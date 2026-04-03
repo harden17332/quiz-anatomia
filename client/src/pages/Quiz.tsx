@@ -52,10 +52,6 @@ export default function Quiz() {
     setAnswers(newAnswers);
   };
 
-  const handleFinish = () => {
-    setShowResults(true);
-  };
-
   const handleRestart = () => {
     setAnswers(new Array(questions.length).fill(null));
     setShowResults(false);
@@ -67,6 +63,11 @@ export default function Quiz() {
 
   const percentage = Math.round((correctCount / questions.length) * 100);
   const allAnswered = answers.every((answer) => answer !== null);
+
+  // Mostrar resultados automaticamente quando todas as questoes forem respondidas
+  if (allAnswered && !showResults && answers.length > 0) {
+    setShowResults(true);
+  }
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 to-slate-950">
@@ -201,23 +202,7 @@ export default function Quiz() {
               );
             })}
 
-            {/* Botão Finalizar */}
-            <div className="flex gap-3 sticky bottom-4">
-              <Button
-                variant="outline"
-                className="flex-1 border-slate-600 text-white hover:bg-slate-700"
-                onClick={() => setLocation("/")}
-              >
-                Cancelar
-              </Button>
-              <Button
-                className="flex-1 bg-blue-600 hover:bg-blue-700"
-                onClick={handleFinish}
-                disabled={!allAnswered}
-              >
-                {allAnswered ? "Ver Resultados" : "Responda todas as questões"}
-              </Button>
-            </div>
+
           </div>
         ) : (
           /* Resultados */
