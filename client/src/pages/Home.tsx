@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { themes } from "@/lib/quizData";
+import { quizzes } from "@/lib/quizData";
 import { useLocation } from "wouter";
 
 export default function Home() {
@@ -36,24 +36,24 @@ export default function Home() {
 
         {/* Theme Cards Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {themes.map((theme) => (
+          {quizzes.map((quiz) => (
             <Card
-              key={theme.id}
+              key={quiz.id}
               className="hover:shadow-lg transition-all duration-300 cursor-pointer border-2 border-slate-700 hover:border-slate-600 bg-slate-800"
-              onClick={() => handleThemeSelect(theme.id)}
+              onClick={() => handleThemeSelect(quiz.id)}
             >
               <CardHeader>
                 <div className="flex items-start justify-between mb-3">
-                  <span className="text-5xl">{theme.icon}</span>
+                  <span className="text-5xl">{quiz.emoji}</span>
                   <span className="inline-block bg-slate-700 text-slate-200 text-xs font-semibold px-3 py-1 rounded-full">
-                    {theme.totalQuestions} questões
+                    {quiz.questions.length} questões
                   </span>
                 </div>
                 <CardTitle className="text-xl text-white">
-                  {theme.name}
+                  {quiz.title}
                 </CardTitle>
                 <CardDescription className="text-slate-400">
-                  {theme.description}
+                  {quiz.description}
                 </CardDescription>
               </CardHeader>
               <CardContent>
@@ -61,7 +61,7 @@ export default function Home() {
                   className="w-full bg-blue-600 hover:bg-blue-700 text-white"
                   onClick={(e) => {
                     e.stopPropagation();
-                    handleThemeSelect(theme.id);
+                    handleThemeSelect(quiz.id);
                   }}
                 >
                   Começar Quiz

@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { quizzes, themes } from "@/lib/quizData";
+import { quizzes, Question } from "@/lib/quizData";
 import { ChevronLeft } from "lucide-react";
 import { useState } from "react";
 import { useLocation, useRoute } from "wouter";
@@ -13,10 +13,10 @@ export default function Quiz() {
   const [expandedExplanation, setExpandedExplanation] = useState<number | null>(null);
 
   const themeId = params?.themeId as string;
-  const theme = themes.find((t) => t.id === themeId);
-  const questions = quizzes[themeId] || [];
+  const quiz = quizzes.find((q) => q.id === themeId);
+  const questions = quiz?.questions || [];
 
-  if (!match || !theme) {
+  if (!match || !quiz) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-slate-900">
         <div className="text-center">
@@ -49,7 +49,7 @@ export default function Quiz() {
   };
 
   const correctCount = answers.filter(
-    (answer, index) => answer === questions[index].correct
+    (answer, index) => answer === questions[index]?.correctAnswer
   ).length;
 
   const percentage = Math.round((correctCount / questions.length) * 100);
@@ -76,10 +76,10 @@ export default function Quiz() {
               Voltar
             </Button>
             <div className="flex items-center gap-3">
-              <span className="text-3xl">{theme.icon}</span>
+              <span className="text-3xl">{quiz.emoji}</span>
               <div>
-                <h1 className="text-xl font-bold text-white">{theme.name}</h1>
-                <p className="text-sm text-slate-400">{theme.description}</p>
+                <h1 className="text-xl font-bold text-white">{quiz.title}</h1>
+                <p className="text-sm text-slate-400">{quiz.description}</p>
               </div>
             </div>
             <div className="text-right">
@@ -97,9 +97,9 @@ export default function Quiz() {
         {!showResults ? (
           <div className="space-y-6">
             {/* Questões */}
-            {questions.map((question, qIndex) => {
+            {questions.map((question: Question, qIndex: number) => {
               const isAnswered = answers[qIndex] !== null;
-              const isCorrect = answers[qIndex] === question.correct;
+              const isCorrect = answers[qIndex] === question.correctAnswer;
               const showExplanation = expandedExplanation === qIndex;
 
               return (
@@ -121,9 +121,9 @@ export default function Quiz() {
                   </CardHeader>
                   <CardContent>
                     <div className="space-y-3">
-                      {question.options.map((option, oIndex) => {
+                      {question.options.map((option: string, oIndex: number) => {
                         const isSelected = answers[qIndex] === oIndex;
-                        const isCorrectOption = oIndex === question.correct;
+                        const isCorrectOption = oIndex === question.correctAnswer;
                         const shouldHighlightCorrect =
                           isAnswered && isCorrectOption;
                         const shouldHighlightWrong =
@@ -229,7 +229,7 @@ export default function Quiz() {
                 Resultados
               </CardTitle>
               <CardDescription className="text-slate-400">
-                {theme.name}
+                {quiz.title}
               </CardDescription>
             </CardHeader>
             <CardContent className="space-y-8">
