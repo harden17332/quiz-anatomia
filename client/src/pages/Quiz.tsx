@@ -1,14 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogHeader,
-  DialogTitle,
-} from "@/components/ui/dialog";
 import { quizzes, themes } from "@/lib/quizData";
-import { CheckCircle2, ChevronLeft } from "lucide-react";
+import { ChevronLeft } from "lucide-react";
 import { useState } from "react";
 import { useLocation, useRoute } from "wouter";
 
@@ -17,10 +10,7 @@ export default function Quiz() {
   const [, setLocation] = useLocation();
   const [answers, setAnswers] = useState<(number | null)[]>([]);
   const [showResults, setShowResults] = useState(false);
-  const [selectedExplanation, setSelectedExplanation] = useState<{
-    question: string;
-    explanation: string;
-  } | null>(null);
+  const [expandedExplanation, setExpandedExplanation] = useState<number | null>(null);
 
   const themeId = params?.themeId as string;
   const theme = themes.find((t) => t.id === themeId);
@@ -55,6 +45,7 @@ export default function Quiz() {
   const handleRestart = () => {
     setAnswers(new Array(questions.length).fill(null));
     setShowResults(false);
+    setExpandedExplanation(null);
   };
 
   const correctCount = answers.filter(
@@ -63,8 +54,9 @@ export default function Quiz() {
 
   const percentage = Math.round((correctCount / questions.length) * 100);
   const allAnswered = answers.every((answer) => answer !== null);
+  const answeredCount = answers.filter((answer) => answer !== null).length;
 
-  // Mostrar resultados automaticamente quando todas as questoes forem respondidas
+  // Mostrar resultados automaticamente quando todas as questões forem respondidas
   if (allAnswered && !showResults && answers.length > 0) {
     setShowResults(true);
   }
@@ -90,7 +82,12 @@ export default function Quiz() {
                 <p className="text-sm text-slate-400">{theme.description}</p>
               </div>
             </div>
-            <div className="w-20"></div>
+            <div className="text-right">
+              <div className="text-sm text-slate-400">Progresso</div>
+              <div className="text-xl font-bold text-white">
+                {answeredCount}/{questions.length}
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -103,6 +100,7 @@ export default function Quiz() {
             {questions.map((question, qIndex) => {
               const isAnswered = answers[qIndex] !== null;
               const isCorrect = answers[qIndex] === question.correct;
+              const showExplanation = expandedExplanation === qIndex;
 
               return (
                 <Card
@@ -119,16 +117,6 @@ export default function Quiz() {
                           {question.question}
                         </CardDescription>
                       </div>
-                      {isAnswered && isCorrect && (
-                        <div className="ml-4">
-                          <div className="flex flex-col items-center gap-1">
-                            <CheckCircle2 className="w-8 h-8 text-green-500" />
-                            <span className="text-xs text-green-500 font-semibold">
-                              Correto
-                            </span>
-                          </div>
-                        </div>
-                      )}
                     </div>
                   </CardHeader>
                   <CardContent>
@@ -138,6 +126,8 @@ export default function Quiz() {
                         const isCorrectOption = oIndex === question.correct;
                         const shouldHighlightCorrect =
                           isAnswered && isCorrectOption;
+                        const shouldHighlightWrong =
+                          isAnswered && isSelected && !isCorrect;
 
                         return (
                           <button
@@ -147,9 +137,11 @@ export default function Quiz() {
                             className={`w-full p-4 text-left rounded-lg border-2 transition-all ${
                               shouldHighlightCorrect
                                 ? "border-green-500 bg-green-500/10"
-                                : isSelected
-                                  ? "border-blue-600 bg-slate-700"
-                                  : "border-slate-700 hover:border-slate-600 bg-slate-800"
+                                : shouldHighlightWrong
+                                  ? "border-red-500 bg-red-500/10"
+                                  : isSelected
+                                    ? "border-blue-600 bg-slate-700"
+                                    : "border-slate-700 hover:border-slate-600 bg-slate-800"
                             } ${isAnswered ? "cursor-default" : "cursor-pointer"}`}
                           >
                             <div className="flex items-center gap-3">
@@ -157,12 +149,16 @@ export default function Quiz() {
                                 className={`w-5 h-5 rounded-full border-2 flex items-center justify-center flex-shrink-0 ${
                                   shouldHighlightCorrect
                                     ? "border-green-500 bg-green-500"
-                                    : isSelected
-                                      ? "border-blue-600 bg-blue-600"
-                                      : "border-slate-600"
+                                    : shouldHighlightWrong
+                                      ? "border-red-500 bg-red-500"
+                                      : isSelected
+                                        ? "border-blue-600 bg-blue-600"
+                                        : "border-slate-600"
                                 }`}
                               >
-                                {(shouldHighlightCorrect || isSelected) && (
+                                {(shouldHighlightCorrect ||
+                                  shouldHighlightWrong ||
+                                  isSelected) && (
                                   <div className="w-2 h-2 bg-white rounded-full" />
                                 )}
                               </div>
@@ -170,7 +166,9 @@ export default function Quiz() {
                                 className={`font-medium ${
                                   shouldHighlightCorrect
                                     ? "text-green-400"
-                                    : "text-white"
+                                    : shouldHighlightWrong
+                                      ? "text-red-400"
+                                      : "text-white"
                                 }`}
                               >
                                 {option}
@@ -186,23 +184,42 @@ export default function Quiz() {
                       <div className="mt-4">
                         <button
                           onClick={() =>
-                            setSelectedExplanation({
-                              question: question.question,
-                              explanation: question.explanation,
-                            })
+                            setExpandedExplanation(
+                              showExplanation ? null : qIndex
+                            )
                           }
                           className="text-sm text-blue-400 hover:text-blue-300 underline"
                         >
-                          Ver explicação
+                          {showExplanation ? "Ocultar" : "Ver"} explicação
                         </button>
+                      </div>
+                    )}
+
+                    {/* Explicação (mostrada se clicada) */}
+                    {showExplanation && (
+                      <div
+                        className={`mt-4 p-3 rounded-lg ${
+                          isCorrect
+                            ? "bg-green-500/10 border border-green-500/30"
+                            : "bg-red-500/10 border border-red-500/30"
+                        }`}
+                      >
+                        <p
+                          className={`text-sm ${
+                            isCorrect
+                              ? "text-green-300"
+                              : "text-red-300"
+                          }`}
+                        >
+                          <span className="font-semibold">Explicação:</span>{" "}
+                          {question.explanation}
+                        </p>
                       </div>
                     )}
                   </CardContent>
                 </Card>
               );
             })}
-
-
           </div>
         ) : (
           /* Resultados */
@@ -272,26 +289,6 @@ export default function Quiz() {
           </Card>
         )}
       </div>
-
-      {/* Modal de Explicação */}
-      <Dialog
-        open={selectedExplanation !== null}
-        onOpenChange={(open) => {
-          if (!open) setSelectedExplanation(null);
-        }}
-      >
-        <DialogContent className="bg-slate-800 border-slate-700">
-          <DialogHeader>
-            <DialogTitle className="text-white">Explicação</DialogTitle>
-            <DialogDescription className="text-slate-400 mt-2">
-              {selectedExplanation?.question}
-            </DialogDescription>
-          </DialogHeader>
-          <div className="text-slate-300 text-sm leading-relaxed">
-            {selectedExplanation?.explanation}
-          </div>
-        </DialogContent>
-      </Dialog>
     </div>
   );
 }
