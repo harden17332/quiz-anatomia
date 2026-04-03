@@ -1,7 +1,14 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+} from "@/components/ui/dialog";
 import { quizzes, themes } from "@/lib/quizData";
-import { CheckCircle2, ChevronLeft, XCircle } from "lucide-react";
+import { CheckCircle2, ChevronLeft } from "lucide-react";
 import { useState } from "react";
 import { useLocation, useRoute } from "wouter";
 
@@ -10,6 +17,10 @@ export default function Quiz() {
   const [, setLocation] = useLocation();
   const [answers, setAnswers] = useState<(number | null)[]>([]);
   const [showResults, setShowResults] = useState(false);
+  const [selectedExplanation, setSelectedExplanation] = useState<{
+    question: string;
+    explanation: string;
+  } | null>(null);
 
   const themeId = params?.themeId as string;
   const theme = themes.find((t) => t.id === themeId);
@@ -107,23 +118,14 @@ export default function Quiz() {
                           {question.question}
                         </CardDescription>
                       </div>
-                      {isAnswered && (
+                      {isAnswered && isCorrect && (
                         <div className="ml-4">
-                          {isCorrect ? (
-                            <div className="flex flex-col items-center gap-1">
-                              <CheckCircle2 className="w-8 h-8 text-green-500" />
-                              <span className="text-xs text-green-500 font-semibold">
-                                Correto
-                              </span>
-                            </div>
-                          ) : (
-                            <div className="flex flex-col items-center gap-1">
-                              <XCircle className="w-8 h-8 text-red-500" />
-                              <span className="text-xs text-red-500 font-semibold">
-                                Errado
-                              </span>
-                            </div>
-                          )}
+                          <div className="flex flex-col items-center gap-1">
+                            <CheckCircle2 className="w-8 h-8 text-green-500" />
+                            <span className="text-xs text-green-500 font-semibold">
+                              Correto
+                            </span>
+                          </div>
                         </div>
                       )}
                     </div>
@@ -135,8 +137,6 @@ export default function Quiz() {
                         const isCorrectOption = oIndex === question.correct;
                         const shouldHighlightCorrect =
                           isAnswered && isCorrectOption;
-                        const shouldHighlightWrong =
-                          isAnswered && isSelected && !isCorrect;
 
                         return (
                           <button
@@ -146,11 +146,9 @@ export default function Quiz() {
                             className={`w-full p-4 text-left rounded-lg border-2 transition-all ${
                               shouldHighlightCorrect
                                 ? "border-green-500 bg-green-500/10"
-                                : shouldHighlightWrong
-                                  ? "border-red-500 bg-red-500/10"
-                                  : isSelected
-                                    ? "border-blue-600 bg-slate-700"
-                                    : "border-slate-700 hover:border-slate-600 bg-slate-800"
+                                : isSelected
+                                  ? "border-blue-600 bg-slate-700"
+                                  : "border-slate-700 hover:border-slate-600 bg-slate-800"
                             } ${isAnswered ? "cursor-default" : "cursor-pointer"}`}
                           >
                             <div className="flex items-center gap-3">
@@ -158,16 +156,12 @@ export default function Quiz() {
                                 className={`w-5 h-5 rounded-full border-2 flex items-center justify-center flex-shrink-0 ${
                                   shouldHighlightCorrect
                                     ? "border-green-500 bg-green-500"
-                                    : shouldHighlightWrong
-                                      ? "border-red-500 bg-red-500"
-                                      : isSelected
-                                        ? "border-blue-600 bg-blue-600"
-                                        : "border-slate-600"
+                                    : isSelected
+                                      ? "border-blue-600 bg-blue-600"
+                                      : "border-slate-600"
                                 }`}
                               >
-                                {(shouldHighlightCorrect ||
-                                  shouldHighlightWrong ||
-                                  isSelected) && (
+                                {(shouldHighlightCorrect || isSelected) && (
                                   <div className="w-2 h-2 bg-white rounded-full" />
                                 )}
                               </div>
@@ -175,9 +169,7 @@ export default function Quiz() {
                                 className={`font-medium ${
                                   shouldHighlightCorrect
                                     ? "text-green-400"
-                                    : shouldHighlightWrong
-                                      ? "text-red-400"
-                                      : "text-white"
+                                    : "text-white"
                                 }`}
                               >
                                 {option}
@@ -188,25 +180,20 @@ export default function Quiz() {
                       })}
                     </div>
 
-                    {/* Explicação (mostrada se respondida) */}
+                    {/* Botão Ver Explicação (mostrado se respondida) */}
                     {isAnswered && (
-                      <div
-                        className={`mt-4 p-3 rounded-lg ${
-                          isCorrect
-                            ? "bg-green-500/10 border border-green-500/30"
-                            : "bg-blue-500/10 border border-blue-500/30"
-                        }`}
-                      >
-                        <p
-                          className={`text-sm ${
-                            isCorrect
-                              ? "text-green-300"
-                              : "text-blue-300"
-                          }`}
+                      <div className="mt-4">
+                        <button
+                          onClick={() =>
+                            setSelectedExplanation({
+                              question: question.question,
+                              explanation: question.explanation,
+                            })
+                          }
+                          className="text-sm text-blue-400 hover:text-blue-300 underline"
                         >
-                          <span className="font-semibold">Explicação:</span>{" "}
-                          {question.explanation}
-                        </p>
+                          Ver explicação
+                        </button>
                       </div>
                     )}
                   </CardContent>
@@ -300,6 +287,26 @@ export default function Quiz() {
           </Card>
         )}
       </div>
+
+      {/* Modal de Explicação */}
+      <Dialog
+        open={selectedExplanation !== null}
+        onOpenChange={(open) => {
+          if (!open) setSelectedExplanation(null);
+        }}
+      >
+        <DialogContent className="bg-slate-800 border-slate-700">
+          <DialogHeader>
+            <DialogTitle className="text-white">Explicação</DialogTitle>
+            <DialogDescription className="text-slate-400 mt-2">
+              {selectedExplanation?.question}
+            </DialogDescription>
+          </DialogHeader>
+          <div className="text-slate-300 text-sm leading-relaxed">
+            {selectedExplanation?.explanation}
+          </div>
+        </DialogContent>
+      </Dialog>
     </div>
   );
 }
