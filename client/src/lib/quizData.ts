@@ -756,7 +756,7 @@ const cavidadeOralQuestions: Question[] = [
 ];
 
 // QUESTÕES DE ORELHA E OLHO (40 questões)
-export const quizData = [
+export const quizzes = [
   {
     id: "coracao",
     title: "Coração",
