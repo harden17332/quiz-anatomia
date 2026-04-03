@@ -35,9 +35,9 @@ export default function Quiz() {
 
   if (!match || !theme) {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-slate-50">
+      <div className="min-h-screen flex items-center justify-center bg-slate-900">
         <div className="text-center">
-          <h1 className="text-2xl font-bold text-slate-900 mb-4">
+          <h1 className="text-2xl font-bold text-white mb-4">
             Tema não encontrado
           </h1>
           <Button onClick={() => setLocation("/")} variant="default">
@@ -98,13 +98,13 @@ export default function Quiz() {
 
   if (quizState.showResults) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100">
+      <div className="min-h-screen bg-gradient-to-br from-slate-900 to-slate-950">
         {/* Header */}
-        <div className="bg-white border-b border-slate-200 shadow-sm">
+        <div className="bg-slate-800 border-b border-slate-700 shadow-sm">
           <div className="container py-4">
             <Button
               variant="ghost"
-              className="gap-2"
+              className="gap-2 text-white hover:bg-slate-700"
               onClick={() => setLocation("/")}
             >
               <ChevronLeft className="w-4 h-4" />
@@ -115,43 +115,43 @@ export default function Quiz() {
 
         {/* Results */}
         <div className="container py-12">
-          <Card className="max-w-2xl mx-auto border-2 border-slate-200">
+          <Card className="max-w-2xl mx-auto border-2 border-slate-700 bg-slate-800">
             <CardHeader className="text-center">
-              <CardTitle className="text-3xl mb-2">Resultados</CardTitle>
-              <CardDescription>{theme.name}</CardDescription>
+              <CardTitle className="text-3xl mb-2 text-white">Resultados</CardTitle>
+              <CardDescription className="text-slate-400">{theme.name}</CardDescription>
             </CardHeader>
             <CardContent className="space-y-8">
               {/* Score Display */}
               <div className="text-center">
-                <div className="inline-flex items-center justify-center w-32 h-32 rounded-full bg-gradient-to-br from-slate-100 to-slate-200 mb-4">
+                <div className="inline-flex items-center justify-center w-32 h-32 rounded-full bg-gradient-to-br from-slate-700 to-slate-800 mb-4">
                   <div className="text-center">
-                    <div className="text-5xl font-bold text-slate-900">
+                    <div className="text-5xl font-bold text-white">
                       {percentage}%
                     </div>
-                    <div className="text-sm text-slate-600 mt-1">
+                    <div className="text-sm text-slate-400 mt-1">
                       {correctCount}/{questions.length}
                     </div>
                   </div>
                 </div>
-                <p className="text-lg text-slate-600">
+                <p className="text-lg text-slate-300">
                   Você acertou {correctCount} de {questions.length} questões
                 </p>
               </div>
 
               {/* Performance Message */}
-              <div className="p-4 rounded-lg bg-slate-50 border border-slate-200">
+              <div className="p-4 rounded-lg bg-slate-700 border border-slate-600">
                 {percentage >= 80 && (
-                  <p className="text-slate-900 font-semibold">
+                  <p className="text-white font-semibold">
                     🎉 Excelente desempenho! Você domina este tema.
                   </p>
                 )}
                 {percentage >= 60 && percentage < 80 && (
-                  <p className="text-slate-900 font-semibold">
+                  <p className="text-white font-semibold">
                     👏 Bom trabalho! Continue estudando para melhorar.
                   </p>
                 )}
                 {percentage < 60 && (
-                  <p className="text-slate-900 font-semibold">
+                  <p className="text-white font-semibold">
                     💪 Continue praticando! Você está no caminho certo.
                   </p>
                 )}
@@ -159,7 +159,7 @@ export default function Quiz() {
 
               {/* Detailed Results */}
               <div className="space-y-3 max-h-96 overflow-y-auto">
-                <h3 className="font-semibold text-slate-900 mb-4">
+                <h3 className="font-semibold text-white mb-4">
                   Revisão das Respostas
                 </h3>
                 {questions.map((question, index) => {
@@ -167,34 +167,34 @@ export default function Quiz() {
                   return (
                     <div
                       key={question.id}
-                      className="p-3 rounded-lg border border-slate-200 bg-white"
+                      className="p-3 rounded-lg border border-slate-700 bg-slate-700"
                     >
                       <div className="flex items-start gap-3 mb-2">
                         {isCorrect ? (
-                          <CheckCircle2 className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                          <CheckCircle2 className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
                         ) : (
-                          <XCircle className="w-5 h-5 text-red-600 flex-shrink-0 mt-0.5" />
+                          <XCircle className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" />
                         )}
                         <div className="flex-1">
-                          <p className="text-sm font-medium text-slate-900">
+                          <p className="text-sm font-medium text-white">
                             Q{index + 1}: {question.question}
                           </p>
-                          <p className="text-xs text-slate-600 mt-1">
+                          <p className="text-xs text-slate-400 mt-1">
                             Sua resposta:{" "}
                             <span
                               className={
                                 isCorrect
-                                  ? "text-green-600 font-semibold"
-                                  : "text-red-600 font-semibold"
+                                  ? "text-green-500 font-semibold"
+                                  : "text-red-500 font-semibold"
                               }
                             >
                               {question.options[quizState.answers[index] || 0]}
                             </span>
                           </p>
                           {!isCorrect && (
-                            <p className="text-xs text-slate-600 mt-1">
+                            <p className="text-xs text-slate-400 mt-1">
                               Resposta correta:{" "}
-                              <span className="text-green-600 font-semibold">
+                              <span className="text-green-500 font-semibold">
                                 {question.options[question.correct]}
                               </span>
                             </p>
@@ -210,12 +210,12 @@ export default function Quiz() {
               <div className="flex gap-3 pt-4">
                 <Button
                   variant="outline"
-                  className="flex-1"
+                  className="flex-1 border-slate-600 text-white hover:bg-slate-700"
                   onClick={() => setLocation("/")}
                 >
                   Voltar para Home
                 </Button>
-                <Button className="flex-1 bg-slate-900 hover:bg-slate-800" onClick={handleRestart}>
+                <Button className="flex-1 bg-blue-600 hover:bg-blue-700" onClick={handleRestart}>
                   Refazer Quiz
                 </Button>
               </div>
@@ -230,27 +230,27 @@ export default function Quiz() {
   const currentAnswer = quizState.answers[quizState.currentQuestion];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100">
+    <div className="min-h-screen bg-gradient-to-br from-slate-900 to-slate-950">
       {/* Header */}
-      <div className="bg-white border-b border-slate-200 shadow-sm sticky top-0 z-10">
+      <div className="bg-slate-800 border-b border-slate-700 shadow-sm sticky top-0 z-10">
         <div className="container py-4">
           <div className="flex items-center justify-between mb-4">
             <Button
               variant="ghost"
-              className="gap-2"
+              className="gap-2 text-white hover:bg-slate-700"
               onClick={() => setLocation("/")}
             >
               <ChevronLeft className="w-4 h-4" />
               Voltar
             </Button>
-            <div className="text-sm font-medium text-slate-600">
+            <div className="text-sm font-medium text-slate-300">
               Questão {quizState.currentQuestion + 1} de {questions.length}
             </div>
           </div>
           {/* Progress Bar */}
-          <div className="w-full bg-slate-200 rounded-full h-2">
+          <div className="w-full bg-slate-700 rounded-full h-2">
             <div
-              className="bg-slate-900 h-2 rounded-full transition-all duration-300"
+              className="bg-blue-600 h-2 rounded-full transition-all duration-300"
               style={{
                 width: `${((quizState.currentQuestion + 1) / questions.length) * 100}%`,
               }}
@@ -261,20 +261,20 @@ export default function Quiz() {
 
       {/* Main Content */}
       <div className="container py-8">
-        <Card className="max-w-2xl mx-auto border-2 border-slate-200">
+        <Card className="max-w-2xl mx-auto border-2 border-slate-700 bg-slate-800">
           <CardHeader>
             <div className="flex items-center gap-3 mb-4">
               <span className="text-3xl">{theme.icon}</span>
               <div>
-                <CardTitle className="text-xl">{theme.name}</CardTitle>
-                <CardDescription>{theme.description}</CardDescription>
+                <CardTitle className="text-xl text-white">{theme.name}</CardTitle>
+                <CardDescription className="text-slate-400">{theme.description}</CardDescription>
               </div>
             </div>
           </CardHeader>
           <CardContent className="space-y-6">
             {/* Question */}
             <div>
-              <h2 className="text-xl font-semibold text-slate-900 mb-6">
+              <h2 className="text-xl font-semibold text-white mb-6">
                 {currentQuestion.question}
               </h2>
 
@@ -286,23 +286,23 @@ export default function Quiz() {
                     onClick={() => handleAnswer(index)}
                     className={`w-full p-4 text-left rounded-lg border-2 transition-all ${
                       currentAnswer === index
-                        ? "border-slate-900 bg-slate-50"
-                        : "border-slate-200 hover:border-slate-300 bg-white"
+                        ? "border-blue-600 bg-slate-700"
+                        : "border-slate-700 hover:border-slate-600 bg-slate-800"
                     }`}
                   >
                     <div className="flex items-center gap-3">
                       <div
                         className={`w-5 h-5 rounded-full border-2 flex items-center justify-center ${
                           currentAnswer === index
-                            ? "border-slate-900 bg-slate-900"
-                            : "border-slate-300"
+                            ? "border-blue-600 bg-blue-600"
+                            : "border-slate-600"
                         }`}
                       >
                         {currentAnswer === index && (
                           <div className="w-2 h-2 bg-white rounded-full" />
                         )}
                       </div>
-                      <span className="text-slate-900 font-medium">{option}</span>
+                      <span className="text-white font-medium">{option}</span>
                     </div>
                   </button>
                 ))}
@@ -310,17 +310,17 @@ export default function Quiz() {
             </div>
 
             {/* Navigation Buttons */}
-            <div className="flex gap-3 pt-6 border-t border-slate-200">
+            <div className="flex gap-3 pt-6 border-t border-slate-700">
               <Button
                 variant="outline"
                 onClick={handlePrevious}
                 disabled={quizState.currentQuestion === 0}
-                className="flex-1"
+                className="flex-1 border-slate-600 text-white hover:bg-slate-700"
               >
                 Anterior
               </Button>
               <Button
-                className="flex-1 bg-slate-900 hover:bg-slate-800"
+                className="flex-1 bg-blue-600 hover:bg-blue-700"
                 onClick={handleNext}
                 disabled={currentAnswer === null}
               >
