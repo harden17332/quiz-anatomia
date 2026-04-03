@@ -943,6 +943,86 @@ export const quizzes = [
         correctAnswer: 2,
         explanation: "Composta por aurícula (pavilhão) e meato acústico externo [1, 8, 16].",
         theme: "Orelha"
+      },
+      {
+        id: "orelha-21",
+        question: "Um paciente apresenta um abscesso na região da concha auricular. Para realizar a drenagem, o médico deve considerar a inervação local. De acordo com os materiais, qual nervo é responsável pela inervação sensitiva do território anterossuperior do meato acústico externo e parte da aurícula?",
+        options: ['Nervo Vago (X par).', 'Nervo Auriculotemporal (ramo de V3).', 'Nervo Facial (VII par).', 'Nervo Auricular Magno.'],
+        correctAnswer: 1,
+        explanation: "O território anterossuperior do meato acústico externo é inervado pelo nervo auriculotemporal, ramo do mandibular (V3) [1].",
+        theme: "Orelha"
+      },
+      {
+        id: "orelha-22",
+        question: "Durante uma timpanoplastia, o cirurgião observa a cadeia ossicular. Qual ossículo possui uma estrutura chamada \"processo lenticular\" e com qual estrutura ele se articula diretamente?",
+        options: ['Martelo; articula-se com a membrana timpânica.', 'Bigorna; articula-se com a cabeça do estribo.', 'Estribo; articula-se com a janela oval.', 'Bigorna; articula-se com o cabo do martelo.'],
+        correctAnswer: 1,
+        explanation: "O processo lenticular está na bigorna e articula-se com a cabeça do estribo [1, 2].",
+        theme: "Orelha"
+      },
+      {
+        id: "orelha-23",
+        question: "Um mergulhador apresenta barotrauma com hemorragia na orelha média. O sangue provém de ramos da carótida externa. Qual dessas artérias é um ramo direto da artéria maxilar que supre a orelha média?",
+        options: ['Artéria Timpânica Posterior.', 'Artéria Timpânica Anterior.', 'Artéria Estilomastoidea.', 'Artéria Labiríntica.'],
+        correctAnswer: 1,
+        explanation: "A artéria timpânica anterior é ramo da artéria maxilar [2].",
+        theme: "Orelha"
+      },
+      {
+        id: "orelha-24",
+        question: "No caso de uma infecção que se espalha da cavidade timpânica para as células mastóideas, qual porção do osso temporal está sendo primariamente afetada e onde se localiza o recesso epitimpânico em relação à membrana timpânica?",
+        options: ['Porção escamosa; inferior à membrana.', 'Porção petrosa; superior à membrana.', 'Porção timpânica; medial à membrana.', 'Porção mastóidea; lateral à membrana.'],
+        correctAnswer: 1,
+        explanation: "A cavidade timpânica e o recesso epitimpânico situam-se na porção petrosa. O recesso fica superior à membrana [3].",
+        theme: "Orelha"
+      },
+      {
+        id: "orelha-25",
+        question: "Um paciente com perda súbita de audição é diagnosticado com oclusão da artéria que supre o labirinto membranáceo. Qual é essa artéria e de qual vaso ela se origina?",
+        options: ['Artéria Timpânica Superior; ramo da meníngea média.', 'Artéria Labiríntica; ramo da artéria basilar.', 'Artéria Caroticotimpânica; ramo da carótida interna.', 'Artéria Auricular Profunda; ramo da maxilar.'],
+        correctAnswer: 1,
+        explanation: "A artéria labiríntica, ramo da artéria basilar, supre a orelha interna [4].",
+        theme: "Orelha"
+      },
+      {
+        id: "orelha-26",
+        question: "Sobre a anatomia do labirinto ósseo, assinale a alternativa CORRETA sobre o fluido que preenche suas cavidades e as estruturas que o compõem:",
+        options: ['Contém endolinfa; composto por ducto coclear e sáculo.', 'Contém perilinfa; composto por cóclea, vestíbulo e canais semicirculares.', 'Contém cerume; composto por meato acústico interno.', 'Contém perilinfa; composto por utrículo e ductos semicirculares.'],
+        correctAnswer: 1,
+        explanation: "O labirinto ósseo contém perilinfa e é formado pela cóclea, vestíbulo e canais semicirculares [4-6].",
+        theme: "Orelha"
+      },
+      {
+        id: "orelha-27",
+        question: "Em um exame neurológico, um paciente demonstra incapacidade de atenuar sons muito agudos. O médico suspeita de paralisia do músculo estapédio. Qual par craniano inerva este músculo?",
+        options: ['V par (Trigêmeo).', 'VIII par (Vestibulococlear).', 'VII par (Facial).', 'X par (Vago).'],
+        correctAnswer: 2,
+        explanation: "O músculo estapédio é inervado pelo nervo facial (VII par) [2].",
+        theme: "Orelha"
+      },
+      {
+        id: "orelha-28",
+        question: "Assinale a alternativa INCORRETA sobre a tuba auditiva:",
+        options: ['Conecta a orelha média à nasofaringe.', 'Localiza-se na porção petrosa do osso temporal.', 'Sua função é a produção de endolinfa para a cóclea.', 'Permite a equalização da pressão na cavidade timpânica.'],
+        correctAnswer: 2,
+        explanation: "A função da tuba auditiva é ventilação e equilíbrio de pressão, não produção de fluidos da orelha interna [3].",
+        theme: "Orelha"
+      },
+      {
+        id: "orelha-29",
+        question: "Qual estrutura anatômica é considerada o limite entre a orelha externa e a orelha média?",
+        options: ['Janela Oval.', 'Promontório.', 'Membrana Timpânica.', 'Tuba Auditiva.'],
+        correctAnswer: 2,
+        explanation: "A membrana timpânica divide o meato acústico externo (orelha externa) da cavidade timpânica (orelha média) [3, 7].",
+        theme: "Orelha"
+      },
+      {
+        id: "orelha-30",
+        question: "Sobre a orelha interna, quais estruturas são especificamente responsáveis pela detecção do equilíbrio (posição e movimento da cabeça)?",
+        options: ['Cóclea e ducto coclear.', 'Apenas o ducto coclear.', 'Utrículo, sáculo e ductos semicirculares.', 'Membrana timpânica secundária e janela redonda.'],
+        correctAnswer: 2,
+        explanation: "O equilíbrio é função do utrículo, sáculo e ductos semicirculares [4, 6].",
+        theme: "Orelha"
       }
     ]
   },
@@ -1083,9 +1163,9 @@ export const quizzes = [
       {
         id: "olho-37",
         question: "Qual a função do músculo reto inferior conforme descrito nos materiais?",
-        options: ['Elevação com abdução.', 'Depressão com abdução.', 'Adução pura.', 'Fechamento da pálpebra.'],
+        options: ['Elevação com abdução.', 'Depressão com adução.', 'Adução pura.', 'Fechamento da pálpebra.'],
         correctAnswer: 1,
-        explanation: "O reto inferior realiza depressão com abdução [6, 22, 23].",
+        explanation: "O reto inferior realiza depressão com adução [6, 22, 23].",
         theme: "Olho"
       },
       {
@@ -1110,6 +1190,86 @@ export const quizzes = [
         options: ['III - Oculomotor.', 'IV - Troclear.', 'VI - Abducente.', 'VII - Facial.'],
         correctAnswer: 0,
         explanation: "O oculomotor (III) inerva quase todos, exceto o Oblíquo Superior (IV) e Reto Lateral (VI) [20, 21, 24].",
+        theme: "Olho"
+      },
+      {
+        id: "olho-41",
+        question: "Uma fratura na parede medial da órbita pode comprometer estruturas delicadas. Quais ossos formam o limite medial da cavidade orbital?",
+        options: ['Frontal, Etmoide, Lacrimal e Maxilar.', 'Zigomático e Asa maior do esfenoide.', 'Palatino e Vômer.', 'Apenas o osso Etmoide e Frontal.'],
+        correctAnswer: 0,
+        explanation: "A parede medial é composta pelos ossos frontal, etmoide, lacrimal e maxilar [8, 9].",
+        theme: "Olho"
+      },
+      {
+        id: "olho-42",
+        question: "Um paciente apresenta incapacidade de olhar para baixo quando o olho está em adução. Seguindo a regra \"OS 4 RELA 6 RESTAM 3\", qual músculo e nervo estão lesionados?",
+        options: ['M. Reto Inferior; N. Oculomotor (III).', 'M. Oblíquo Superior; N. Troclear (IV).', 'M. Reto Lateral; N. Abducente (VI).', 'M. Oblíquo Inferior; N. Oculomotor (III).'],
+        correctAnswer: 1,
+        explanation: "O Oblíquo Superior (OS 4) é o músculo que faz depressão com adução, inervado pelo nervo Troclear [10-12].",
+        theme: "Olho"
+      },
+      {
+        id: "olho-43",
+        question: "Durante a avaliação do reflexo fotomotor, a luz atinge a retina e a resposta motora (miose) é executada por qual músculo intrínseco e qual via nervosa?",
+        options: ['M. Dilatador da pupila; Fibras simpáticas.', 'M. Constritor da pupila; Fibras parassimpáticas via III par.', 'M. Ciliar; Fibras simpáticas via nervo oftálmico.', 'M. Esfíncter da pupila; Fibras parassimpáticas via VII par.'],
+        correctAnswer: 1,
+        explanation: "A miose (constrição) é feita pelo m. constritor da pupila via fibras parassimpáticas do III par [13-15].",
+        theme: "Olho"
+      },
+      {
+        id: "olho-44",
+        question: "O \"caminho da lágrima\" é um trajeto preciso. Após passar pelos canalículos lacrimais e pelo canalículo comum, o fluido lacrimal entra em qual estrutura antes de chegar ao meato nasal inferior?",
+        options: ['Ponto lacrimal.', 'Glândula lacrimal.', 'Saco lacrimal.', 'Prega semilunar.'],
+        correctAnswer: 2,
+        explanation: "Após os canalículos, a lágrima cai no saco lacrimal antes de descer pelo ducto nasolacrimal [10, 12, 16].",
+        theme: "Olho"
+      },
+      {
+        id: "olho-45",
+        question: "A túnica vascular do bulbo ocular, também chamada de úvea, é composta por quais três partes contínuas?",
+        options: ['Esclera, Córnea e Retina.', 'Corioide, Corpo Ciliar e Íris.', 'Cristalino, Humor Vítreo e Humor Aquoso.', 'Retina, Nervo Óptico e Mácula.'],
+        correctAnswer: 1,
+        explanation: "A úvea (vascular) é composta por corioide, corpo ciliar e íris [17, 18].",
+        theme: "Olho"
+      },
+      {
+        id: "olho-46",
+        question: "Um paciente apresenta um \"terçol\" (hordéolo) na margem palpebral. Anatomicamente, quais glândulas sebáceas localizadas nas pálpebras podem estar envolvidas conforme os slides?",
+        options: ['Glândulas de Krause e Wolfring.', 'Glândulas de Meibomius (tarsais) e Zeis.', 'Glândulas de Moll.', 'Glândulas de Bowman.'],
+        correctAnswer: 1,
+        explanation: "As glândulas sebáceas palpebrais mencionadas são as de Meibomius (tarsais) e as de Zeis [19, 20].",
+        theme: "Olho"
+      },
+      {
+        id: "olho-47",
+        question: "Sobre as câmaras do olho, onde se localiza a \"Câmara Posterior\" e qual fluido ela contém?",
+        options: ['Entre a córnea e a íris; humor aquoso.', 'Entre a íris e o cristalino; humor aquoso.', 'Após o cristalino; humor vítreo.', 'Entre a esclera e a corioide; perilinfa.'],
+        correctAnswer: 1,
+        explanation: "A câmara posterior fica entre a face posterior da íris e a face anterior do cristalino, contendo humor aquoso [17, 21].",
+        theme: "Olho"
+      },
+      {
+        id: "olho-48",
+        question: "Qual nervo craniano atravessa o canal óptico acompanhado pela artéria oftálmica?",
+        options: ['N. Oculomotor (III).', 'N. Trigêmeo (V1).', 'N. Óptico (II).', 'N. Abducente (VI).'],
+        correctAnswer: 2,
+        explanation: "O canal óptico é a passagem para o nervo óptico (II) e artéria oftálmica [8, 9].",
+        theme: "Olho"
+      },
+      {
+        id: "olho-49",
+        question: "O músculo que tem a função de abrir o olho (elevação da pálpebra superior) é o músculo levantador da pálpebra superior. Qual sua inervação motor?",
+        options: ['Nervo Facial (VII).', 'Nervo Oculomotor (III).', 'Nervo Troclear (IV).', 'Nervo Oftálmico (V1).'],
+        correctAnswer: 1,
+        explanation: "O levantador da pálpebra superior é inervado pelo III par (Oculomotor) [10-12].",
+        theme: "Olho"
+      },
+      {
+        id: "olho-50",
+        question: "A irrigação da retina é feita predominantemente por qual vaso, que é ramo da artéria oftálmica e corre dentro do nervo óptico?",
+        options: ['Artéria Ciliar Anterior.', 'Artéria Central da Retina.', 'Artéria Lacrimal.', 'Artéria Supraorbital.'],
+        correctAnswer: 1,
+        explanation: "A artéria central da retina é o ramo da oftálmica que perfura o nervo óptico para nutrir a retina [16-18].",
         theme: "Olho"
       }
     ]
