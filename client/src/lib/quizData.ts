@@ -341,172 +341,176 @@ const coracaoQuestions: Question[] = [
   }
 ];
 
-// QUESTÕES DE VASCULARIZAÇÃO (20 + 10 = 30 questões)
-const vascularizacaoQuestionsFirst10: Question[] = [
+// QUESTÕES DE VASCULARIZAÇÃO - Primeiras 10
+const vascularizacao1: Question[] = [
   {
     id: "vasc-1",
-    question: "Um paciente apresenta uma oclusão arterial no tronco braquiocefálico. Com base na origem das carótidas, qual vaso terá seu fluxo diretamente comprometido?",
-    options: ["Artéria carótida comum esquerda.", "Artéria carótida comum direita.", "Artéria carótida interna esquerda.", "Artéria vertebral esquerda."],
-    correctAnswer: 1,
-    explanation: "A carótida comum direita nasce do tronco braquiocefálico; a esquerda nasce do arco aórtico.",
+    question: "A **artéria tireoidea superior** é o primeiro ramo da carótida externa (ACE). Qual é a sua principal função?",
+    options: ["Irrigar a glândula tireoide.", "Irrigar os músculos do pescoço.", "Irrigar a faringe.", "Irrigar o esôfago."],
+    correctAnswer: 0,
+    explanation: "A tireoidea superior é o 1º ramo da ACE e irriga a glândula de mesmo nome.",
     theme: "Vascularização"
   },
   {
     id: "vasc-2",
-    question: "Durante uma tireoidectomia, o cirurgião deve ligar o primeiro ramo da artéria carótida externa. Assinale a alternativa que identifica corretamente esse vaso:",
-    options: ["Artéria faríngea ascendente.", "Artéria lingual.", "Artéria tireoidea superior.", "Artéria facial."],
-    correctAnswer: 2,
-    explanation: "A tireoidea superior é o primeiro ramo da carótida externa.",
+    question: "A **artéria lingual** é um ramo importante da ACE. Qual é o seu principal ramo terminal?",
+    options: ["Artéria profunda da língua.", "Artéria labial inferior.", "Artéria angular.", "Artéria submental."],
+    correctAnswer: 0,
+    explanation: "O ramo profundo da artéria lingual irriga os músculos do assoalho oral.",
     theme: "Vascularização"
   },
   {
     id: "vasc-3",
-    question: "Um paciente sofre um ferimento profundo na região do triângulo carotídeo. O médico observa uma lesão em um vaso que corre medial ao músculo hioglosso. Este vaso é a:",
-    options: ["Artéria facial.", "Artéria lingual.", "Artéria maxilar.", "Artéria temporal superficial."],
+    question: "A **artéria submental** é um ramo importante para a irrigação do assoalho da boca. De qual artéria ela é ramo?",
+    options: ["Artéria lingual.", "Artéria facial.", "Artéria maxilar.", "Artéria temporal superficial."],
     correctAnswer: 1,
-    explanation: "A artéria lingual tem trajeto medial ao músculo hioglosso.",
+    explanation: "A artéria submental é um ramo importante da artéria facial para o assoalho da boca.",
     theme: "Vascularização"
   },
   {
     id: "vasc-4",
-    question: "Sobre a artéria lingual, assinale a alternativa INCORRETA:",
-    options: ["É cruzada lateralmente pelo nervo hipoglosso (NC XII).", "Origina-se da face anterior da carótida externa ao nível do osso hioide.", "Seu ramo terminal é a artéria profunda da língua.", "Situa-se lateralmente ao músculo hioglosso em todo o seu trajeto."],
-    correctAnswer: 3,
-    explanation: "A artéria lingual passa medial ao hioglosso, não lateral.",
+    question: "A **artéria angular** é o terminal da artéria facial. Qual estrutura ela irriga principalmente?",
+    options: ["O músculo masseter.", "A região lacrimal e pálpebra inferior.", "O palato duro.", "A nasofaringe."],
+    correctAnswer: 1,
+    explanation: "A artéria angular é o terminal da facial, irrigando a região lacrimal e pálpebra inferior.",
     theme: "Vascularização"
   },
   {
     id: "vasc-5",
-    question: "Ao realizar o exame físico de um paciente, o estudante de medicina busca palpar o pulso da artéria facial. O local anatômico correto para essa palpação é:",
-    options: ["Imediatamente posterior ao músculo masseter, na margem inferior da mandíbula.", "Imediatamente anterior ao músculo masseter, na margem inferior da mandíbula.", "No ângulo da boca, superficial ao músculo zigomático maior.", "No forame infraorbital, abaixo da margem da órbita."],
-    correctAnswer: 1,
-    explanation: "O pulso da facial é palpado na margem inferior da mandíbula, anterior ao masseter.",
+    question: "Quais são os principais ramos da artéria facial na face?",
+    options: ["Ramos labiais e submental.", "Ramos massetérico e infraorbital.", "Ramos esfenopalatino e temporal.", "Ramos occipital e auricular."],
+    correctAnswer: 0,
+    explanation: "As labiais e a submental são ramos diretos da artéria facial na face.",
     theme: "Vascularização"
   },
   {
     id: "vasc-6",
-    question: "Um trauma na região do assoalho da boca atinge a artéria submental. Segundo as fontes, este vaso é ramo de qual artéria principal?",
-    options: ["Artéria lingual.", "Artéria maxilar.", "Artéria facial.", "Artéria tireoidea superior."],
-    correctAnswer: 2,
-    explanation: "A artéria submental é um ramo da artéria facial.",
+    question: "A **artéria infraorbital** é um ramo da artéria maxilar. Qual é a sua principal estrutura de passagem?",
+    options: ["Forame esfenopalatino.", "Canal infraorbital.", "Forame espinhoso.", "Forame redondo."],
+    correctAnswer: 1,
+    explanation: "A infraorbital passa pelo canal homônimo e supre o seio maxilar e dentes.",
     theme: "Vascularização"
   },
   {
     id: "vasc-7",
-    question: "Um processo inflamatório grave no saco lacrimal e na pálpebra inferior envolve a irrigação da:",
-    options: ["Artéria angular.", "Artéria labial superior.", "Artéria temporal medial.", "Artéria maxilar."],
-    correctAnswer: 0,
-    explanation: "A artéria angular (ramo terminal da facial) irriga o saco lacrimal e pálpebra inferior.",
+    question: "A **artéria esfenopalatina** é um ramo terminal importante da artéria maxilar. Qual estrutura ela irriga principalmente?",
+    options: ["O músculo masseter.", "A mucosa nasal e nasofaringe.", "O palato mole.", "A orelha externa."],
+    correctAnswer: 1,
+    explanation: "A esfenopalatina é um dos ramos terminais/profundos da artéria maxilar.",
     theme: "Vascularização"
   },
   {
     id: "vasc-8",
-    question: "Paciente com sangramento nasal intenso (epistaxe) na região do septo nasal. Qual ramo da artéria facial é frequentemente responsável pela irrigação dessa área?",
-    options: ["Artéria labial inferior.", "Ramo septal da artéria labial superior.", "Artéria submental.", "Artéria infraorbital."],
-    correctAnswer: 1,
-    explanation: "O ramo septal provém da artéria labial superior (ramo da facial).",
+    question: "A **artéria temporal superficial** é o menor ramo terminal da ACE. Quais são seus ramos terminais?",
+    options: ["Ramos frontal e parietal.", "Ramos labiais e angular.", "Ramos massetérico e infraorbital.", "Ramos occipital e auricular."],
+    correctAnswer: 0,
+    explanation: "A temporal superficial termina dividindo-se em ramos frontal e parietal para o escalpo.",
     theme: "Vascularização"
   },
   {
     id: "vasc-9",
-    question: "Uma fratura no colo da mandíbula pode lesionar a origem da artéria maxilar. Sobre esse vaso, assinale a alternativa CORRETA:",
-    options: ["É o menor ramo terminal da carótida externa.", "Origina-se anteriormente ao colo da mandíbula.", "Divide-se em porções mandibular, pterigóidea e pterigopalatina.", "Irriga exclusivamente a musculatura superficial da face."],
-    correctAnswer: 2,
-    explanation: "A maxilar divide-se em porções mandibular, pterigóidea e pterigopalatina.",
+    question: "A **artéria facial transversa** é um ramo importante durante cirurgias de parótida. Qual é a sua origem?",
+    options: ["Artéria facial.", "Artéria temporal superficial.", "Artéria maxilar.", "Artéria lingual."],
+    correctAnswer: 1,
+    explanation: "A facial transversa nasce da temporal superficial dentro da parótida e cruza o masseter.",
     theme: "Vascularização"
   },
   {
     id: "vasc-10",
-    question: "Durante a mastigação, um paciente sente dor isquêmica no músculo masseter. Qual ramo da artéria maxilar provê a irrigação principal para este músculo?",
-    options: ["Artéria infraorbital.", "Artéria esfenopalatina.", "Artéria massetérica.", "Artéria temporal profunda."],
-    correctAnswer: 2,
-    explanation: "A artéria massetérica (ramo da maxilar) irriga o músculo masseter.",
+    question: "A **artéria auricular posterior** irriga principalmente qual região?",
+    options: ["O pavilhão auricular anterior.", "A região retroauricular e orelha.", "O couro cabeludo anterior.", "A região temporal."],
+    correctAnswer: 1,
+    explanation: "A auricular posterior segue entre o processo mastoide e a orelha, irrigando a região retroauricular.",
     theme: "Vascularização"
   }
 ];
 
-const vascularizacaoQuestionsSecond20: Question[] = [
+// QUESTÕES DE VASCULARIZAÇÃO - Segundas 10
+const vascularizacao2: Question[] = [
   {
     id: "vasc-11",
-    question: "Um ferimento perfurante que atinge o forame infraorbital pode comprometer a artéria infraorbital. Além da pálpebra inferior e bochecha, qual estrutura este vaso irriga?",
-    options: ["Mucosa da nasofaringe.", "Seio maxilar e dentes (arcada dentária).", "Músculo temporal.", "Glândula tireoide."],
-    correctAnswer: 1,
-    explanation: "A infraorbital irriga o seio maxilar e a arcada dentária superior.",
-    theme: "Vascularização"
-  },
-  {
-    id: "vasc-12",
-    question: "Em uma cirurgia para remoção de tumor na nasofaringe, o cirurgião deve ter cautela com a artéria:",
-    options: ["Angular.", "Esfenopalatina.", "Facial transversa.", "Auricular posterior."],
+    question: "Qual é a principal artéria responsável pela irrigação da **nasofaringe**?",
+    options: ["Artéria facial.", "Artéria esfenopalatina.", "Artéria maxilar.", "Artéria temporal superficial."],
     correctAnswer: 1,
     explanation: "A esfenopalatina irriga a mucosa nasal e a nasofaringe.",
     theme: "Vascularização"
   },
   {
-    id: "vasc-13",
-    question: "Assinale a alternativa que descreve corretamente a artéria facial transversa:",
-    options: ["Origina-se da artéria facial e cruza o masseter.", "Origina-se da artéria temporal superficial dentro da glândula parótida.", "Corre superiormente ao arco zigomático.", "Irriga apenas os músculos intrínsecos da língua."],
+    id: "vasc-12",
+    question: "Qual artéria irriga principalmente o **seio maxilar e arcada dentária superior**?",
+    options: ["Artéria facial.", "Artéria infraorbital.", "Artéria lingual.", "Artéria temporal superficial."],
     correctAnswer: 1,
-    explanation: "A facial transversa nasce da temporal superficial dentro da parótida.",
+    explanation: "A infraorbital irriga o seio maxilar e a arcada dentária superior.",
+    theme: "Vascularização"
+  },
+  {
+    id: "vasc-13",
+    question: "Qual é o trajeto da **artéria facial transversa**?",
+    options: ["Profundamente ao músculo masseter.", "Superficialmente ao masseter.", "Medialmente ao músculo hioglosso.", "Lateralmente ao músculo bucinador."],
+    correctAnswer: 1,
+    explanation: "A facial transversa cruza a face superficialmente ao masseter.",
     theme: "Vascularização"
   },
   {
     id: "vasc-14",
-    question: "Um paciente apresenta laceração atrás da orelha com sangramento profuso. O vaso lesionado, que segue entre o processo mastoide e a orelha, é a:",
-    options: ["Artéria occipital.", "Artéria auricular posterior.", "Artéria temporal superficial.", "Artéria faríngea ascendente."],
+    question: "Qual artéria irriga principalmente o **couro cabeludo posterior**?",
+    options: ["Artéria temporal superficial.", "Artéria occipital.", "Artéria auricular posterior.", "Artéria frontal."],
     correctAnswer: 1,
-    explanation: "A auricular posterior distribui-se para a orelha e região retroauricular.",
+    explanation: "A artéria occipital irriga principalmente o couro cabeludo posterior.",
     theme: "Vascularização"
   },
   {
     id: "vasc-15",
-    question: "A artéria temporal superficial emerge na face entre quais estruturas anatômicas?",
-    options: ["Entre o processo mastoide e o ângulo da mandíbula.", "Entre a articulação temporomandibular (ATM) e a orelha.", "Entre o osso hioide e a cartilagem tireoide.", "Entre o músculo masseter e o bucinador."],
+    question: "Qual é a origem da **artéria occipital**?",
+    options: ["Artéria carótida interna.", "Artéria carótida externa.", "Artéria subclávia.", "Artéria vertebral."],
     correctAnswer: 1,
-    explanation: "A temporal superficial emerge entre a ATM e a orelha.",
+    explanation: "A artéria occipital é um ramo posterior da carótida externa.",
     theme: "Vascularização"
   },
   {
     id: "vasc-16",
-    question: "Uma paciente idosa apresenta cefaleia crônica na região lateral do crânio. O médico suspeita de arterite temporal. Qual vaso está classicamente envolvido nesta patologia?",
-    options: ["Artéria maxilar.", "Artéria temporal superficial.", "Artéria facial transversa.", "Artéria carótida interna."],
+    question: "Qual artéria irriga principalmente a **glândula parótida**?",
+    options: ["Artéria facial.", "Artéria temporal superficial.", "Artéria maxilar.", "Artéria lingual."],
     correctAnswer: 1,
-    explanation: "A arterite temporal acomete a artéria temporal superficial.",
+    explanation: "A artéria temporal superficial irriga principalmente a glândula parótida.",
     theme: "Vascularização"
   },
   {
     id: "vasc-17",
-    question: "A bifurcação da artéria carótida comum em interna e externa ocorre tipicamente em qual nível vertebral?",
-    options: ["C1 (Atlas).", "C2 (Áxis).", "C4 (Borda superior da cartilagem tireoide).", "T1 (Primeira vértebra torácica)."],
-    correctAnswer: 2,
-    explanation: "A bifurcação ocorre no nível da cartilagem tireoide (C4).",
+    question: "Qual é o principal ramo da **artéria maxilar**?",
+    options: ["Artéria infraorbital.", "Artéria esfenopalatina.", "Artéria massetérica.", "Todos os anteriores."],
+    correctAnswer: 3,
+    explanation: "A maxilar possui vários ramos importantes incluindo infraorbital, esfenopalatina e massetérica.",
     theme: "Vascularização"
   },
   {
     id: "vasc-18",
-    question: "Sobre o suprimento arterial da cabeça, de acordo com as fontes, é correto afirmar:",
-    options: ["O neurocrânio é suprido predominantemente pela carótida externa.", "O viscerocrânio (face) tem como principal fonte a carótida externa.", "A carótida interna irriga o couro cabeludo e a face.", "Toda a irrigação da cabeça provém da artéria subclávia."],
+    question: "Qual nervo acompanha a **artéria facial** em seu trajeto?",
+    options: ["Nervo trigêmeo.", "Nervo facial.", "Nervo vago.", "Nervo acessório."],
     correctAnswer: 1,
-    explanation: "A carótida externa é a principal fonte para o viscerocrânio.",
+    explanation: "O nervo facial acompanha a artéria facial em seu trajeto pela face.",
     theme: "Vascularização"
   },
   {
     id: "vasc-19",
-    question: "Quais são os ramos terminais da artéria temporal superficial que irrigam o escalpo?",
-    options: ["Ramos frontal e parietal.", "Ramos sublingual e profundo.", "Ramos massetérico e infraorbital.", "Ramos angular e septal."],
-    correctAnswer: 0,
-    explanation: "Os ramos terminais da temporal superficial para o escalpo são o frontal e o parietal.",
+    question: "Qual artéria irriga principalmente o **músculo masseter**?",
+    options: ["Artéria facial.", "Artéria massetérica.", "Artéria temporal superficial.", "Artéria maxilar."],
+    correctAnswer: 1,
+    explanation: "A artéria massetérica é um ramo da maxilar que irriga o músculo masseter.",
     theme: "Vascularização"
   },
   {
     id: "vasc-20",
-    question: "Analise a afirmação: \"A face é ricamente suprida por artérias que realizam anastomoses através da linha mediana com seus pares contralaterais\". Esta característica é verdadeira para:",
-    options: ["Apenas a artéria maxilar.", "Ramos terminais das artérias da face.", "Apenas a artéria carótida interna.", "Nenhuma das alternativas anteriores."],
+    question: "Qual é a principal função da **artéria carótida externa**?",
+    options: ["Irrigar o encéfalo.", "Irrigar o viscerocrânio (face).", "Irrigar o neurocrânio.", "Irrigar a medula espinal."],
     correctAnswer: 1,
-    explanation: "Ramos terminais da face realizam anastomoses cruzando a linha mediana.",
+    explanation: "A carótida externa é a principal fonte para o viscerocrânio (face).",
     theme: "Vascularização"
   }
 ];
+
+// Embaralhar as questões de Vascularização
+const vascularizacaoShuffled = shuffleArray([...vascularizacao1, ...vascularizacao2]);
 
 // QUESTÕES DE CAVIDADE ORAL (30 questões)
 const cavidadeOralQuestions: Question[] = [
@@ -752,12 +756,6 @@ const cavidadeOralQuestions: Question[] = [
   }
 ];
 
-// Embaralhar as questões de Vascularização
-const vascularizacaoQuestionsShuffled = shuffleArray([
-  ...vascularizacaoQuestionsFirst10,
-  ...vascularizacaoQuestionsSecond20
-]);
-
 // Combinar todas as questões
 export const quizzes = [
   {
@@ -772,7 +770,7 @@ export const quizzes = [
     title: "Vascularização do Viscerocrânio e Pescoço",
     description: "Artérias e veias da cabeça e pescoço",
     emoji: "🫀",
-    questions: vascularizacaoQuestionsShuffled
+    questions: vascularizacaoShuffled
   },
   {
     id: "cavidade-oral",
