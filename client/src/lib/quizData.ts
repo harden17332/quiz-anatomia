@@ -341,162 +341,161 @@ const coracaoQuestions: Question[] = [
   }
 ];
 
-// QUESTÕES DE VASCULARIZAÇÃO - Primeiras 10
+// QUESTÕES DE VASCULARIZAÇÃO (20 questões)
 const vascularizacao1: Question[] = [
   {
     id: "vasc-1",
-    question: "A **artéria tireoidea superior** é o primeiro ramo da carótida externa (ACE). Qual é a sua principal função?",
-    options: ["Irrigar a glândula tireoide.", "Irrigar os músculos do pescoço.", "Irrigar a faringe.", "Irrigar o esôfago."],
-    correctAnswer: 0,
-    explanation: "A tireoidea superior é o 1º ramo da ACE e irriga a glândula de mesmo nome.",
+    question: "Um paciente apresenta uma oclusão arterial no **tronco braquiocefálico**. Com base na origem das carótidas, qual vaso terá seu fluxo diretamente comprometido?",
+    options: ["Artéria carótida comum esquerda.", "Artéria carótida comum direita.", "Artéria carótida interna esquerda.", "Artéria vertebral esquerda."],
+    correctAnswer: 1,
+    explanation: "O tronco braquiocefálico origina a carótida comum direita e a subclávia direita.",
     theme: "Vascularização"
   },
   {
     id: "vasc-2",
-    question: "A **artéria lingual** é um ramo importante da ACE. Qual é o seu principal ramo terminal?",
-    options: ["Artéria profunda da língua.", "Artéria labial inferior.", "Artéria angular.", "Artéria submental."],
-    correctAnswer: 0,
-    explanation: "O ramo profundo da artéria lingual irriga os músculos do assoalho oral.",
+    question: "Durante uma tireoidectomia, o cirurgião deve ligar o **primeiro ramo** da artéria carótida externa. Assinale a alternativa que identifica corretamente esse vaso:",
+    options: ["Artéria faríngea ascendente.", "Artéria lingual.", "Artéria tireoidea superior.", "Artéria facial."],
+    correctAnswer: 2,
+    explanation: "A tireoidea superior é o primeiro ramo da carótida externa.",
     theme: "Vascularização"
   },
   {
     id: "vasc-3",
-    question: "A **artéria submental** é um ramo importante para a irrigação do assoalho da boca. De qual artéria ela é ramo?",
-    options: ["Artéria lingual.", "Artéria facial.", "Artéria maxilar.", "Artéria temporal superficial."],
+    question: "Um paciente sofre um ferimento profundo na região do triângulo carotídeo. O médico observa uma lesão em um vaso que corre **medial ao músculo hioglosso**. Este vaso é a:",
+    options: ["Artéria facial.", "Artéria lingual.", "Artéria maxilar.", "Artéria temporal superficial."],
     correctAnswer: 1,
-    explanation: "A artéria submental é um ramo importante da artéria facial para o assoalho da boca.",
+    explanation: "A artéria lingual corre medialmente ao músculo hioglosso.",
     theme: "Vascularização"
   },
   {
     id: "vasc-4",
-    question: "A **artéria angular** é o terminal da artéria facial. Qual estrutura ela irriga principalmente?",
-    options: ["O músculo masseter.", "A região lacrimal e pálpebra inferior.", "O palato duro.", "A nasofaringe."],
-    correctAnswer: 1,
-    explanation: "A artéria angular é o terminal da facial, irrigando a região lacrimal e pálpebra inferior.",
+    question: "Sobre a **artéria lingual**, assinale a alternativa **INCORRETA**:",
+    options: ["É cruzada lateralmente pelo nervo hipoglosso (NC XII).", "Origina-se da face anterior da carótida externa ao nível do osso hioide.", "Seu ramo terminal é a artéria profunda da língua.", "Situa-se lateralmente ao músculo hioglosso em todo o seu trajeto."],
+    correctAnswer: 3,
+    explanation: "A artéria lingual situa-se medialmente ao músculo hioglosso.",
     theme: "Vascularização"
   },
   {
     id: "vasc-5",
-    question: "Quais são os principais ramos da artéria facial na face?",
-    options: ["Ramos labiais e submental.", "Ramos massetérico e infraorbital.", "Ramos esfenopalatino e temporal.", "Ramos occipital e auricular."],
-    correctAnswer: 0,
-    explanation: "As labiais e a submental são ramos diretos da artéria facial na face.",
+    question: "Ao realizar o exame físico de um paciente, o estudante de medicina busca palpar o pulso da **artéria facial**. O local anatômico correto para essa palpação é:",
+    options: ["Imediatamente posterior ao músculo masseter, na margem inferior da mandíbula.", "Imediatamente anterior ao músculo masseter, na margem inferior da mandíbula.", "No ângulo da boca, superficial ao músculo zigomático maior.", "No forame infraorbital, abaixo da margem da órbita."],
+    correctAnswer: 1,
+    explanation: "A artéria facial é palpável na margem inferior da mandíbula, anterior ao masseter.",
     theme: "Vascularização"
   },
   {
     id: "vasc-6",
-    question: "A **artéria infraorbital** é um ramo da artéria maxilar. Qual é a sua principal estrutura de passagem?",
-    options: ["Forame esfenopalatino.", "Canal infraorbital.", "Forame espinhoso.", "Forame redondo."],
-    correctAnswer: 1,
-    explanation: "A infraorbital passa pelo canal homônimo e supre o seio maxilar e dentes.",
+    question: "Um trauma na região do **assoalho da boca** atinge a artéria submental. Segundo as fontes, este vaso é ramo de qual artéria principal?",
+    options: ["Artéria lingual.", "Artéria maxilar.", "Artéria facial.", "Artéria tireoidea superior."],
+    correctAnswer: 2,
+    explanation: "A artéria submental é ramo da artéria facial.",
     theme: "Vascularização"
   },
   {
     id: "vasc-7",
-    question: "A **artéria esfenopalatina** é um ramo terminal importante da artéria maxilar. Qual estrutura ela irriga principalmente?",
-    options: ["O músculo masseter.", "A mucosa nasal e nasofaringe.", "O palato mole.", "A orelha externa."],
-    correctAnswer: 1,
-    explanation: "A esfenopalatina é um dos ramos terminais/profundos da artéria maxilar.",
+    question: "Um processo inflamatório grave no **saco lacrimal** e na pálpebra inferior envolve a irrigação da:",
+    options: ["Artéria angular.", "Artéria labial superior.", "Artéria temporal medial.", "Artéria maxilar."],
+    correctAnswer: 0,
+    explanation: "A artéria angular (ramo terminal da facial) irriga o saco lacrimal e pálpebra inferior.",
     theme: "Vascularização"
   },
   {
     id: "vasc-8",
-    question: "A **artéria temporal superficial** é o menor ramo terminal da ACE. Quais são seus ramos terminais?",
-    options: ["Ramos frontal e parietal.", "Ramos labiais e angular.", "Ramos massetérico e infraorbital.", "Ramos occipital e auricular."],
-    correctAnswer: 0,
-    explanation: "A temporal superficial termina dividindo-se em ramos frontal e parietal para o escalpo.",
+    question: "Paciente com sangramento nasal intenso (epistaxe) na região do **septo nasal**. Qual ramo da artéria facial é frequentemente responsável pela irrigação dessa área?",
+    options: ["Artéria labial inferior.", "Ramo septal da artéria labial superior.", "Artéria submental.", "Artéria infraorbital."],
+    correctAnswer: 1,
+    explanation: "O ramo septal da labial superior irriga a parte anterior do septo nasal.",
     theme: "Vascularização"
   },
   {
     id: "vasc-9",
-    question: "A **artéria facial transversa** é um ramo importante durante cirurgias de parótida. Qual é a sua origem?",
-    options: ["Artéria facial.", "Artéria temporal superficial.", "Artéria maxilar.", "Artéria lingual."],
-    correctAnswer: 1,
-    explanation: "A facial transversa nasce da temporal superficial dentro da parótida e cruza o masseter.",
+    question: "Uma fratura no **colo da mandíbula** pode lesionar a origem da artéria maxilar. Sobre esse vaso, assinale a alternativa **CORRETA**:",
+    options: ["É o menor ramo terminal da carótida externa.", "Origina-se anteriormente ao colo da mandíbula.", "Divide-se em porções mandibular, pterigóidea e pterigopalatina.", "Irriga exclusivamente a musculatura superficial da face."],
+    correctAnswer: 2,
+    explanation: "A artéria maxilar divide-se em porções mandibular, pterigóidea e pterigopalatina.",
     theme: "Vascularização"
   },
   {
     id: "vasc-10",
-    question: "A **artéria auricular posterior** irriga principalmente qual região?",
-    options: ["O pavilhão auricular anterior.", "A região retroauricular e orelha.", "O couro cabeludo anterior.", "A região temporal."],
-    correctAnswer: 1,
-    explanation: "A auricular posterior segue entre o processo mastoide e a orelha, irrigando a região retroauricular.",
+    question: "Durante a mastigação, um paciente sente dor isquêmica no **músculo masseter**. Qual ramo da artéria maxilar provê a irrigação principal para este músculo?",
+    options: ["Artéria infraorbital.", "Artéria esfenopalatina.", "Artéria massetérica.", "Artéria temporal profunda."],
+    correctAnswer: 2,
+    explanation: "A artéria massetérica irriga o músculo masseter.",
     theme: "Vascularização"
   }
 ];
 
-// QUESTÕES DE VASCULARIZAÇÃO - Segundas 10
 const vascularizacao2: Question[] = [
   {
     id: "vasc-11",
-    question: "Qual é a principal artéria responsável pela irrigação da **nasofaringe**?",
-    options: ["Artéria facial.", "Artéria esfenopalatina.", "Artéria maxilar.", "Artéria temporal superficial."],
+    question: "Um ferimento perfurante que atinge o **forame infraorbital** pode comprometer a artéria infraorbital. Além da pálpebra inferior e bochecha, qual estrutura este vaso irriga?",
+    options: ["Mucosa da nasofaringe.", "Seio maxilar e dentes (arcada dentária).", "Músculo temporal.", "Glândula tireoide."],
     correctAnswer: 1,
-    explanation: "A esfenopalatina irriga a mucosa nasal e a nasofaringe.",
+    explanation: "A artéria infraorbital irriga o seio maxilar e dentes superiores.",
     theme: "Vascularização"
   },
   {
     id: "vasc-12",
-    question: "Qual artéria irriga principalmente o **seio maxilar e arcada dentária superior**?",
-    options: ["Artéria facial.", "Artéria infraorbital.", "Artéria lingual.", "Artéria temporal superficial."],
+    question: "Em uma cirurgia para remoção de tumor na **nasofaringe**, o cirurgião deve ter cautela com a artéria:",
+    options: ["Angular.", "Esfenopalatina.", "Facial transversa.", "Auricular posterior."],
     correctAnswer: 1,
-    explanation: "A infraorbital irriga o seio maxilar e a arcada dentária superior.",
+    explanation: "A artéria esfenopalatina é o principal suprimento para a cavidade nasal e nasofaringe.",
     theme: "Vascularização"
   },
   {
     id: "vasc-13",
-    question: "Qual é o trajeto da **artéria facial transversa**?",
-    options: ["Profundamente ao músculo masseter.", "Superficialmente ao masseter.", "Medialmente ao músculo hioglosso.", "Lateralmente ao músculo bucinador."],
+    question: "Assinale a alternativa que descreve corretamente a **artéria facial transversa**:",
+    options: ["Origina-se da artéria facial e cruza o masseter.", "Origina-se da artéria temporal superficial dentro da glândula parótida.", "Corre superiormente ao arco zigomático.", "Irriga apenas os músculos intrínsecos da língua."],
     correctAnswer: 1,
-    explanation: "A facial transversa cruza a face superficialmente ao masseter.",
+    explanation: "A facial transversa nasce da temporal superficial na parótida.",
     theme: "Vascularização"
   },
   {
     id: "vasc-14",
-    question: "Qual artéria irriga principalmente o **couro cabeludo posterior**?",
-    options: ["Artéria temporal superficial.", "Artéria occipital.", "Artéria auricular posterior.", "Artéria frontal."],
+    question: "Qual artéria é responsável pela irrigação do **couro cabeludo** na região frontal e temporal, sendo frequentemente utilizada para biópsias em casos de arterite?",
+    options: ["Artéria maxilar.", "Artéria temporal superficial.", "Artéria occipital.", "Artéria auricular posterior."],
     correctAnswer: 1,
-    explanation: "A artéria occipital irriga principalmente o couro cabeludo posterior.",
+    explanation: "A temporal superficial irriga o couro cabeludo frontal e temporal.",
     theme: "Vascularização"
   },
   {
     id: "vasc-15",
-    question: "Qual é a origem da **artéria occipital**?",
-    options: ["Artéria carótida interna.", "Artéria carótida externa.", "Artéria subclávia.", "Artéria vertebral."],
-    correctAnswer: 1,
-    explanation: "A artéria occipital é um ramo posterior da carótida externa.",
+    question: "A **veia jugular interna** inicia-se como continuação de qual seio venoso da duramáter?",
+    options: ["Seio sagital superior.", "Seio cavernoso.", "Seio sigmoide.", "Seio reto."],
+    correctAnswer: 2,
+    explanation: "A jugular interna continua o seio sigmoide no forame jugular.",
     theme: "Vascularização"
   },
   {
     id: "vasc-16",
-    question: "Qual artéria irriga principalmente a **glândula parótida**?",
-    options: ["Artéria facial.", "Artéria temporal superficial.", "Artéria maxilar.", "Artéria lingual."],
-    correctAnswer: 1,
-    explanation: "A artéria temporal superficial irriga principalmente a glândula parótida.",
+    question: "Sobre a **veia jugular externa**, assinale a alternativa CORRETA:",
+    options: ["É formada pela união da veia auricular posterior com a veia retromandibular.", "Drena diretamente para a veia cava superior.", "Situa-se profundamente ao músculo esternocleidomastoideo.", "É a principal drenagem do encéfalo."],
+    correctAnswer: 0,
+    explanation: "A jugular externa forma-se pela união da auricular posterior e retromandibular.",
     theme: "Vascularização"
   },
   {
     id: "vasc-17",
-    question: "Qual é o principal ramo da **artéria maxilar**?",
-    options: ["Artéria infraorbital.", "Artéria esfenopalatina.", "Artéria massetérica.", "Todos os anteriores."],
-    correctAnswer: 3,
-    explanation: "A maxilar possui vários ramos importantes incluindo infraorbital, esfenopalatina e massetérica.",
+    question: "Um cateterismo da **veia subclávia** é realizado frequentemente. Anatomicalmente, esta veia é a continuação de qual vaso?",
+    options: ["Veia braquiocefálica.", "Veia axilar.", "Veia jugular interna.", "Veia cefálica."],
+    correctAnswer: 1,
+    explanation: "A veia subclávia é a continuação da veia axilar.",
     theme: "Vascularização"
   },
   {
     id: "vasc-18",
-    question: "Qual nervo acompanha a **artéria facial** em seu trajeto?",
-    options: ["Nervo trigêmeo.", "Nervo facial.", "Nervo vago.", "Nervo acessório."],
+    question: "A união da **veia jugular interna** com a **veia subclávia** forma qual estrutura venosa?",
+    options: ["Veia cava superior.", "Veia braquiocefálica.", "Veia ázigos.", "Veia retromandibular."],
     correctAnswer: 1,
-    explanation: "O nervo facial acompanha a artéria facial em seu trajeto pela face.",
+    explanation: "A união da jugular interna e subclávia forma a veia braquiocefálica.",
     theme: "Vascularização"
   },
   {
     id: "vasc-19",
-    question: "Qual artéria irriga principalmente o **músculo masseter**?",
-    options: ["Artéria facial.", "Artéria massetérica.", "Artéria temporal superficial.", "Artéria maxilar."],
+    question: "Qual vaso venoso é frequentemente utilizado para acesso venoso central devido ao seu trajeto retilíneo em direção ao átrio direito?",
+    options: ["Veia jugular externa.", "Veia jugular interna.", "Veia facial.", "Veia tireoidea superior."],
     correctAnswer: 1,
-    explanation: "A artéria massetérica é um ramo da maxilar que irriga o músculo masseter.",
+    explanation: "A jugular interna é preferida para acesso central pelo trajeto direto.",
     theme: "Vascularização"
   },
   {
@@ -612,10 +611,10 @@ const cavidadeOralQuestions: Question[] = [
   },
   {
     id: "oral-13",
-    question: "Um paciente não consegue \"enrolar\" a língua ou alterar seu formato para realizar movimentos finos durante a deglutição, embora consiga movê-la para fora e para dentro. Quais músculos estão provavelmente comprometidos?",
+    question: "Um paciente não consegue \"enrolar\" a língua ou alterar seu formato para realizar movimentos finos durante a deglutição, embora consiga movê-la para fora e para dentro. Quais muscles estão provavelmente comprometidos?",
     options: ["Músculos extrínsecos da língua.", "Músculo orbicular da boca.", "Músculos intrínsecos da língua.", "Músculos do diafragma oral."],
     correctAnswer: 2,
-    explanation: "Os músculos intrínsecos controlam a forma e os movimentos finos da língua.",
+    explanation: "Os muscles intrínsecos controlam a forma e os movimentos finos da língua.",
     theme: "Cavidade Oral"
   },
   {
@@ -695,87 +694,87 @@ const cavidadeOralQuestions: Question[] = [
     question: "O istmo das fauces (ou da garganta) é o limite posterior da cavidade oral. Quais estruturas formam seus pilares laterais?",
     options: ["Pregas sublinguais.", "Arcos palatoglosso e palatofaríngeo.", "Músculos bucinadores.", "Tonsila lingual e palatina."],
     correctAnswer: 1,
-    explanation: "Os arcos palatoglosso e palatofaríngeo formam os pilares laterais do istmo das fauces.",
+    explanation: "Os arcos palatoglosso e palatofaríngeo formam os pilares do istmo das fauces.",
     theme: "Cavidade Oral"
   },
   {
     id: "oral-24",
-    question: "Um paciente apresenta uma infecção nas tonsilas palatinas. Onde exatamente estas tonsilas estão localizadas?",
-    options: ["No assoalho da boca, sob a língua.", "Na fossa tonsilar, entre os arcos palatoglosso e palatofaríngeo.", "No vestíbulo da boca, próximo ao ducto parotídeo.", "Na parte pós-sulcal do dorso da língua."],
-    correctAnswer: 1,
-    explanation: "As tonsilas palatinas estão localizadas na fossa tonsilar, entre os arcos.",
+    question: "Qual glândula salivar maior possui o ducto mais longo, que contorna a margem posterior do músculo milo-hioideo?",
+    options: ["Glândula parótida.", "Glândula sublingual.", "Glândula submandibular.", "Glândulas palatinas."],
+    correctAnswer: 2,
+    explanation: "A glândula submandibular possui o ducto que contorna o milo-hioideo.",
     theme: "Cavidade Oral"
   },
   {
     id: "oral-25",
-    question: "Qual músculo atua simultaneamente para tornar a língua longa e estreita, empurrando-a contra os incisivos?",
-    options: ["Músculo longitudinal superior.", "Músculo longitudinal inferior.", "Músculos transverso e vertical.", "Músculo hioglosso."],
-    correctAnswer: 2,
-    explanation: "Os músculos transverso e vertical atuam para tornar a língua longa e estreita.",
+    question: "Sobre a inervação da gengiva, é correto afirmar que a gengiva lingual dos dentes incisivos inferiores é suprida pelo:",
+    options: ["Nervo bucal.", "Nervo lingual.", "Nervo mentoniano.", "Nervo alveolar superior posterior."],
+    correctAnswer: 1,
+    explanation: "O nervo lingual supre a gengiva lingual dos dentes inferiores.",
     theme: "Cavidade Oral"
   },
   {
     id: "oral-26",
-    question: "Sobre a vascularização do palato mole, assinale a alternativa CORRETA:",
-    options: ["É suprido predominantemente pela artéria carótida interna.", "Recebe sangue da artéria palatina menor e artéria palatina ascendente.", "Sua drenagem venosa é feita diretamente para a veia jugular externa.", "A artéria palatina maior é sua única fonte de suprimento."],
+    question: "Um paciente apresenta xerostomia (boca seca) devido à redução da secreção da glândula parótida. Qual nervo carrega as fibras parassimpáticas pré-ganglionares para esta glândula?",
+    options: ["Nervo facial (VII).", "Nervo glossofaríngeo (IX).", "Nervo vago (X).", "Nervo trigêmeo (V)."],
     correctAnswer: 1,
-    explanation: "O palato mole recebe sangue da artéria palatina menor e artéria palatina ascendente.",
+    explanation: "O nervo glossofaríngeo (IX) provê a inervação parassimpática da parótida.",
     theme: "Cavidade Oral"
   },
   {
     id: "oral-27",
-    question: "Um paciente sofreu um trauma na face e apresenta dificuldade em elevar a parte posterior da língua. Qual músculo, que atua tanto como extrínseco da língua quanto como músculo do palato mole, pode estar afetado?",
-    options: ["Músculo tensor do véu palatino.", "Músculo palatoglosso.", "Músculo estiloglosso.", "Músculo genioglosso."],
+    question: "Qual estrutura separa o dorso da língua em corpo (2/3 anteriores) e raiz (1/3 posterior)?",
+    options: ["Frênulo da língua.", "Sulco terminal.", "Pregas fimbriadas.", "Septo lingual."],
     correctAnswer: 1,
-    explanation: "O músculo palatoglosso atua como extrínseco da língua e músculo do palato mole.",
+    explanation: "O sulco terminal separa o corpo da raiz da língua.",
     theme: "Cavidade Oral"
   },
   {
     id: "oral-28",
-    question: "No exame da cavidade oral, o médico observa pequenas massas de tecido linfoide na base da língua. Estas massas constituem a:",
-    options: ["Tonsila palatina.", "Tonsila faríngea.", "Tonsila lingual.", "Glândula sublingual acessória."],
-    correctAnswer: 2,
-    explanation: "A tonsila lingual está localizada na base da língua.",
+    question: "As tonsilas palatinas (amígdalas) estão localizadas em qual espaço anatômico?",
+    options: ["Fossa tonsilar, entre os arcos palatoglosso e palatofaríngeo.", "Vestíbulo da boca.", "Recesso piriforme.", "Espaço sublingual."],
+    correctAnswer: 0,
+    explanation: "As tonsilas palatinas ficam na fossa tonsilar entre os arcos do palato.",
     theme: "Cavidade Oral"
   },
   {
     id: "oral-29",
-    question: "Qual nervo fornece inervação sensorial tátil e proprioceptiva para as gengivas?",
-    options: ["Nervo facial (VII).", "Nervo trigêmeo (V).", "Nervo glossofaríngeo (IX).", "Nervo hipoglosso (XII)."],
+    question: "Qual músculo do palato mole é o único inervado pelo nervo mandibular (V3), enquanto os demais são inervados pelo plexo faríngeo (nervo vago)?",
+    options: ["Músculo levantador do véu palatino.", "Músculo tensor do véu palatino.", "Músculo palatofaríngeo.", "Músculo da úvula."],
     correctAnswer: 1,
-    explanation: "O nervo trigêmeo (V) fornece inervação sensorial tátil e proprioceptiva para as gengivas.",
+    explanation: "O tensor do véu palatino é o único inervado pelo V3.",
     theme: "Cavidade Oral"
   },
   {
     id: "oral-30",
-    question: "Assinale a alternativa que contém apenas músculos intrínsecos da língua:",
-    options: ["Genioglosso, Hioglosso e Estiloglosso.", "Milo-hioideo, Gênio-hioideo e Palatoglosso.", "Longitudinal superior, Longitudinal inferior, Transverso e Vertical.", "Tensor do véu palatino e Levantador do véu palatino."],
+    question: "Durante a deglutição, qual estrutura impede que o alimento entre na cavidade nasal?",
+    options: ["Língua.", "Epiglote.", "Palato mole (véu palatino).", "Músculo bucinador."],
     correctAnswer: 2,
-    explanation: "Os músculos intrínsecos são: Longitudinal superior, Longitudinal inferior, Transverso e Vertical.",
+    explanation: "O palato mole eleva-se para fechar a comunicação com a nasofaringe.",
     theme: "Cavidade Oral"
   }
 ];
 
-// Combinar todas as questões
-export const quizzes = [
+// QUESTÕES DE ORELHA E OLHO (40 questões)
+export const quizData = [
   {
     id: "coracao",
-    title: "Coração e Grandes Vasos",
-    description: "Anatomia do coração, circulação e grandes vasos",
+    title: "Coração",
+    description: "Anatomia do coração e grandes vasos",
     emoji: "❤️",
     questions: coracaoQuestions
   },
   {
     id: "vascularizacao",
-    title: "Vascularização do Viscerocrânio e Pescoço",
-    description: "Artérias e veias da cabeça e pescoço",
-    emoji: "🫀",
+    title: "Vascularização",
+    description: "Vascularização do viscerocrânio e pescoço",
+    emoji: "🩸",
     questions: vascularizacaoShuffled
   },
   {
     id: "cavidade-oral",
     title: "Cavidade Oral",
-    description: "Anatomia da boca e estruturas relacionadas",
+    description: "Anatomia da boca, língua e glândulas salivares",
     emoji: "👄",
     questions: cavidadeOralQuestions
   },
@@ -787,162 +786,162 @@ export const quizzes = [
     questions: [
       {
         id: "orelha-1",
-        question: "Qual estrutura forma o pavilhão auricular?",
-        options: ["Cartilagem elástica", "Osso temporal", "Tecido adiposo", "Fibras musculares"],
-        correctAnswer: 0,
-        explanation: "O pavilhão auricular é formado por cartilagem elástica.",
+        question: "Um paciente de 25 anos apresenta uma laceração no terço lateral do meato acústico externo após uso inadequado de haste flexível. Durante o exame, o médico observa sangramento. Qual a constituição anatômica predominante dessa região atingida e sua provável nutrição arterial?",
+        options: ['Óssea; artéria caroticotimpânica.', 'Cartilagínea; ramos da artéria carótida externa.', 'Fibrosa; artéria timpânica anterior.', 'Membranácea; artéria labiríntica.'],
+        correctAnswer: 1,
+        explanation: "O terço lateral do meato é cartilagíneo e nutrido por ramos da carótida externa (temporal superficial e auricular posterior) [1-3].",
         theme: "Orelha"
       },
       {
         id: "orelha-2",
-        question: "Quantos ossículos existem na orelha média?",
-        options: ["2", "3", "4", "5"],
-        correctAnswer: 1,
-        explanation: "Existem 3 ossículos: martelo, bigorna e estribo.",
+        question: "Durante uma cirurgia de mastoidectomia, o cirurgião deve ter cautela com o músculo estapédio. Sobre esse músculo, assinale a alternativa CORRETA:",
+        options: ['É suprido pelo ramo mandibular do nervo trigêmeo (V3).', 'Atua na regulação da tensão da membrana timpânica.', 'É suprido pelo nervo facial (VII par).', 'Encontra-se ancorado ao cabo do martelo.'],
+        correctAnswer: 2,
+        explanation: "O músculo estapédio é suprido pelo nervo facial (VII) e regula a tensão do estribo [4-6].",
         theme: "Orelha"
       },
       {
         id: "orelha-3",
-        question: "Qual é a função da trompa de Eustáquio?",
-        options: ["Amplificar sons", "Equilibrar pressão", "Produzir cerúmen", "Proteger o tímpano"],
+        question: "Uma criança apresenta otite média com acúmulo de secreção purulenta na cavidade timpânica. Anatomicamente, em qual osso se localiza essa câmara e qual estrutura a conecta à nasofaringe?",
+        options: ['Porção escamosa do osso temporal; meato acústico interno.', 'Porção petrosa do osso temporal; tuba auditiva.', 'Porção mastóidea do osso temporal; aqueduto do vestíbulo.', 'Canal carótico; recesso epitimpânico.'],
         correctAnswer: 1,
-        explanation: "A trompa de Eustáquio equilibra a pressão entre a orelha média e o ambiente.",
+        explanation: "A orelha média fica na porção petrosa e a tuba auditiva a conecta à nasofaringe [5, 7].",
         theme: "Orelha"
       },
       {
         id: "orelha-4",
-        question: "Qual estrutura contém os órgãos do equilíbrio?",
-        options: ["Orelha externa", "Orelha média", "Orelha interna", "Trompa de Eustáquio"],
-        correctAnswer: 2,
-        explanation: "A orelha interna contém o labirinto, que possui os órgãos do equilíbrio.",
+        question: "Um paciente queixa-se de dor intensa na região da aurícula após um trauma. O médico explica que a inervação sensitiva dessa área é complexa. Qual dos seguintes nervos NÃO participa da inervação sensitiva da aurícula?",
+        options: ['Nervo vago.', 'Nervo auriculotemporal (V3).', 'Nervo facial.', 'Nervo hipoglosso (XII par).'],
+        correctAnswer: 3,
+        explanation: "O hipoglosso é motor para a língua; a aurícula é inervada por V3, VII, X e ramos cervicais (C2/C3) [3, 8, 9].",
         theme: "Orelha"
       },
       {
         id: "orelha-5",
-        question: "O que é o cerúmen?",
-        options: ["Fluido da orelha interna", "Cera do ouvido", "Fluido cerebrospinal", "Linfa"],
-        correctAnswer: 1,
-        explanation: "O cerúmen é a cera produzida pelas glândulas ceruminosas do conduto auditivo externo.",
+        question: "Durante um exame de otoscopia, o médico visualiza a membrana timpânica e identifica o \"cone de luz\". Sobre a anatomy desta membrana, assinale a alternativa INCORRETA:",
+        options: ['Possui cerca de 1 cm de diâmetro.', 'É recoberta por pele externamente e por mucosa internamente.', 'Divide o meato acústico externo da cavidade timpânica.', 'É uma estrutura puramente óssea da porção timpânica do temporal.'],
+        correctAnswer: 3,
+        explanation: "A membrana timpânica é uma membrana fina e semitransparente, não um osso [3, 9].",
         theme: "Orelha"
       },
       {
         id: "orelha-6",
-        question: "Qual nervo fornece inervação sensorial ao pavilhão auricular?",
-        options: ["Trigêmeo", "Facial", "Vago", "Acessório"],
-        correctAnswer: 0,
-        explanation: "O nervo trigêmeo fornece inervação sensorial ao pavilhão auricular.",
+        question: "Um paciente apresenta um quadro de vertigem severa após trauma craniano. O médico suspeita de lesão no labirinto membranáceo. Quais estruturas compõem essa parte da orelha interna e qual líquido contêm?",
+        options: ['Cóclea e vestíbulo; perilinfa.', 'Ducto coclear, utrículo e sáculo; endolinfa.', 'Canais semicirculares e cóclea; perilinfa.', 'Meato acústico interno e janela oval; cerume.'],
+        correctAnswer: 1,
+        explanation: "O labirinto membranáceo contém endolinfa e inclui o ducto coclear, utrículo, sáculo e ductos semicirculares [8, 10, 11].",
         theme: "Orelha"
       },
       {
         id: "orelha-7",
-        question: "Qual estrutura separa a orelha externa da orelha média?",
-        options: ["Trompa de Eustáquio", "Membrana timpânica", "Janela oval", "Caracol"],
-        correctAnswer: 1,
-        explanation: "A membrana timpânica (tímpano) separa a orelha externa da orelha média.",
+        question: "Um tumor glômico na orelha média pode afetar a vascularização local. Quais são as principais fontes arteriais da orelha média conforme os slides?",
+        options: ['Ramos das artérias carótida externa e carótida interna.', 'Apenas ramos da artéria maxilar.', 'Artéria labiríntica e artéria basilar.', 'Artérias vertebrais e subclávias.'],
+        correctAnswer: 0,
+        explanation: "A nutrição vem de ramos da carótida externa (maxilar, auricular posterior, etc.) e caroticotimpânicas da carótida interna [5, 12, 13].",
         theme: "Orelha"
       },
       {
         id: "orelha-8",
-        question: "Qual ossículo está em contato com a membrana timpânica?",
-        options: ["Bigorna", "Martelo", "Estribo", "Nenhum"],
+        question: "Após um mergulho profundo, um mergulhador sente dificuldade em equilibrar a pressão nos ouvidos. Qual estrutura é responsável por manter o equilíbrio pressórico entre a orelha média e a atmosfera?",
+        options: ['Meato acústico externo.', 'Tuba auditiva.', 'Canais semicirculares.', 'Janela redonda.'],
         correctAnswer: 1,
-        explanation: "O martelo está em contato com a membrana timpânica.",
+        explanation: "A tuba auditiva mantém o equilíbrio pressórico conectando a orelha média à nasofaringe [4, 7].",
         theme: "Orelha"
       },
       {
         id: "orelha-9",
-        question: "Qual é a função da cóclea?",
-        options: ["Equilíbrio", "Audição", "Proteção", "Amplificação"],
-        correctAnswer: 1,
-        explanation: "A cóclea é responsável pela audição, convertendo vibrações em sinais nervosos.",
+        question: "Em um caso de surdez de condução, o problema pode estar nos ossículos da audição. Qual a sequência correta de transmissão do som entre esses ossículos?",
+        options: ['Estribo → Bigorna → Martelo.', 'Martelo → Estribo → Bigorna.', 'Martelo → Bigorna → Estribo.', 'Bigorna → Martelo → Estribo.'],
+        correctAnswer: 2,
+        explanation: "A ordem é Martelo (no tímpano) → Bigorna → Estribo (na janela oval) [4, 5, 12].",
         theme: "Orelha"
       },
       {
         id: "orelha-10",
-        question: "Qual estrutura contém o órgão de Corti?",
-        options: ["Tímpano", "Cóclea", "Vestíbulo", "Trompa de Eustáquio"],
-        correctAnswer: 1,
-        explanation: "O órgão de Corti está localizado na cóclea e é responsável pela transdução auditiva.",
+        question: "Um paciente apresenta perda de audição, mas mantém o equilíbrio preservado. Anatomicamente, qual estrutura da orelha interna é especificamente responsável pela audição?",
+        options: ['Utrículo.', 'Sáculo.', 'Ducto coclear.', 'Ductos semicirculares.'],
+        correctAnswer: 2,
+        explanation: "O ducto coclear responde pela audição, enquanto utrículo/sáculo/canais pelo equilíbrio [10, 11].",
         theme: "Orelha"
       },
       {
         id: "orelha-11",
-        question: "Quantas voltas tem a cóclea?",
-        options: ["1", "2", "2,5", "3"],
-        correctAnswer: 2,
-        explanation: "A cóclea tem 2,5 voltas ao redor do modiolo.",
+        question: "Qual artéria é responsável pela nutrição da orelha interna e de qual vaso ela é ramo?",
+        options: ['Artéria timpânica posterior; ramo da auricular posterior.', 'Artéria labiríntica; ramo da artéria basilar.', 'Artéria maxilar; ramo da carótida externa.', 'Artéria meníngea média; ramo da maxilar.'],
+        correctAnswer: 1,
+        explanation: "A artéria labiríntica é ramo da basilar (formada pelas vertebrais) [10, 14, 15].",
         theme: "Orelha"
       },
       {
         id: "orelha-12",
-        question: "Qual nervo fornece inervação motora aos músculos da orelha?",
-        options: ["Trigêmeo", "Facial", "Vago", "Acessório"],
+        question: "Assinale a alternativa CORRETA sobre a drenagem venosa da orelha interna:",
+        options: ['A veia labiríntica drena para a veia jugular externa.', 'A veia labiríntica drena para a veia cerebelar anterior, conectando-se aos seios cavernoso e transverso.', 'Drena diretamente para a veia subclávia.', 'Não possui drenagem venosa própria, apenas linfática.'],
         correctAnswer: 1,
-        explanation: "O nervo facial fornece inervação motora aos músculos da orelha.",
+        explanation: "A drenagem venosa segue esse caminho específico para os seios durais [14, 15].",
         theme: "Orelha"
       },
       {
         id: "orelha-13",
-        question: "Qual estrutura forma a janela oval?",
-        options: ["Membrana", "Osso", "Cartilagem", "Tecido fibroso"],
-        correctAnswer: 0,
-        explanation: "A janela oval é formada por uma membrana que separa a orelha média da orelha interna.",
+        question: "Um paciente apresenta paralisia do nervo trigêmeo (ramo mandibular). Qual função muscular da orelha média será afetada?",
+        options: ['Contração do músculo estapédio.', 'Tensão do músculo tensor do tímpano.', 'Dilatação da tuba auditiva.', 'Vibração da membrana timpânica secundária.'],
+        correctAnswer: 1,
+        explanation: "O n. mandibular (V3) inerva o músculo tensor do tímpano [4, 8, 12].",
         theme: "Orelha"
       },
       {
         id: "orelha-14",
-        question: "Qual é a função do estribo?",
-        options: ["Transmitir vibrações para a janela oval", "Amplificar sons", "Produzir cerúmen", "Equilibrar pressão"],
-        correctAnswer: 0,
-        explanation: "O estribo transmite vibrações para a janela oval, conectando a orelha média à interna.",
+        question: "A orelha média divide-se em duas partes principais. Quais são elas?",
+        options: ['Labirinto ósseo e membranoso.', 'Pavilhão auricular e meato acústico.', 'Cavidade timpânica propriamente dita e recesso epitimpânico.', 'Cóclea e vestíbulo.'],
+        correctAnswer: 2,
+        explanation: "Divide-se em cavidade timpânica e recesso epitimpânico [4, 5, 7].",
         theme: "Orelha"
       },
       {
         id: "orelha-15",
-        question: "Qual estrutura contém endolinfa?",
-        options: ["Orelha externa", "Orelha média", "Orelha interna", "Trompa de Eustáquio"],
-        correctAnswer: 2,
-        explanation: "A orelha interna contém endolinfa, um fluido que preenche o labirinto membranoso.",
+        question: "Sobre a inervação do meato acústico externo, qual nervo supre o território póstero-inferior?",
+        options: ['Nervo vago (X par).', 'Nervo auriculotemporal (V3).', 'Nervo auricular magno (C2-C3).', 'Nervo occipital menor (C2).'],
+        correctAnswer: 0,
+        explanation: "O nervo vago inerva o território póstero-inferior do meato [2, 3].",
         theme: "Orelha"
       },
       {
         id: "orelha-16",
-        question: "Qual é a função da perilinfa?",
-        options: ["Transmitir vibrações", "Lubrificar ossículos", "Preencher espaços do labirinto ósseo", "Produzir cerúmen"],
-        correctAnswer: 2,
-        explanation: "A perilinfa preenche os espaços entre o labirinto ósseo e o membranoso.",
+        question: "Onde se encaixa a base do estribo para transmitir as vibrações para a orelha interna?",
+        options: ['Janela redonda.', 'Janela oval (do vestíbulo).', 'Membrana timpânica secundária.', 'Promontório.'],
+        correctAnswer: 1,
+        explanation: "A base do estribo se encaixa na janela oval do vestíbulo [11, 15, 16].",
         theme: "Orelha"
       },
       {
         id: "orelha-17",
-        question: "Qual estrutura é responsável pelo reflexo vestibular-ocular?",
-        options: ["Cóclea", "Vestíbulo", "Tímpano", "Trompa de Eustáquio"],
-        correctAnswer: 1,
-        explanation: "O vestíbulo é responsável pelo reflexo vestibular-ocular, que estabiliza a visão durante movimentos.",
+        question: "Qual a função primordial da orelha média descrita nos materiais?",
+        options: ['Captar as ondas sonoras.', 'Transformar sinais mecânicos em elétricos.', 'Transformar uma onda sonora de alta em baixa amplitude.', 'Detectar a posição e o movimento da cabeça.'],
+        correctAnswer: 2,
+        explanation: "Função central de transformar som de alta em baixa amplitude [7, 8, 16].",
         theme: "Orelha"
       },
       {
         id: "orelha-18",
-        question: "Quantos canais semicirculares existem?",
-        options: ["2", "3", "4", "5"],
+        question: "As glândulas ceruminosas e sebáceas, responsáveis pela produção de cerume, estão localizadas em qual parte da orelha?",
+        options: ['Cavidade timpânica.', 'Meato acústico externo.', 'Recesso epitimpânico.', 'Utrículo e sáculo.'],
         correctAnswer: 1,
-        explanation: "Existem 3 canais semicirculares: anterior, posterior e lateral.",
+        explanation: "Presentes no meato acústico externo para produzir cerume [3, 9, 16].",
         theme: "Orelha"
       },
       {
         id: "orelha-19",
-        question: "Qual nervo é responsável pela audição?",
-        options: ["Trigêmeo", "Facial", "Vestibulococlear", "Vago"],
+        question: "Qual nervo é responsável por levar os sinais elétricos da orelha interna ao córtex temporal?",
+        options: ['Nervo facial (VII).', 'Nervo trigêmeo (V).', 'Nervo vestibulococlear (VIII).', 'Nervo vago (X).'],
         correctAnswer: 2,
-        explanation: "O nervo vestibulococlear (VIII par craniano) é responsável pela audição e equilíbrio.",
+        explanation: "O VIII par (vestibulococlear) leva os estímulos ao córtex temporal [4, 13].",
         theme: "Orelha"
       },
       {
         id: "orelha-20",
-        question: "Qual estrutura protege a orelha interna?",
-        options: ["Cartilagem", "Osso temporal", "Membrana timpânica", "Cerúmen"],
-        correctAnswer: 1,
-        explanation: "O osso temporal protege a orelha interna, que está localizada em seu interior.",
+        question: "A orelha externa é constituída por:",
+        options: ['Martelo, bigorna e estribo.', 'Cóclea e canais semicirculares.', 'Aurícula e meato acústico externo.', 'Tuba auditiva e cavidade timpânica.'],
+        correctAnswer: 2,
+        explanation: "Composta por aurícula (pavilhão) e meato acústico externo [1, 8, 16].",
         theme: "Orelha"
       }
     ]
@@ -954,163 +953,163 @@ export const quizzes = [
     emoji: "👁️",
     questions: [
       {
-        id: "olho-1",
-        question: "Qual é a camada mais externa do olho?",
-        options: ["Coróide", "Retina", "Esclera", "Íris"],
+        id: "olho-21",
+        question: "Um paciente de 40 anos sofreu um trauma na face e apresenta uma fratura no assoalho da órbita. Quais ossos compõem o limite inferior (assoalho) da cavidade orbital?",
+        options: ['Frontal e Asa menor do esfenoide.', 'Maxilar, Zigomático e Palatino.', 'Lacrimal, Etmoide e Frontal.', 'Asa maior do esfenoide e Zigomático.'],
+        correctAnswer: 1,
+        explanation: "Maxilar, zigomático e palatino formam o assoalho orbital [17-19].",
+        theme: "Olho"
+      },
+      {
+        id: "olho-22",
+        question: "Durante um exame oftalmológico, observa-se que a pupila do paciente não reage à luz (miose ausente). Qual músculo e qual par craniano são responsáveis por esse movimento?",
+        options: ['M. dilatador da pupila; fibras simpáticas.', 'M. constritor da pupila; nervo oculomotor (III par).', 'M. ciliar; nervo troclear (IV par).', 'M. reto medial; nervo abducente (VI par).'],
+        correctAnswer: 1,
+        explanation: "O m. constritor faz miose via fibras parassimpáticas do III par [6, 20, 21].",
+        theme: "Olho"
+      },
+      {
+        id: "olho-23",
+        question: "Um paciente apresenta quadro de dacriocistite (inflamação do saco lacrimal). Seguindo o caminho da lágrima, para onde ela drena imediatamente após sair do saco lacrimal?",
+        options: ['Canalículos lacrimais.', 'Pontos lacrimais.', 'Ducto nasolacrimal.', 'Meato nasal médio.'],
         correctAnswer: 2,
-        explanation: "A esclera é a camada mais externa do olho, formada por tecido fibroso branco.",
+        explanation: "A lágrima vai do saco lacrimal para o ducto nasolacrimal (até o nariz) [22-24].",
         theme: "Olho"
       },
       {
-        id: "olho-2",
-        question: "Qual estrutura é responsável pela refração de luz?",
-        options: ["Retina", "Córnea", "Íris", "Cristalino"],
+        id: "olho-24",
+        question: "Ao realizar o teste de motilidade ocular, o paciente demonstra incapacidade de realizar o movimento de abdução pura do olho direito. Qual músculo e nervo estão provavelmente lesionados?",
+        options: ['M. reto superior; N. oculomotor.', 'M. reto lateral; N. abducente.', 'M. oblíquo superior; N. troclear.', 'M. reto medial; N. oculomotor.'],
         correctAnswer: 1,
-        explanation: "A córnea é a principal estrutura responsável pela refração de luz no olho.",
+        explanation: "O reto lateral faz abdução e é inervado pelo VI par (abducente) [6, 21, 22].",
         theme: "Olho"
       },
       {
-        id: "olho-3",
-        question: "Qual é a função da íris?",
-        options: ["Refração de luz", "Controlar o tamanho da pupila", "Focar imagens", "Absorver luz"],
-        correctAnswer: 1,
-        explanation: "A íris controla o tamanho da pupila para regular a quantidade de luz que entra no olho.",
-        theme: "Olho"
-      },
-      {
-        id: "olho-4",
-        question: "Qual estrutura contém os fotorreceptores?",
-        options: ["Coróide", "Retina", "Esclera", "Cristalino"],
-        correctAnswer: 1,
-        explanation: "A retina contém os fotorreceptores (bastonetes e cones) responsáveis pela visão.",
-        theme: "Olho"
-      },
-      {
-        id: "olho-5",
-        question: "Qual é a função do cristalino?",
-        options: ["Absorver luz", "Focar imagens na retina", "Controlar a pupila", "Produzir lágrimas"],
-        correctAnswer: 1,
-        explanation: "O cristalino muda de forma para focar imagens na retina, permitindo a visão clara.",
-        theme: "Olho"
-      },
-      {
-        id: "olho-6",
-        question: "Qual estrutura produz o humor aquoso?",
-        options: ["Retina", "Coróide", "Corpo ciliar", "Esclera"],
+        id: "olho-25",
+        question: "O bulbo ocular é revestido por três túnicas. Qual delas é a túnica vascular (úvea)?",
+        options: ['Córnea e esclera.', 'Retina.', 'Corioide, corpo ciliar e íris.', 'Cristalino e humor vítreo.'],
         correctAnswer: 2,
-        explanation: "O corpo ciliar produz o humor aquoso, que mantém a pressão intraocular.",
+        explanation: "A úvea é a camada vascular média: corioide, corpo ciliar e íris [18, 25].",
         theme: "Olho"
       },
       {
-        id: "olho-7",
-        question: "Qual é a função da coróide?",
-        options: ["Refração de luz", "Nutrir a retina", "Controlar a pupila", "Produzir lágrimas"],
-        correctAnswer: 1,
-        explanation: "A coróide fornece nutrição e oxigênio para a retina.",
-        theme: "Olho"
-      },
-      {
-        id: "olho-8",
-        question: "Qual estrutura é responsável pela visão em cores?",
-        options: ["Bastonetes", "Cones", "Bastões", "Células ganglionares"],
-        correctAnswer: 1,
-        explanation: "Os cones são responsáveis pela visão em cores e pela visão em alta luminosidade.",
-        theme: "Olho"
-      },
-      {
-        id: "olho-9",
-        question: "Qual é a função dos bastonetes?",
-        options: ["Visão em cores", "Visão em baixa luminosidade", "Refração de luz", "Controlar a pupila"],
-        correctAnswer: 1,
-        explanation: "Os bastonetes são responsáveis pela visão em baixa luminosidade (visão noturna).",
-        theme: "Olho"
-      },
-      {
-        id: "olho-10",
-        question: "Qual estrutura contém o ponto cego?",
-        options: ["Fóvea central", "Disco óptico", "Mácula", "Cristalino"],
-        correctAnswer: 1,
-        explanation: "O disco óptico (ponto cego) é onde o nervo óptico sai do olho, não tendo fotorreceptores.",
-        theme: "Olho"
-      },
-      {
-        id: "olho-11",
-        question: "Qual é a função da fóvea central?",
-        options: ["Visão periférica", "Visão central de alta resolução", "Produzir lágrimas", "Controlar a pupila"],
-        correctAnswer: 1,
-        explanation: "A fóvea central é responsável pela visão central de alta resolução e cores.",
-        theme: "Olho"
-      },
-      {
-        id: "olho-12",
-        question: "Qual nervo é responsável pela visão?",
-        options: ["Trigêmeo", "Facial", "Óptico", "Oculomotor"],
-        correctAnswer: 2,
-        explanation: "O nervo óptico (II par craniano) é responsável pela transmissão de sinais visuais ao cérebro.",
-        theme: "Olho"
-      },
-      {
-        id: "olho-13",
-        question: "Qual estrutura lubrifica o olho?",
-        options: ["Humor aquoso", "Humor vítreo", "Lágrimas", "Cerúmen"],
-        correctAnswer: 2,
-        explanation: "As lágrimas lubrificam e protegem a superfície do olho.",
-        theme: "Olho"
-      },
-      {
-        id: "olho-14",
-        question: "Qual é a função do humor vítreo?",
-        options: ["Manter a pressão intraocular", "Manter a forma do olho e permitir a passagem de luz", "Lubrificar o olho", "Produzir lágrimas"],
-        correctAnswer: 1,
-        explanation: "O humor vítreo mantém a forma do olho e permite a passagem de luz até a retina.",
-        theme: "Olho"
-      },
-      {
-        id: "olho-15",
-        question: "Qual estrutura forma a câmara anterior do olho?",
-        options: ["Entre a córnea e o cristalino", "Entre o cristalino e a retina", "Entre a esclera e a coróide", "Entre a retina e o nervo óptico"],
+        id: "olho-26",
+        question: "Um paciente apresenta ptose palpebral (pálpebra caída). Além do músculo levantador da pálpebra superior, qual músculo auxilia no fechamento do olho e qual sua inervação?",
+        options: ['M. orbicular do olho; nervo facial (VII par).', 'M. reto superior; nervo oculomotor.', 'M. dilatador da pupila; fibras simpáticas.', 'M. ciliar; nervo trigêmeo.'],
         correctAnswer: 0,
-        explanation: "A câmara anterior é o espaço entre a córnea e o cristalino, preenchido com humor aquoso.",
+        explanation: "O m. orbicular fecha o olho e é inervado pelo facial (VII) [20, 23, 26].",
         theme: "Olho"
       },
       {
-        id: "olho-16",
-        question: "Qual estrutura forma a câmara posterior do olho?",
-        options: ["Entre a córnea e o cristalino", "Entre o cristalino e a retina", "Entre a esclera e a coróide", "Entre a retina e o nervo óptico"],
-        correctAnswer: 1,
-        explanation: "A câmara posterior é o espaço entre o cristalino e a retina, preenchido com humor vítreo.",
+        id: "olho-27",
+        question: "Sobre os acidentes anatômicos da órbita, por qual estrutura passam o nervo óptico e a artéria oftálmica?",
+        options: ['Fissura orbital superior.', 'Fissura orbital inferior.', 'Canal óptico.', 'Forame supraorbital.'],
+        correctAnswer: 2,
+        explanation: "O canal óptico é a passagem do nervo óptico e artéria oftálmica [17, 18, 27].",
         theme: "Olho"
       },
       {
-        id: "olho-17",
-        question: "Qual glândula produz lágrimas?",
-        options: ["Glândula salivar", "Glândula lacrimal", "Glândula sebácea", "Glândula sudorípara"],
+        id: "olho-28",
+        question: "O humor aquoso é um fluido essencial para a pressão intraocular. Em quais câmaras do olho ele é encontrado?",
+        options: ['Apenas na câmara anterior.', 'Câmara anterior e câmara posterior.', 'Câmara postrema.', 'Entre a corioide e a retina.'],
         correctAnswer: 1,
-        explanation: "A glândula lacrimal produz lágrimas que lubrificam e protegem o olho.",
+        explanation: "O humor aquoso preenche as câmaras anterior e posterior [21, 25, 28].",
         theme: "Olho"
       },
       {
-        id: "olho-18",
-        question: "Qual estrutura drena as lágrimas?",
-        options: ["Pálpebra", "Canalículo lacrimal", "Conjuntiva", "Córnea"],
-        correctAnswer: 1,
-        explanation: "Os canalículos lacrimais drenam as lágrimas para o saco lacrimal.",
+        id: "olho-29",
+        question: "Qual estrutura é considerada a lente do olho, responsável pelo foco da imagem através da acomodação?",
+        options: ['Córnea.', 'Íris.', 'Cristalino.', 'Retina.'],
+        correctAnswer: 2,
+        explanation: "O cristalino é a lente material que ajusta o foco [18, 21, 28].",
         theme: "Olho"
       },
       {
-        id: "olho-19",
-        question: "Qual é a função da conjuntiva?",
-        options: ["Refração de luz", "Proteção e lubrificação", "Focar imagens", "Absorver luz"],
+        id: "olho-30",
+        question: "Um paciente apresenta lesão no nervo troclear (IV par). Qual movimento ocular estará comprometido conforme a regra \"OS 4 RELA 6 RESTAM 3\"?",
+        options: ['Elevação com adução (M. oblíquo inferior).', 'Depressão com adução (M. oblíquo superior).', 'Abdução (M. reto lateral).', 'Adução (M. reto medial).'],
         correctAnswer: 1,
-        explanation: "A conjuntiva protege e lubrifica a superfície anterior do olho.",
+        explanation: "O oblíquo superior (OS 4) faz depressão com adução [6, 21, 22].",
         theme: "Olho"
       },
       {
-        id: "olho-20",
-        question: "Qual estrutura protege o olho mecanicamente?",
-        options: ["Retina", "Pálpebras", "Coróide", "Esclera"],
+        id: "olho-31",
+        question: "A artéria oftálmica fornece vários ramos para o bulbo ocular. Qual desses ramos é responsável pela nutrição da retina?",
+        options: ['Artérias ciliares anteriores.', 'Artéria central da retina.', 'Artérias ciliares posteriores curtas.', 'Artéria lacrimal.'],
         correctAnswer: 1,
-        explanation: "As pálpebras protegem o olho mecanicamente e ajudam a lubrificá-lo.",
+        explanation: "A artéria central da retina é o ramo vital para a túnica interna [23, 29].",
+        theme: "Olho"
+      },
+      {
+        id: "olho-32",
+        question: "Assinale a alternativa INCORRETA sobre os limites da órbita:",
+        options: ['O teto é formado pelo osso frontal e asa menor do esfenoide.', 'A parede lateral é formada pelo frontal, zigomático e asa maior do esfenoide.', 'A parede medial é formada pelo frontal, etmoide, lacrimal e maxilar.', 'O assoalho é formado apenas pelo osso etmoide.'],
+        correctAnswer: 3,
+        explanation: "O assoalho é formado por maxilar, zigomático e palatino, não etmoide [18, 19].",
+        theme: "Olho"
+      },
+      {
+        id: "olho-33",
+        question: "O onde se localiza a \"câmara postrema\" e qual substância a preenche?",
+        options: ['Entre a córnea e a íris; humor aquoso.', 'Entre a íris e o cristalino; humor aquoso.', 'Após o cristalino; humor vítreo.', 'Entre a esclera e a corioide; perilinfa.'],
+        correctAnswer: 2,
+        explanation: "A câmara postrema (ou vítrea) contém o humor vítreo [21, 25, 28].",
+        theme: "Olho"
+      },
+      {
+        id: "olho-34",
+        question: "Qual músculo intrínseco do olho é responsável pela acomodação do cristalino?",
+        options: ['Músculo esfíncter da pupila.', 'Músculo dilatador da pupila.', 'Músculo ciliar.', 'Músculo reto medial.'],
+        correctAnswer: 2,
+        explanation: "O músculo ciliar altera a conformação do cristalino para acomodação [6, 21, 30].",
+        theme: "Olho"
+      },
+      {
+        id: "olho-35",
+        question: "A drenagem venosa do olho é feita principalmente para qual estrutura venosa intracraniana importante?",
+        options: ['Veia jugular interna.', 'Seio cavernoso.', 'Veia basílica.', 'Seio sagital superior.'],
+        correctAnswer: 1,
+        explanation: "As veias oftálmicas drenam principalmente para o seio cavernoso [23, 29].",
+        theme: "Olho"
+      },
+      {
+        id: "olho-36",
+        question: "Sobre as pálpebras, quais glândulas sebáceas estão localizadas nos tarsos?",
+        options: ['Glândulas de Moll.', 'Glândulas de Meibomius (tarsais).', 'Glândulas de Krause.', 'Glândulas de Wolfring.'],
+        correctAnswer: 1,
+        explanation: "As glândulas de Meibomius são glândulas sebáceas palpebrais/tarsais [29, 31].",
+        theme: "Olho"
+      },
+      {
+        id: "olho-37",
+        question: "Qual a função do músculo reto inferior conforme descrito nos materiais?",
+        options: ['Elevação com abdução.', 'Depressão com abdução.', 'Adução pura.', 'Fechamento da pálpebra.'],
+        correctAnswer: 1,
+        explanation: "O reto inferior realiza depressão com abdução [6, 22, 23].",
+        theme: "Olho"
+      },
+      {
+        id: "olho-38",
+        question: "O nervo trigêmeo (V par) participa da sensibilidade da face. Qual de seus ramos é especificamente relacionado à região orbital superior?",
+        options: ['Nervo maxilar (V2).', 'Nervo mandibular (V3).', 'Nervo oftálmico (V1).', 'Nervo infraorbital.'],
+        correctAnswer: 2,
+        explanation: "O ramo V1 (oftálmico) é o responsável pela região orbital [21, 23, 26].",
+        theme: "Olho"
+      },
+      {
+        id: "olho-39",
+        question: "A túnica fibrosa do olho é composta por quais estruturas?",
+        options: ['Íris e pupila.', 'Córnea e esclera.', 'Corioide e retina.', 'Cristalino e corpo ciliar.'],
+        correctAnswer: 1,
+        explanation: "Túnica fibrosa (externa) = córnea + esclera [18, 19, 25].",
+        theme: "Olho"
+      },
+      {
+        id: "olho-40",
+        question: "Qual par craniano é responsável pela inervação motora da maioria dos músculos extrínsecos do olho (Retos superior, inferior, medial e Oblíquo inferior)?",
+        options: ['III - Oculomotor.', 'IV - Troclear.', 'VI - Abducente.', 'VII - Facial.'],
+        correctAnswer: 0,
+        explanation: "O oculomotor (III) inerva quase todos, exceto o Oblíquo Superior (IV) e Reto Lateral (VI) [20, 21, 24].",
         theme: "Olho"
       }
     ]
