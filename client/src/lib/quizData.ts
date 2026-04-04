@@ -756,7 +756,343 @@ const cavidadeOralQuestions: Question[] = [
 ];
 
 // QUESTÕES DE ORELHA E OLHO (40 questões)
+const cavidadeNasalQuestions: Question[] = [
+  {
+    "id": "cavidade-nasal-1",
+    "question": "Um paciente apresenta uma fratura na base do crânio que compromete a **lâmina crivosa do osso etmoide**. Além do risco de fístula liquórica, qual déficit sensorial é esperado devido à localização das fibras nervosas nessa região?",
+    "options": [
+      "Perda da sensibilidade tátil da face.",
+      "Anosmia.",
+      "Perda da gustação no terço posterior da língua.",
+      "Diminuição da secreção lacrimal."
+    ],
+    "correctAnswer": 1,
+    "explanation": "A lâmina crivosa contém os forames por onde passam os filetes do nervo olfatório (I par).",
+    "theme": "Cavidade Nasal"
+  },
+  {
+    "id": "cavidade-nasal-2",
+    "question": "Durante um exame físico, o médico observa a pirâmide nasal de um paciente. Sobre a constituição do **nariz externo**, assinale a alternativa **CORRETA**:",
+    "options": [
+      "O ápice do nariz é formado pelos ossos nasais.",
+      "A parte óssea corresponde aos 2/3 inferiores do nariz.",
+      "O terço superioré formado pelos ossos nasais e processos frontais da maxila.",
+      "As cartilagens alares menores são as principais responsáveis pelo formato da ponta do nariz."
+    ],
+    "correctAnswer": 2,
+    "explanation": "O dorso é ósseo (ossos nasais e maxila), enquanto a ponta é cartilaginosa.",
+    "theme": "Cavidade Nasal"
+  },
+  {
+    "id": "cavidade-nasal-3",
+    "question": "Um estudante de medicina descreve as paredes da cavidade nasal. Ao falar sobre o **assoalho**, quais estruturas ele deve citar obrigatoriamente?",
+    "options": [
+      "Lâmina crivosa e osso esfenóide.",
+      "Processo palatino da maxila e lâmina horizontal do osso palatino.",
+      "Vômer e cartilagem septal.",
+      "Concha nasal inferior e osso lacrimal."
+    ],
+    "correctAnswer": 1,
+    "explanation": "O assoalho é formado pelos processos palatinos das maxilas e lâminas horizontais dos palatinos.",
+    "theme": "Cavidade Nasal"
+  },
+  {
+    "id": "cavidade-nasal-4",
+    "question": "Um paciente apresenta um sangramento nasal persistente na região do septo anterior (**Área de Kiesselbach**). Sobre a **parede medial** da cavidade nasal, é correto afirmar que:",
+    "options": [
+      "É puramente óssea, formada pelo vômer e osso etmoide.",
+      "É formada pela cartilagem do septo, lâmina perpendicular do etmoide e pelo vômer.",
+      "Não possui suprimento vascular importante.",
+      "Separa a cavidade nasal do seio maxilar."
+    ],
+    "correctAnswer": 1,
+    "explanation": "O septo é osteocartilaginoso (cartilagem septal + lâmina perpendicular do etmoide + vômer).",
+    "theme": "Cavidade Nasal"
+  },
+  {
+    "id": "cavidade-nasal-5",
+    "question": "Sobre as **conchas nasais**, assinale a alternativa que apresenta uma classificação **INCORRETA** quanto à origem óssea:",
+    "options": [
+      "Concha nasal superior: acidente do osso etmoide.",
+      "Concha nasal média: acidente do osso etmoide.",
+      "Concha nasal inferior: osso par independente do viscerocrânio.",
+      "Concha nasal média: osso par independente do neurocrânio."
+    ],
+    "correctAnswer": 3,
+    "explanation": "As conchas superior e média são acidentes do etmoide; a inferior é um osso independente.",
+    "theme": "Cavidade Nasal"
+  },
+  {
+    "id": "cavidade-nasal-6",
+    "question": "Uma criança chega ao consultório com queixa de lacrimejamento constante em apenas um olho após um trauma nasal. O médico suspeita de obstrução da drenagem da lágrima. Qual estrutura da cavidade nasal recebe o **ducto nasolacrimal**?",
+    "options": [
+      "Meato nasal médio.",
+      "Meato nasal superior.",
+      "Meato nasal inferior.",
+      "Recesso esfenoetmoidal."
+    ],
+    "correctAnswer": 2,
+    "explanation": "O ducto nasolacrimal drena para o meato nasal inferior.",
+    "theme": "Cavidade Nasal"
+  },
+  {
+    "id": "cavidade-nasal-7",
+    "question": "Um paciente com sinusite frontal crônica apresenta obstrução no seu local de drenagem principal. De acordo com a anatomia, o **seio frontal** drena para o:",
+    "options": [
+      "Meato nasal médio, via infundíbulo.",
+      "Recesso esfenoetmoidal.",
+      "Meato nasal superior.",
+      "Átrio do meato médio."
+    ],
+    "correctAnswer": 0,
+    "explanation": "O seio frontal drena para o meato médio via ducto nasofrontal/infundíbulo.",
+    "theme": "Cavidade Nasal"
+  },
+  {
+    "id": "cavidade-nasal-8",
+    "question": "Assinale a alternativa **CORRETA** sobre o **seio esfenoidal**:",
+    "options": [
+      "É o maior dos seios paranasais.",
+      "Localiza-se anteriormente ao seio frontal.",
+      "Sua drenagem ocorre diretamente no meato nasal inferior.",
+      "Localiza-se no corpo do osso esfenóide, posteriormente à cavidade nasal."
+    ],
+    "correctAnswer": 3,
+    "explanation": "O seio esfenoidal está no corpo do osso esfenóide, sendo o mais posterior.",
+    "theme": "Cavidade Nasal"
+  },
+  {
+    "id": "cavidade-nasal-9",
+    "question": "Em uma **rinoscopia posterior**, o examinador visualiza a comunicação da cavidade nasal com a nasofaringe. Essa abertura é denominada:",
+    "options": [
+      "Narina.",
+      "Coana.",
+      "Istmo das fauces.",
+      "Ádito da laringe."
+    ],
+    "correctAnswer": 1,
+    "explanation": "As coanas são as comunicações posteriores com a faringe.",
+    "theme": "Cavidade Nasal"
+  },
+  {
+    "id": "cavidade-nasal-10",
+    "question": "Qual estrutura anatômica é responsável por marcar o limite entre o nariz externo e a cavidade nasal propriamente dita, localizada logo após o vestíbulo?",
+    "options": [
+      "Coana.",
+      "Limiar do nariz.",
+      "Meato médio.",
+      "Septo ósseo."
+    ],
+    "correctAnswer": 1,
+    "explanation": "O limiar do nariz divide o vestíbulo da cavidade nasal propriamente dita.",
+    "theme": "Cavidade Nasal"
+  },
+  {
+    "id": "cavidade-nasal-11",
+    "question": "Sobre o **seio maxilar**, é **INCORRETO** afirmar:",
+    "options": [
+      "É o maior dos seios paranasais.",
+      "Sua drenagem principal ocorre no meato nasal médio.",
+      "Localiza-se superiormente à órbita.",
+      "Possui íntima relação com as raízes dos dentes molares superiores."
+    ],
+    "correctAnswer": 2,
+    "explanation": "O seio maxilar localiza-se *inferiormente* à órbita.",
+    "theme": "Cavidade Nasal"
+  },
+  {
+    "id": "cavidade-nasal-12",
+    "question": "Um paciente apresenta quadro de epistaxe intensa e o médico decide realizar um **tamponamento posterior**. Onde o tampão deve ser fixado para interromper o fluxo sanguíneo nessa região?",
+    "options": [
+      "Na narina.",
+      "No vestíbulo nasal.",
+      "Na coana.",
+      "No meato inferior."
+    ],
+    "correctAnswer": 2,
+    "explanation": "O tamponamento posterior é feito na região das coanas.",
+    "theme": "Cavidade Nasal"
+  },
+  {
+    "id": "cavidade-nasal-13",
+    "question": "A parede lateral da cavidade nasal é caracterizada pela presença de conchas e meatos. Qual seio paranasal drena especificamente para o **meato nasal superior**?",
+    "options": [
+      "Seio frontal.",
+      "Seio maxilar.",
+      "Células etmoidais posteriores.",
+      "Seio esfenoidal."
+    ],
+    "correctAnswer": 2,
+    "explanation": "O meato superior recebe as células etmoidais posteriores.",
+    "theme": "Cavidade Nasal"
+  },
+  {
+    "id": "cavidade-nasal-14",
+    "question": "O **teto da cavidade nasal** é uma estrutura complexa dividida em três partes. Quais são elas?",
+    "options": [
+      "Maxilar, palatina e lacrimal.",
+      "Frontonasal, etmoidal e esfenoidal.",
+      "Anterior, média e posterior.",
+      "Cartilaginosa, óssea e mucosa."
+    ],
+    "correctAnswer": 1,
+    "explanation": "O teto é dividido em partes frontonasal, etmoidal e esfenoidal.",
+    "theme": "Cavidade Nasal"
+  },
+  {
+    "id": "cavidade-nasal-15",
+    "question": "Durante uma cirurgia de acesso hipofisário, o cirurgião utiliza a cavidade nasal para atingir a sela turca. Qual seio paranasal deve ser atravessado para acessar essa região?",
+    "options": [
+      "Seio Maxilar.",
+      "Seio Etmoidal.",
+      "Seio Esfenoidal.",
+      "Seio Frontal."
+    ],
+    "correctAnswer": 2,
+    "explanation": "O seio esfenoidal está logo abaixo da sela turca (hipófise).",
+    "theme": "Cavidade Nasal"
+  },
+  {
+    "id": "cavidade-nasal-16",
+    "question": "Considere as funções da mucosa nasal. A região responsável pela **percepção de odores** está localizada em qual porção da cavidade nasal?",
+    "options": [
+      "No assoalho nasal.",
+      "Na mucosa respiratória do meato inferior.",
+      "No teto e porção superior da cavidade.",
+      "Exclusivamente no vestíbulo nasal."
+    ],
+    "correctAnswer": 2,
+    "explanation": "A mucosa olfatória está no teto e concha superior.",
+    "theme": "Cavidade Nasal"
+  },
+  {
+    "id": "cavidade-nasal-17",
+    "question": "Sobre a vascularização, qual artéria é um ramo da **Artéria Carótida Externa** que contribui para o suprimento da face e nariz?",
+    "options": [
+      "Artéria Oftálmica.",
+      "Artéria Facial.",
+      "Artéria Cerebral Anterior.",
+      "Artéria Tireóidea Inferior."
+    ],
+    "correctAnswer": 1,
+    "explanation": "A artéria facial é ramo da carótida externa e irriga o nariz externo.",
+    "theme": "Cavidade Nasal"
+  },
+  {
+    "id": "cavidade-nasal-18",
+    "question": "O **meato nasal médio** recebe a drenagem de diversas estruturas. Assinale a alternativa que contém apenas estruturas que drenam para este meato:",
+    "options": [
+      "Ducto nasolacrimal e seio esfenoidal.",
+      "Seio frontal e seio maxilar.",
+      "Seios etmoidais posteriores e seio frontal.",
+      "Ducto nasolacrimal e seio frontal."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Frontal e maxilar drenam para o meato médio.",
+    "theme": "Cavidade Nasal"
+  },
+  {
+    "id": "cavidade-nasal-19",
+    "question": "A estrutura que separa a cavidade nasal da cavidade oral é o **palato**. Anatomicamente, o palato duro constitui:",
+    "options": [
+      "O teto da cavidade nasal.",
+      "O assoalho da cavidade nasal.",
+      "A parede lateral da cavidade nasal.",
+      "O septo nasal."
+    ],
+    "correctAnswer": 1,
+    "explanation": "O palato separa a boca do nariz, sendo o assoalho deste último.",
+    "theme": "Cavidade Nasal"
+  },
+  {
+    "id": "cavidade-nasal-20",
+    "question": "As **vibrissas** (pelos do nariz) têm função de filtro mecânico. Em qual região do nariz elas são encontradas?",
+    "options": [
+      "Meato médio.",
+      "Coanas.",
+      "Vestíbulo nasal.",
+      "Recesso esfenoetmoidal."
+    ],
+    "correctAnswer": 2,
+    "explanation": "As vibrissas estão na entrada do nariz (vestíbulo).",
+    "theme": "Cavidade Nasal"
+  },
+  {
+    "id": "cavidade-nasal-21",
+    "question": "Sobre os **seios paranasais**, assinale a alternativa que define corretamente sua natureza:",
+    "options": [
+      "São cavidades sólidas preenchidas por medula óssea.",
+      "São cavidades pneumáticas revestidas por mucosa que se comunicam com a cavidade nasal.",
+      "São órgãos linfóides responsáveis pela produção de anticorpos.",
+      "São espaços preenchidos por líquido cefalorraquidiano."
+    ],
+    "correctAnswer": 1,
+    "explanation": "São cavidades pneumáticas no interior de ossos do crânio.",
+    "theme": "Cavidade Nasal"
+  },
+  {
+    "id": "cavidade-nasal-22",
+    "question": "Um desvio de septo nasal acentuado pode dificultar a respiração e forçar a respiração bucal. O **septo nasal** divide a cavidade em:",
+    "options": [
+      "Meatos superior e inferior.",
+      "Metades direita e esquerda.",
+      "Nariz externo e interno.",
+      "Cavidade nasal e nasofaringe."
+    ],
+    "correctAnswer": 1,
+    "explanation": "O septo é a parede medial que divide a cavidade em duas metades.",
+    "theme": "Cavidade Nasal"
+  },
+  {
+    "id": "cavidade-nasal-23",
+    "question": "O **recesso esfenoetmoidal** é uma pequena fenda situada acima da concha superior. Qual estrutura drena para este local?",
+    "options": [
+      "Seio frontal.",
+      "Seio maxilar.",
+      "Seio esfenoidal.",
+      "Ducto nasolacrimal."
+    ],
+    "correctAnswer": 2,
+    "explanation": "O óstio do seio esfenoidal abre-se no recesso esfenoetmoidal.",
+    "theme": "Cavidade Nasal"
+  },
+  {
+    "id": "cavidade-nasal-24",
+    "question": "Qual osso do viscerocrânio contribui para a formação da parte posterior e inferior do **septo nasal**?",
+    "options": [
+      "Etmoide.",
+      "Vômer.",
+      "Maxila.",
+      "Palatino."
+    ],
+    "correctAnswer": 1,
+    "explanation": "O vômer forma a porção postero-inferior do septo.",
+    "theme": "Cavidade Nasal"
+  },
+  {
+    "id": "cavidade-nasal-25",
+    "question": "Em um exame de imagem (Radiografia de Waters), observa-se um velamento no seio paranasal localizado abaixo da órbita. Este é o:",
+    "options": [
+      "Seio frontal.",
+      "Seio maxilar.",
+      "Seio esfenoidal.",
+      "Seio etmoidal."
+    ],
+    "correctAnswer": 1,
+    "explanation": "O seio maxilar situa-se no corpo da maxila, abaixo da órbita.",
+    "theme": "Cavidade Nasal"
+  }
+];
+
 export const quizzes = [
+  {
+    id: "cavidade-nasal",
+    title: "Cavidade Nasal",
+    description: "Anatomia do nariz e cavidade nasal",
+    emoji: "👃",
+    questions: cavidadeNasalQuestions
+  },
+
   {
     id: "coracao",
     title: "Coração",
