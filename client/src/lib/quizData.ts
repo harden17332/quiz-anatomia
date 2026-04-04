@@ -21,8 +21,8 @@ function shuffleArray<T>(array: T[]): T[] {
 const toraxQuestions: Question[] = [
   {
     id: "torax-1",
-    question: "Em casos de neoplasias esofágicas avançadas, observa-se frequentemente um diagnóstico tardio. Do ponto de vista anatômico, isso ocorre predominantemente porque as vísceras torácicas:",
-    options: ["Devido à pressão subatmosférica constante no mediastino posterior.", "Porque são protegidas pelo arcabouço ósseo e muscular, tornando as doenças oligossintomáticas [1, 2].", "Pelo fato de a pleura visceral possuir alta sensibilidade dolorosa, mascarando o tumor.", "Porque o esôfago localiza-se no mediastino médio, área de difícil visualização."],
+    question: "Em casos de neoplasias esofágicas avançadas, observa-se frequentemente um diagnóstico tardio. Do ponto de vista anatômico, isso ocorre predominantemente porque as vísceras torácicas",
+    options: ["estão submetidas a uma pressão subatmosférica constante no mediastino posterior.", "são protegidas pelo arcabouço ósseo e muscular, tornando as doenças oligossintomáticas [1, 2].", "possuem pleura visceral com alta sensibilidade dolorosa, mascarando o tumor.", "possuem o esôfago localizado no mediastino médio, área de difícil visualização."],
     correctAnswer: 1,
     explanation: "A proteção óssea torna as doenças oligossintomáticas.",
     theme: "Tórax"
@@ -40,7 +40,7 @@ const toraxQuestions: Question[] = [
     question: "O mediastino inferior é subdividido em compartimentos anterior, médio e posterior. Qual estrutura anatômica é utilizada como principal referência para essa compartimentalização?",
     options: ["O esôfago torácico.", "O pericárdio [3, 5].", "A traqueia torácica.", "A quarta vértebra torácica (T4)."],
     correctAnswer: 1,
-    explanation: "O pericárdio serve como referência anatômica para a divisão do o mediastino inferior [3, 5].",
+    explanation: "O pericárdio serve como referência anatômica para a divisão do mediastino inferior [3, 5].",
     theme: "Tórax"
   },
   {
@@ -125,7 +125,7 @@ const toraxQuestions: Question[] = [
   },
   {
     id: "torax-14",
-    question: "Um paciente apresenta uma \"dor pleurítica\". Segundo os materiais, qual camada da pleura é sensível à dor e por quais nervos?",
+    question: "Um paciente apresenta uma \"dor pleurítica\". Qual camada da pleura é sensível à dor e por quais nervos?",
     options: ["Pleura visceral; plexo pulmonar.", "Pleura parietal; nervos intercostais e nervo frênico [16, 21].", "Pleura parietal mediastínica; apenas nervo vago.", "Ambas as pleuras são igualmente sensíveis."],
     correctAnswer: 1,
     explanation: "A pleura parietal possui inervação somática, sendo a camada sensível à dor [16, 21].",
@@ -133,7 +133,7 @@ const toraxQuestions: Question[] = [
   },
   {
     id: "torax-15",
-    question: "De acordo com as anotações sobre os recessos pleurais, qual deles \"some\" ou desaparece especificamente em casos de pneumotórax (ar)?",
+    question: "Em relação aos recessos pleurais, qual deles \"some\" ou desaparece especificamente em casos de pneumotórax (ar)?",
     options: ["Recesso costofrênico.", "Recesso cardiofrênico.", "Recesso apical [22-24].", "Recesso diafragmático."],
     correctAnswer: 2,
     explanation: "No pneumotórax, o recesso apical é tipicamente o primeiro a ser obliterado [22-24].",
@@ -182,7 +182,7 @@ const toraxQuestions: Question[] = [
   {
     id: "torax-21",
     question: "Anatomicamente, o pulmão direito diferencia-se do esquerdo por apresentar:",
-    options: ["Possui 2 lobos e é mais leve.", "Possui 3 lobos e 2 fissuras (horizontal e oblíqua) [23, 29].", "Apresenta incisura cardíaca e língula.", "É mais longo e estreito."],
+    options: ["dois lobos e menor peso relativo.", "três lobos e duas fissuras (horizontal e oblíqua) [23, 29].", "incisura cardíaca e língula.", "formato mais alongado e estreito."],
     correctAnswer: 1,
     explanation: "Morfologicamente, o pulmão direito é composto por três lobos e duas fissuras [23, 29].",
     theme: "Tórax"
@@ -214,7 +214,7 @@ const toraxQuestions: Question[] = [
   {
     id: "torax-25",
     question: "A maior incidência de aspiração de corpos estranhos para o brônquio principal direito deve-se a quais características anatômicas desta estrutura?",
-    options: ["Por ele ser mais longo e horizontal.", "Por ele ser mais curto e verticalizado [6, 23, 33].", "Devido à presença da carina desviada para a direita.", "Porque o brônquio esquerdo é mais calibroso."],
+    options: ["Maior comprimento e disposição horizontal.", "Menor comprimento e maior verticalidade [6, 23, 33].", "Devido à presença da carina desviada para a direita.", "Porque o brônquio esquerdo é mais calibroso."],
     correctAnswer: 1,
     explanation: "O brônquio principal direito apresenta maior verticalidade e menor comprimento que o esquerdo [6, 23, 33].",
     theme: "Tórax"
