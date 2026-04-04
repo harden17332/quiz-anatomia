@@ -1027,6 +1027,470 @@ export const quizzes = [
     ]
   },
   {
+    id: "faringe",
+    title: "Faringe",
+    description: "Anatomia da faringe (naso, oro e laringofaringe)",
+    emoji: "🗣️",
+    questions: [
+      {
+        id: "faringe-1",
+        question: "Um paciente de 12 anos apresenta respiração ruidosa e roncos. O exame de imagem revela hipertrofia de tecido linfoide no teto da nasofaringe. Sobre essa região, assinale a alternativa INCORRETA:",
+        options: ['É limitada superiormente pelo osso esfenoide e a parte basilar do osso occipital [2, 3].', 'A tonsila faríngea, quando aumentada, é popularmente chamada de adenoide [3, 4].', 'Sua abertura anterior se comunica com a cavidade oral através do istmo das fauces [3, 5].', 'O óstio faríngeo da tuba auditiva localiza-se na sua parede lateral [6, 7].', 'É também denominada epifaringe ou faringe superior [4].'],
+        correctAnswer: 2,
+        explanation: "A abertura anterior da nasofaringe se comunica com a cavidade nasal através das coanas, não com a cavidade oral.",
+        theme: "Faringe"
+      },
+      {
+        id: "faringe-2",
+        question: "Durante a passagem de uma sonda nasogástrica, o médico deve conhecer os limites da orofaringe. Assinale a alternativa CORRETA sobre essa divisão:",
+        options: ['Seu limite superior é definido pela margem inferior da cartilagem cricoide [6].', 'O istmo das fauces representa sua comunicação anterior com a cavidade oral [2, 6].', 'Localiza-se posteriormente à cavidade nasal e acima do palato mole [3].', 'Sua parede posterior está relacionada ao nível das vértebras C4 a C6 [8].', 'Não possui relação anatômica com as tonsilas palatinas [2, 6].'],
+        correctAnswer: 1,
+        explanation: "O istmo das fauces é a comunicação entre a cavidade oral e a orofaringe.",
+        theme: "Faringe"
+      },
+      {
+        id: "faringe-3",
+        question: "Sobre os músculos constritores da faringe, responsáveis pelo movimento peristáltico durante a deglutição, assinale a alternativa INCORRETA:",
+        options: ['São três músculos intrínsecos de disposição circular [8, 9].', 'O músculo constritor superior ajuda a formar a parede lateral da nasofaringe [7, 9].', 'O músculo constritor médio insere-se no corno maior do osso hioide [8, 10].', 'Todos os três constritores são inervados exclusivamente pelo nervo glossofaríngeo [2, 11].', 'Eles se sobrepõem como telhas em um telhado, sendo o inferior o mais superficial [9, 10].'],
+        correctAnswer: 3,
+        explanation: "Os constritores são inervados pelo plexo faríngeo (nervo vago), exceto o estilofaríngeo (IX).",
+        theme: "Faringe"
+      },
+      {
+        id: "faringe-4",
+        question: "Um objeto pontiagudo (espinha de peixe) fica retido em uma depressão na laringofaringe. Qual estrutura anatômica é o local mais provável desse aprisionamento?",
+        options: ['Recesso faríngeo.', 'Fossa tonsilar.', 'Recesso piriforme.', 'Toro do levantador.', 'Sáculo da laringe.'],
+        correctAnswer: 2,
+        explanation: "O recesso piriforme é uma depressão lateral ao ádito da laringe onde corpos estranhos frequentemente se alojam [2, 8, 9].",
+        theme: "Faringe"
+      },
+      {
+        id: "faringe-5",
+        question: "Assinale a alternativa INCORRETA sobre a vascularização arterial da faringe:",
+        options: ['A faringe superior é irrigada por ramos da artéria carótida externa [10, 11].', 'A artéria faríngea ascendente é um dos principais suprimentos da parte superior [2, 11].', 'A artéria tireóidea superior fornece ramos para a faringe inferior [2, 10].', 'A artéria subclávia é a origem direta de todos os vasos que irrigam a nasofaringe [10, 11].', 'Ramos das artérias facial, lingual e maxilar também participam da irrigação superior [10, 11].'],
+        correctAnswer: 3,
+        explanation: "A irrigação vem da carótida externa (faríngea ascendente, etc.) e carótida interna (caroticotimpânicas).",
+        theme: "Faringe"
+      },
+      {
+        id: "faringe-6",
+        question: "O Anel de Waldeyer é uma barreira defensiva de tecido linfoide. Sobre seus componentes, assinale a alternativa INCORRETA:",
+        options: ['A tonsila faríngea situa-se posterosuperiormente [1, 5].', 'As tonsilas palatinas localizam-se lateralmente na orofaringe [1, 12].', 'As tonsilas tubárias estão localizadas próximas ao óstio da tuba auditiva [1, 7].', 'A tonsila lingual compõe a parte anteroinferior na raiz da língua [1, 5].', 'Todas as tonsilas do anel estão localizadas exclusivamente na laringofaringe [9, 12].'],
+        correctAnswer: 4,
+        explanation: "As tonsilas estão distribuídas na nasofaringe, orofaringe e raiz da língua.",
+        theme: "Faringe"
+      },
+      {
+        id: "faringe-7",
+        question: "Um paciente apresenta paralisia do músculo estilofaríngeo. Qual nervo craniano o médico deve suspeitar que esteja lesionado?",
+        options: ['Nervo Vago (X).', 'Nervo Glossofaríngeo (IX).', 'Nervo Trigêmeo (V).', 'Nervo Hipoglosso (XII).', 'Nervo Facial (VII).'],
+        correctAnswer: 1,
+        explanation: "O estilofaríngeo é o único músculo da faringe inervado pelo nervo glossofaríngeo (IX); os demais são pelo vago (X) [2, 13, 14].",
+        theme: "Faringe"
+      },
+      {
+        id: "faringe-8",
+        question: "Qual das seguintes estruturas NÃO faz parte da parede lateral da nasofaringe?",
+        options: ['Toro tubário.', 'Prega salpingofaríngea.', 'Toro do levantador.', 'Prega vocal.', 'Recesso faríngeo.'],
+        correctAnswer: 3,
+        explanation: "A prega vocal localiza-se na laringe, não na parede lateral da nasofaringe [7, 15].",
+        theme: "Faringe"
+      },
+      {
+        id: "faringe-9",
+        question: "Assinale a alternativa que descreve CORRETAMENTE a inervação sensitiva da faringe:",
+        options: ['A nasofaringe é suprida pelo ramo maxilar (V2) do nervo trigêmeo [2, 14].', 'A orofaringe é suprida pelo nervo vago [11, 14].', 'A laringofaringe é inervada pelo nervo glossofaríngeo [10, 11].', 'O nervo facial é o principal responsável pela sensibilidade da mucosa faríngea [14].', 'Toda a mucosa da faringe é inervada exclusivamente pelo plexo cervical [14].'],
+        correctAnswer: 0,
+        explanation: "A nasofaringe é inervada pelo nervo maxilar (V2).",
+        theme: "Faringe"
+      },
+      {
+        id: "faringe-10",
+        question: "Sobre a laringofaringe (hipofaringe), assinale a alternativa CORRETA:",
+        options: ['Estende-se da base do crânio até o palato mole [3].', 'Comunica-se anteriormente com o ádito da laringe [2, 9].', 'Situa-se ao nível das vértebras C1 e C2 [2].', 'É irrigada principalmente pela artéria maxilar [11].', 'Termina na margem superior da cartilagem tireoide [8].'],
+        correctAnswer: 1,
+        explanation: "A laringofaringe comunica-se anteriormente com o ádito da laringe.",
+        theme: "Faringe"
+      },
+      {
+        id: "faringe-11",
+        question: "Qual músculo longitudinal da faringe tem origem na tuba auditiva?",
+        options: ['Estilofaríngeo.', 'Salpingofaríngeo.', 'Palatofaríngeo.', 'Constritor médio.', 'Uvular.'],
+        correctAnswer: 1,
+        explanation: "O músculo salpingofaríngeo origina-se na parte cartilaginosa da tuba auditiva [8, 10].",
+        theme: "Faringe"
+      },
+      {
+        id: "faringe-12",
+        question: "A drenagem venosa da faringe é realizada pelo plexo venoso faríngeo. Para qual vaso esse plexo drena predominantemente?",
+        options: ['Veia Subclávia.', 'Veia Jugular Interna.', 'Veia Braquiocefálica Esquerda.', 'Veia Tireóidea Inferior.', 'Seio Sagital Superior.'],
+        correctAnswer: 1,
+        explanation: "O plexo venoso faríngeo drena diretamente para a veia jugular interna [10, 11].",
+        theme: "Faringe"
+      },
+      {
+        id: "faringe-13",
+        question: "Assinale a alternativa INCORRETA sobre o osso hioide:",
+        options: ['Localiza-se ao nível da vértebra C3 [15, 16].', 'Não se articula diretamente com outros ossos [16, 17].', 'Possui um corpo, cornos maiores e cornos menores [16, 17].', 'Participa da mastigação, fala e deglutição [15, 17].', 'Faz parte do esqueleto cartilaginoso da laringofaringe [17].'],
+        correctAnswer: 4,
+        explanation: "O hioide é um osso, não faz parte do esqueleto cartilaginoso da laringe.",
+        theme: "Faringe"
+      },
+      {
+        id: "faringe-14",
+        question: "Qual estrutura separa a nasofaringe da orofaringe durante a deglutição?",
+        options: ['Epiglote.', 'Palato mole.', 'Úvula.', 'Cartilagem cricoide.', 'Coana.'],
+        correctAnswer: 1,
+        explanation: "O palato mole eleva-se para fechar o istmo faríngeo, separando as duas partes [3, 5].",
+        theme: "Faringe"
+      },
+      {
+        id: "faringe-15",
+        question: "O \"istmo das fauces\" é delimitado por quais estruturas?",
+        options: ['Coanas e tonsila faríngea.', 'Ádito da laringe e prega ariepiglótica.', 'Úvula, arco palatoglosso e raiz da língua.', 'Toro tubário e recesso faríngeo.', 'Epiglote e cartilagem tireoide.'],
+        correctAnswer: 2,
+        explanation: "Esses são os limites anatômicos da abertura anterior da orofaringe [2, 5].",
+        theme: "Faringe"
+      },
+      {
+        id: "faringe-16",
+        question: "Sobre os músculos extrínsecos da faringe, assinale a alternativa CORRETA:",
+        options: ['Atuam como constritores do lúmen faríngeo [8].', 'São eles: o estilofaríngeo, salpingofaríngeo e palatofaríngeo [2, 8].', 'Todos possuem fibras circulares [8].', 'São inervados apenas pelo nervo hipoglosso [13].', 'Não participam do processo de levantamento da faringe [8].'],
+        correctAnswer: 1,
+        explanation: "Os músculos extrínsecos são o estilofaríngeo, salpingofaríngeo e palatofaríngeo.",
+        theme: "Faringe"
+      },
+      {
+        id: "faringe-17",
+        question: "Qual é o comprimento médio aproximado do tubo musculomembranoso da faringe?",
+        options: ['5 a 8 cm.', '12 a 14 cm.', '20 a 25 cm.', '2 a 4 cm.', '30 cm.'],
+        correctAnswer: 1,
+        explanation: "A faringe mede entre 12 e 14 cm de comprimento [3, 18].",
+        theme: "Faringe"
+      },
+      {
+        id: "faringe-18",
+        question: "O limite inferior da faringe, onde se torna contínua com o esôfago, corresponde a qual nível vertebral?",
+        options: ['C2.', 'C4.', 'C6.', 'T2.', 'T4.'],
+        correctAnswer: 2,
+        explanation: "A transição ocorre na margem inferior da cartilagem cricoide, ao nível de C6 [2, 9].",
+        theme: "Faringe"
+      },
+      {
+        id: "faringe-19",
+        question: "A prega salpingopalatina localiza-se na parede lateral de qual região?",
+        options: ['Orofaringe.', 'Laringofaringe.', 'Nasofaringe.', 'Cavidade infraglótica.', 'Vestíbulo da boca.'],
+        correctAnswer: 2,
+        explanation: "Faz parte da complexa parede lateral da nasofaringe [2, 6].",
+        theme: "Faringe"
+      },
+      {
+        id: "faringe-20",
+        question: "Durante a deglutição, o músculo que traciona a faringe superior e lateralmente, facilitando a passagem do bolo alimentar, é o:",
+        options: ['Constritor superior.', 'Milo-hióideo.', 'Estilofaríngeo.', 'Vocal.', 'Cricoaritenóideo lateral.'],
+        correctAnswer: 2,
+        explanation: "Os músculos extrínsecos/longitudinais (como o estilofaríngeo) elevam a faringe [8, 18].",
+        theme: "Faringe"
+      }
+    ]
+  },
+  {
+    id: "laringe",
+    title: "Laringe",
+    description: "Anatomia da laringe e fonação",
+    emoji: "🎶",
+    questions: [
+      {
+        id: "laringe-21",
+        question: "A laringe é o órgão da fonação e atua como um esfíncter das vias aéreas. Sobre sua extensão, assinale a alternativa CORRETA:",
+        options: ['Estende-se da base do crânio até a vértebra C3 [17].', 'Vai da margem superior da epiglote até a margem inferior da cartilagem cricoide [15, 17].', 'Localiza-se entre as vértebras T1 e T4 [19].', 'Inicia-se nas coanas e termina no istmo das fauces [3, 6].', 'Está situada posteriormente ao esôfago [17].'],
+        correctAnswer: 1,
+        explanation: "A laringe vai da epiglote até a margem inferior da cricoide (C6).",
+        theme: "Laringe"
+      },
+      {
+        id: "laringe-22",
+        question: "\"O protetor das vias aéreas\" – Esta cartilagem em formato de folha fecha o ádito da laringe na deglutição. Trata-se da:",
+        options: ['Cartilagem Tireoide.', 'Cartilagem Cricoide.', 'Cartilagem Epiglote.', 'Cartilagem Aritenoide.', 'Cartilagem Corniculada.'],
+        correctAnswer: 2,
+        explanation: "A epiglote atua fechando a entrada da laringe para evitar aspiração [17, 20].",
+        theme: "Laringe"
+      },
+      {
+        id: "laringe-23",
+        question: "Um cirurgião realiza uma tireoidectomia e lesiona acidentalmente o NERVO LARÍNGEO EXTERNO. Qual função será prejudicada?",
+        options: ['Sensibilidade da mucosa acima das pregas vocais [15, 21].', 'Abdução (abertura) das pregas vocais pelo músculo cricoaritenóideo posterior [22].', 'Tensão das pregas vocais pelo músculo cricotireóideo, afetando sons agudos [15, 21, 22].', 'Sensibilidade de toda a laringofaringe [14].', 'Movimentação da epiglote pelo músculo tireoepiglótico [23].'],
+        correctAnswer: 2,
+        explanation: "O nervo laríngeo externo inerva o músculo cricotireóideo, responsável pela tensão das pregas vocais.",
+        theme: "Laringe"
+      },
+      {
+        id: "laringe-24",
+        question: "Sobre a cartilagem tireoide, assinale a alternativa INCORRETA:",
+        options: ['Possui formato de escudo [17, 24].', 'É formada por duas lâminas quadriláteras [24, 25].', 'A fusão dos seus 2/3 inferiores forma a proeminência laríngea (pomo de Adão) [24, 25].', 'Articula-se inferiormente com o osso hioide por uma articulação sinovial [24].', 'Possui cornos superiores e inferiores em sua borda posterior [24, 25].'],
+        correctAnswer: 3,
+        explanation: "A cartilagem tireoide articula-se com a cricoide, não diretamente com o hioide por articulação sinovial (é ligada por membrana).",
+        theme: "Laringe"
+      },
+      {
+        id: "laringe-25",
+        question: "Qual cartilagem da laringe possui o formato de um \"anel de sinete\" e serve de base para o esqueleto laríngeo?",
+        options: ['Epiglote.', 'Tireoide.', 'Cricoide.', 'Aritenoide.', 'Tritícea.'],
+        correctAnswer: 2,
+        explanation: "A cricoide é caracterizada pelo arco anterior estreito e lâmina posterior larga [26, 27].",
+        theme: "Laringe"
+      },
+      {
+        id: "laringe-26",
+        question: "As cartilagens aritenoides são fundamentais para a fonação. Nelas, o ligamento vocal se origina de qual estrutura específica?",
+        options: ['Ápice da cartilagem.', 'Fóvea triangular (superior) [28, 29].', 'Fóvea oblonga (inferior) [28, 29].', 'Processo muscular lateral [28].', 'Margem superior da epiglote [20].'],
+        correctAnswer: 2,
+        explanation: "O ligamento vocal se insere na fóvea oblonga da aritenoide.",
+        theme: "Laringe"
+      },
+      {
+        id: "laringe-27",
+        question: "Um paciente apresenta rouquidão persistente. O exame mostra paralisia do ÚNICO músculo capaz de abrir a rima glótica (abduzir as pregas vocais). Qual é esse músculo?",
+        options: ['Cricoaritenóideo lateral [22].', 'Cricoaritenóideo posterior [21, 22].', 'Cricotireóideo [22].', 'Tireoaritenóideo [22].', 'Interaritenóideo transverso [23].'],
+        correctAnswer: 1,
+        explanation: "O cricoaritenóideo posterior é conhecido como o \"músculo da respiração\" por ser o único abdutor [22, 30].",
+        theme: "Laringe"
+      },
+      {
+        id: "laringe-28",
+        question: "Sobre a vascularização da laringe, assinale a alternativa CORRETA:",
+        options: ['A artéria laríngea superior é ramo da artéria tireóidea inferior [15, 31].', 'A artéria laríngea inferior deriva do tronco tireocervical, via artéria tireóidea inferior [15, 31, 32].', 'Toda a drenagem venosa da laringe ocorre para a veia subclávia direita [31, 32].', 'A artéria tireóidea ima é o principal suprimento da laringe superior [33].', 'Não existem vasos linfáticos na região laríngea [19].'],
+        correctAnswer: 1,
+        explanation: "A artéria laríngea inferior é ramo da tireóidea inferior.",
+        theme: "Laringe"
+      },
+      {
+        id: "laringe-29",
+        question: "O nervo laríngeo interno perfura qual membrana para prover sensibilidade à laringe superior?",
+        options: ['Membrana cricovocal (cone elástico) [34].', 'Membrana tireo-hióidea [15, 24, 26].', 'Membrana quadrangular [34].', 'Membrana cricotireóidea [26].', 'Fáscia bucofaríngea [6].'],
+        correctAnswer: 1,
+        explanation: "A membrana tireo-hióidea possui uma abertura para o nervo laríngeo interno e a artéria laríngea superior [15, 24, 26].",
+        theme: "Laringe"
+      },
+      {
+        id: "laringe-30",
+        question: "Qual compartimento da cavidade laríngea situa-se entre as pregas vestibulares e as pregas vocais?",
+        options: ['Vestíbulo laríngeo [32].', 'Cavidade infraglótica [32].', 'Ventrículo laríngeo [32].', 'Adito da laringe [32].', 'Rima glótica [32].'],
+        correctAnswer: 2,
+        explanation: "O ventrículo é o espaço médio entre as pregas superiores (vestibulares) e inferiores (vocais) [32].",
+        theme: "Laringe"
+      },
+      {
+        id: "laringe-31",
+        question: "Sobre a inervação sensitiva da laringe, assinale a alternativa INCORRETA:",
+        options: ['Acima das pregas vocais, a sensibilidade é dada pelo nervo laríngeo interno [15, 21, 31].', 'Abaixo das pregas vocais, a sensibilidade é dada pelo nervo laríngeo recorrente [15, 21, 31].', 'O nervo glossofaríngeo é o principal responsável pela tosse laríngea [14].', 'O nervo vago é a origem comum de ambos os nervos laríngeos [21, 31].', 'A lesão do nervo laríngeo interno pode abolir o reflexo de proteção da laringe [21].'],
+        correctAnswer: 2,
+        explanation: "O reflexo da tosse é mediado pelo nervo vago (laríngeo superior e recorrente).",
+        theme: "Laringe"
+      },
+      {
+        id: "laringe-32",
+        question: "As cartilagens corniculadas articulam-se com qual parte da cartilagem aritenoide?",
+        options: ['Base.', 'Ápice.', 'Processo vocal.', 'Face medial.', 'Fóvea oblonga.'],
+        correctAnswer: 1,
+        explanation: "Elas situam-se sobre os ápices das aritenoides [20, 29].",
+        theme: "Laringe"
+      },
+      {
+        id: "laringe-33",
+        question: "Qual músculo relaxa e encurta a prega vocal, produzindo sons mais graves?",
+        options: ['Cricotireóideo [22].', 'Tireoaritenóideo (e músculo vocal) [22, 30].', 'Ariepiglótico [23].', 'Constritor superior [8].', 'Estilofaríngeo [10].'],
+        correctAnswer: 1,
+        explanation: "Esses músculos agem reduzindo a tensão das pregas vocais [22].",
+        theme: "Laringe"
+      },
+      {
+        id: "laringe-34",
+        question: "A margem livre inferior da \"membrana quadrangular\" espessa-se para formar qual estrutura?",
+        options: ['Ligamento vocal [34].', 'Ligamento vestibular [28, 34].', 'Ligamento cricotireóideo mediano [27].', 'Prega salpingofaríngea [7].', 'Cone elástico [32].'],
+        correctAnswer: 1,
+        explanation: "A margem inferior da membrana quadrangular é o ligamento vestibular (prega vocal falsa) [28, 34, 35].",
+        theme: "Laringe"
+      },
+      {
+        id: "laringe-35",
+        question: "A \"Rima Glótica\" ou Glote é definida como:",
+        options: ['O espaço entre a epiglote e a língua [12].', 'A abertura superior da laringe (ádito) [32].', 'A fissura entre as pregas vocais e as cartilagens aritenoides [23, 32].', 'O canal entre a laringe e o esôfago [9].', 'O espaço dentro do sáculo laríngeo [32].'],
+        correctAnswer: 2,
+        explanation: "É a abertura variável entre as estruturas da fonação [23, 32].",
+        theme: "Laringe"
+      },
+      {
+        id: "laringe-36",
+        question: "Qual estrutura é formada pelo espessamento mediano da membrana cricotireóidea?",
+        options: ['Ligamento tireo-hióideo lateral [24].', 'Ligamento cricotireóideo mediano [27, 28].', 'Ligamento vocal [28].', 'Prega ariepiglótica [23].', 'Epiglote [29].'],
+        correctAnswer: 1,
+        explanation: "Local onde se realiza o acesso de urgência à via aérea [27, 28].",
+        theme: "Laringe"
+      },
+      {
+        id: "laringe-37",
+        question: "Onde se localizam as cartilagens cuneiformes?",
+        options: ['No interior do ligamento vocal [28].', 'No ápice da cartilagem cricoide [27].', 'Nas pregas ariepiglóticas, acima das aritenoides [20, 34].', 'No istmo da glândula tireoide [36].', 'Fundidas à cartilagem tireoide [25].'],
+        correctAnswer: 2,
+        explanation: "São nódulos em forma de baqueta nas pregas ariepiglóticas [20, 34].",
+        theme: "Laringe"
+      },
+      {
+        id: "laringe-38",
+        question: "Assinale a alternativa CORRETA sobre o músculo cricotireóideo:",
+        options: ['É inervado pelo nervo laríngeo recorrente [21].', 'É o único músculo intrínseco inervado pelo nervo laríngeo externo [15, 21, 31].', 'Sua função principal é abrir a glote para a respiração [22].', 'Origina-se na cartilagem epiglote [20].', 'Relaxa as pregas vocais para a voz grave [22].'],
+        correctAnswer: 1,
+        explanation: "Ele é a única exceção à inervação motora do recorrente na laringe [21, 31].",
+        theme: "Laringe"
+      },
+      {
+        id: "laringe-39",
+        question: "Pequenos nódulos cartilaginosos encontrados nos ligamentos tireo-hióideos laterais:",
+        options: ['Corniculadas.', 'Cuneiformes.', 'Tritíceas.', 'Aritenoides.', 'Tireoides.'],
+        correctAnswer: 2,
+        explanation: "As cartilagens tritíceas situam-se nos ligamentos laterais da membrana tireo-hióidea [15, 26, 27].",
+        theme: "Laringe"
+      },
+      {
+        id: "laringe-40",
+        question: "Qual músculo fecha o ádito da laringe para evitar que alimento entre na via aérea?",
+        options: ['Tireoepiglótico [23, 30].', 'Ariepiglótico [23, 30].', 'Vocal [22].', 'Estilofaríngeo [10].', 'Cricotireóideo [22].'],
+        correctAnswer: 1,
+        explanation: "O ariepiglótico fecha o ádito; o tireoepiglótico o abre [23, 30].",
+        theme: "Laringe"
+      }
+    ]
+  },
+  {
+    id: "tireoide",
+    title: "Tireoide",
+    description: "Glândulas tireoide e paratireoides",
+    emoji: "🦋",
+    questions: [
+      {
+        id: "tireoide-41",
+        question: "Sobre a localização e morfologia da glândula tireoide, assinale a alternativa INCORRETA:",
+        options: ['Situa-se na região anterior do pescoço [19, 37].', 'Localiza-se ao nível das vértebras C5 a T1 [19, 36, 37].', 'Consiste em dois lobos unidos por um istmo mediano [19, 36].', 'O istmo localiza-se tipicamente anterior à cartilagem tireoide [19, 37].', 'Possui uma cápsula fibrosa que a envolve [19].'],
+        correctAnswer: 3,
+        explanation: "O istmo localiza-se anterior ao 2º e 3º anéis traqueais, abaixo da cartilagem tireoide.",
+        theme: "Tireoide"
+      },
+      {
+        id: "tireoide-42",
+        question: "\"O maestro da orquestra endócrina pode ter um componente extra em 50% dos casos\". Essa variação anatômica da tireoide é o:",
+        options: ['Lobo Cônico.', 'Lobo Piramidal.', 'Lobo Ectópico.', 'Istmo Acessório.', 'Lobo de Waldeyer.'],
+        correctAnswer: 1,
+        explanation: "O lobo piramidal projeta-se superiormente a partir do istmo [19, 37].",
+        theme: "Tireoide"
+      },
+      {
+        id: "tireoide-43",
+        question: "As superfícies laterais dos lobos da tireoide são recobertas por qual músculo?",
+        options: ['Esternocleidomastoideo.', 'Esternotireóideo.', 'Platisma.', 'Escaleno anterior.', 'Digástrico.'],
+        correctAnswer: 1,
+        explanation: "Os lobos são cobertos pelos músculos esternotireóideos [36, 37].",
+        theme: "Tireoide"
+      },
+      {
+        id: "tireoide-44",
+        question: "Assinale a alternativa que descreve CORRETAMENTE o suprimento arterial da tireoide:",
+        options: ['A artéria tireóidea superior deriva da artéria subclávia [19].', 'A artéria tireóidea inferior origina-se da artéria carótida externa [19].', 'A artéria tireóidea ima, quando presente, pode vir do tronco braquiocefálico ou arco aórtico [19, 33, 36].', 'O tronco tireocervical irriga exclusivamente o lobo piramidal [19].', 'A artéria carótida comum não fornece ramos para a glândula [36].'],
+        correctAnswer: 2,
+        explanation: "A artéria tireóidea ima é uma variação que pode vir do tronco braquiocefálico ou arco aórtico.",
+        theme: "Tireoide"
+      },
+      {
+        id: "tireoide-45",
+        question: "Sobre a drenagem venosa da glândula tireoide, assinale a alternativa INCORRETA:",
+        options: ['As veias tireóideas superiores drenam para a jugular interna [31, 33, 36].', 'As veias tireóideas médias drenam para a jugular interna [31, 33, 36].', 'As veias tireóideas inferiores drenam para a veia jugular externa [1, 31, 33].', 'As veias tireóideas inferiores drenam para as veias braquiocefálicas [31, 36, 38].', 'Existe um plexo venoso na face anterior da glândula [31].'],
+        correctAnswer: 2,
+        explanation: "As veias tireóideas inferiores drenam para as veias braquiocefálicas.",
+        theme: "Tireoide"
+      },
+      {
+        id: "tireoide-46",
+        question: "Um paciente apresenta baixo nível de cálcio após cirurgia cervical. O médico suspeita de remoção acidental das glândulas paratireoides. Sobre elas, é INCORRETO afirmar:",
+        options: ['São pequenas, marrom-amareladas e lentiformes [19, 38].', 'Tipicamente, existem duas de cada lado [19, 36].', 'Localizam-se entre a superfície posterior da tireoide e sua cápsula [19, 36, 38].', 'Localizam-se anteriormente à cartilagem tireoide [38].', 'Estão medialmente anexadas à cápsula da glândula tireoide [19, 38].'],
+        correctAnswer: 3,
+        explanation: "As paratireoides localizam-se na face posterior dos lobos da tireoide.",
+        theme: "Tireoide"
+      },
+      {
+        id: "tireoide-47",
+        question: "A artéria tireóidea inferior é ramo de qual estrutura?",
+        options: ['Artéria Carótida Externa.', 'Tronco Tireocervical (da artéria subclávia).', 'Arco Aórtico diretamente.', 'Artéria Laríngea Superior.', 'Artéria Maxilar.'],
+        correctAnswer: 1,
+        explanation: "Deriva do tronco tireocervical, ramo da subclávia [31, 32, 36].",
+        theme: "Tireoide"
+      },
+      {
+        id: "tireoide-48",
+        question: "O istmo da tireoide situa-se anterior a quais estruturas traqueais?",
+        options: ['1º e 2º anéis traqueais.', '2º e 3º anéis traqueais.', '4º e 5º anéis traqueais.', 'Cartilagem cricoide.', 'Brônquios principais.'],
+        correctAnswer: 1,
+        explanation: "Essa é a posição clássica do istmo [37].",
+        theme: "Tireoide"
+      },
+      {
+        id: "tireoide-49",
+        question: "A artéria laríngea superior, que irriga a parte interna da laringe, é ramo de qual vaso?",
+        options: ['Artéria Tireóidea Inferior.', 'Artéria Tireóidea Superior.', 'Artéria Carótida Comum.', 'Artéria Facial.', 'Artéria Faríngea Ascendente.'],
+        correctAnswer: 1,
+        explanation: "A laríngea superior nasce da tireóidea superior [15, 23, 32].",
+        theme: "Tireoide"
+      },
+      {
+        id: "tireoide-50",
+        question: "Qual a relação íntima do nervo laríngeo recorrente com a glândula tireoide?",
+        options: ['Passa anteriormente ao istmo [31].', 'Ascende no sulco traqueoesofágico, posterior aos lobos da glândula [31, 39].', 'Perfura o lobo piramidal [19].', 'Origina-se dentro da cápsula da tireoide [31].', 'Cruza a artéria carótida interna ao nível de T1 [31].'],
+        correctAnswer: 1,
+        explanation: "Ascende no sulco traqueoesofágico, posterior aos lobos da glândula [31, 39].",
+        theme: "Tireoide"
+      },
+      {
+        id: "tireoide-51",
+        question: "As bases dos lobos da tireoide podem se estender inferiormente até qual nível?",
+        options: ['1º anel traqueal.', '2º anel traqueal.', '4º ou 5º anéis traqueais.', 'Manúbrio do esterno.', 'Bifurcação da traqueia.'],
+        correctAnswer: 2,
+        explanation: "Os lobos são cônicos e suas bases atingem o nível do 4º ou 5º anel [37].",
+        theme: "Tireoide"
+      },
+      {
+        id: "tireoide-52",
+        question: "Assinale a alternativa que contém apenas veias que drenam para a veia JUGULAR INTERNA:",
+        options: ['Tireóidea Superior e Tireóidea Inferior.', 'Tireóidea Superior e Tireóidea Média.', 'Tireóidea Média e Tireóidea Ima.', 'Tireóidea Inferior e Braquiocefálica.', 'Laríngea Inferior e Subclávia.'],
+        correctAnswer: 1,
+        explanation: "A superior e a média são tributárias da jugular interna; a inferior vai para a braquiocefálica [31-33, 36].",
+        theme: "Tireoide"
+      },
+      {
+        id: "tireoide-53",
+        question: "A glândula tireoide está medialmente anexada a qual estrutura laríngea?",
+        options: ['Epiglote.', 'Cartilagem Cricoide.', 'Cartilagem Aritenoide.', 'Membrana tireo-hióidea.', 'Osso Hioide.'],
+        correctAnswer: 1,
+        explanation: "As superfícies mediais dos lobos fixam-se à cricoide [36, 37].",
+        theme: "Tireoide"
+      },
+      {
+        id: "tireoide-54",
+        question: "Sobre a artéria tireóidea ima, é CORRETO afirmar:",
+        options: ['Está presente em 100% da população.', 'É um ramo constante da artéria carótida externa.', 'Pode originar-se do tronco braquiocefálico ou arco aórtico.', 'Irriga apenas as glândulas paratireoides superiores.', 'Substitui a artéria tireóidea superior em todos os casos.'],
+        correctAnswer: 2,
+        explanation: "É uma variação arterial importante [19, 33, 36].",
+        theme: "Tireoide"
+      },
+      {
+        id: "tireoide-55",
+        question: "Assinale a alternativa INCORRETA sobre a glândula tireoide:",
+        options: ['É uma glândula endócrina.', 'Produz os hormônios T3 e T4 [19].', 'Sua drenagem linfática é inexistente [19].', 'Situa-se profundamente aos músculos esternotireóideos [36, 37].', 'O lobo piramidal, quando presente, projeta-se para cima a partir do istmo [19, 37].'],
+        correctAnswer: 2,
+        explanation: "Como qualquer órgão, possui drenagem linfática (embora não detalhada nos slides curtos, a afirmação de que é inexistente é anatomicamente falsa) [19].",
+        theme: "Tireoide"
+      }
+    ]
+  },
+  {
     id: "olho",
     title: "Olho",
     description: "Anatomia do olho e estruturas relacionadas",
