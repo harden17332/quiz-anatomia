@@ -46,7 +46,9 @@ export default function Home() {
                 <div className="flex items-start justify-between mb-3">
                   <span className="text-5xl">{quiz.emoji}</span>
                   <span className="inline-block bg-slate-700 text-slate-200 text-xs font-semibold px-3 py-1 rounded-full">
-                    {quiz.questions.length} questões
+                    {quiz.blocks && quiz.blocks.length > 0 
+                      ? quiz.blocks[0].questions.length 
+                      : quiz.questions.length} questões
                   </span>
                 </div>
                 <CardTitle className="text-xl text-white">
