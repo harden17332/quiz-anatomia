@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { quizzes, Question } from "@/lib/quizData";
 import { ChevronLeft } from "lucide-react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useLocation, useRoute } from "wouter";
 
 export default function Quiz() {
@@ -11,10 +11,18 @@ export default function Quiz() {
   const [answers, setAnswers] = useState<(number | null)[]>([]);
   const [showResults, setShowResults] = useState(false);
   const [expandedExplanation, setExpandedExplanation] = useState<number | null>(null);
+  const [selectedBlockId, setSelectedBlockId] = useState<string | null>(null);
 
   const themeId = params?.themeId as string;
   const quiz = quizzes.find((q) => q.id === themeId);
-  const questions = quiz?.questions || [];
+
+  // Resetar estado ao mudar de tema
+  useEffect(() => {
+    setAnswers([]);
+    setShowResults(false);
+    setExpandedExplanation(null);
+    setSelectedBlockId(null);
+  }, [themeId]);
 
   if (!match || !quiz) {
     return (
@@ -31,10 +39,17 @@ export default function Quiz() {
     );
   }
 
-  // Inicializar respostas
-  if (answers.length === 0) {
-    setAnswers(new Array(questions.length).fill(null));
-  }
+  // Determinar quais questões mostrar
+  const hasBlocks = quiz.blocks && quiz.blocks.length > 0;
+  const selectedBlock = hasBlocks ? quiz.blocks?.find(b => b.id === selectedBlockId) : null;
+  const questions = hasBlocks ? (selectedBlock?.questions || []) : quiz.questions;
+
+  // Inicializar respostas quando o bloco é selecionado ou se não houver blocos
+  useEffect(() => {
+    if (questions.length > 0 && (answers.length !== questions.length)) {
+      setAnswers(new Array(questions.length).fill(null));
+    }
+  }, [questions, answers.length]);
 
   const handleAnswer = (questionIndex: number, optionIndex: number) => {
     const newAnswers = [...answers];
@@ -53,12 +68,47 @@ export default function Quiz() {
   ).length;
 
   const percentage = Math.round((correctCount / questions.length) * 100);
-  const allAnswered = answers.every((answer) => answer !== null);
+  const allAnswered = answers.length > 0 && answers.every((answer) => answer !== null);
   const answeredCount = answers.filter((answer) => answer !== null).length;
 
   // Mostrar resultados automaticamente quando todas as questões forem respondidas
   if (allAnswered && !showResults && answers.length > 0) {
     setShowResults(true);
+  }
+
+  // Tela de seleção de bloco
+  if (hasBlocks && !selectedBlockId) {
+    return (
+      <div className="min-h-screen bg-gradient-to-br from-slate-900 to-slate-950 flex items-center justify-center">
+        <Card className="w-full max-w-md border-2 border-slate-700 bg-slate-800">
+          <CardHeader className="text-center">
+            <div className="text-4xl mb-4">{quiz.emoji}</div>
+            <CardTitle className="text-2xl text-white">{quiz.title}</CardTitle>
+            <CardDescription className="text-slate-400">
+              Escolha um bloco de questões para começar
+            </CardDescription>
+          </CardHeader>
+          <CardContent className="space-y-4">
+            {quiz.blocks?.map((block) => (
+              <Button
+                key={block.id}
+                className="w-full h-16 text-lg bg-slate-700 hover:bg-slate-600 border-slate-600"
+                onClick={() => setSelectedBlockId(block.id)}
+              >
+                {block.title} ({block.questions.length} questões)
+              </Button>
+            ))}
+            <Button
+              variant="ghost"
+              className="w-full text-slate-400 hover:text-white"
+              onClick={() => setLocation("/")}
+            >
+              Voltar para o Início
+            </Button>
+          </CardContent>
+        </Card>
+      </div>
+    );
   }
 
   return (
@@ -70,15 +120,17 @@ export default function Quiz() {
             <Button
               variant="ghost"
               className="gap-2 text-white hover:bg-slate-700"
-              onClick={() => setLocation("/")}
+              onClick={() => hasBlocks ? setSelectedBlockId(null) : setLocation("/")}
             >
               <ChevronLeft className="w-4 h-4" />
-              Voltar
+              {hasBlocks ? "Mudar Bloco" : "Voltar"}
             </Button>
             <div className="flex items-center gap-3">
               <span className="text-3xl">{quiz.emoji}</span>
               <div>
-                <h1 className="text-xl font-bold text-white">{quiz.title}</h1>
+                <h1 className="text-xl font-bold text-white">
+                  {quiz.title} {selectedBlock ? `- ${selectedBlock.title}` : ""}
+                </h1>
                 <p className="text-sm text-slate-400">{quiz.description}</p>
               </div>
             </div>
@@ -229,7 +281,7 @@ export default function Quiz() {
                 Resultados
               </CardTitle>
               <CardDescription className="text-slate-400">
-                {quiz.title}
+                {quiz.title} {selectedBlock ? `- ${selectedBlock.title}` : ""}
               </CardDescription>
             </CardHeader>
             <CardContent className="space-y-8">
@@ -274,9 +326,9 @@ export default function Quiz() {
                 <Button
                   variant="outline"
                   className="flex-1 border-slate-600 text-white hover:bg-slate-700"
-                  onClick={() => setLocation("/")}
+                  onClick={() => hasBlocks ? setSelectedBlockId(null) : setLocation("/")}
                 >
-                  Voltar para Home
+                  {hasBlocks ? "Mudar Bloco" : "Voltar para Home"}
                 </Button>
                 <Button
                   className="flex-1 bg-blue-600 hover:bg-blue-700"

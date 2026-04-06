@@ -2,87 +2,7 @@ export interface Question { id: string; question: string; options: string[]; cor
 } // Função para embaralhar array
 function shuffleArray<T>(array: T[]): T[] { const shuffled = [...array]; for (let i = shuffled.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]]; } return shuffled;
 } // QUESTÕES DE TÓRAX (40 questões)
-const toraxQuestions: Question[] = [ { id: "torax-1", question: "Em casos de neoplasias esofágicas avançadas, observa-se frequentemente um diagnóstico tardio. Do ponto de vista anatômico, isso ocorre predominantemente porque as vísceras torácicas:", options: ["Estão submetidas a uma pressão subatmosférica constante no mediastino posterior.", "São protegidas pelo arcabouço ósseo e muscular, tornando as doenças oligossintomáticas.", "Possuem pleura visceral com alta sensibilidade dolorosa, mascarando o tumor.", "Possuem o esôfago localizado no mediastino médio, área de difícil visualização."],
-    correctAnswer: 1, explanation: "A proteção óssea torna as doenças oligossintomáticas.", theme: "Tórax" },
- { id: "torax-2", question: "O mediastino é definido como o compartimento central da cavidade torácica, situado entre as duas cavidades pleurais. Qual estrutura anatômica representa o limite superior dessa região?", options: ["Cartilagem cricoide.", "Manúbrio do esterno.", "Fúrcula esternal (abertura torácica superior).", "Vértebra cervical C7."],
-    correctAnswer: 2, explanation: "O limite superior é definido pela fúrcula esternal.", theme: "Tórax" },
- { id: "torax-3", question: "O mediastino inferior é subdividido em compartimentos anterior, médio e posterior. Qual estrutura anatômica é utilizada como principal referência para essa compartimentalização?", options: ["O esôfago torácico.", "O pericárdio.", "A traqueia torácica.", "A quarta vértebra torácica (T4)."],
-    correctAnswer: 1, explanation: "O pericárdio serve como referência anatômica para a divisão do mediastino inferior.", theme: "Tórax" },
- { id: "torax-4", question: "Em exames de imagem do mediastino superior em adultos, além do timo, qual das seguintes estruturas pode ser encontrada esporadicamente nesta topografia?", options: ["Veia ázigos.", "Tronco simpático.", "Bócio mergulhante da glândula tireoide.", "Coração e pericárdio."],
-    correctAnswer: 2, explanation: "O bócio mergulhante é uma estrutura que pode ocupar o mediastino superior.", theme: "Tórax" },
- { id: "torax-5", question: "Assinale a alternativa que apresenta estruturas localizadas estritamente no compartimento do mediastino posterior:", options: ["Timo e raízes dos grandes vasos.", "Veia ázigos e ducto torácico.", "Hilos pulmonares e pericárdio.", "Traqueia torácica e nervo frênico."],
-    correctAnswer: 1, explanation: "A veia ázigos e o ducto torácico são conteúdos típicos do mediastino posterior.", theme: "Tórax" },
- { id: "torax-6", question: "No mediastino médio, os pulmões se localizam lateralmente, mas o professor menciona uma estrutura específica deste compartimento onde os pulmões \"se beijam\". Que estrutura é essa?", options: ["Carina da traqueia.", "Hilo dos pulmões.", "Pleura mediastínica.", "Grande vaso da base."],
-    correctAnswer: 1, explanation: "O hilo é onde os pulmões \"se beijam\" no mediastino médio.", theme: "Tórax" },
- { id: "torax-7", question: "Anatomicamente, o timo (ou seus remanescentes adiposos no adulto) pode ser encontrado em quais compartimentos mediastinais?", options: ["Apenas no mediastino superior.", "No superior e no inferior anterior.", "No inferior médio e posterior.", "Apenas no mediastino posterior."],
-    correctAnswer: 1, explanation: "Topograficamente, o timo situa-se nos compartimentos superior e inferior anterior.", theme: "Tórax" },
- { id: "torax-8", question: "\"tudo que está embaixo do diafragma está no abdômen\". Qual o limite posterior do mediastino que vai de T1 a T12?", options: ["Arcos costais.", "Esterno.", "Coluna vertebral torácica (coluna dorsal).", "Músculos intercostais."],
-    correctAnswer: 2, explanation: "A coluna vertebral torácica constitui o limite posterior do mediastino.", theme: "Tórax" },
- { id: "torax-9", question: "A divisão entre o mediastino superior e inferior é estabelecida pelo plano transverso do tórax. Sobre este plano, é correto afirmar:", options: ["Ocorre no nível do processo xifoide.", "É feita por uma linha imaginária no nível da 4ª vértebra torácica (T4).", "O mediastino inferior termina no nível de T10.", "O mediastino superior contém o esôfago torácico em toda sua extensão."],
-    correctAnswer: 1, explanation: "O plano transverso do tórax (ângulo de Louis) situa-se ao nível de T4.", theme: "Tórax" },
- { id: "torax-10", question: "A inervação motora do músculo diafragma é suprida por qual estrutura nervosa?", options: ["Nervo vago.", "Nervo frênico.", "Nervo intercostal.", "Nervo hipoglosso."],
-    correctAnswer: 1, explanation: "O nervo frênico fornece a inervação motora para o diafragma.", theme: "Tórax" },
- { id: "torax-11", question: "Sobre as características anatômicas da pleura visceral, é correto afirmar que:", options: ["Ela reveste a parede interna da caixa torácica.", "É sensível à dor através dos nervos intercostais.", "É aderida intrinsecamente ao parênquima pulmonar e não pode ser descolada.", "É vascularizada exclusivamente pela artéria torácica interna."],
-    correctAnswer: 2, explanation: "A pleura visceral é intimamente aderida ao parênquima pulmonar.", theme: "Tórax" },
- { id: "torax-12", question: "O espaço entre as pleuras parietal e visceral é normalmente virtual. O que caracteriza o \"pneumotórax\" ?", options: ["Acúmulo de líquido por desequilíbrio de absorção.", "Presença de sangue por trauma.", "Presença de ar, tornando o espaço real.", "Acúmulo de linfa por lesão do ducto torácico."],
-    correctAnswer: 2, explanation: "A presença de ar no espaço pleural converte a cavidade virtual em real.", theme: "Tórax" },
- { id: "torax-13", question: "No mecanismo da mecânica respiratória, a principal função fisiológica da pressão intrapleural negativa (subatmosférica) é:", options: ["Manter a pressão positiva para facilitar a expiração.", "Manter a pressão negativa (subatmosférica) para evitar o colabamento pulmonar.", "Igualar a pressão pulmonar à pressão atmosférica.", "Produzir 1000 ml de líquido pleural por minuto."],
-    correctAnswer: 1, explanation: "A pressão intrapleural negativa é essencial para prevenir o colabamento pulmonar.", theme: "Tórax" },
- { id: "torax-14", question: "Um paciente apresenta uma \"dor pleurítica\". Qual camada da pleura é sensível à dor e por quais nervos?", options: ["Pleura visceral; plexo pulmonar.", "Pleura parietal; nervos intercostais e nervo frênico.", "Pleura parietal mediastínica; apenas nervo vago.", "Ambas as pleuras são igualmente sensíveis."],
-    correctAnswer: 1, explanation: "A pleura parietal possui inervação somática, sendo a camada sensível à dor.", theme: "Tórax" },
- { id: "torax-15", question: "Em relação aos recessos pleurais, qual deles \"some\" ou desaparece especificamente em casos de pneumotórax (ar)?", options: ["Recesso costofrênico.", "Recesso cardiofrênico.", "Recesso apical.", "Recesso diafragmático."],
-    correctAnswer: 2, explanation: "No pneumotórax, o recesso apical é tipicamente o primeiro a ser obliterado.", theme: "Tórax" },
- { id: "torax-16", question: "O \"selo d'água\" é um mecanismo para drenagem torácica. Sua função principal é:", options: ["Lavar a cavidade pleural.", "Impedir a comunicação do meio exterior com a cavidade (evitar que o ar entre).", "Produzir líquido pleural artificial.", "Aumentar a pressão negativa durante a inspiração."],
-    correctAnswer: 1, explanation: "O sistema de selo d'água atua como uma válvula unidirecional que impede o refluxo de ar para o tórax.", theme: "Tórax" },
- { id: "torax-17", question: "O suprimento arterial da porção diafragmática da pleura parietal é provido predominantemente por qual vaso?", options: ["Artéria torácica interna.", "Artéria intercostal.", "Artéria brônquica.", "Artéria musculofrênica."],
-    correctAnswer: 3, explanation: "A artéria musculofrênica é responsável pela irrigação desta área.", theme: "Tórax" },
- { id: "torax-18", question: "O hemotórax define-se pelo acúmulo de sangue na cavidade pleural. Qual é a etiologia mais frequente para esta condição em serviços de emergência?", options: ["Pneumonia.", "Insuficiência cardíaca.", "Trauma (acidentes de carro, arma branca).", "Câncer de pulmão avançado."],
-    correctAnswer: 2, explanation: "O trauma torácico é a principal etiologia do hemotórax.", theme: "Tórax" },
- { id: "torax-19", question: "A irrigação arterial da pleura parietal em sua face mediastinal é derivada de qual vaso?", options: ["Artéria torácica interna.", "Artéria brônquica.", "Artéria musculofrenica.", "Artéria aorta descendente."],
-    correctAnswer: 0, explanation: "A irrigação da pleura mediastínica provém da artéria torácica interna.", theme: "Tórax" },
- { id: "torax-20", question: "Sobre os \"recessos pleurais\"?", options: ["Espaços que nunca somem, mesmo em doenças.", "Cavidades no espaço pleural que aparecem durante a expiração.", "Estruturas que fixam o pulmão ao diafragma.", "Locais de entrada dos brônquios principais."],
-    correctAnswer: 1, explanation: "Os recessos pleurais funcionam como espaços de reserva durante a mecânica respiratória.", theme: "Tórax" },
- { id: "torax-21", question: "Anatomicamente, o pulmão direito diferencia-se do esquerdo por apresentar:", options: ["Dois lobos e menor peso relativo.", "Três lobos e duas fissuras (horizontal e oblíqua).", "Incisura cardíaca e língula.", "Formato mais alongado e estreito."],
-    correctAnswer: 1, explanation: "Morfologicamente, o pulmão direito é composto por três lobos e duas fissuras.", theme: "Tórax" },
- { id: "torax-22", question: "\"Estrutura no lobo superior esquerdo que representa anatomicamente o que seria o lobo médio\". Esta definição refere-se à:", options: ["Carina.", "Incisura cardíaca.", "Língula.", "Base pulmonar."],
-    correctAnswer: 2, explanation: "A língula é a projeção do lobo superior esquerdo análoga ao lobo médio direito.", theme: "Tórax" },
- { id: "torax-23", question: "Ao analisar o hilo pulmonar direito em uma vista lateral, qual a sequência anatômica das estruturas no sentido superoinferior?", options: ["Artéria, Brônquio, Veia (ABV).", "Brônquio, Artéria, Veia (BAV).", "Veia, Artéria, Brônquio (VAB).", "Veia, Brônquio, Artéria (VBA)."],
-    correctAnswer: 1, explanation: "No hilo pulmonar direito, a disposição craniocaudal é Brônquio, Artéria e Veia.", theme: "Tórax" },
- { id: "torax-24", question: "No hilo pulmonar esquerdo, qual a organização anatômica das estruturas principais no sentido superoinferior?", options: ["Artéria, Brônquio, Veia (ABV).", "Brônquio, Artéria, Veia (BAV).", "Veia, Brônquio, Artéria.", "Artéria, Veia, Brônquio."],
-    correctAnswer: 0, explanation: "No hilo pulmonar esquerdo, a disposição craniocaudal é Artéria, Brônquio e Veia.", theme: "Tórax" },
- { id: "torax-25", question: "A maior incidência de aspiração de corpos estranhos para o brônquio principal direito deve-se a quais características anatômicas desta estrutura?", options: ["Maior comprimento e disposição horizontal.", "Menor comprimento e maior verticalidade.", "Devido à presença da carina desviada para a direita.", "Porque o brônquio esquerdo é mais calibroso."],
-    correctAnswer: 1, explanation: "O brônquio principal direito apresenta maior verticalidade e menor comprimento que o esquerdo.", theme: "Tórax" },
- { id: "torax-26", question: "A traqueia é um conduto fibrocartilaginoso que se estende longitudinalmente entre quais níveis anatômicos?", options: ["Da laringe até T12.", "Da cartilagem tireoide até os brônquios lobares.", "Da cartilagem cricoide até a carina.", "Do osso hioide até o manúbrio."],
-    correctAnswer: 2, explanation: "A traqueia estende-se da cartilagem cricoide até a sua bifurcação na carina.", theme: "Tórax" },
- { id: "torax-27", question: "Assinale a alternativa que descreve a sequência anatômica correta da árvore brônquica, da traqueia até as unidades funcionais de troca gasosa:", options: ["Traqueia → Carina → Brônquio Principal → Brônquio Lobar → Brônquio Segmentar → Bronquíolos → Alvéolos.", "Traqueia → Brônquio Segmentar → Brônquio Lobar → Bronquíolo.", "Carina → Bronquíolo Terminal → Brônquio Principal.", "Brônquio Principal → Alvéolo → Bronquíolo."],
-    correctAnswer: 0, explanation: "Representa a segmentação anatômica correta da árvore brônquica.", theme: "Tórax" },
- { id: "torax-28", question: "A hematose, ou troca gasosa alvéolo-capilar, ocorre predominantemente em quais estruturas do parênquima pulmonar?", options: ["Nos brônquios principais.", "Nos brônquios lobares.", "Nos bronquíolos terminais e alvéolos.", "Na carina."],
-    correctAnswer: 2, explanation: "A troca gasosa ocorre nas unidades alveolares e bronquíolos respiratórios.", theme: "Tórax" },
- { id: "torax-29", question: "O professor menciona a \"Asma Brônquica\". Qual o problema anatômico nesta condição?", options: ["Ruptura dos alvéolos por pressão negativa.", "Dificuldade na passagem do ar devido ao edema da árvore brônquica.", "Presença de líquido no espaço pleural.", "Fibrose das artérias pulmonares."],
-    correctAnswer: 1, explanation: "A asma brônquica caracteriza-se por inflamação e broncoconstrição reversível.", theme: "Tórax" },
- { id: "torax-30", question: "No pulmão direito, a fissura horizontal estabelece o limite anatômico entre quais lobos?", options: ["Lobo médio do inferior.", "Lobo superior do inferior.", "Lobo superior do médio.", "Não existe fissura horizontal no pulmão direito."],
-    correctAnswer: 2, explanation: "A fissura horizontal delimita os lobos superior e médio do pulmão direito.", theme: "Tórax" },
- { id: "torax-31", question: "Sobre o sistema linfático, qual a definição de \"Cisterna do Quilo\"?", options: ["Local onde desemboca o ducto torácico.", "Parte mais dilatada do sistema linfático, onde se forma o ducto torácico.", "Conjunto de linfonodos localizados no hilo pulmonar.", "Vaso que drena a linfa da face e pescoço."],
-    correctAnswer: 1, explanation: "A cisterna do quilo é a origem dilatada do ducto torácico.", theme: "Tórax" },
- { id: "torax-32", question: "O ducto torácico, principal vaso linfático do corpo, drena para o sistema venoso especificamente na seguinte topografia:", options: ["Veia cava superior.", "Veia ázigos.", "Junção das veias subclávia e jugular interna esquerdas.", "Átrio direito."],
-    correctAnswer: 2, explanation: "O ducto torácico drena para a confluência venosa jugulo-subclávia esquerda.", theme: "Tórax" },
- { id: "torax-33", question: "A veia hemiázigos, componente do sistema ázigos à esquerda, tem sua origem anatômica a partir da junção de quais vasos?", options: ["Veia renal e veia porta.", "Veia lombar ascendente e subcostal esquerda.", "Veia intercostal anterior e posterior.", "Veia cava inferior e superior."],
-    correctAnswer: 1, explanation: "Descreve os vasos que convergem para formar a veia hemiázigos.", theme: "Tórax" },
- { id: "torax-34", question: "O hiato esofágico é uma abertura no pilar direito do diafragma (nível T10). Quais estruturas atravessam este hiato concomitantemente ao esôfago?", options: ["Ducto torácico.", "Troncos vagais anterior e posterior.", "Veia ázigos.", "Artéria aorta."],
-    correctAnswer: 1, explanation: "O esôfago e os troncos vagais atravessam o diafragma ao nível de T10.", theme: "Tórax" },
- { id: "torax-35", question: "O hiato aórtico é a abertura mais posterior do diafragma (nível T12). Quais estruturas anatômicas utilizam esta passagem?", options: ["Aorta, ducto torácico e veia ázigos.", "Aorta e nervo frênico.", "Veia cava inferior e nervos vagos.", "Apenas a artéria aorta."],
-    correctAnswer: 0, explanation: "A aorta, o ducto torácico e a veia ázigos utilizam o hiato aórtico (T12).", theme: "Tórax" },
- { id: "torax-36", question: "A artéria torácica interna, utilizada frequentemente em cirurgias de revascularização do miocárdio, é ramo de qual vaso?", options: ["Artéria aorta torácica.", "Artéria subclávia.", "Artéria carótida comum.", "Artéria brônquica."],
-    correctAnswer: 1, explanation: "A artéria torácica interna é um ramo descendente da artéria subclávia.", theme: "Tórax" },
- { id: "torax-37", question: "A maioria das artérias intercostais posteriores (do 3º ao 11º espaço) origina-se diretamente de qual vaso?", options: ["Artéria torácica interna.", "Artéria musculofrênica.", "Artéria aorta descendente (torácica).", "Veia ázigos."],
-    correctAnswer: 2, explanation: "As artérias intercostais posteriores originam-se da face posterior da aorta torácica.", theme: "Tórax" },
- { id: "torax-38", question: "Qual é a terminologia oncológica correta para designar as neoplasias malignas primárias do sistema linfático?", options: ["Carcinoma.", "Linfoma.", "Sarcoma.", "Linfadenite."],
-    correctAnswer: 1, explanation: "O termo linfoma designa neoplasias malignas do tecido linfoide.", theme: "Tórax" },
- { id: "torax-39", question: "O forame da veia cava inferior é uma abertura situada no centro tendíneo do diafragma. Em qual nível vertebral esta estrutura se localiza?", options: ["T4.", "T8-T9.", "T10.", "T12."],
-    correctAnswer: 1, explanation: "O forame da veia cava inferior localiza-se ao nível de T8.", theme: "Tórax" },
- { id: "torax-40", question: "Qual vaso é responsável pela drenagem venosa da parede posterior do tórax à direita e drena diretamente para a veia cava superior?", options: ["Veia hemiázigos.", "Veia torácica interna.", "Veia ázigos.", "Veia jugular externa."],
-    correctAnswer: 2, explanation: "A veia ázigos é o principal vaso de drenagem da parede torácica direita para a veia cava superior.", theme: "Tórax" }
-]; // QUESTÕES DE CORAÇÃO (40 questões)
+ // QUESTÕES DE CORAÇÃO (40 questões)
 const coracaoQuestions: Question[] = [ { id: "coracao-1", question: "Um paciente de 22 anos apresenta um quadro de AVC isquêmico. O ecocardiograma revela um Forame Oval Patente (FOP). Anatomicalmente, essa condição representa uma falha no fechamento da comunicação entre:", options: ["O ventrículo direito e o ventrículo esquerdo.", "O átrio direito e o átrio esquerdo.", "A aorta e o tronco pulmonar.", "A veia cava superior e o átrio direito."],
     correctAnswer: 1, explanation: "O FOP é uma falha no fechamento do forame oval, que comunica os átrios no feto.", theme: "Coração" },
  { id: "coracao-2", question: "Durante um exame físico, o médico localiza o ictus cordis no 5º espaço intercostal esquerdo, na linha hemiclavicular. Essa estrutura corresponde ao:", options: ["Ápice do coração, formado pelo ventrículo esquerdo.", "Ápice do coração, formado pelo átrio esquerdo.", "Base do coração, formada pelo ventrículo direito.", "Margem inferior do coração, formada pelo átrio direito."],
@@ -292,9 +212,623 @@ const cavidadeNasalQuestions: Question[] = [ { "id": "cavidade-nasal-1", "questi
  { "id": "cavidade-nasal-23", "question": "O **recesso esfenoetmoidal** é uma pequena fenda situada acima da concha superior. Qual estrutura drena para este local?", "options": [ "Seio frontal.", "Seio maxilar.", "Seio esfenoidal.", "Ducto nasolacrimal." ], "correctAnswer": 2, "explanation": "O óstio do seio esfenoidal abre-se no recesso esfenoetmoidal.", "theme": "Cavidade Nasal" },
  { "id": "cavidade-nasal-24", "question": "Qual osso do viscerocrânio contribui para a formação da parte posterior e inferior do **septo nasal**?", "options": [ "Etmoide.", "Vômer.", "Maxila.", "Palatino." ], "correctAnswer": 1, "explanation": "O vômer forma a porção postero-inferior do septo.", "theme": "Cavidade Nasal" },
  { "id": "cavidade-nasal-25", "question": "Em um exame de imagem (Radiografia de Waters), observa-se um velamento no seio paranasal localizado abaixo da órbita. Este é o:", "options": [ "Seio frontal.", "Seio maxilar.", "Seio esfenoidal.", "Seio etmoidal." ], "correctAnswer": 1, "explanation": "O seio maxilar situa-se no corpo da maxila, abaixo da órbita.", "theme": "Cavidade Nasal" }
-]; export const quizzes = [ { id: "cavidade-nasal", title: "Cavidade Nasal", description: "Anatomia do nariz e cavidade nasal", emoji: "👃", questions: cavidadeNasalQuestions },
+]; const toraxBlock1: Question[] = [ { id: "torax-1", question: "Em casos de neoplasias esofágicas avançadas, observa-se frequentemente um diagnóstico tardio. Do ponto de vista anatômico, isso ocorre predominantemente porque as vísceras torácicas:", options: ["Estão submetidas a uma pressão subatmosférica constante no mediastino posterior.", "São protegidas pelo arcabouço ósseo e muscular, tornando as doenças oligossintomáticas.", "Possuem pleura visceral com alta sensibilidade dolorosa, mascarando o tumor.", "Possuem o esôfago localizado no mediastino médio, área de difícil visualização."],
+    correctAnswer: 1, explanation: "A proteção óssea torna as doenças oligossintomáticas.", theme: "Tórax" },
+ { id: "torax-2", question: "O mediastino é definido como o compartimento central da cavidade torácica, situado entre as duas cavidades pleurais. Qual estrutura anatômica representa o limite superior dessa região?", options: ["Cartilagem cricoide.", "Manúbrio do esterno.", "Fúrcula esternal (abertura torácica superior).", "Vértebra cervical C7."],
+    correctAnswer: 2, explanation: "O limite superior é definido pela fúrcula esternal.", theme: "Tórax" },
+ { id: "torax-3", question: "O mediastino inferior é subdividido em compartimentos anterior, médio e posterior. Qual estrutura anatômica é utilizada como principal referência para essa compartimentalização?", options: ["O esôfago torácico.", "O pericárdio.", "A traqueia torácica.", "A quarta vértebra torácica (T4)."],
+    correctAnswer: 1, explanation: "O pericárdio serve como referência anatômica para a divisão do mediastino inferior.", theme: "Tórax" },
+ { id: "torax-4", question: "Em exames de imagem do mediastino superior em adultos, além do timo, qual das seguintes estruturas pode ser encontrada esporadicamente nesta topografia?", options: ["Veia ázigos.", "Tronco simpático.", "Bócio mergulhante da glândula tireoide.", "Coração e pericárdio."],
+    correctAnswer: 2, explanation: "O bócio mergulhante é uma estrutura que pode ocupar o mediastino superior.", theme: "Tórax" },
+ { id: "torax-5", question: "Assinale a alternativa que apresenta estruturas localizadas estritamente no compartimento do mediastino posterior:", options: ["Timo e raízes dos grandes vasos.", "Veia ázigos e ducto torácico.", "Hilos pulmonares e pericárdio.", "Traqueia torácica e nervo frênico."],
+    correctAnswer: 1, explanation: "A veia ázigos e o ducto torácico são conteúdos típicos do mediastino posterior.", theme: "Tórax" },
+ { id: "torax-6", question: "No mediastino médio, os pulmões se localizam lateralmente, mas o professor menciona uma estrutura específica deste compartimento onde os pulmões \"se beijam\". Que estrutura é essa?", options: ["Carina da traqueia.", "Hilo dos pulmões.", "Pleura mediastínica.", "Grande vaso da base."],
+    correctAnswer: 1, explanation: "O hilo é onde os pulmões \"se beijam\" no mediastino médio.", theme: "Tórax" },
+ { id: "torax-7", question: "Anatomicamente, o timo (ou seus remanescentes adiposos no adulto) pode ser encontrado em quais compartimentos mediastinais?", options: ["Apenas no mediastino superior.", "No superior e no inferior anterior.", "No inferior médio e posterior.", "Apenas no mediastino posterior."],
+    correctAnswer: 1, explanation: "Topograficamente, o timo situa-se nos compartimentos superior e inferior anterior.", theme: "Tórax" },
+ { id: "torax-8", question: "\"tudo que está embaixo do diafragma está no abdômen\". Qual o limite posterior do mediastino que vai de T1 a T12?", options: ["Arcos costais.", "Esterno.", "Coluna vertebral torácica (coluna dorsal).", "Músculos intercostais."],
+    correctAnswer: 2, explanation: "A coluna vertebral torácica constitui o limite posterior do mediastino.", theme: "Tórax" },
+ { id: "torax-9", question: "A divisão entre o mediastino superior e inferior é estabelecida pelo plano transverso do tórax. Sobre este plano, é correto afirmar:", options: ["Ocorre no nível do processo xifoide.", "É feita por uma linha imaginária no nível da 4ª vértebra torácica (T4).", "O mediastino inferior termina no nível de T10.", "O mediastino superior contém o esôfago torácico em toda sua extensão."],
+    correctAnswer: 1, explanation: "O plano transverso do tórax (ângulo de Louis) situa-se ao nível de T4.", theme: "Tórax" },
+ { id: "torax-10", question: "A inervação motora do músculo diafragma é suprida por qual estrutura nervosa?", options: ["Nervo vago.", "Nervo frênico.", "Nervo intercostal.", "Nervo hipoglosso."],
+    correctAnswer: 1, explanation: "O nervo frênico fornece a inervação motora para o diafragma.", theme: "Tórax" },
+ { id: "torax-11", question: "Sobre as características anatômicas da pleura visceral, é correto afirmar que:", options: ["Ela reveste a parede interna da caixa torácica.", "É sensível à dor através dos nervos intercostais.", "É aderida intrinsecamente ao parênquima pulmonar e não pode ser descolada.", "É vascularizada exclusivamente pela artéria torácica interna."],
+    correctAnswer: 2, explanation: "A pleura visceral é intimamente aderida ao parênquima pulmonar.", theme: "Tórax" },
+ { id: "torax-12", question: "O espaço entre as pleuras parietal e visceral é normalmente virtual. O que caracteriza o \"pneumotórax\" ?", options: ["Acúmulo de líquido por desequilíbrio de absorção.", "Presença de sangue por trauma.", "Presença de ar, tornando o espaço real.", "Acúmulo de linfa por lesão do ducto torácico."],
+    correctAnswer: 2, explanation: "A presença de ar no espaço pleural converte a cavidade virtual em real.", theme: "Tórax" },
+ { id: "torax-13", question: "No mecanismo da mecânica respiratória, a principal função fisiológica da pressão intrapleural negativa (subatmosférica) é:", options: ["Manter a pressão positiva para facilitar a expiração.", "Manter a pressão negativa (subatmosférica) para evitar o colabamento pulmonar.", "Igualar a pressão pulmonar à pressão atmosférica.", "Produzir 1000 ml de líquido pleural por minuto."],
+    correctAnswer: 1, explanation: "A pressão intrapleural negativa é essencial para prevenir o colabamento pulmonar.", theme: "Tórax" },
+ { id: "torax-14", question: "Um paciente apresenta uma \"dor pleurítica\". Qual camada da pleura é sensível à dor e por quais nervos?", options: ["Pleura visceral; plexo pulmonar.", "Pleura parietal; nervos intercostais e nervo frênico.", "Pleura parietal mediastínica; apenas nervo vago.", "Ambas as pleuras são igualmente sensíveis."],
+    correctAnswer: 1, explanation: "A pleura parietal possui inervação somática, sendo a camada sensível à dor.", theme: "Tórax" },
+ { id: "torax-15", question: "Em relação aos recessos pleurais, qual deles \"some\" ou desaparece especificamente em casos de pneumotórax (ar)?", options: ["Recesso costofrênico.", "Recesso cardiofrênico.", "Recesso apical.", "Recesso diafragmático."],
+    correctAnswer: 2, explanation: "No pneumotórax, o recesso apical é tipicamente o primeiro a ser obliterado.", theme: "Tórax" },
+ { id: "torax-16", question: "O \"selo d'água\" é um mecanismo para drenagem torácica. Sua função principal é:", options: ["Lavar a cavidade pleural.", "Impedir a comunicação do meio exterior com a cavidade (evitar que o ar entre).", "Produzir líquido pleural artificial.", "Aumentar a pressão negativa durante a inspiração."],
+    correctAnswer: 1, explanation: "O sistema de selo d'água atua como uma válvula unidirecional que impede o refluxo de ar para o tórax.", theme: "Tórax" },
+ { id: "torax-17", question: "O suprimento arterial da porção diafragmática da pleura parietal é provido predominantemente por qual vaso?", options: ["Artéria torácica interna.", "Artéria intercostal.", "Artéria brônquica.", "Artéria musculofrênica."],
+    correctAnswer: 3, explanation: "A artéria musculofrênica é responsável pela irrigação desta área.", theme: "Tórax" },
+ { id: "torax-18", question: "O hemotórax define-se pelo acúmulo de sangue na cavidade pleural. Qual é a etiologia mais frequente para esta condição em serviços de emergência?", options: ["Pneumonia.", "Insuficiência cardíaca.", "Trauma (acidentes de carro, arma branca).", "Câncer de pulmão avançado."],
+    correctAnswer: 2, explanation: "O trauma torácico é a principal etiologia do hemotórax.", theme: "Tórax" },
+ { id: "torax-19", question: "A irrigação arterial da pleura parietal em sua face mediastinal é derivada de qual vaso?", options: ["Artéria torácica interna.", "Artéria brônquica.", "Artéria musculofrenica.", "Artéria aorta descendente."],
+    correctAnswer: 0, explanation: "A irrigação da pleura mediastínica provém da artéria torácica interna.", theme: "Tórax" },
+ { id: "torax-20", question: "Sobre os \"recessos pleurais\"?", options: ["Espaços que nunca somem, mesmo em doenças.", "Cavidades no espaço pleural que aparecem durante a expiração.", "Estruturas que fixam o pulmão ao diafragma.", "Locais de entrada dos brônquios principais."],
+    correctAnswer: 1, explanation: "Os recessos pleurais funcionam como espaços de reserva durante a mecânica respiratória.", theme: "Tórax" },
+ { id: "torax-21", question: "Anatomicamente, o pulmão direito diferencia-se do esquerdo por apresentar:", options: ["Dois lobos e menor peso relativo.", "Três lobos e duas fissuras (horizontal e oblíqua).", "Incisura cardíaca e língula.", "Formato mais alongado e estreito."],
+    correctAnswer: 1, explanation: "Morfologicamente, o pulmão direito é composto por três lobos e duas fissuras.", theme: "Tórax" },
+ { id: "torax-22", question: "\"Estrutura no lobo superior esquerdo que representa anatomicamente o que seria o lobo médio\". Esta definição refere-se à:", options: ["Carina.", "Incisura cardíaca.", "Língula.", "Base pulmonar."],
+    correctAnswer: 2, explanation: "A língula é a projeção do lobo superior esquerdo análoga ao lobo médio direito.", theme: "Tórax" },
+ { id: "torax-23", question: "Ao analisar o hilo pulmonar direito em uma vista lateral, qual a sequência anatômica das estruturas no sentido superoinferior?", options: ["Artéria, Brônquio, Veia (ABV).", "Brônquio, Artéria, Veia (BAV).", "Veia, Artéria, Brônquio (VAB).", "Veia, Brônquio, Artéria (VBA)."],
+    correctAnswer: 1, explanation: "No hilo pulmonar direito, a disposição craniocaudal é Brônquio, Artéria e Veia.", theme: "Tórax" },
+ { id: "torax-24", question: "No hilo pulmonar esquerdo, qual a organização anatômica das estruturas principais no sentido superoinferior?", options: ["Artéria, Brônquio, Veia (ABV).", "Brônquio, Artéria, Veia (BAV).", "Veia, Brônquio, Artéria.", "Artéria, Veia, Brônquio."],
+    correctAnswer: 0, explanation: "No hilo pulmonar esquerdo, a disposição craniocaudal é Artéria, Brônquio e Veia.", theme: "Tórax" },
+ { id: "torax-25", question: "A maior incidência de aspiração de corpos estranhos para o brônquio principal direito deve-se a quais características anatômicas desta estrutura?", options: ["Maior comprimento e disposição horizontal.", "Menor comprimento e maior verticalidade.", "Devido à presença da carina desviada para a direita.", "Porque o brônquio esquerdo é mais calibroso."],
+    correctAnswer: 1, explanation: "O brônquio principal direito apresenta maior verticalidade e menor comprimento que o esquerdo.", theme: "Tórax" },
+ { id: "torax-26", question: "A traqueia é um conduto fibrocartilaginoso que se estende longitudinalmente entre quais níveis anatômicos?", options: ["Da laringe até T12.", "Da cartilagem tireoide até os brônquios lobares.", "Da cartilagem cricoide até a carina.", "Do osso hioide até o manúbrio."],
+    correctAnswer: 2, explanation: "A traqueia estende-se da cartilagem cricoide até a sua bifurcação na carina.", theme: "Tórax" },
+ { id: "torax-27", question: "Assinale a alternativa que descreve a sequência anatômica correta da árvore brônquica, da traqueia até as unidades funcionais de troca gasosa:", options: ["Traqueia → Carina → Brônquio Principal → Brônquio Lobar → Brônquio Segmentar → Bronquíolos → Alvéolos.", "Traqueia → Brônquio Segmentar → Brônquio Lobar → Bronquíolo.", "Carina → Bronquíolo Terminal → Brônquio Principal.", "Brônquio Principal → Alvéolo → Bronquíolo."],
+    correctAnswer: 0, explanation: "Representa a segmentação anatômica correta da árvore brônquica.", theme: "Tórax" },
+ { id: "torax-28", question: "A hematose, ou troca gasosa alvéolo-capilar, ocorre predominantemente em quais estruturas do parênquima pulmonar?", options: ["Nos brônquios principais.", "Nos brônquios lobares.", "Nos bronquíolos terminais e alvéolos.", "Na carina."],
+    correctAnswer: 2, explanation: "A troca gasosa ocorre nas unidades alveolares e bronquíolos respiratórios.", theme: "Tórax" },
+ { id: "torax-29", question: "O professor menciona a \"Asma Brônquica\". Qual o problema anatômico nesta condição?", options: ["Ruptura dos alvéolos por pressão negativa.", "Dificuldade na passagem do ar devido ao edema da árvore brônquica.", "Presença de líquido no espaço pleural.", "Fibrose das artérias pulmonares."],
+    correctAnswer: 1, explanation: "A asma brônquica caracteriza-se por inflamação e broncoconstrição reversível.", theme: "Tórax" },
+ { id: "torax-30", question: "No pulmão direito, a fissura horizontal estabelece o limite anatômico entre quais lobos?", options: ["Lobo médio do inferior.", "Lobo superior do inferior.", "Lobo superior do médio.", "Não existe fissura horizontal no pulmão direito."],
+    correctAnswer: 2, explanation: "A fissura horizontal delimita os lobos superior e médio do pulmão direito.", theme: "Tórax" },
+ { id: "torax-31", question: "Sobre o sistema linfático, qual a definição de \"Cisterna do Quilo\"?", options: ["Local onde desemboca o ducto torácico.", "Parte mais dilatada do sistema linfático, onde se forma o ducto torácico.", "Conjunto de linfonodos localizados no hilo pulmonar.", "Vaso que drena a linfa da face e pescoço."],
+    correctAnswer: 1, explanation: "A cisterna do quilo é a origem dilatada do ducto torácico.", theme: "Tórax" },
+ { id: "torax-32", question: "O ducto torácico, principal vaso linfático do corpo, drena para o sistema venoso especificamente na seguinte topografia:", options: ["Veia cava superior.", "Veia ázigos.", "Junção das veias subclávia e jugular interna esquerdas.", "Átrio direito."],
+    correctAnswer: 2, explanation: "O ducto torácico drena para a confluência venosa jugulo-subclávia esquerda.", theme: "Tórax" },
+ { id: "torax-33", question: "A veia hemiázigos, componente do sistema ázigos à esquerda, tem sua origem anatômica a partir da junção de quais vasos?", options: ["Veia renal e veia porta.", "Veia lombar ascendente e subcostal esquerda.", "Veia intercostal anterior e posterior.", "Veia cava inferior e superior."],
+    correctAnswer: 1, explanation: "Descreve os vasos que convergem para formar a veia hemiázigos.", theme: "Tórax" },
+ { id: "torax-34", question: "O hiato esofágico é uma abertura no pilar direito do diafragma (nível T10). Quais estruturas atravessam este hiato concomitantemente ao esôfago?", options: ["Ducto torácico.", "Troncos vagais anterior e posterior.", "Veia ázigos.", "Artéria aorta."],
+    correctAnswer: 1, explanation: "O esôfago e os troncos vagais atravessam o diafragma ao nível de T10.", theme: "Tórax" },
+ { id: "torax-35", question: "O hiato aórtico é a abertura mais posterior do diafragma (nível T12). Quais estruturas anatômicas utilizam esta passagem?", options: ["Aorta, ducto torácico e veia ázigos.", "Aorta e nervo frênico.", "Veia cava inferior e nervos vagos.", "Apenas a artéria aorta."],
+    correctAnswer: 0, explanation: "A aorta, o ducto torácico e a veia ázigos utilizam o hiato aórtico (T12).", theme: "Tórax" },
+ { id: "torax-36", question: "A artéria torácica interna, utilizada frequentemente em cirurgias de revascularização do miocárdio, é ramo de qual vaso?", options: ["Artéria aorta torácica.", "Artéria subclávia.", "Artéria carótida comum.", "Artéria brônquica."],
+    correctAnswer: 1, explanation: "A artéria torácica interna é um ramo descendente da artéria subclávia.", theme: "Tórax" },
+ { id: "torax-37", question: "A maioria das artérias intercostais posteriores (do 3º ao 11º espaço) origina-se diretamente de qual vaso?", options: ["Artéria torácica interna.", "Artéria musculofrênica.", "Artéria aorta descendente (torácica).", "Veia ázigos."],
+    correctAnswer: 2, explanation: "As artérias intercostais posteriores originam-se da face posterior da aorta torácica.", theme: "Tórax" },
+ { id: "torax-38", question: "Qual é a terminologia oncológica correta para designar as neoplasias malignas primárias do sistema linfático?", options: ["Carcinoma.", "Linfoma.", "Sarcoma.", "Linfadenite."],
+    correctAnswer: 1, explanation: "O termo linfoma designa neoplasias malignas do tecido linfoide.", theme: "Tórax" },
+ { id: "torax-39", question: "O forame da veia cava inferior é uma abertura situada no centro tendíneo do diafragma. Em qual nível vertebral esta estrutura se localiza?", options: ["T4.", "T8-T9.", "T10.", "T12."],
+    correctAnswer: 1, explanation: "O forame da veia cava inferior localiza-se ao nível de T8.", theme: "Tórax" },
+ { id: "torax-40", question: "Qual vaso é responsável pela drenagem venosa da parede posterior do tórax à direita e drena diretamente para a veia cava superior?", options: ["Veia hemiázigos.", "Veia torácica interna.", "Veia ázigos.", "Veia jugular externa."],
+    correctAnswer: 2, explanation: "A veia ázigos é o principal vaso de drenagem da parede torácica direita para a veia cava superior.", theme: "Tórax" }
+];
+const toraxBlock2: Question[] = [
+  {
+    "id": "torax-b2-1",
+    "question": "Paciente apresenta uma massa tumoral no mediastino superior que comprime a traqueia. qual estrutura pode estar presente esporadicamente nesta região quando aumentada patologicamente?**",
+    "options": [
+      "O timo em involução.",
+      "O coração e o saco pericárdico.",
+      "O bócio mergulhante da glândula tireoide .",
+      "A veia ázigos e o ducto torácico."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Explicação não disponível.",
+    "theme": "Tórax"
+  },
+  {
+    "id": "torax-b2-2",
+    "question": "Durante uma drenagem de tórax (toracocentese), o médico precisa atingir o ponto mais baixo da cavidade pleural para drenar um derrame líquido. Qual recesso pleural costuma estar preenchido e \"apagado\" no raio-X nesse caso?**",
+    "options": [
+      "Recesso apical.",
+      "Recesso cardiofrênico.",
+      "Recesso diafragmático superior.",
+      "Recesso costofrênico ."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Explicação não disponível.",
+    "theme": "Tórax"
+  },
+  {
+    "id": "torax-b2-3",
+    "question": "as doenças das vísceras torácicas são frequentemente diagnosticadas em estágios avançados. Qual a justificativa anatômica dada para esse caráter \"oligossintomático\"?**",
+    "options": [
+      "A pressão negativa do espaço pleural mascara a dor.",
+      "O arcabouço ósseo e o gradil muscular (intercostais) protegem as vísceras, gerando poucos sintomas iniciais .",
+      "A inervação visceral é feita apenas pelo nervo vago, que não transmite dor.",
+      "A pleura visceral é extremamente sensível, mas o parênquima pulmonar não possui nervos."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Explicação não disponível.",
+    "theme": "Tórax"
+  },
+  {
+    "id": "torax-b2-4",
+    "question": "No hilo do pulmão esquerdo, qual a disposição anatômica das estruturas de cima para baixo, ?**",
+    "options": [
+      "Artéria pulmonar, Brônquio principal e Veias pulmonares (ABV) .",
+      "Brônquio principal, Artéria pulmonar e Veias pulmonares (BAV).",
+      "Veia pulmonar, Artéria pulmonar e Brônquio principal.",
+      "Artéria brônquica, Brônquio segmentar e Linfáticos."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Explicação não disponível.",
+    "theme": "Tórax"
+  },
+  {
+    "id": "torax-b2-5",
+    "question": "Um trauma por arma branca no nível de T10 atinge o diafragma exatamente em uma de suas aberturas. Quais estruturas passam por esse hiato esofágico?**",
+    "options": [
+      "Aorta abdominal e ducto torácico.",
+      "Esôfago torácico e troncos vagais anterior e posterior .",
+      "Veia cava inferior e nervo frênico.",
+      "Veia ázigos e nervos esplâncnicos."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Explicação não disponível.",
+    "theme": "Tórax"
+  },
+  {
+    "id": "torax-b2-6",
+    "question": "Sobre a vascularização da pleura, assinale a alternativa que indica CORRETAMENTE o vaso responsável pela irrigação da pleura parietal mediastínica:**",
+    "options": [
+      "Artéria brônquica.",
+      "Artéria intercostal posterior.",
+      "Artéria musculofrênica.",
+      "Artéria torácica interna ."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Explicação não disponível.",
+    "theme": "Tórax"
+  },
+  {
+    "id": "torax-b2-7",
+    "question": "\"O espaço que existe entre as cavidades pleuropulmonares direita e esquerda\". Esta definição refere-se a qual estrutura?**",
+    "options": [
+      "Mediastino .",
+      "Cavidade torácica total.",
+      "Recesso costofrênico.",
+      "Pericárdio fibroso."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Explicação não disponível.",
+    "theme": "Tórax"
+  },
+  {
+    "id": "torax-b2-8",
+    "question": "Um recém-nascido apresenta uma imagem radiológica com o mediastino \"alargado\". isso é normal nessa idade devido a qual estrutura que vai até a puberdade?**",
+    "options": [
+      "Glândula tireoide.",
+      "Timo .",
+      "Coração hipertrofiado.",
+      "Ducto torácico dilatado."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Explicação não disponível.",
+    "theme": "Tórax"
+  },
+  {
+    "id": "torax-b2-9",
+    "question": "Assinale a alternativa INCORRETA sobre o sistema de drenagem venosa do tórax:**",
+    "options": [
+      "A veia ázigos desemboca na veia cava superior ao nível do ápice do pulmão direito .",
+      "A veia hemiázigos localiza-se à direita da coluna vertebral .",
+      "A hemiázigos é formada pela junção da veia subcostal esquerda e lombar ascendente esquerda .",
+      "O sistema ázigos drena a parede posterior do tórax e abdômen ."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Explicação não disponível.",
+    "theme": "Tórax"
+  },
+  {
+    "id": "torax-b2-10",
+    "question": "Qual a sequência correta da árvore brônquica, do maior para o menor calibre, até chegar aos alvéolos?**",
+    "options": [
+      "Traqueia → Carina → Brônquio Principal → Brônquio Lobar → Brônquio Segmentar → Bronquíolos → Alvéolos .",
+      "Traqueia → Brônquio Segmentar → Brônquio Lobar → Bronquíolo Terminal.",
+      "Carina → Brônquio Principal → Bronquíolo respiratório → Brônquio Lobar.",
+      "Traqueia → Bronquíolo → Brônquio Segmentar → Alvéolo → Carina."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Explicação não disponível.",
+    "theme": "Tórax"
+  },
+  {
+    "id": "torax-b2-11",
+    "question": "Um paciente apresenta um quadro de pneumotórax (ar no espaço pleural). Qual recesso pleural o professor afirma que \"some\" ou desaparece nessa condição porque o ar sobe?**",
+    "options": [
+      "Recesso costofrênico.",
+      "Recesso cardiofrênico.",
+      "Recesso apical .",
+      "Recesso diafragmático inferior."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Explicação não disponível.",
+    "theme": "Tórax"
+  },
+  {
+    "id": "torax-b2-12",
+    "question": "A artéria torácica interna (ou mamária) é fundamental para a parede anterior do tórax. De qual vaso ela se origina?**",
+    "options": [
+      "Artéria aorta ascendente.",
+      "Artéria subclávia .",
+      "Tronco braquiocefálico.",
+      "Artéria carótida comum."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Explicação não disponível.",
+    "theme": "Tórax"
+  },
+  {
+    "id": "torax-b2-13",
+    "question": "Onde se localiza a \"Cisterna do Quilo\", descrita como a parte mais dilatada do sistema linfático?**",
+    "options": [
+      "No mediastino superior.",
+      "No ângulo venoso esquerdo.",
+      "Ao nível de L1 e L2 .",
+      "No hilo pulmonar direito."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Explicação não disponível.",
+    "theme": "Tórax"
+  },
+  {
+    "id": "torax-b2-14",
+    "question": "Sobre o pulmão direito, é CORRETO afirmar que:**",
+    "options": [
+      "Possui apenas uma fissura chamada oblíqua.",
+      "Apresenta a língula no lobo superior.",
+      "É dividido em três lobos pelas fissuras horizontal e oblíqua .",
+      "É menor e mais leve que o pulmão esquerdo."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Explicação não disponível.",
+    "theme": "Tórax"
+  },
+  {
+    "id": "torax-b2-15",
+    "question": "Qual o limite posterior do mediastino, ?**",
+    "options": [
+      "O osso esterno.",
+      "O músculo diafragma.",
+      "Os arcos costais lateralmente.",
+      "A coluna vertebral torácica (T1 a T12) ."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Explicação não disponível.",
+    "theme": "Tórax"
+  },
+  {
+    "id": "torax-b2-16",
+    "question": "O \"selo d'água\" em um sistema de drenagem torácica é vital para o paciente. Qual sua função anatômica e clínica?**",
+    "options": [
+      "Lavar a pleura visceral inflamada.",
+      "Manter a pressão positiva dentro do mediastino.",
+      "Impedir a comunicação do meio exterior com a cavidade pleural (evitar entrada de ar) .",
+      "Facilitar a hematose nos alvéolos colapsados."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Explicação não disponível.",
+    "theme": "Tórax"
+  },
+  {
+    "id": "torax-b2-17",
+    "question": "O professor descreve que a traqueia se estende da região cervical até o mediastino. Quais são os marcos anatômicos de seu início e fim?**",
+    "options": [
+      "Da cartilagem tireoide até a fúrcula esternal.",
+      "Da cartilagem cricoide até a carina .",
+      "Do osso hioide até T12.",
+      "Da laringe até o hiato esofágico."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Explicação não disponível.",
+    "theme": "Tórax"
+  },
+  {
+    "id": "torax-b2-18",
+    "question": "Qual nervo inerva a pleura parietal costal e é responsável pela dor aguda sentida na \"dor pleurítica\"?**",
+    "options": [
+      "Nervo vago.",
+      "Nervo frênico.",
+      "Nervos intercostais .",
+      "Tronco simpático."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Explicação não disponível.",
+    "theme": "Tórax"
+  },
+  {
+    "id": "torax-b2-19",
+    "question": "No hiato aórtico (nível de T12), além da artéria aorta, quais estruturas atravessam o diafragma?**",
+    "options": [
+      "Veia cava inferior e nervo frênico.",
+      "Ducto torácico e veia ázigos .",
+      "Nervos vagos e esôfago.",
+      "Apenas o ducto torácico."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Explicação não disponível.",
+    "theme": "Tórax"
+  },
+  {
+    "id": "torax-b2-20",
+    "question": "A \"Língula\" é uma estrutura característica de qual lobo pulmonar?**",
+    "options": [
+      "Lobo médio do pulmão direito.",
+      "Lobo superior do pulmão esquerdo .",
+      "Lobo inferior do pulmão esquerdo.",
+      "Ápice do pulmão direito."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Explicação não disponível.",
+    "theme": "Tórax"
+  },
+  {
+    "id": "torax-b2-21",
+    "question": "Qual o nome técnico dado ao câncer do sistema linfático, mencionado como uma patologia importante desse sistema?**",
+    "options": [
+      "Carcinoma.",
+      "Sarcoma.",
+      "Linfoma .",
+      "Adenoma."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Explicação não disponível.",
+    "theme": "Tórax"
+  },
+  {
+    "id": "torax-b2-22",
+    "question": "O mediastino inferior é subdividido em relação a qual membrana serosa?**",
+    "options": [
+      "Pleura parietal.",
+      "Pericárdio .",
+      "Peritônio.",
+      "Fáscia endotorácica."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Explicação não disponível.",
+    "theme": "Tórax"
+  },
+  {
+    "id": "torax-b2-23",
+    "question": "Sobre a vascularização dos pulmões e da pleura visceral, qual vaso realiza essa função e de onde ele se origina?**",
+    "options": [
+      "Artéria torácica interna.",
+      "Artérias brônquicas (ramos da aorta torácica) .",
+      "Artéria pulmonar (trazendo oxigênio).",
+      "Artéria musculofrênica."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Explicação não disponível.",
+    "theme": "Tórax"
+  },
+  {
+    "id": "torax-b2-24",
+    "question": "Um corpo estranho aspirado por uma criança tem maior probabilidade de se prender no brônquio principal direito. Qual a razão anatômica?**",
+    "options": [
+      "Ele é mais longo e horizontal.",
+      "Ele é mais curto, largo e verticalizado .",
+      "Ele possui a carina mais baixa.",
+      "O pulmão direito tem menos lobos para ventilar."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Explicação não disponível.",
+    "theme": "Tórax"
+  },
+  {
+    "id": "torax-b2-25",
+    "question": "Qual estrutura marca a divisão entre o mediastino superior e o mediastino inferior?**",
+    "options": [
+      "Uma linha imaginária no nível da 4ª vértebra torácica (T4) .",
+      "A fúrcula esternal.",
+      "O hiato esofágico em T10.",
+      "O processo xifoide do esterno."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Explicação não disponível.",
+    "theme": "Tórax"
+  },
+  {
+    "id": "torax-b2-26",
+    "question": "Onde termina o ducto torácico, despejando a linfa de quase todo o corpo na corrente sanguínea?**",
+    "options": [
+      "No átrio direito do coração.",
+      "Na veia cava superior.",
+      "Na junção da veia subclávia esquerda com a jugular interna esquerda .",
+      "Na veia ázigos."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Explicação não disponível.",
+    "theme": "Tórax"
+  },
+  {
+    "id": "torax-b2-27",
+    "question": "os pulmões \"se beijam\" no mediastino. Em qual compartimento específico isso ocorre?**",
+    "options": [
+      "Mediastino superior.",
+      "Mediastino inferior médio (no hilo) .",
+      "Mediastino posterior.",
+      "Mediastino anterior."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Explicação não disponível.",
+    "theme": "Tórax"
+  },
+  {
+    "id": "torax-b2-28",
+    "question": "Qual a função da pressão negativa (subatmosférica) mantida pela pleura no espaço pleural?**",
+    "options": [
+      "Facilitar a digestão no hiato esofágico.",
+      "Evitar o colabamento (colapso) pulmonar .",
+      "Bombear o sangue para a aorta ascendente.",
+      "Manter o timo em posição superior."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Explicação não disponível.",
+    "theme": "Tórax"
+  },
+  {
+    "id": "torax-b2-29",
+    "question": "As artérias intercostais posteriores são ramos diretos de qual grande vaso?**",
+    "options": [
+      "Artéria torácica interna.",
+      "Artéria subclávia.",
+      "Artéria aorta torácica (descendente) .",
+      "Tronco braquiocefálico."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Explicação não disponível.",
+    "theme": "Tórax"
+  },
+  {
+    "id": "torax-b2-30",
+    "question": "No hiato da veia cava (nível T8-T9), além da própria veia cava inferior, o que mais atravessa o diafragma?**",
+    "options": [
+      "Ramos terminais do nervo frênico e vasos linfáticos .",
+      "Nervos vagos e esôfago.",
+      "Ducto torácico e veia ázigos.",
+      "Artéria aorta e tronco simpático."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Explicação não disponível.",
+    "theme": "Tórax"
+  },
+  {
+    "id": "torax-b2-31",
+    "question": "Sobre a anatomia do pulmão esquerdo, assinale a alternativa CORRETA:**",
+    "options": [
+      "Possui duas fissuras: horizontal e oblíqua.",
+      "É mais curto e largo que o direito.",
+      "Sua borda anterior apresenta a incisura cardíaca .",
+      "Tem três lobos: superior, médio e inferior."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Explicação não disponível.",
+    "theme": "Tórax"
+  },
+  {
+    "id": "torax-b2-32",
+    "question": "O que ocorre tecnicamente quando o espaço pleural, que é virtual, se torna real devido ao acúmulo de sangue?**",
+    "options": [
+      "Pneumotórax.",
+      "Quilotórax.",
+      "Derrame pleural seroso.",
+      "Hemotórax ."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Explicação não disponível.",
+    "theme": "Tórax"
+  },
+  {
+    "id": "torax-b2-33",
+    "question": "Qual nervo percorre o mediastino e inerva o pericárdio e a pleura mediastínica?**",
+    "options": [
+      "Nervo vago.",
+      "Nervo frênico .",
+      "Nervo laríngeo recorrente.",
+      "Nervo intercostal."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Explicação não disponível.",
+    "theme": "Tórax"
+  },
+  {
+    "id": "torax-b2-34",
+    "question": "Em qual compartimento do mediastino localizam-se o tronco simpático e a veia ázigos?**",
+    "options": [
+      "Mediastino posterior .",
+      "Mediastino médio.",
+      "Mediastino superior.",
+      "Mediastino anterior."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Explicação não disponível.",
+    "theme": "Tórax"
+  },
+  {
+    "id": "torax-b2-35",
+    "question": "A \"Hematose\" (troca de CO2 por O2) ocorre especificamente em qual parte da árvore respiratória?**",
+    "options": [
+      "Brônquios principais.",
+      "Carina da traqueia.",
+      "Bronquíolos terminais e alvéolos .",
+      "Brônquios lobares."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Explicação não disponível.",
+    "theme": "Tórax"
+  },
+  {
+    "id": "torax-b2-36",
+    "question": "Qual é a disposição anatômica do hilo do pulmão direito, conforme a aula?**",
+    "options": [
+      "Artéria, Brônquio e Veia (ABV).",
+      "Brônquio principal, Artéria pulmonar e Veias pulmonares (BAV) .",
+      "Veia, Artéria e Brônquio.",
+      "Brônquio, Veia e Linfático."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Explicação não disponível.",
+    "theme": "Tórax"
+  },
+  {
+    "id": "torax-b2-37",
+    "question": "O professor afirma que \"tudo que está embaixo do diafragma está no abdômen\". Qual o limite superior do mediastino?**",
+    "options": [
+      "Fúrcula esternal (abertura torácica superior) .",
+      "Manúbrio do esterno.",
+      "Nível de T4.",
+      "Cartilagem cricoide."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Explicação não disponível.",
+    "theme": "Tórax"
+  },
+  {
+    "id": "torax-b2-38",
+    "question": "Qual a membrana que reveste intrinsecamente o pulmão, sendo \"agarrada\" e impossível de descolar?**",
+    "options": [
+      "Pleura parietal costal.",
+      "Pleura visceral .",
+      "Pleura mediastínica.",
+      "Pericárdio seroso."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Explicação não disponível.",
+    "theme": "Tórax"
+  },
+  {
+    "id": "torax-b2-39",
+    "question": "Sobre a drenagem linfática profunda dos pulmões, eles drenam para quais linfonodos?**",
+    "options": [
+      "Linfonodos broncopulmonares (hilares).",
+      "Linfonodos pulmonares (ao longo dos brônquios) .",
+      "Cisterna do quilo.",
+      "Linfonodos axilares."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Explicação não disponível.",
+    "theme": "Tórax"
+  },
+  {
+    "id": "torax-b2-40",
+    "question": "O acúmulo de linfa no espaço pleural, geralmente por lesão do ducto torácico, é chamado de:**",
+    "options": [
+      "Hemotórax.",
+      "Hidrotórax.",
+      "Quilotórax .",
+      "Pneumotórax."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Explicação não disponível.",
+    "theme": "Tórax"
+  }
+];
+
+export const quizzes = [ { id: "cavidade-nasal", title: "Cavidade Nasal", description: "Anatomia do nariz e cavidade nasal", emoji: "👃", questions: cavidadeNasalQuestions },
  { id: "coracao", title: "Coração", description: "Anatomia do coração e grandes vasos", emoji: "❤️", questions: coracaoQuestions },
- { id: "torax", title: "Tórax", description: "Mediastino, Pulmões, Pleuras e Vascularização", emoji: "🫁", questions: toraxQuestions },
+ {
+    id: "torax",
+    title: "Tórax",
+    description: "Mediastino, Pulmões, Pleuras e Vascularização",
+    emoji: "🫁",
+    questions: [],
+    blocks: [
+      { id: "bloco1", title: "Bloco 1", questions: toraxBlock1 },
+      { id: "bloco2", title: "Bloco 2", questions: toraxBlock2 }
+    ]
+  },
  { id: "vascularizacao", title: "Vascularização", description: "Vascularização do viscerocrânio e pescoço", emoji: "🩸", questions: vascularizacaoShuffled },
  { id: "cavidade-oral", title: "Cavidade Oral", description: "Anatomia da boca, língua e glândulas salivares", emoji: "👄", questions: cavidadeOralQuestions },
  { id: "orelha", title: "Orelha", description: "Anatomia da orelha externa, média e interna", emoji: "👂", questions: [ { id: "orelha-1", question: "Durante um exame físico, um médico aplica pressão na pequena projeção cartilaginosa situada à frente da abertura do meato acústico externo. O paciente relata dor aguda, sugerindo uma inflamação externa. Qual estrutura foi pressionada e para qual diagnóstico esse sinal é indicativo?", options: ['Lóbulo; otite média.', 'Trago; otite externa.', 'Hélice; labirintite.', 'Antirramo da hélice; plenitude auricular.'],
