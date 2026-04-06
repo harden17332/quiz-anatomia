@@ -296,522 +296,522 @@ const cavidadeNasalQuestions: Question[] = [ { "id": "cavidade-nasal-1", "questi
 const toraxBlock2: Question[] = [
   {
     "id": "torax-b2-1",
-    "question": "Paciente apresenta uma massa tumoral no mediastino superior que comprime a traqueia. qual estrutura pode estar presente esporadicamente nesta região quando aumentada patologicamente?**",
+    "question": "Um paciente de 55 anos apresenta uma massa tumoral no mediastino superior que comprime a traqueia. qual estrutura pode estar presente esporadicamente nesta região quando aumentada patologicamente?",
     "options": [
       "O timo em involução.",
       "O coração e o saco pericárdico.",
-      "O bócio mergulhante da glândula tireoide .",
+      "O bócio mergulhante da glândula tireoide.",
       "A veia ázigos e o ducto torácico."
     ],
     "correctAnswer": 0,
-    "explanation": "Explicação não disponível.",
+    "explanation": "Explicação detalhada no material didático.",
     "theme": "Tórax"
   },
   {
     "id": "torax-b2-2",
-    "question": "Durante uma drenagem de tórax (toracocentese), o médico precisa atingir o ponto mais baixo da cavidade pleural para drenar um derrame líquido. Qual recesso pleural costuma estar preenchido e \"apagado\" no raio-X nesse caso?**",
+    "question": "Durante uma drenagem de tórax (toracocentese), o médico precisa atingir o ponto mais baixo da cavidade pleural para drenar um derrame líquido. Qual recesso pleural costuma estar preenchido e \"apagado\" no raio-X nesse caso?",
     "options": [
       "Recesso apical.",
       "Recesso cardiofrênico.",
       "Recesso diafragmático superior.",
-      "Recesso costofrênico ."
+      "Recesso costofrênico."
     ],
     "correctAnswer": 0,
-    "explanation": "Explicação não disponível.",
+    "explanation": "Explicação detalhada no material didático.",
     "theme": "Tórax"
   },
   {
     "id": "torax-b2-3",
-    "question": "as doenças das vísceras torácicas são frequentemente diagnosticadas em estágios avançados. Qual a justificativa anatômica dada para esse caráter \"oligossintomático\"?**",
+    "question": "as doenças das vísceras torácicas são frequentemente diagnosticadas em estágios avançados. Qual a justificativa anatômica dada para esse caráter \"oligossintomático\"?",
     "options": [
       "A pressão negativa do espaço pleural mascara a dor.",
-      "O arcabouço ósseo e o gradil muscular (intercostais) protegem as vísceras, gerando poucos sintomas iniciais .",
+      "O arcabouço ósseo e o gradil muscular (intercostais) protegem as vísceras, gerando poucos sintomas iniciais.",
       "A inervação visceral é feita apenas pelo nervo vago, que não transmite dor.",
       "A pleura visceral é extremamente sensível, mas o parênquima pulmonar não possui nervos."
     ],
     "correctAnswer": 0,
-    "explanation": "Explicação não disponível.",
+    "explanation": "Explicação detalhada no material didático.",
     "theme": "Tórax"
   },
   {
     "id": "torax-b2-4",
-    "question": "No hilo do pulmão esquerdo, qual a disposição anatômica das estruturas de cima para baixo, ?**",
+    "question": "No hilo do pulmão esquerdo, qual a disposição anatômica das estruturas de cima para baixo:",
     "options": [
-      "Artéria pulmonar, Brônquio principal e Veias pulmonares (ABV) .",
+      "Artéria pulmonar, Brônquio principal e Veias pulmonares (ABV).",
       "Brônquio principal, Artéria pulmonar e Veias pulmonares (BAV).",
       "Veia pulmonar, Artéria pulmonar e Brônquio principal.",
       "Artéria brônquica, Brônquio segmentar e Linfáticos."
     ],
     "correctAnswer": 0,
-    "explanation": "Explicação não disponível.",
+    "explanation": "Explicação detalhada no material didático.",
     "theme": "Tórax"
   },
   {
     "id": "torax-b2-5",
-    "question": "Um trauma por arma branca no nível de T10 atinge o diafragma exatamente em uma de suas aberturas. Quais estruturas passam por esse hiato esofágico?**",
+    "question": "Um trauma por arma branca no nível de T10 atinge o diafragma exatamente em uma de suas aberturas. Quais estruturas passam por esse hiato esofágico?",
     "options": [
       "Aorta abdominal e ducto torácico.",
-      "Esôfago torácico e troncos vagais anterior e posterior .",
+      "Esôfago torácico e troncos vagais anterior e posterior.",
       "Veia cava inferior e nervo frênico.",
       "Veia ázigos e nervos esplâncnicos."
     ],
     "correctAnswer": 0,
-    "explanation": "Explicação não disponível.",
+    "explanation": "Explicação detalhada no material didático.",
     "theme": "Tórax"
   },
   {
     "id": "torax-b2-6",
-    "question": "Sobre a vascularização da pleura, assinale a alternativa que indica CORRETAMENTE o vaso responsável pela irrigação da pleura parietal mediastínica:**",
+    "question": "Sobre a vascularização da pleura, assinale a alternativa que indica CORRETAMENTE o vaso responsável pela irrigação da pleura parietal mediastínica:",
     "options": [
       "Artéria brônquica.",
       "Artéria intercostal posterior.",
       "Artéria musculofrênica.",
-      "Artéria torácica interna ."
+      "Artéria torácica interna."
     ],
     "correctAnswer": 0,
-    "explanation": "Explicação não disponível.",
+    "explanation": "Explicação detalhada no material didático.",
     "theme": "Tórax"
   },
   {
     "id": "torax-b2-7",
-    "question": "\"O espaço que existe entre as cavidades pleuropulmonares direita e esquerda\". Esta definição refere-se a qual estrutura?**",
+    "question": "\"O espaço que existe entre as cavidades pleuropulmonares direita e esquerda\". Esta definição refere-se a qual estrutura?",
     "options": [
-      "Mediastino .",
+      "Mediastino.",
       "Cavidade torácica total.",
       "Recesso costofrênico.",
       "Pericárdio fibroso."
     ],
     "correctAnswer": 0,
-    "explanation": "Explicação não disponível.",
+    "explanation": "Explicação detalhada no material didático.",
     "theme": "Tórax"
   },
   {
     "id": "torax-b2-8",
-    "question": "Um recém-nascido apresenta uma imagem radiológica com o mediastino \"alargado\". isso é normal nessa idade devido a qual estrutura que vai até a puberdade?**",
+    "question": "Um recém-nascido apresenta uma imagem radiológica com o mediastino \"alargado\". isso é normal nessa idade devido a qual estrutura que vai até a puberdade?",
     "options": [
       "Glândula tireoide.",
-      "Timo .",
+      "Timo.",
       "Coração hipertrofiado.",
       "Ducto torácico dilatado."
     ],
     "correctAnswer": 0,
-    "explanation": "Explicação não disponível.",
+    "explanation": "Explicação detalhada no material didático.",
     "theme": "Tórax"
   },
   {
     "id": "torax-b2-9",
-    "question": "Assinale a alternativa INCORRETA sobre o sistema de drenagem venosa do tórax:**",
+    "question": "Assinale a alternativa INCORRETA sobre o sistema de drenagem venosa do tórax:",
     "options": [
-      "A veia ázigos desemboca na veia cava superior ao nível do ápice do pulmão direito .",
-      "A veia hemiázigos localiza-se à direita da coluna vertebral .",
-      "A hemiázigos é formada pela junção da veia subcostal esquerda e lombar ascendente esquerda .",
-      "O sistema ázigos drena a parede posterior do tórax e abdômen ."
+      "A veia ázigos desemboca na veia cava superior ao nível do ápice do pulmão direito.",
+      "A veia hemiázigos localiza-se à direita da coluna vertebral.",
+      "A hemiázigos é formada pela junção da veia subcostal esquerda e lombar ascendente esquerda.",
+      "O sistema ázigos drena a parede posterior do tórax e abdômen."
     ],
     "correctAnswer": 0,
-    "explanation": "Explicação não disponível.",
+    "explanation": "Explicação detalhada no material didático.",
     "theme": "Tórax"
   },
   {
     "id": "torax-b2-10",
-    "question": "Qual a sequência correta da árvore brônquica, do maior para o menor calibre, até chegar aos alvéolos?**",
+    "question": "Qual a sequência correta da árvore brônquica, do maior para o menor calibre, até chegar aos alvéolos?",
     "options": [
-      "Traqueia → Carina → Brônquio Principal → Brônquio Lobar → Brônquio Segmentar → Bronquíolos → Alvéolos .",
+      "Traqueia → Carina → Brônquio Principal → Brônquio Lobar → Brônquio Segmentar → Bronquíolos → Alvéolos.",
       "Traqueia → Brônquio Segmentar → Brônquio Lobar → Bronquíolo Terminal.",
       "Carina → Brônquio Principal → Bronquíolo respiratório → Brônquio Lobar.",
       "Traqueia → Bronquíolo → Brônquio Segmentar → Alvéolo → Carina."
     ],
     "correctAnswer": 0,
-    "explanation": "Explicação não disponível.",
+    "explanation": "Explicação detalhada no material didático.",
     "theme": "Tórax"
   },
   {
     "id": "torax-b2-11",
-    "question": "Um paciente apresenta um quadro de pneumotórax (ar no espaço pleural). Qual recesso pleural o professor afirma que \"some\" ou desaparece nessa condição porque o ar sobe?**",
+    "question": "Um paciente apresenta um quadro de pneumotórax (ar no espaço pleural). Qual recesso pleural o professor afirma que \"some\" ou desaparece nessa condição porque o ar sobe?",
     "options": [
       "Recesso costofrênico.",
       "Recesso cardiofrênico.",
-      "Recesso apical .",
+      "Recesso apical.",
       "Recesso diafragmático inferior."
     ],
     "correctAnswer": 0,
-    "explanation": "Explicação não disponível.",
+    "explanation": "Explicação detalhada no material didático.",
     "theme": "Tórax"
   },
   {
     "id": "torax-b2-12",
-    "question": "A artéria torácica interna (ou mamária) é fundamental para a parede anterior do tórax. De qual vaso ela se origina?**",
+    "question": "A artéria torácica interna (ou mamária) é fundamental para a parede anterior do tórax. De qual vaso ela se origina?",
     "options": [
       "Artéria aorta ascendente.",
-      "Artéria subclávia .",
+      "Artéria subclávia.",
       "Tronco braquiocefálico.",
       "Artéria carótida comum."
     ],
     "correctAnswer": 0,
-    "explanation": "Explicação não disponível.",
+    "explanation": "Explicação detalhada no material didático.",
     "theme": "Tórax"
   },
   {
     "id": "torax-b2-13",
-    "question": "Onde se localiza a \"Cisterna do Quilo\", descrita como a parte mais dilatada do sistema linfático?**",
+    "question": "Onde se localiza a \"Cisterna do Quilo\", descrita como a parte mais dilatada do sistema linfático?",
     "options": [
       "No mediastino superior.",
       "No ângulo venoso esquerdo.",
-      "Ao nível de L1 e L2 .",
+      "Ao nível de L1 e L2.",
       "No hilo pulmonar direito."
     ],
     "correctAnswer": 0,
-    "explanation": "Explicação não disponível.",
+    "explanation": "Explicação detalhada no material didático.",
     "theme": "Tórax"
   },
   {
     "id": "torax-b2-14",
-    "question": "Sobre o pulmão direito, é CORRETO afirmar que:**",
+    "question": "Sobre o pulmão direito, é CORRETO afirmar que:",
     "options": [
       "Possui apenas uma fissura chamada oblíqua.",
       "Apresenta a língula no lobo superior.",
-      "É dividido em três lobos pelas fissuras horizontal e oblíqua .",
+      "É dividido em três lobos pelas fissuras horizontal e oblíqua.",
       "É menor e mais leve que o pulmão esquerdo."
     ],
     "correctAnswer": 0,
-    "explanation": "Explicação não disponível.",
+    "explanation": "Explicação detalhada no material didático.",
     "theme": "Tórax"
   },
   {
     "id": "torax-b2-15",
-    "question": "Qual o limite posterior do mediastino, ?**",
+    "question": "Qual o limite posterior do mediastino:",
     "options": [
       "O osso esterno.",
       "O músculo diafragma.",
       "Os arcos costais lateralmente.",
-      "A coluna vertebral torácica (T1 a T12) ."
+      "A coluna vertebral torácica (T1 a T12)."
     ],
     "correctAnswer": 0,
-    "explanation": "Explicação não disponível.",
+    "explanation": "Explicação detalhada no material didático.",
     "theme": "Tórax"
   },
   {
     "id": "torax-b2-16",
-    "question": "O \"selo d'água\" em um sistema de drenagem torácica é vital para o paciente. Qual sua função anatômica e clínica?**",
+    "question": "O \"selo d'água\" em um sistema de drenagem torácica é vital para o paciente. Qual sua função anatômica e clínica?",
     "options": [
       "Lavar a pleura visceral inflamada.",
       "Manter a pressão positiva dentro do mediastino.",
-      "Impedir a comunicação do meio exterior com a cavidade pleural (evitar entrada de ar) .",
+      "Impedir a comunicação do meio exterior com a cavidade pleural (evitar entrada de ar).",
       "Facilitar a hematose nos alvéolos colapsados."
     ],
     "correctAnswer": 0,
-    "explanation": "Explicação não disponível.",
+    "explanation": "Explicação detalhada no material didático.",
     "theme": "Tórax"
   },
   {
     "id": "torax-b2-17",
-    "question": "O professor descreve que a traqueia se estende da região cervical até o mediastino. Quais são os marcos anatômicos de seu início e fim?**",
+    "question": "O professor descreve que a traqueia se estende da região cervical até o mediastino. Quais são os marcos anatômicos de seu início e fim?",
     "options": [
       "Da cartilagem tireoide até a fúrcula esternal.",
-      "Da cartilagem cricoide até a carina .",
+      "Da cartilagem cricoide até a carina.",
       "Do osso hioide até T12.",
       "Da laringe até o hiato esofágico."
     ],
     "correctAnswer": 0,
-    "explanation": "Explicação não disponível.",
+    "explanation": "Explicação detalhada no material didático.",
     "theme": "Tórax"
   },
   {
     "id": "torax-b2-18",
-    "question": "Qual nervo inerva a pleura parietal costal e é responsável pela dor aguda sentida na \"dor pleurítica\"?**",
+    "question": "Qual nervo inerva a pleura parietal costal e é responsável pela dor aguda sentida na \"dor pleurítica\"?",
     "options": [
       "Nervo vago.",
       "Nervo frênico.",
-      "Nervos intercostais .",
+      "Nervos intercostais.",
       "Tronco simpático."
     ],
     "correctAnswer": 0,
-    "explanation": "Explicação não disponível.",
+    "explanation": "Explicação detalhada no material didático.",
     "theme": "Tórax"
   },
   {
     "id": "torax-b2-19",
-    "question": "No hiato aórtico (nível de T12), além da artéria aorta, quais estruturas atravessam o diafragma?**",
+    "question": "No hiato aórtico (nível de T12), além da artéria aorta, quais estruturas atravessam o diafragma?",
     "options": [
       "Veia cava inferior e nervo frênico.",
-      "Ducto torácico e veia ázigos .",
+      "Ducto torácico e veia ázigos.",
       "Nervos vagos e esôfago.",
       "Apenas o ducto torácico."
     ],
     "correctAnswer": 0,
-    "explanation": "Explicação não disponível.",
+    "explanation": "Explicação detalhada no material didático.",
     "theme": "Tórax"
   },
   {
     "id": "torax-b2-20",
-    "question": "A \"Língula\" é uma estrutura característica de qual lobo pulmonar?**",
+    "question": "A \"Língula\" é uma estrutura característica de qual lobo pulmonar?",
     "options": [
       "Lobo médio do pulmão direito.",
-      "Lobo superior do pulmão esquerdo .",
+      "Lobo superior do pulmão esquerdo.",
       "Lobo inferior do pulmão esquerdo.",
       "Ápice do pulmão direito."
     ],
     "correctAnswer": 0,
-    "explanation": "Explicação não disponível.",
+    "explanation": "Explicação detalhada no material didático.",
     "theme": "Tórax"
   },
   {
     "id": "torax-b2-21",
-    "question": "Qual o nome técnico dado ao câncer do sistema linfático, mencionado como uma patologia importante desse sistema?**",
+    "question": "Qual o nome técnico dado ao câncer do sistema linfático, mencionado como uma patologia importante desse sistema?",
     "options": [
       "Carcinoma.",
       "Sarcoma.",
-      "Linfoma .",
+      "Linfoma.",
       "Adenoma."
     ],
     "correctAnswer": 0,
-    "explanation": "Explicação não disponível.",
+    "explanation": "Explicação detalhada no material didático.",
     "theme": "Tórax"
   },
   {
     "id": "torax-b2-22",
-    "question": "O mediastino inferior é subdividido em relação a qual membrana serosa?**",
+    "question": "O mediastino inferior é subdividido em relação a qual membrana serosa?",
     "options": [
       "Pleura parietal.",
-      "Pericárdio .",
+      "Pericárdio.",
       "Peritônio.",
       "Fáscia endotorácica."
     ],
     "correctAnswer": 0,
-    "explanation": "Explicação não disponível.",
+    "explanation": "Explicação detalhada no material didático.",
     "theme": "Tórax"
   },
   {
     "id": "torax-b2-23",
-    "question": "Sobre a vascularização dos pulmões e da pleura visceral, qual vaso realiza essa função e de onde ele se origina?**",
+    "question": "Sobre a vascularização dos pulmões e da pleura visceral, qual vaso realiza essa função e de onde ele se origina?",
     "options": [
       "Artéria torácica interna.",
-      "Artérias brônquicas (ramos da aorta torácica) .",
+      "Artérias brônquicas (ramos da aorta torácica).",
       "Artéria pulmonar (trazendo oxigênio).",
       "Artéria musculofrênica."
     ],
     "correctAnswer": 0,
-    "explanation": "Explicação não disponível.",
+    "explanation": "Explicação detalhada no material didático.",
     "theme": "Tórax"
   },
   {
     "id": "torax-b2-24",
-    "question": "Um corpo estranho aspirado por uma criança tem maior probabilidade de se prender no brônquio principal direito. Qual a razão anatômica?**",
+    "question": "Um corpo estranho aspirado por uma criança tem maior probabilidade de se prender no brônquio principal direito. Qual a razão anatômica?",
     "options": [
       "Ele é mais longo e horizontal.",
-      "Ele é mais curto, largo e verticalizado .",
+      "Ele é mais curto, largo e verticalizado.",
       "Ele possui a carina mais baixa.",
       "O pulmão direito tem menos lobos para ventilar."
     ],
     "correctAnswer": 0,
-    "explanation": "Explicação não disponível.",
+    "explanation": "Explicação detalhada no material didático.",
     "theme": "Tórax"
   },
   {
     "id": "torax-b2-25",
-    "question": "Qual estrutura marca a divisão entre o mediastino superior e o mediastino inferior?**",
+    "question": "Qual estrutura marca a divisão entre o mediastino superior e o mediastino inferior?",
     "options": [
-      "Uma linha imaginária no nível da 4ª vértebra torácica (T4) .",
+      "Uma linha imaginária no nível da 4ª vértebra torácica (T4).",
       "A fúrcula esternal.",
       "O hiato esofágico em T10.",
       "O processo xifoide do esterno."
     ],
     "correctAnswer": 0,
-    "explanation": "Explicação não disponível.",
+    "explanation": "Explicação detalhada no material didático.",
     "theme": "Tórax"
   },
   {
     "id": "torax-b2-26",
-    "question": "Onde termina o ducto torácico, despejando a linfa de quase todo o corpo na corrente sanguínea?**",
+    "question": "Onde termina o ducto torácico, despejando a linfa de quase todo o corpo na corrente sanguínea?",
     "options": [
       "No átrio direito do coração.",
       "Na veia cava superior.",
-      "Na junção da veia subclávia esquerda com a jugular interna esquerda .",
+      "Na junção da veia subclávia esquerda com a jugular interna esquerda.",
       "Na veia ázigos."
     ],
     "correctAnswer": 0,
-    "explanation": "Explicação não disponível.",
+    "explanation": "Explicação detalhada no material didático.",
     "theme": "Tórax"
   },
   {
     "id": "torax-b2-27",
-    "question": "os pulmões \"se beijam\" no mediastino. Em qual compartimento específico isso ocorre?**",
+    "question": "os pulmões \"se beijam\" no mediastino. Em qual compartimento específico isso ocorre?",
     "options": [
       "Mediastino superior.",
-      "Mediastino inferior médio (no hilo) .",
+      "Mediastino inferior médio (no hilo).",
       "Mediastino posterior.",
       "Mediastino anterior."
     ],
     "correctAnswer": 0,
-    "explanation": "Explicação não disponível.",
+    "explanation": "Explicação detalhada no material didático.",
     "theme": "Tórax"
   },
   {
     "id": "torax-b2-28",
-    "question": "Qual a função da pressão negativa (subatmosférica) mantida pela pleura no espaço pleural?**",
+    "question": "Qual a função da pressão negativa (subatmosférica) mantida pela pleura no espaço pleural?",
     "options": [
       "Facilitar a digestão no hiato esofágico.",
-      "Evitar o colabamento (colapso) pulmonar .",
+      "Evitar o colabamento (colapso) pulmonar.",
       "Bombear o sangue para a aorta ascendente.",
       "Manter o timo em posição superior."
     ],
     "correctAnswer": 0,
-    "explanation": "Explicação não disponível.",
+    "explanation": "Explicação detalhada no material didático.",
     "theme": "Tórax"
   },
   {
     "id": "torax-b2-29",
-    "question": "As artérias intercostais posteriores são ramos diretos de qual grande vaso?**",
+    "question": "As artérias intercostais posteriores são ramos diretos de qual grande vaso?",
     "options": [
       "Artéria torácica interna.",
       "Artéria subclávia.",
-      "Artéria aorta torácica (descendente) .",
+      "Artéria aorta torácica (descendente).",
       "Tronco braquiocefálico."
     ],
     "correctAnswer": 0,
-    "explanation": "Explicação não disponível.",
+    "explanation": "Explicação detalhada no material didático.",
     "theme": "Tórax"
   },
   {
     "id": "torax-b2-30",
-    "question": "No hiato da veia cava (nível T8-T9), além da própria veia cava inferior, o que mais atravessa o diafragma?**",
+    "question": "No hiato da veia cava (nível T8-T9), além da própria veia cava inferior, o que mais atravessa o diafragma?",
     "options": [
-      "Ramos terminais do nervo frênico e vasos linfáticos .",
+      "Ramos terminais do nervo frênico e vasos linfáticos.",
       "Nervos vagos e esôfago.",
       "Ducto torácico e veia ázigos.",
       "Artéria aorta e tronco simpático."
     ],
     "correctAnswer": 0,
-    "explanation": "Explicação não disponível.",
+    "explanation": "Explicação detalhada no material didático.",
     "theme": "Tórax"
   },
   {
     "id": "torax-b2-31",
-    "question": "Sobre a anatomia do pulmão esquerdo, assinale a alternativa CORRETA:**",
+    "question": "Sobre a anatomia do pulmão esquerdo, assinale a alternativa CORRETA:",
     "options": [
       "Possui duas fissuras: horizontal e oblíqua.",
       "É mais curto e largo que o direito.",
-      "Sua borda anterior apresenta a incisura cardíaca .",
+      "Sua borda anterior apresenta a incisura cardíaca.",
       "Tem três lobos: superior, médio e inferior."
     ],
     "correctAnswer": 0,
-    "explanation": "Explicação não disponível.",
+    "explanation": "Explicação detalhada no material didático.",
     "theme": "Tórax"
   },
   {
     "id": "torax-b2-32",
-    "question": "O que ocorre tecnicamente quando o espaço pleural, que é virtual, se torna real devido ao acúmulo de sangue?**",
+    "question": "O que ocorre tecnicamente quando o espaço pleural, que é virtual, se torna real devido ao acúmulo de sangue?",
     "options": [
       "Pneumotórax.",
       "Quilotórax.",
       "Derrame pleural seroso.",
-      "Hemotórax ."
+      "Hemotórax."
     ],
     "correctAnswer": 0,
-    "explanation": "Explicação não disponível.",
+    "explanation": "Explicação detalhada no material didático.",
     "theme": "Tórax"
   },
   {
     "id": "torax-b2-33",
-    "question": "Qual nervo percorre o mediastino e inerva o pericárdio e a pleura mediastínica?**",
+    "question": "Qual nervo percorre o mediastino e inerva o pericárdio e a pleura mediastínica?",
     "options": [
       "Nervo vago.",
-      "Nervo frênico .",
+      "Nervo frênico.",
       "Nervo laríngeo recorrente.",
       "Nervo intercostal."
     ],
     "correctAnswer": 0,
-    "explanation": "Explicação não disponível.",
+    "explanation": "Explicação detalhada no material didático.",
     "theme": "Tórax"
   },
   {
     "id": "torax-b2-34",
-    "question": "Em qual compartimento do mediastino localizam-se o tronco simpático e a veia ázigos?**",
+    "question": "Em qual compartimento do mediastino localizam-se o tronco simpático e a veia ázigos?",
     "options": [
-      "Mediastino posterior .",
+      "Mediastino posterior.",
       "Mediastino médio.",
       "Mediastino superior.",
       "Mediastino anterior."
     ],
     "correctAnswer": 0,
-    "explanation": "Explicação não disponível.",
+    "explanation": "Explicação detalhada no material didático.",
     "theme": "Tórax"
   },
   {
     "id": "torax-b2-35",
-    "question": "A \"Hematose\" (troca de CO2 por O2) ocorre especificamente em qual parte da árvore respiratória?**",
+    "question": "A \"Hematose\" (troca de CO2 por O2) ocorre especificamente em qual parte da árvore respiratória?",
     "options": [
       "Brônquios principais.",
       "Carina da traqueia.",
-      "Bronquíolos terminais e alvéolos .",
+      "Bronquíolos terminais e alvéolos.",
       "Brônquios lobares."
     ],
     "correctAnswer": 0,
-    "explanation": "Explicação não disponível.",
+    "explanation": "Explicação detalhada no material didático.",
     "theme": "Tórax"
   },
   {
     "id": "torax-b2-36",
-    "question": "Qual é a disposição anatômica do hilo do pulmão direito, conforme a aula?**",
+    "question": "Qual é a disposição anatômica do hilo do pulmão direito:",
     "options": [
       "Artéria, Brônquio e Veia (ABV).",
-      "Brônquio principal, Artéria pulmonar e Veias pulmonares (BAV) .",
+      "Brônquio principal, Artéria pulmonar e Veias pulmonares (BAV).",
       "Veia, Artéria e Brônquio.",
       "Brônquio, Veia e Linfático."
     ],
     "correctAnswer": 0,
-    "explanation": "Explicação não disponível.",
+    "explanation": "Explicação detalhada no material didático.",
     "theme": "Tórax"
   },
   {
     "id": "torax-b2-37",
-    "question": "O professor afirma que \"tudo que está embaixo do diafragma está no abdômen\". Qual o limite superior do mediastino?**",
+    "question": "O professor afirma que \"tudo que está embaixo do diafragma está no abdômen\". Qual o limite superior do mediastino?",
     "options": [
-      "Fúrcula esternal (abertura torácica superior) .",
+      "Fúrcula esternal (abertura torácica superior).",
       "Manúbrio do esterno.",
       "Nível de T4.",
       "Cartilagem cricoide."
     ],
     "correctAnswer": 0,
-    "explanation": "Explicação não disponível.",
+    "explanation": "Explicação detalhada no material didático.",
     "theme": "Tórax"
   },
   {
     "id": "torax-b2-38",
-    "question": "Qual a membrana que reveste intrinsecamente o pulmão, sendo \"agarrada\" e impossível de descolar?**",
+    "question": "Qual a membrana que reveste intrinsecamente o pulmão, sendo \"agarrada\" e impossível de descolar?",
     "options": [
       "Pleura parietal costal.",
-      "Pleura visceral .",
+      "Pleura visceral.",
       "Pleura mediastínica.",
       "Pericárdio seroso."
     ],
     "correctAnswer": 0,
-    "explanation": "Explicação não disponível.",
+    "explanation": "Explicação detalhada no material didático.",
     "theme": "Tórax"
   },
   {
     "id": "torax-b2-39",
-    "question": "Sobre a drenagem linfática profunda dos pulmões, eles drenam para quais linfonodos?**",
+    "question": "Sobre a drenagem linfática profunda dos pulmões, eles drenam para quais linfonodos?",
     "options": [
       "Linfonodos broncopulmonares (hilares).",
-      "Linfonodos pulmonares (ao longo dos brônquios) .",
+      "Linfonodos pulmonares (ao longo dos brônquios).",
       "Cisterna do quilo.",
       "Linfonodos axilares."
     ],
     "correctAnswer": 0,
-    "explanation": "Explicação não disponível.",
+    "explanation": "Explicação detalhada no material didático.",
     "theme": "Tórax"
   },
   {
     "id": "torax-b2-40",
-    "question": "O acúmulo de linfa no espaço pleural, geralmente por lesão do ducto torácico, é chamado de:**",
+    "question": "O acúmulo de linfa no espaço pleural, geralmente por lesão do ducto torácico, é chamado de:",
     "options": [
       "Hemotórax.",
       "Hidrotórax.",
-      "Quilotórax .",
+      "Quilotórax.",
       "Pneumotórax."
     ],
     "correctAnswer": 0,
-    "explanation": "Explicação não disponível.",
+    "explanation": "Explicação detalhada no material didático.",
     "theme": "Tórax"
   }
 ];
