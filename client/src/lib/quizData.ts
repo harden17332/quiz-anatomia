@@ -518,8 +518,8 @@ export const fisiologiaCardiacaQuestions: Question[] = [
       "Os átrios e ventrículos são isolados eletricamente por tecido fibroso, exceto pelo NAV",
       "A contração ventricular começa na base do coração e termina no ápice"
     ],
-    "correctAnswer": -1,
-    "explanation": "",
+    "correctAnswer": 3,
+    "explanation": "A contração ventricular começa no ápice e sobe em direção à base para empurrar o sangue para as artérias",
     "theme": "Fisiologia"
   }
 ];
