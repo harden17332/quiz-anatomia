@@ -4228,3 +4228,4 @@ export const quizzes: Quiz[] = [
   { id: "fisiologia-muscular", title: "Fisiologia Muscular", description: "Mecanismos de contração e fisiologia do músculo", emoji: "💪", category: "Fisiologia", questions: fisiologiaMuscularQuestions },
   { id: "sna", title: "SNA", description: "Sistema Nervoso Autônomo e Fisiologia de Membrana", emoji: "🧠⚡", category: "Fisiologia", questions: snaQuestions }
 ];
+// Deploy trigger: Sun Apr 12 19:58:05 EDT 2026
