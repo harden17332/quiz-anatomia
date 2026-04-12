@@ -4214,8 +4214,8 @@ export const snaQuestions: Question[] = [
 
 
 export const quizzes: Quiz[] = [
-  { id: "coracao", title: "Coração", description: "Anatomia do sistema cardiovascular", emoji: "🫀", category: "Anatomia", questions: coracaoQuestions },
-  { id: "torax", title: "Tórax", description: "Mediastino, Pulmões, Pleuras e Vascularização", emoji: "🫁", category: "Anatomia", questions: toraxQuestions },
+  { id: "coracao", title: "Coração", description: "Anatomia do sistema cardiovascular", emoji: "❤️", category: "Anatomia", questions: coracaoQuestions },
+  { id: "torax", title: "Tórax", description: "Mediastino, Pulmões, Pleuras e Vascularização", emoji: "🩺", category: "Anatomia", questions: toraxQuestions },
   { id: "cavidade-oral", title: "Cavidade Oral", description: "Anatomia da boca e glândulas", emoji: "👄", category: "Anatomia", questions: cavidadeOralQuestions },
   { id: "faringe", title: "Faringe", description: "Anatomia da faringe", emoji: "🗣️", category: "Anatomia", questions: faringeQuestions },
   { id: "laringe", title: "Laringe", description: "Anatomia da laringe", emoji: "🎙️", category: "Anatomia", questions: laringeQuestions },
