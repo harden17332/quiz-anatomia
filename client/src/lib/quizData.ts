@@ -1,20 +1,4 @@
-export interface Question {
-  id: string;
-  question: string;
-  options: string[];
-  correctAnswer: number;
-  explanation: string;
-  theme: string;
-}
-
-export interface Quiz {
-  id: string;
-  title: string;
-  description: string;
-  emoji: string;
-  category: "Anatomia" | "Fisiologia";
-  questions: Question[];
-}
+import { Quiz, Question } from "./types";
 
 export const coracaoQuestions: Question[] = [
 {
@@ -338,7 +322,6 @@ export const coracaoQuestions: Question[] = [
     theme: "Coração"
   }
 ];
-
 export const toraxQuestions: Question[] = [
 {
         id: "torax-1",
@@ -661,7 +644,6 @@ export const toraxQuestions: Question[] = [
         theme: "Tórax"
       }
 ];
-
 export const cavidadeOralQuestions: Question[] = [
 {
     id: "oral-1",
@@ -904,7 +886,6 @@ export const cavidadeOralQuestions: Question[] = [
     theme: "Cavidade Oral"
   }
 ];
-
 export const faringeQuestions: Question[] = [
 {
         id: "faringe-1",
@@ -1067,7 +1048,6 @@ export const faringeQuestions: Question[] = [
         theme: "Faringe"
       }
 ];
-
 export const laringeQuestions: Question[] = [
 {
         id: "laringe-21",
@@ -1230,7 +1210,6 @@ export const laringeQuestions: Question[] = [
         theme: "Laringe"
       }
 ];
-
 export const tireoideQuestions: Question[] = [
 {
         id: "tireoide-41",
@@ -1353,7 +1332,6 @@ export const tireoideQuestions: Question[] = [
         theme: "Tireoide"
       }
 ];
-
 export const vascularizacaoQuestions: Question[] = [
 {
     id: "vasc-1",
@@ -1516,7 +1494,6 @@ export const vascularizacaoQuestions: Question[] = [
     theme: "Vascularização"
   }
 ];
-
 export const olhoQuestions: Question[] = [
 {
         id: "olho-21",
@@ -1759,7 +1736,6 @@ export const olhoQuestions: Question[] = [
         theme: "Olho"
       }
 ];
-
 export const orelhaQuestions: Question[] = [
 {
         id: "orelha-1",
@@ -2525,7 +2501,6 @@ export const fisiologiaCardiacaQuestions: Question[] = [
     "theme": "Fisiologia"
   }
 ];
-
 export const hemostasiaQuestions: Question[] = [
   {
     "id": "hemostasia-v2-1",
@@ -3048,7 +3023,6 @@ export const hemostasiaQuestions: Question[] = [
     "theme": "Fisiologia"
   }
 ];
-
 export const fisiologiaMuscularQuestions: Question[] = [
   {
     "id": "fisiologia-musc-2",
@@ -3688,167 +3662,205 @@ export const fisiologiaMuscularQuestions: Question[] = [
     "theme": "Fisiologia"
   }
 ];
-
 export const snaQuestions: Question[] = [
   {
     "id": "sna-1",
-    "question": "Um paciente de 68 anos com insuficiência cardíaca congestiva utiliza Digoxina. O mecanismo de ação desse fármaco envolve a inibição da bomba de sódio e potássio (Na+/K+-ATPase). Qual a consequência fisiológica direta dessa inibição nas células miocárdicas?",
+    "question": "Um paciente apresenta fraqueza muscular severa e ptose palpebral (queda da pálpebra). O diagnóstico suspeito é Miastenia Gravis. Fisiologicamente, essa condição ocorre porque:.",
     "options": [
-      "Aumento do efluxo de sódio, reduzindo a osmolaridade celular mediante regulação homeostática específica.",
-      "Acúmulo de sódio intracelular, o que reduz a atividade do trocador Na+/Ca2+.",
-      "Hiperpolarização imediata da membrana celular devido ao acúmulo de potássio.",
-      "Redução da contratilidade cardíaca por depleção de cálcio intracelular."
+      "Anticorpos destroem os receptores muscarínicos M3 na junção neuromuscular.",
+      "Há um bloqueio na liberação de acetilcolina pelas vesículas pré-sinápticas.",
+      "Anticorpos atacam os receptores nicotínicos, impedindo a despolarização da fibra muscular.",
+      "Ocorre uma hiperatividade da enzima acetilcolinesterase na fenda sináptica."
     ],
-    "correctAnswer": 1,
-    "explanation": "O acúmulo de Na+ intracelular reduz o gradiente que move o trocador Na+/Ca2+, resultando em mais cálcio disponível para a contração (inotropismo positivo)",
+    "correctAnswer": 2,
+    "explanation": "Miastenia Gravis envolve anticorpos contra receptores nicotínicos na placa motora.",
     "theme": "Fisiologia"
   },
   {
     "id": "sna-2",
-    "question": "Durante um procedimento estético, uma paciente recebe aplicação de toxina botulínica. Fisiologicamente, essa toxina atua bloqueando a liberação de acetilcolina no neurônio motor. Assinale a alternativa que descreve corretamente o mecanismo molecular envolvido:",
+    "question": "Durante uma aplicação estética de toxina botulínica, o músculo alvo entra em paralisia flácida. Qual o mecanismo molecular descrito em suas notas para esse efeito?.",
     "options": [
-      "Competição direta com a acetilcolina pelos receptores nicotínicos na placa motora via sinalização celular local.",
-      "Quebra das proteínas que auxiliam a vesícula de neurotransmissor a se fundir com a membrana pré-sináptica.",
-      "Inibição da enzima acetilcolinesterase na fenda sináptica via sinalização celular local.",
-      "Bloqueio dos canais de cálcio dependentes de voltagem no terminal axônico via sinalização celular local."
+      "Competição com a acetilcolina pelo sítio de ligação no receptor nicotínico.",
+      "Quebra das proteínas de fusão (SNAREs), impedindo que a vesícula de acetilcolina se funda à membrana.",
+      "Bloqueio dos canais de cálcio dependentes de voltagem no neurônio pós-ganglionar.",
+      "Ativação excessiva de receptores M2, gerando hiperpolarização muscular."
     ],
     "correctAnswer": 1,
-    "explanation": "A toxina botulínica cliva proteínas de fusão (SNAREs), impedindo a exocitose da acetilcolina",
+    "explanation": "A toxina botulínica destrói proteínas SNARE, impedindo a exocitose de ACh.",
     "theme": "Fisiologia"
   },
   {
     "id": "sna-3",
-    "question": "Um homem de 45 anos apresenta quadro de fraqueza muscular progressiva e ptose palpebral, com suspeita de Miastenia Gravis. Nessa patologia, anticorpos atacam os receptores nicotínicos da placa motora. Sobre esses receptores, é CORRETO afirmar:",
+    "question": "Um paciente asmático em crise de bronconstrição é tratado com um agonista β2. Assinale a alternativa que descreve corretamente a via de sinalização ativada:.",
     "options": [
-      "São receptores metabotrópicos acoplados à proteína Gq\n por meio de um processo fisiológico adaptativo.",
-      "Funcionam como canais iônicos (ionotrópicos), permitindo a entrada rápida de sódio para despolarização.",
-      "Sua ativação primária promove a hiperpolarização da fibra muscular esquelética por meio de um processo fisiológico adaptativo.",
-      "São estimulados preferencialmente por noradrenalina em condições fisiológicas por meio de um processo fisiológico adaptativo."
+      "Proteína Gq -> Fosfolipase C -> Aumento de Cálcio.",
+      "Proteína Gi -> Inibição da Adenilato Ciclase -> Queda de AMPc.",
+      "Proteína Gs -> Ativação da Adenilato Ciclase -> Aumento de AMPc -> Relaxamento muscular.",
+      "Abertura direta de canais de Cloreto, gerando hiperpolarização."
     ],
-    "correctAnswer": 1,
-    "explanation": "Receptores nicotínicos são canais iônicos diretos (ionotrópicos) que permitem a entrada de Na+",
+    "correctAnswer": 2,
+    "explanation": "Receptores β2 ativam Gs, aumentando AMPc e gerando relaxamento bronquial.",
     "theme": "Fisiologia"
   },
   {
     "id": "sna-4",
-    "question": "Um paciente diabético de longa data apresenta tontura ao se levantar (hipotensão ortostática) e saciedade precoce (gastroparesia), sugerindo disfunção autonômica. Qual divisão do sistema nervoso periférico é responsável pelo controle dessas funções involuntárias e automáticas?",
+    "question": "Sobre a organização das vias autonômicas, assinale a alternativa INCORRETA:.",
     "options": [
-      "Sistema Nervoso Somático Eferente.",
-      "Sistema Nervoso Autônomo.",
-      "Sistema Nervoso Sensorial Consciente.",
-      "Apenas o Sistema Nervoso Simpático, exclusivamente."
+      "Todo neurônio pré-ganglionar (simpático ou parassimpático) libera acetilcolina.",
+      "O sistema simpático possui neurônios pré-ganglionares curtos e pós-ganglionares longos.",
+      "Os gânglios do sistema parassimpático localizam-se longe dos órgãos efetores, próximos à coluna vertebral.",
+      "A fibra pré-ganglionar é mielinizada, o que permite uma condução mais rápida do impulso."
     ],
-    "correctAnswer": 1,
-    "explanation": "O SNA controla funções involuntárias como pressão arterial e digestão",
+    "correctAnswer": 2,
+    "explanation": "Gânglios parassimpáticos são próximos ou dentro dos órgãos efetores.",
     "theme": "Fisiologia"
   },
   {
     "id": "sna-5",
-    "question": "Considere um paciente em choque anafilático que apresenta bronconstrição acentuada. Para reverter o quadro, utiliza-se adrenalina. Qual receptor e via de sinalização são o alvo principal para promover a broncodilatação?",
+    "question": "Um paciente com bradicardia extrema necessita de intervenção. Fisiologicamente, a redução da frequência cardíaca pelo sistema parassimpático ocorre via:.",
     "options": [
-      "Receptor β \n2\n​\n , que ativa a proteína Gs, aumentando o AMPc e estimulando o relaxamento da musculatura lisa.",
-      "Receptor α \n1\n​\n , que ativa a proteína Gq, aumentando o cálcio intracelular afetando diretamente a dinâmica funcional.",
-      "Receptor M \n3\n​\n , que promove a contração das vias aéreas via proteína Gq\n afetando diretamente a dinâmica funcional.",
-      "Receptor β \n1\n​\n , que aumenta a frequência cardíaca sem interferir no pulmão afetando diretamente a dinâmica funcional."
+      "Receptor M2 acoplado à proteína Gi, que inibe a adenilato ciclase.",
+      "Receptor β1 acoplado à proteína Gs, aumentando o AMPc.",
+      "Receptor M3 acoplado à proteína Gq, aumentando o cálcio.",
+      "Receptor nicotínico Nn no gânglio autonômico."
     ],
     "correctAnswer": 0,
-    "explanation": "Receptores β",
+    "explanation": "M2 no coração reduz AMPc via Gi, causando bradicardia.",
     "theme": "Fisiologia"
   },
   {
     "id": "sna-6",
-    "question": "Assinale a alternativa INCORRETA sobre a organização das vias autonômicas:",
+    "question": "Em uma situação de \"luta ou fuga\", um indivíduo apresenta midríase (dilatação da pupila). Esse efeito é mediado por qual receptor e mecanismo?.",
     "options": [
-      "Todo neurônio pré-ganglionar, tanto do simpático quanto do parassimpático, libera acetilcolina.",
-      "O neurônio pós-ganglionar do sistema simpático é geralmente longo.",
-      "No sistema parassimpático, o gânglio localiza-se próximo ou dentro do órgão efetor.",
-      "O sistema simpático tem origem na região craniossacral da medula espinhal."
+      "Receptor M3, via proteína Gq.",
+      "Receptor α1, via proteína Gq, promovendo a contração do músculo radial da íris.",
+      "Receptor β2, via proteína Gs, promovendo relaxamento.",
+      "Receptor α2, via proteína Gi, inibindo a miose."
     ],
-    "correctAnswer": 3,
-    "explanation": "O sistema simpático é toracolombar (T1-L2); o parassimpático é que é craniossacral",
+    "correctAnswer": 1,
+    "explanation": "α1 via Gq contrai o músculo radial, causando midríase.",
     "theme": "Fisiologia"
   },
   {
     "id": "sna-7",
-    "question": "Um paciente apresenta bradicardia severa. Sabe-se que a acetilcolina reduz a frequência cardíaca atuando em receptores específicos. Qual o receptor e a proteína G envolvida nesse mecanismo?",
+    "question": "A medula da glândula suprarrenal é uma peça fundamental do sistema simpático. Sobre ela, é correto afirmar:.",
     "options": [
-      "Receptor M \n3\n​\n  e proteína Gq através de uma alteração no mecanismo de transporte.",
-      "Receptor M \n2\n​\n  e proteína Gi, que inibe a adenilato ciclase e reduz o AMPc.",
-      "Receptor β \n1\n​\n  e proteína Gs através de uma alteração no mecanismo de transporte.",
-      "Receptor nicotínico e proteína Gs através de uma alteração no mecanismo de transporte."
+      "É formada por neurônios pós-ganglionares modificados que liberam majoritariamente noradrenalina.",
+      "Atua como uma glândula endócrina, liberando 80% de adrenalina e 20% de noradrenalina no sangue.",
+      "Libera acetilcolina diretamente nos órgãos efetores durante o estresse.",
+      "Seus receptores são exclusivamente muscarínicos do tipo M1."
     ],
     "correctAnswer": 1,
-    "explanation": "M",
+    "explanation": "A medula adrenal é um gânglio modificado que lança adrenalina/noradrenalina no sangue.",
     "theme": "Fisiologia"
   },
   {
     "id": "sna-8",
-    "question": "Sobre o transporte através da membrana plasmática, um estudante observa que certas substâncias movem-se a favor do gradiente de concentração sem gasto de ATP, mas utilizando proteínas transportadoras. Esse processo é denominado:",
+    "question": "Um paciente diabético apresenta gastroparesia (esvaziamento gástrico lento). Isso pode ser causado por uma falha no sistema parassimpático, que normalmente estimula a motilidade via:.",
     "options": [
-      "Difusão simples.",
-      "Transporte ativo primário.",
-      "Difusão facilitada.",
-      "Transporte ativo secundário."
+      "Receptores β3 e proteína Gs.",
+      "Receptores M3 e proteína Gq.",
+      "Receptores α2 e proteína Gi.",
+      "Receptores nicotínicos musculares."
     ],
-    "correctAnswer": 2,
-    "explanation": "Difusão facilitada utiliza proteínas transportadoras a favor do gradiente, sem ATP",
+    "correctAnswer": 1,
+    "explanation": "M3 via Gq estimula a motilidade e secreções gastrointestinais.",
     "theme": "Fisiologia"
   },
   {
     "id": "sna-9",
-    "question": "Em uma situação de \"luta ou fuga\", o sistema simpático promove midríase (dilatação da pupila). Esse efeito é mediado pela ativação de:",
+    "question": "Assinale a alternativa que contém a sequência correta da síntese das catecolaminas:.",
     "options": [
-      "Receptores α \n1\n​\n , que ativam a proteína Gq e aumentam o cálcio intracelular para contração do músculo radial da íris.",
-      "Receptores M \n3\n​\n , que promovem a miose bloqueando a via de fluxo iônico.",
-      "Receptores β \n2\n​\n , via proteína Gs bloqueando a via de fluxo iônico.",
-      "Receptores α \n2\n​\n , que inibem a liberação de noradrenalina bloqueando a via de fluxo iônico."
+      "Tirosina -> Dopamina -> DOPA -> Noradrenalina.",
+      "Tirosina -> DOPA -> Dopamina -> Noradrenalina -> Adrenalina.",
+      "Colina + Acetil-CoA -> Acetilcolina.",
+      "Triptofano -> Serotonina -> Noradrenalina."
     ],
-    "correctAnswer": 0,
-    "explanation": "α",
+    "correctAnswer": 1,
+    "explanation": "Sequência correta: Tirosina -> DOPA -> Dopamina -> Noradrenalina -> Adrenalina.",
     "theme": "Fisiologia"
   },
   {
     "id": "sna-10",
-    "question": "A bomba de Na+/K+-ATPase é fundamental para a bioeletrogênese. Ela atua expulsando e introduzindo íons na seguinte proporção\n:",
+    "question": "O receptor α2 adrenérgico é conhecido por sua função reguladora. Qual seu efeito nos vasos sanguíneos?.",
     "options": [
-      "2 íons Na+ para fora e 3 íons K+ para dentro.",
-      "3 íons Na+ para fora e 2 íons K+ para dentro.",
-      "3 íons Na+ para dentro e 2 íons K+ para fora.",
-      "1 íon Na+ para fora e 1 íon K+ para dentro."
+      "Promove vasoconstrição direta via Gq.",
+      "Atua como um inibidor do receptor α1, gerando vasodilatação via proteína Gi.",
+      "Aumenta a liberação de noradrenalina na fenda sináptica.",
+      "Estimula a liberação de renina nos rins."
     ],
     "correctAnswer": 1,
-    "explanation": "A proporção fixa é de 3 Na+ para fora e 2 K+ para dentro",
+    "explanation": "α2 via Gi inibe a vasoconstrição de α1, resultando em vasodilatação.",
     "theme": "Fisiologia"
   },
   {
     "id": "sna-11",
-    "question": "Um paciente com doença de Alzheimer apresenta baixos níveis de acetilcolina cerebral. O tratamento visa aumentar a disponibilidade desse neurotransmissor na fenda sináptica. Qual enzima é responsável pela degradação da acetilcolina?",
+    "question": "Um paciente sofreu intoxicação por \"Curare\". O quadro de paralisia ocorre porque o Curare:.",
     "options": [
-      "Tirosina hidroxilase.",
-      "MAO (Monoaminoxidase).",
-      "Acetilcolinesterase.",
-      "COMT (Catecol-O-metiltransferase)."
+      "Impede a quebra da acetilcolina pela acetilcolinesterase.",
+      "Bloqueia a liberação de vesículas de acetilcolina.",
+      "Compete com a acetilcolina pelos receptores nicotínicos na placa motora, impedindo a abertura de canais de Na+.",
+      "Ativa receptores GABA, hiperpolarizando o neurônio motor."
     ],
     "correctAnswer": 2,
-    "explanation": "A acetilcolinesterase degrada a ACh na fenda sináptica",
+    "explanation": "Curare compete pelos receptores nicotínicos, impedindo o influxo de Na+ e a contração.",
     "theme": "Fisiologia"
   },
   {
     "id": "sna-12",
-    "question": "Assinale a alternativa CORRETA sobre o potencial de ação neuronal\n:",
+    "question": "Sobre os receptores muscarínicos, utilize a regra dos \"Ímpares e Pares\" para assinalar a correta:.",
     "options": [
-      "A fase de despolarização é causada pela saída rápida de potássio da célula.",
-      "O limiar de excitação deve ser atingido para que o potencial de ação ocorra.",
-      "A repolarização ocorre devido à entrada de sódio através de canais dependentes de voltagem.",
-      "Durante a hiperpolarização, o potencial de membrana torna-se menos negativo que o de repouso."
+      "M1, M3 e M5 são inibitórios e acoplados à proteína Gi.",
+      "M2 e M4 são excitatórios e acoplados à proteína Gq.",
+      "M1, M3 e M5 ativam a fosfolipase C e aumentam o cálcio (Gq).",
+      "Todos os receptores muscarínicos são ionotrópicos."
     ],
-    "correctAnswer": 1,
-    "explanation": "O potencial de ação é um evento \"tudo ou nada\" que requer atingir o limiar",
+    "correctAnswer": 2,
+    "explanation": "Ímpares (M1, M3, M5) são Gq/excitatórios.",
     "theme": "Fisiologia"
   },
   {
     "id": "sna-13",
-    "question": "Um indivíduo apresenta sudorese excessiva ao realizar uma prova. Embora a sudorese seja uma resposta do sistema simpático, as fibras pós-ganglionares que inervam as glândulas sudoríparas são uma exceção e liberam\n:",
+    "question": "Um paciente com insuficiência cardíaca utiliza um medicamento que visa aumentar a força de contração (inotropismo). O alvo fisiológico para aumentar a força e frequência cardíaca é:.",
+    "options": [
+      "Receptor β1 acoplado à proteína Gs.",
+      "Receptor β2 acoplado à proteína Gi.",
+      "Receptor α1 acoplado à proteína Gq.",
+      "Receptor M2 acoplado à proteína Gs."
+    ],
+    "correctAnswer": 0,
+    "explanation": "No coração, β1 (Gs) aumenta frequência e força.",
+    "theme": "Fisiologia"
+  },
+  {
+    "id": "sna-14",
+    "question": "A sinalização via Proteína Gq envolve quais segundos mensageiros?.",
+    "options": [
+      "AMPc e GMPc.",
+      "IP3 (Inositol trifosfato) e DAG (Diacilglicerol), que aumentam o cálcio intracelular.",
+      "Apenas canais de Sódio e Potássio.",
+      "Adenilato ciclase e ATP."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Gq ativa Fosfolipase C -> IP3/DAG -> Liberação de Cálcio.",
+    "theme": "Fisiologia"
+  },
+  {
+    "id": "sna-15",
+    "question": "Dentre as funções do Sistema Nervoso Autônomo, qual estrutura é considerada o principal centro integrador que recebe estímulos internos e externos para manter a homeostase?.",
+    "options": [
+      "Tálamo.",
+      "Hipotálamo.",
+      "Tronco encefálico.",
+      "Cerebelo."
+    ],
+    "correctAnswer": 1,
+    "explanation": "O hipotálamo integra as respostas autonômicas.",
+    "theme": "Fisiologia"
+  },
+  {
+    "id": "sna-16",
+    "question": "As fibras pós-ganglionares do sistema simpático que inervam as glândulas sudoríparas representam uma exceção fisiológica, pois liberam:.",
     "options": [
       "Noradrenalina.",
       "Adrenalina.",
@@ -3856,233 +3868,168 @@ export const snaQuestions: Question[] = [
       "Dopamina."
     ],
     "correctAnswer": 2,
-    "explanation": "Glândulas sudoríparas são uma exceção simpática que utiliza fibras colinérgicas",
-    "theme": "Fisiologia"
-  },
-  {
-    "id": "sna-14",
-    "question": "Sobre os receptores metabotrópicos, assinale a alternativa INCORRETA:",
-    "options": [
-      "Estão acoplados à proteína G\n seguindo o padrão de resposta sistêmica.",
-      "Sua resposta é mais lenta, porém mais duradoura que a dos ionotrópicos.",
-      "Ativam cascatas de sinalização intracelular através de segundos mensageiros.",
-      "Funcionam diretamente como canais iônicos de abertura rápida."
-    ],
-    "correctAnswer": 3,
-    "explanation": "Receptores metabotrópicos não são canais iônicos diretos; essa é a definição de ionotrópicos",
-    "theme": "Fisiologia"
-  },
-  {
-    "id": "sna-15",
-    "question": "A síntese das catecolaminas segue uma via metabólica específica. Qual é o precursor inicial nessa via, conforme as notas de aula?",
-    "options": [
-      "Triptofano.",
-      "Tirosina.",
-      "Colina.",
-      "Acetil-CoA."
-    ],
-    "correctAnswer": 1,
-    "explanation": "A síntese começa com o aminoácido Tirosina",
-    "theme": "Fisiologia"
-  },
-  {
-    "id": "sna-16",
-    "question": "Um paciente ingere acidentalmente uma substância que bloqueia os receptores α \n2\n​\n  adrenérgicos. Fisiologicamente, o receptor α \n2\n​\n  atua como um \"freio\", pois\n:",
-    "options": [
-      "Estimula a liberação de mais noradrenalina rompendo o balanço hidrostático necessário.",
-      "Ativa a proteína Gs para aumentar o AMPc rompendo o balanço hidrostático necessário.",
-      "Inibe o receptor α \n1\n​\n  (vasoconstritor), gerando vasodilatação via proteína Gi.",
-      "Promove a contração do esfíncter ureteral rompendo o balanço hidrostático necessário."
-    ],
-    "correctAnswer": 2,
-    "explanation": "α",
+    "explanation": "Glândulas sudoríparas são inervadas por fibras simpáticas que liberam ACh.",
     "theme": "Fisiologia"
   },
   {
     "id": "sna-17",
-    "question": "A proteína Gq, quando ativada por um neurotransmissor, estimula a enzima fosfolipase C, gerando quais segundos mensageiros?",
+    "question": "Um paciente apresenta retenção urinária. Para auxiliar na micção, o mecanismo fisiológico desejado seria a contração do músculo detrusor da bexiga. Isso é mediado por:.",
     "options": [
-      "AMPc e GMPc através de uma alteração no mecanismo de transporte.",
-      "Diacilglicerol (DAG) e Inositol Trifosfato (IP3).",
-      "ATP e ADP através de uma alteração no mecanismo de transporte.",
-      "Canais de sódio e potássio através de uma alteração no mecanismo de transporte."
+      "Receptor β3 (que promove relaxamento).",
+      "Receptor M3 (via parassimpático, promovendo contração).",
+      "Receptor α1 (que contrai o esfíncter, dificultando a micção).",
+      "Receptor nicotínico muscular."
     ],
     "correctAnswer": 1,
-    "explanation": "Gq ativa a fosfolipase C, que cliva PIP2 em DAG e IP3",
+    "explanation": "O parassimpático (M3) contrai o detrusor para a micção.",
     "theme": "Fisiologia"
   },
   {
     "id": "sna-18",
-    "question": "No sistema gastrointestinal, o estímulo parassimpático via receptor M \n3\n​\n  promove\n:",
+    "question": "Qual a principal diferença funcional entre receptores Ionotrópicos e Metabotrópicos?.",
     "options": [
-      "Inibição da digestão e constipação sob influência direta do controle autonômico.",
-      "Aumento da motilidade e secreção ácida (via bomba de prótons).",
-      "Relaxamento do músculo detrusor sob influência direta do controle autonômico.",
-      "Vasoconstrição das artérias mesentéricas sob influência direta do controle autonômico."
+      "Ionotrópicos são acoplados à proteína G; Metabotrópicos são canais iônicos.",
+      "Ionotrópicos promovem respostas rápidas; Metabotrópicos promovem respostas mais lentas e duradouras.",
+      "Apenas os metabotrópicos alteram o potencial elétrico da célula.",
+      "Receptores adrenérgicos são sempre ionotrópicos."
     ],
     "correctAnswer": 1,
-    "explanation": "O parassimpático (via M",
+    "explanation": "Ionotrópicos são canais rápidos; metabotrópicos usam proteína G e são mais lentos.",
     "theme": "Fisiologia"
   },
   {
     "id": "sna-19",
-    "question": "Um paciente apresenta retenção urinária. Para facilitar a micção, seria necessário estimular qual receptor no músculo detrusor da bexiga?",
+    "question": "A enzima responsável pela degradação da acetilcolina na fenda sináptica, encerrando o sinal, é a:.",
     "options": [
-      "α \n1\n​\n  (que promove contração do esfíncter)\n bloqueando a via de fluxo iônico.",
-      "M \n3\n​\n  (parassimpático, que promove contração do detrusor).",
-      "β \n3\n​\n  (que promove relaxamento do detrusor)\n bloqueando a via de fluxo iônico.",
-      "M \n2\n​\n  (que reduz a frequência cardíaca) bloqueando a via de fluxo iônico."
+      "MAO (Monoaminoxidase).",
+      "COMT (Catecol-O-metiltransferase).",
+      "Acetilcolinesterase.",
+      "Tirosina hidroxilase."
     ],
-    "correctAnswer": 1,
-    "explanation": "M",
+    "correctAnswer": 2,
+    "explanation": "A acetilcolinesterase limpa a fenda sináptica da acetilcolina.",
     "theme": "Fisiologia"
   },
   {
     "id": "sna-20",
-    "question": "O veneno \"Curare\" é conhecido por causar paralisia muscular. Seu mecanismo consiste em\n:",
-    "options": [
-      "Bloquear a liberação de acetilcolina gerando uma resposta compensatória inadequada.",
-      "Competir com a acetilcolina pelos receptores nicotínicos na placa motora, impedindo a despolarização.",
-      "Inibir a bomba de sódio e potássio gerando uma resposta compensatória inadequada.",
-      "Ativar excessivamente os receptores muscarínicos gerando uma resposta compensatória inadequada."
-    ],
-    "correctAnswer": 1,
-    "explanation": "O curare bloqueia o receptor nicotínico, impedindo a contração muscular",
-    "theme": "Fisiologia"
-  },
-  {
-    "id": "sna-23",
-    "question": "Sobre a proteína Gi, é correto afirmar que sua ativação leva a\n:",
-    "options": [
-      "Aumento dos níveis de AMP cíclico por meio de um processo fisiológico adaptativo.",
-      "Inibição da adenilato ciclase e diminuição do AMP cíclico.",
-      "Ativação da fosfolipase C por meio de um processo fisiológico adaptativo.",
-      "Abertura direta de canais de cálcio por meio de um processo fisiológico adaptativo."
-    ],
-    "correctAnswer": 1,
-    "explanation": "A proteína Gi é inibitória da adenilato ciclase",
-    "theme": "Fisiologia"
-  },
-  {
-    "id": "sna-24",
-    "question": "A medula da glândula suprarrenal é considerada um gânglio simpático modificado. Ela secreta principalmente\n:",
-    "options": [
-      "Acetilcolina seguindo o padrão de resposta sistêmica.",
-      "Adrenalina (80%) e Noradrenalina (20%).",
-      "Apenas Dopamina seguindo o padrão de resposta sistêmica.",
-      "Serotonina seguindo o padrão de resposta sistêmica."
-    ],
-    "correctAnswer": 1,
-    "explanation": "A medula suprarrenal libera majoritariamente adrenalina na corrente sanguínea",
-    "theme": "Fisiologia"
-  },
-  {
-    "id": "sna-25",
-    "question": "Um paciente apresenta taquicardia em uma situação de estresse. O neurotransmissor noradrenalina está atuando em qual receptor cardíaco para aumentar a frequência e a força de contração?",
-    "options": [
-      "β \n1\n​\n  adrenérgico, acoplado à proteína Gs.",
-      "β \n2\n​\n  adrenérgico, promovendo vasodilatação.",
-      "M \n2\n​\n  muscarínico, promovendo bradicardia.",
-      "α \n1\n​\n  adrenérgico, promovendo vasoconstrição."
-    ],
-    "correctAnswer": 0,
-    "explanation": "No coração, o simpático atua via β",
-    "theme": "Fisiologia"
-  },
-  {
-    "id": "sna-26",
-    "question": "Assinale a alternativa que correlaciona corretamente o receptor e sua proteína G correspondente, conforme o \"macete\" fornecido no material:",
-    "options": [
-      "α \n1\n​\n  - Gi; α \n2\n​\n  - Gq; Betas - Gs.",
-      "α \n1\n​\n  - Gq; α \n2\n​\n  - Gi; Betas - Gs.",
-      "α \n1\n​\n  - Gs; α \n2\n​\n  - Gi; Betas - Gq.",
-      "Todos os receptores adrenérgicos são acoplados à proteína Gq."
-    ],
-    "correctAnswer": 1,
-    "explanation": "α",
-    "theme": "Fisiologia"
-  },
-  {
-    "id": "sna-27",
-    "question": "Em relação aos receptores muscarínicos, quais são considerados inibitórios (pares) e acoplados à proteína Gi?",
-    "options": [
-      "M \n1\n​\n  e M \n3\n​.",
-      "M \n2\n​\n  e M \n4\n​.",
-      "M \n3\n​\n  e M \n5\n​.",
-      "Apenas o M \n1\n​."
-    ],
-    "correctAnswer": 1,
-    "explanation": "Receptores muscarínicos pares (M",
-    "theme": "Fisiologia"
-  },
-  {
-    "id": "sna-28",
-    "question": "A lipólise (quebra de gordura) no tecido adiposo é estimulada pelo sistema simpático através do receptor\n:",
-    "options": [
-      "α \n1\n​.",
-      "β \n2\n​.",
-      "β \n3\n​.",
-      "M \n3\n​."
-    ],
-    "correctAnswer": 2,
-    "explanation": "O receptor β",
-    "theme": "Fisiologia"
-  },
-  {
-    "id": "sna-29",
-    "question": "Qual a função principal da Bainha de Mielina nos neurônios simpáticos pré-ganglionares?",
-    "options": [
-      "Retardar o impulso nervoso para permitir a integração ganglionar.",
-      "Permitir uma condução rápida do impulso por meio do salto saltatório.",
-      "Sintetizar neurotransmissores como a adrenalina bloqueando a via de fluxo iônico.",
-      "Atuar como receptor ionotrópico para o sódio bloqueando a via de fluxo iônico."
-    ],
-    "correctAnswer": 1,
-    "explanation": "A mielina isola o axônio e permite a condução saltatória rápida",
-    "theme": "Fisiologia"
-  },
-  {
-    "id": "sna-30",
-    "question": "O sistema nervoso simpático é frequentemente chamado de sistema \"toracolombar\" devido à sua origem na medula espinhal entre os segmentos\n:",
+    "question": "O sistema simpático é chamado de \"toracolombar\" devido à sua origem na medula espinhal entre:.",
     "options": [
       "C1 e T1.",
       "T1 e L2.",
       "L2 e S4.",
-      "Tronco encefálico e S2-S4."
+      "S2 e S4."
     ],
     "correctAnswer": 1,
-    "explanation": "A origem das fibras simpáticas é toracolombar (T1 a L2)",
+    "explanation": "Origem simpática é toracolombar (T1 a L2).",
     "theme": "Fisiologia"
   },
   {
-    "id": "sna-31",
-    "question": "O relaxamento da musculatura lisa vascular (vasodilatação) no músculo esquelético durante o exercício é mediado por receptores\n:",
+    "id": "sna-21",
+    "question": "O neurotransmissor GABA é o principal inibitório do SNC. Sua ação é do tipo:.",
     "options": [
-      "α \n1\n​.",
-      "β \n2\n​.",
-      "M \n3\n​.",
-      "α \n2\n​."
+      "Metabotrópica, via proteína Gs.",
+      "Ionotrópica, permitindo a entrada de Cl- e hiperpolarizando a célula.",
+      "Excitatória, aumentando o fluxo de Na+.",
+      "Colinérgica, via receptores nicotínicos."
     ],
     "correctAnswer": 1,
-    "explanation": "Receptores β",
+    "explanation": "GABA abre canais de Cl-, causando hiperpolarização (inibição).",
     "theme": "Fisiologia"
   },
   {
-    "id": "sna-32",
-    "question": "Um paciente apresenta pupilas muito contraídas (miose) após exposição a um agente colinérgico. Qual o mecanismo fisiológico por trás desse sinal?",
+    "id": "sna-22",
+    "question": "Um paciente em choque anafilático apresenta queda de pressão e bronconstrição. A adrenalina é administrada porque:.",
     "options": [
-      "Ativação de receptores α \n1\n​\n  no músculo radial via sinalização celular local.",
-      "Ativação de receptores muscarínicos (M \n3\n​\n ) no músculo esfíncter da pupila.",
-      "Inibição do sistema parassimpático via sinalização celular local.",
-      "Estimulação de receptores β \n1\n​\n  oculares via sinalização celular local."
+      "Ativa α1 para vasoconstrição e β2 para broncodilatação.",
+      "Ativa M2 para aumentar os batimentos.",
+      "Inibe a liberação de histamina via receptores nicotínicos.",
+      "Bloqueia os receptores β1 do coração."
     ],
-    "correctAnswer": 1,
-    "explanation": "O estímulo muscarínico M",
+    "correctAnswer": 0,
+    "explanation": "Adrenalina reverte o choque via α1 (pressão) e β2 (pulmão).",
     "theme": "Fisiologia"
   },
   {
-    "id": "sna-34",
-    "question": "A liberação de neurotransmissores na fenda sináptica é um processo dependente do influxo de qual íon para o terminal pré-sináptico?",
+    "id": "sna-23",
+    "question": "Sobre o receptor M1, qual sua localização e função citada no material?.",
+    "options": [
+      "Coração; promove bradicardia.",
+      "Estômago; estimula a bomba de prótons para liberar ácido.",
+      "Pulmão; promove broncodilatação.",
+      "Vasos sanguíneos; promove vasoconstrição."
+    ],
+    "correctAnswer": 1,
+    "explanation": "M1 estimula a secreção ácida gástrica via Gq.",
+    "theme": "Fisiologia"
+  },
+  {
+    "id": "sna-24",
+    "question": "A proteína Gi tem como função principal:.",
+    "options": [
+      "Ativar a adenilato ciclase.",
+      "Inibir a adenilato ciclase, diminuindo o AMP cíclico.",
+      "Estimular a fosfolipase C.",
+      "Abrir canais de cálcio diretamente."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Proteína Gi inibe a produção de AMPc.",
+    "theme": "Fisiologia"
+  },
+  {
+    "id": "sna-25",
+    "question": "O sistema parassimpático tem sua origem \"craniossacral\". Quais nervos cranianos estão envolvidos no fluxo parassimpático?.",
+    "options": [
+      "III, VII, IX e X (Vago).",
+      "I, II e V.",
+      "Apenas o nervo Vago (X).",
+      "Todos os nervos cranianos de I a XII."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Os nervos III, VII, IX e X carregam as eferências parassimpáticas.",
+    "theme": "Fisiologia"
+  },
+  {
+    "id": "sna-26",
+    "question": "Qual o efeito do estímulo simpático via receptor β2 nos vasos sanguíneos do músculo esquelético?.",
+    "options": [
+      "Vasoconstrição.",
+      "Vasodilatação.",
+      "Nenhuma alteração, pois vasos só possuem receptores alfa.",
+      "Aumento da permeabilidade capilar."
+    ],
+    "correctAnswer": 1,
+    "explanation": "β2 nos vasos de músculo esquelético causa relaxamento (vasodilatação).",
+    "theme": "Fisiologia"
+  },
+  {
+    "id": "sna-27",
+    "question": "Um paciente com Doença de Alzheimer apresenta déficit colinérgico. Medicamentos que inibem a acetilcolinesterase são usados para:.",
+    "options": [
+      "Diminuir a acetilcolina na fenda.",
+      "Aumentar a disponibilidade de acetilcolina para os receptores.",
+      "Bloquear os receptores muscarínicos.",
+      "Estimular a síntese de dopamina."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Inibir a enzima aumenta o tempo da ACh na fenda.",
+    "theme": "Fisiologia"
+  },
+  {
+    "id": "sna-28",
+    "question": "Na via de sinalização da proteína Gs, o aumento de AMPc ativa qual componente para estimular a entrada de cálcio no coração?.",
+    "options": [
+      "Fosfolipase C.",
+      "Adenilato ciclase (que produz o AMPc).",
+      "Acetilcolinesterase.",
+      "Proteína Gq."
+    ],
+    "correctAnswer": 1,
+    "explanation": "A adenilato ciclase é o efetor da proteína Gs.",
+    "theme": "Fisiologia"
+  },
+  {
+    "id": "sna-29",
+    "question": "A liberação de neurotransmissores na fenda sináptica é um processo de exocitose que depende obrigatoriamente da entrada de:.",
     "options": [
       "Sódio (Na+).",
       "Potássio (K+).",
@@ -4090,89 +4037,153 @@ export const snaQuestions: Question[] = [
       "Cloreto (Cl-)."
     ],
     "correctAnswer": 2,
-    "explanation": "O influxo de Ca2+ é o gatilho para a fusão das vesículas sinápticas",
+    "explanation": "O influxo de cálcio é o gatilho universal para a liberação de neurotransmissores.",
+    "theme": "Fisiologia"
+  },
+  {
+    "id": "sna-30",
+    "question": "Assinale a alternativa que descreve uma resposta do Sistema Nervoso Somático:.",
+    "options": [
+      "Aumento da frequência cardíaca durante o exercício.",
+      "Contração voluntária do músculo bíceps para levantar um peso.",
+      "Digestão de uma refeição gordurosa.",
+      "Dilatação da pupila em ambiente escuro."
+    ],
+    "correctAnswer": 1,
+    "explanation": "O sistema somático controla movimentos voluntários dos músculos esqueléticos.",
+    "theme": "Fisiologia"
+  },
+  {
+    "id": "sna-31",
+    "question": "O receptor β3 adrenérgico, além da bexiga, atua no tecido adiposo promovendo:.",
+    "options": [
+      "Síntese de triglicerídeos.",
+      "Lipólise (quebra de gordura).",
+      "Acúmulo de glicogênio.",
+      "Inibição da sudorese."
+    ],
+    "correctAnswer": 1,
+    "explanation": "β3 está ligado à lipólise e relaxamento da bexiga.",
+    "theme": "Fisiologia"
+  },
+  {
+    "id": "sna-32",
+    "question": "O que acontece com a pressão arterial de um paciente quando os receptores α1 são ativados nos vasos sanguíneos?.",
+    "options": [
+      "Diminui, devido à vasodilatação.",
+      "Aumenta, devido à vasoconstrição.",
+      "Permanece estável, pois o coração compensa via M2.",
+      "Diminui, devido à inibição da renina."
+    ],
+    "correctAnswer": 1,
+    "explanation": "α1 promove contração vascular, elevando a pressão.",
+    "theme": "Fisiologia"
+  },
+  {
+    "id": "sna-33",
+    "question": "Um \"agonista colinérgico\" teria qual efeito no pulmão e na pupila?.",
+    "options": [
+      "Broncodilatação e midríase.",
+      "Bronconstrição e miose (via receptores M3).",
+      "Relaxamento bronquial e constrição pupilar.",
+      "Nenhum efeito, pois o pulmão só responde ao simpático."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Agonistas colinérgicos mimetizam o parassimpático: M3 causa bronconstrição e miose.",
+    "theme": "Fisiologia"
+  },
+  {
+    "id": "sna-34",
+    "question": "Qual o papel da Bainha de Mielina citada no contexto dos neurônios autonômicos?.",
+    "options": [
+      "Atuar como receptor de neurotransmissores.",
+      "Isolar o axônio e permitir o salto saltatório, acelerando a condução.",
+      "Produzir acetilcolina.",
+      "Armazenar cálcio para a sinapse."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Mielina permite a condução saltatória rápida.",
     "theme": "Fisiologia"
   },
   {
     "id": "sna-35",
-    "question": "Sobre a homeostase, o Sistema Nervoso Autônomo atua ajustando os sistemas do corpo conforme a necessidade (repouso vs estresse). Qual estrutura central é o principal centro integrador do SNA?",
+    "question": "Sobre a classificação dos receptores muscarínicos no sistema parassimpático, quais são considerados excitatórios por estarem acoplados à proteína Gq?.",
     "options": [
-      "Tálamo.",
-      "Hipotálamo.",
-      "Cerebelo.",
-      "Córtex pré-frontal."
+      "M2 e M4.",
+      "M1, M3 e M5.",
+      "Apenas o M3.",
+      "Todos os receptores adrenérgicos."
     ],
     "correctAnswer": 1,
-    "explanation": "O hipotálamo é o centro mestre de controle autonômico",
+    "explanation": "Receptores excitatórios no sistema parassimpático são os ímpares M1, M3 e M5.",
     "theme": "Fisiologia"
   },
   {
     "id": "sna-36",
-    "question": "Um paciente apresenta \"boca seca\" (xerostomia) como efeito colateral de um medicamento. Esse sintoma ocorre provavelmente devido ao bloqueio de receptores:",
+    "question": "A noradrenalina, ao interagir com receptores pré-sinápticos α2, realiza um feedback negativo. Isso significa que ela:.",
     "options": [
-      "Adrenérgicos β \n2\n​\n  rompendo o balanço hidrostático necessário.",
-      "Muscarínicos (que estimulam a secreção salivar).",
-      "Nicotínicos ganglionares rompendo o balanço hidrostático necessário.",
-      "Adrenérgicos α \n1\n​\n  rompendo o balanço hidrostático necessário."
+      "Estimula sua própria liberação.",
+      "Inibe a liberação de mais noradrenalina na fenda.",
+      "Aumenta a degradação de acetilcolina.",
+      "Ativa a via da proteína Gs."
     ],
     "correctAnswer": 1,
-    "explanation": "O parassimpático estimula a salivação; seu bloqueio causa boca seca",
+    "explanation": "Autorreceptores α2 regulam negativamente a liberação de noradrenalina.",
     "theme": "Fisiologia"
   },
   {
     "id": "sna-37",
-    "question": "A proteína Gs (estimulatória) age ativando qual enzima efetora?",
+    "question": "Aponte a alternativa que diferencia corretamente o Simpático do Parassimpático quanto aos gânglios:.",
     "options": [
-      "Fosfolipase C.",
-      "Adenilato ciclase.",
-      "Acetilcolinesterase.",
-      "Tirosina quinase."
+      "Simpático: Gânglios próximos ao órgão efetor.",
+      "Parassimpático: Gânglios próximos à medula espinhal.",
+      "Simpático: Cadeia de gânglios paravertebrais (longe do órgão).",
+      "Ambos possuem gânglios dentro da medula espinhal."
     ],
-    "correctAnswer": 1,
-    "explanation": "A proteína Gs estimula a adenilato ciclase para produzir AMPc",
+    "correctAnswer": 2,
+    "explanation": "O simpático tem gânglios paravertebrais/pré-vertebrais, longe do alvo.",
     "theme": "Fisiologia"
   },
   {
     "id": "sna-38",
-    "question": "O receptor GABA é mencionado como o principal neurotransmissor inibitório do SNC. Sua ativação ionotrópica promove a entrada de qual íon na célula, causando hiperpolarização?",
+    "question": "O neurotransmissor adrenalina tem maior afinidade por qual tipo de receptor em comparação à noradrenalina, especialmente em baixas concentrações?.",
     "options": [
-      "Cálcio (Ca2+).",
-      "Sódio (Na+).",
-      "Cloreto (Cl-).",
-      "Potássio (K+)."
+      "Receptores α.",
+      "Receptores β.",
+      "Receptores muscarínicos.",
+      "Receptores nicotínicos."
     ],
-    "correctAnswer": 2,
-    "explanation": "O canal de GABA permite a entrada de Cl-, hiperpolarizando a célula",
+    "correctAnswer": 1,
+    "explanation": "Adrenalina tem grande afinidade pelos receptores beta.",
     "theme": "Fisiologia"
   },
   {
     "id": "sna-39",
-    "question": "Assinale a alternativa que descreve uma função do Sistema Nervoso Somático\n:",
+    "question": "A ativação da Proteína Gs leva ao aumento de qual mensageiro secundário?.",
     "options": [
-      "Controle da frequência cardíaca bloqueando a via de fluxo iônico.",
-      "Motricidade voluntária e sensorial consciente.",
-      "Regulação da digestão bloqueando a via de fluxo iônico.",
-      "Controle do diâmetro pupilar bloqueando a via de fluxo iônico."
+      "IP3.",
+      "DAG.",
+      "AMPc (AMP cíclico).",
+      "GMPc."
     ],
-    "correctAnswer": 1,
-    "explanation": "O sistema somático lida com motricidade voluntária e consciência",
+    "correctAnswer": 2,
+    "explanation": "Gs -> estimula Adenilato Ciclase -> + AMPc.",
     "theme": "Fisiologia"
   },
   {
     "id": "sna-40",
-    "question": "Durante a fase de repolarização do potencial de ação, o que ocorre com os canais iônicos?",
+    "question": "Um paciente apresenta sintomas de \"boca seca\" e constipação. Esses efeitos são típicos de drogas que bloqueiam qual sistema?.",
     "options": [
-      "Abertura de canais de sódio gerando uma resposta compensatória inadequada.",
-      "Fechamento de canais de potássio gerando uma resposta compensatória inadequada.",
-      "Fechamento (inativação) dos canais de sódio e abertura dos canais de potássio.",
-      "Abertura simultânea de canais de cálcio e cloreto.\n\n--------------------------------------------------------------------------------\nGabarito Comentado\nB: O acúmulo de Na+ intracelular reduz o gradiente que move o trocador Na+/Ca2+, resultando em mais cálcio disponível para a contração (inotropismo positivo).\nB: A toxina botulínica cliva proteínas de fusão (SNAREs), impedindo a exocitose da acetilcolina.\nB: Receptores nicotínicos são canais iônicos diretos (ionotrópicos) que permitem a entrada de Na+.\nB: O SNA controla funções involuntárias como pressão arterial e digestão.\nA: Receptores β \n2\n​\n  ativam Gs -> AMPc -> relaxamento muscular e broncodilatação.\nD: O sistema simpático é toracolombar (T1-L2); o parassimpático é que é craniossacral.\nB: M \n2\n​\n  é acoplado à Gi, que reduz o AMPc no coração, diminuindo a frequência cardíaca.\nC: Difusão facilitada utiliza proteínas transportadoras a favor do gradiente, sem ATP.\nA: α \n1\n​\n  via Gq aumenta cálcio, promovendo a contração do músculo radial (midríase).\nB: A proporção fixa é de 3 Na+ para fora e 2 K+ para dentro.\nC: A acetilcolinesterase degrada a ACh na fenda sináptica.\nB: O potencial de ação é um evento \"tudo ou nada\" que requer atingir o limiar.\nC: Glândulas sudoríparas são uma exceção simpática que utiliza fibras colinérgicas.\nD: Receptores metabotrópicos não são canais iônicos diretos; essa é a definição de ionotrópicos.\nB: A síntese começa com o aminoácido Tirosina.\nC: α \n2\n​\n  é inibitório (Gi) e atua como autorreceptor ou modulador negativo de α \n1\n​.\nB: Gq ativa a fosfolipase C, que cliva PIP2 em DAG e IP3.\nB: O parassimpático (via M \n3\n​\n ) aumenta as funções digestivas.\nB: M \n3\n​\n  promove a contração do músculo detrusor para esvaziamento da bexiga.\nB: O curare bloqueia o receptor nicotínico, impedindo a contração muscular.\nC: Proteínas periféricas na membrana plasmática frequentemente atuam como enzimas.\nC: O nervo vago (X) carrega a maior parte das fibras parassimpáticas para as vísceras.\nB: A proteína Gi é inibitória da adenilato ciclase.\nB: A medula suprarrenal libera majoritariamente adrenalina na corrente sanguínea.\nA: No coração, o simpático atua via β \n1\n​\n  (Gs) para causar taquicardia.\nB: α \n1\n​\n  (Gq), α \n2\n​\n  (Gi), e todos os Betas (β \n1\n​\n ,β \n2\n​\n ,β \n3\n​\n ) são Gs.\nB: Receptores muscarínicos pares (M \n2\n​\n ,M \n4\n​\n ) são Gi.\nC: O receptor β \n3\n​\n  está associado à lipólise e relaxamento do detrusor.\nB: A mielina isola o axônio e permite a condução saltatória rápida.\nB: A origem das fibras simpáticas é toracolombar (T1 a L2).\nB: Receptores β \n2\n​\n  promovem relaxamento (vasodilatação) no músculo esquelético.\nB: O estímulo muscarínico M \n3\n​\n  no olho causa miose (constrição).\nB: No transporte ativo primário, a energia vem diretamente da quebra do ATP.\nC: O influxo de Ca2+ é o gatilho para a fusão das vesículas sinápticas.\nB: O hipotálamo é o centro mestre de controle autonômico.\nB: O parassimpático estimula a salivação; seu bloqueio causa boca seca.\nB: A proteína Gs estimula a adenilato ciclase para produzir AMPc.\nC: O canal de GABA permite a entrada de Cl-, hiperpolarizando a célula.\nB: O sistema somático lida com motricidade voluntária e consciência.\nC: A repolarização envolve a inativação dos canais de Na+ e a saída de K+."
+      "Simpático.",
+      "Parassimpático (bloqueio colinérgico).",
+      "Somático.",
+      "Sensorial aferente."
     ],
-    "correctAnswer": 2,
-    "explanation": "A repolarização envolve a inativação dos canais de Na+ e a saída de K+",
+    "correctAnswer": 1,
+    "explanation": "O parassimpático promove secreção e motilidade; seu bloqueio causa secura e prisão de ventre.",
     "theme": "Fisiologia"
   }
 ];
-
 
 export const quizzes: Quiz[] = [
   { id: "coracao", title: "Coração", description: "Anatomia do sistema cardiovascular", emoji: "❤️", category: "Anatomia", questions: coracaoQuestions },
@@ -4189,4 +4200,3 @@ export const quizzes: Quiz[] = [
   { id: "fisiologia-muscular", title: "Fisiologia Muscular", description: "Mecanismos de contração e fisiologia do músculo", emoji: "💪", category: "Fisiologia", questions: fisiologiaMuscularQuestions },
   { id: "sna", title: "SNA", description: "Sistema Nervoso Autônomo e Fisiologia de Membrana", emoji: "🧠⚡", category: "Fisiologia", questions: snaQuestions }
 ];
-// Deploy trigger: Sun Apr 12 19:58:05 EDT 2026
