@@ -3951,32 +3951,6 @@ export const snaQuestions: Question[] = [
     "theme": "Fisiologia"
   },
   {
-    "id": "sna-21",
-    "question": "Qual das seguintes proteínas de membrana exerce funções enzimáticas, conforme o esquema da membrana plasmática?",
-    "options": [
-      "Proteínas integrais.",
-      "Colesterol mediante regulação homeostática específica.",
-      "Proteínas periféricas.",
-      "Glicocálix mediante regulação homeostática específica."
-    ],
-    "correctAnswer": 2,
-    "explanation": "Proteínas periféricas na membrana plasmática frequentemente atuam como enzimas",
-    "theme": "Fisiologia"
-  },
-  {
-    "id": "sna-22",
-    "question": "Um paciente em repouso após uma refeição apresenta ativação do sistema parassimpático. Qual nervo craniano é responsável pela maior parte do fluxo eferente parassimpático para as vísceras torácicas e abdominais?",
-    "options": [
-      "Nervo Facial (VII).",
-      "Nervo Glossofaringeo (IX).",
-      "Nervo Vago (X).",
-      "Nervo Oculomotor (III)."
-    ],
-    "correctAnswer": 2,
-    "explanation": "O nervo vago (X) carrega a maior parte das fibras parassimpáticas para as vísceras",
-    "theme": "Fisiologia"
-  },
-  {
     "id": "sna-23",
     "question": "Sobre a proteína Gi, é correto afirmar que sua ativação leva a\n:",
     "options": [
