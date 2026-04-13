@@ -3692,11 +3692,11 @@ export const fisiologiaMuscularQuestions: Question[] = [
 export const snaQuestions: Question[] = [
   {
     "id": "sna-1",
-    "question": "Um paciente de 68 anos com insuficiência cardíaca congestiva utiliza Digoxina. O mecanismo de ação desse fármaco envolve a inibição da bomba de sódio e potássio (Na+/K+-ATPase)\n. Qual a consequência fisiológica direta dessa inibição nas células miocárdicas?",
+    "question": "Um paciente de 68 anos com insuficiência cardíaca congestiva utiliza Digoxina. O mecanismo de ação desse fármaco envolve a inibição da bomba de sódio e potássio (Na+/K+-ATPase) Qual a consequência fisiológica direta dessa inibição nas células miocárdicas?",
     "options": [
       "Aumento do efluxo de sódio, reduzindo a osmolaridade celular mediante regulação homeostática específica.",
-      "Acúmulo de sódio intracelular, o que reduz a atividade do trocador Na+/Ca2+\n.",
-      "Hiperpolarização imediata da membrana celular devido ao acúmulo de potássio\n.",
+      "Acúmulo de sódio intracelular, o que reduz a atividade do trocador Na+/Ca2+",
+      "Hiperpolarização imediata da membrana celular devido ao acúmulo de potássio",
       "Redução da contratilidade cardíaca por depleção de cálcio intracelular."
     ],
     "correctAnswer": 1,
@@ -3705,10 +3705,10 @@ export const snaQuestions: Question[] = [
   },
   {
     "id": "sna-2",
-    "question": "Durante um procedimento estético, uma paciente recebe aplicação de toxina botulínica. Fisiologicamente, essa toxina atua bloqueando a liberação de acetilcolina no neurônio motor\n. Assinale a alternativa que descreve corretamente o mecanismo molecular envolvido:",
+    "question": "Durante um procedimento estético, uma paciente recebe aplicação de toxina botulínica. Fisiologicamente, essa toxina atua bloqueando a liberação de acetilcolina no neurônio motor Assinale a alternativa que descreve corretamente o mecanismo molecular envolvido:",
     "options": [
       "Competição direta com a acetilcolina pelos receptores nicotínicos na placa motora via sinalização celular local.",
-      "Quebra das proteínas que auxiliam a vesícula de neurotransmissor a se fundir com a membrana pré-sináptica\n.",
+      "Quebra das proteínas que auxiliam a vesícula de neurotransmissor a se fundir com a membrana pré-sináptica",
       "Inibição da enzima acetilcolinesterase na fenda sináptica via sinalização celular local.",
       "Bloqueio dos canais de cálcio dependentes de voltagem no terminal axônico via sinalização celular local."
     ],
@@ -3718,10 +3718,10 @@ export const snaQuestions: Question[] = [
   },
   {
     "id": "sna-3",
-    "question": "Um homem de 45 anos apresenta quadro de fraqueza muscular progressiva e ptose palpebral, com suspeita de Miastenia Gravis. Nessa patologia, anticorpos atacam os receptores nicotínicos da placa motora\n. Sobre esses receptores, é CORRETO afirmar:",
+    "question": "Um homem de 45 anos apresenta quadro de fraqueza muscular progressiva e ptose palpebral, com suspeita de Miastenia Gravis. Nessa patologia, anticorpos atacam os receptores nicotínicos da placa motora Sobre esses receptores, é CORRETO afirmar:",
     "options": [
-      "São receptores metabotrópicos acoplados à proteína Gq\n por meio de um processo fisiológico adaptativo.",
-      "Funcionam como canais iônicos (ionotrópicos), permitindo a entrada rápida de sódio para despolarização\n.",
+      "São receptores metabotrópicos acoplados à proteína Gq por meio de um processo fisiológico adaptativo.",
+      "Funcionam como canais iônicos (ionotrópicos), permitindo a entrada rápida de sódio para despolarização",
       "Sua ativação primária promove a hiperpolarização da fibra muscular esquelética por meio de um processo fisiológico adaptativo.",
       "São estimulados preferencialmente por noradrenalina em condições fisiológicas por meio de um processo fisiológico adaptativo."
     ],
@@ -3731,11 +3731,11 @@ export const snaQuestions: Question[] = [
   },
   {
     "id": "sna-4",
-    "question": "Um paciente diabético de longa data apresenta tontura ao se levantar (hipotensão ortostática) e saciedade precoce (gastroparesia), sugerindo disfunção autonômica\n. Qual divisão do sistema nervoso periférico é responsável pelo controle dessas funções involuntárias e automáticas?",
+    "question": "Um paciente diabético de longa data apresenta tontura ao se levantar (hipotensão ortostática) e saciedade precoce (gastroparesia), sugerindo disfunção autonômica Qual divisão do sistema nervoso periférico é responsável pelo controle dessas funções involuntárias e automáticas?",
     "options": [
-      "Sistema Nervoso Somático Eferente\n.",
-      "Sistema Nervoso Autônomo\n.",
-      "Sistema Nervoso Sensorial Consciente\n.",
+      "Sistema Nervoso Somático Eferente",
+      "Sistema Nervoso Autônomo",
+      "Sistema Nervoso Sensorial Consciente",
       "Apenas o Sistema Nervoso Simpático, exclusivamente."
     ],
     "correctAnswer": 1,
@@ -3746,10 +3746,10 @@ export const snaQuestions: Question[] = [
     "id": "sna-5",
     "question": "Considere um paciente em choque anafilático que apresenta bronconstrição acentuada. Para reverter o quadro, utiliza-se adrenalina. Qual receptor e via de sinalização são o alvo principal para promover a broncodilatação?",
     "options": [
-      "Receptor β \n2\n​\n, que ativa a proteína Gs, aumentando o AMPc e estimulando o relaxamento da musculatura lisa\n.",
-      "Receptor α \n1\n​\n, que ativa a proteína Gq, aumentando o cálcio intracelular afetando diretamente a dinâmica funcional.",
-      "Receptor M \n3\n​\n, que promove a contração das vias aéreas via proteína Gq\n afetando diretamente a dinâmica funcional.",
-      "Receptor β \n1\n​\n, que aumenta a frequência cardíaca sem interferir no pulmão afetando diretamente a dinâmica funcional."
+      "Receptor β 2\n​\n, que ativa a proteína Gs, aumentando o AMPc e estimulando o relaxamento da musculatura lisa",
+      "Receptor α 1\n​\n, que ativa a proteína Gq, aumentando o cálcio intracelular afetando diretamente a dinâmica funcional.",
+      "Receptor M 3\n​\n, que promove a contração das vias aéreas via proteína Gq afetando diretamente a dinâmica funcional.",
+      "Receptor β 1\n​\n, que aumenta a frequência cardíaca sem interferir no pulmão afetando diretamente a dinâmica funcional."
     ],
     "correctAnswer": 0,
     "explanation": "Receptores β",
@@ -3759,10 +3759,10 @@ export const snaQuestions: Question[] = [
     "id": "sna-6",
     "question": "Assinale a alternativa INCORRETA sobre a organização das vias autonômicas:",
     "options": [
-      "Todo neurônio pré-ganglionar, tanto do simpático quanto do parassimpático, libera acetilcolina\n.",
-      "O neurônio pós-ganglionar do sistema simpático é geralmente longo\n.",
-      "No sistema parassimpático, o gânglio localiza-se próximo ou dentro do órgão efetor\n.",
-      "O sistema simpático tem origem na região craniossacral da medula espinhal\n."
+      "Todo neurônio pré-ganglionar, tanto do simpático quanto do parassimpático, libera acetilcolina",
+      "O neurônio pós-ganglionar do sistema simpático é geralmente longo",
+      "No sistema parassimpático, o gânglio localiza-se próximo ou dentro do órgão efetor",
+      "O sistema simpático tem origem na região craniossacral da medula espinhal"
     ],
     "correctAnswer": 3,
     "explanation": "O sistema simpático é toracolombar (T1-L2); o parassimpático é que é craniossacral",
@@ -3772,9 +3772,9 @@ export const snaQuestions: Question[] = [
     "id": "sna-7",
     "question": "Um paciente apresenta bradicardia severa. Sabe-se que a acetilcolina reduz a frequência cardíaca atuando em receptores específicos. Qual o receptor e a proteína G envolvida nesse mecanismo?",
     "options": [
-      "Receptor M \n3\n​\n  e proteína Gq através de uma alteração no mecanismo de transporte.",
-      "Receptor M \n2\n​\n  e proteína Gi, que inibe a adenilato ciclase e reduz o AMPc\n.",
-      "Receptor β \n1\n​\n  e proteína Gs através de uma alteração no mecanismo de transporte.",
+      "Receptor M 3\n​  e proteína Gq através de uma alteração no mecanismo de transporte.",
+      "Receptor M 2\n​  e proteína Gi, que inibe a adenilato ciclase e reduz o AMPc",
+      "Receptor β 1\n​  e proteína Gs através de uma alteração no mecanismo de transporte.",
       "Receptor nicotínico e proteína Gs através de uma alteração no mecanismo de transporte."
     ],
     "correctAnswer": 1,
@@ -3783,11 +3783,11 @@ export const snaQuestions: Question[] = [
   },
   {
     "id": "sna-8",
-    "question": "Sobre o transporte através da membrana plasmática, um estudante observa que certas substâncias movem-se a favor do gradiente de concentração sem gasto de ATP, mas utilizando proteínas transportadoras\n. Esse processo é denominado:",
+    "question": "Sobre o transporte através da membrana plasmática, um estudante observa que certas substâncias movem-se a favor do gradiente de concentração sem gasto de ATP, mas utilizando proteínas transportadoras Esse processo é denominado:",
     "options": [
       "Difusão simples.",
       "Transporte ativo primário.",
-      "Difusão facilitada\n.",
+      "Difusão facilitada",
       "Transporte ativo secundário."
     ],
     "correctAnswer": 2,
@@ -3796,12 +3796,12 @@ export const snaQuestions: Question[] = [
   },
   {
     "id": "sna-9",
-    "question": "Em uma situação de \"luta ou fuga\", o sistema simpático promove midríase (dilatação da pupila)\n. Esse efeito é mediado pela ativação de:",
+    "question": "Em uma situação de \"luta ou fuga\", o sistema simpático promove midríase (dilatação da pupila) Esse efeito é mediado pela ativação de:",
     "options": [
-      "Receptores α \n1\n​\n, que ativam a proteína Gq e aumentam o cálcio intracelular para contração do músculo radial da íris\n.",
-      "Receptores M \n3\n​\n, que promovem a miose bloqueando a via de fluxo iônico.",
-      "Receptores β \n2\n​\n, via proteína Gs bloqueando a via de fluxo iônico.",
-      "Receptores α \n2\n​\n, que inibem a liberação de noradrenalina bloqueando a via de fluxo iônico."
+      "Receptores α 1\n​\n, que ativam a proteína Gq e aumentam o cálcio intracelular para contração do músculo radial da íris",
+      "Receptores M 3\n​\n, que promovem a miose bloqueando a via de fluxo iônico.",
+      "Receptores β 2\n​\n, via proteína Gs bloqueando a via de fluxo iônico.",
+      "Receptores α 2\n​\n, que inibem a liberação de noradrenalina bloqueando a via de fluxo iônico."
     ],
     "correctAnswer": 0,
     "explanation": "α",
@@ -3812,7 +3812,7 @@ export const snaQuestions: Question[] = [
     "question": "A bomba de Na+/K+-ATPase é fundamental para a bioeletrogênese. Ela atua expulsando e introduzindo íons na seguinte proporção\n:",
     "options": [
       "2 íons Na+ para fora e 3 íons K+ para dentro.",
-      "3 íons Na+ para fora e 2 íons K+ para dentro\n.",
+      "3 íons Na+ para fora e 2 íons K+ para dentro",
       "3 íons Na+ para dentro e 2 íons K+ para fora.",
       "1 íon Na+ para fora e 1 íon K+ para dentro."
     ],
@@ -3822,11 +3822,11 @@ export const snaQuestions: Question[] = [
   },
   {
     "id": "sna-11",
-    "question": "Um paciente com doença de Alzheimer apresenta baixos níveis de acetilcolina cerebral. O tratamento visa aumentar a disponibilidade desse neurotransmissor na fenda sináptica\n. Qual enzima é responsável pela degradação da acetilcolina?",
+    "question": "Um paciente com doença de Alzheimer apresenta baixos níveis de acetilcolina cerebral. O tratamento visa aumentar a disponibilidade desse neurotransmissor na fenda sináptica Qual enzima é responsável pela degradação da acetilcolina?",
     "options": [
       "Tirosina hidroxilase.",
       "MAO (Monoaminoxidase).",
-      "Acetilcolinesterase\n.",
+      "Acetilcolinesterase",
       "COMT (Catecol-O-metiltransferase)."
     ],
     "correctAnswer": 2,
@@ -3838,7 +3838,7 @@ export const snaQuestions: Question[] = [
     "question": "Assinale a alternativa CORRETA sobre o potencial de ação neuronal\n:",
     "options": [
       "A fase de despolarização é causada pela saída rápida de potássio da célula.",
-      "O limiar de excitação deve ser atingido para que o potencial de ação ocorra\n.",
+      "O limiar de excitação deve ser atingido para que o potencial de ação ocorra",
       "A repolarização ocorre devido à entrada de sódio através de canais dependentes de voltagem.",
       "Durante a hiperpolarização, o potencial de membrana torna-se menos negativo que o de repouso."
     ],
@@ -3852,7 +3852,7 @@ export const snaQuestions: Question[] = [
     "options": [
       "Noradrenalina.",
       "Adrenalina.",
-      "Acetilcolina\n.",
+      "Acetilcolina",
       "Dopamina."
     ],
     "correctAnswer": 2,
@@ -3863,10 +3863,10 @@ export const snaQuestions: Question[] = [
     "id": "sna-14",
     "question": "Sobre os receptores metabotrópicos, assinale a alternativa INCORRETA:",
     "options": [
-      "Estão acoplados à proteína G\n seguindo o padrão de resposta sistêmica.",
-      "Sua resposta é mais lenta, porém mais duradoura que a dos ionotrópicos\n.",
-      "Ativam cascatas de sinalização intracelular através de segundos mensageiros\n.",
-      "Funcionam diretamente como canais iônicos de abertura rápida\n."
+      "Estão acoplados à proteína G seguindo o padrão de resposta sistêmica.",
+      "Sua resposta é mais lenta, porém mais duradoura que a dos ionotrópicos",
+      "Ativam cascatas de sinalização intracelular através de segundos mensageiros",
+      "Funcionam diretamente como canais iônicos de abertura rápida"
     ],
     "correctAnswer": 3,
     "explanation": "Receptores metabotrópicos não são canais iônicos diretos; essa é a definição de ionotrópicos",
@@ -3877,7 +3877,7 @@ export const snaQuestions: Question[] = [
     "question": "A síntese das catecolaminas segue uma via metabólica específica. Qual é o precursor inicial nessa via, conforme as notas de aula?",
     "options": [
       "Triptofano.",
-      "Tirosina\n.",
+      "Tirosina",
       "Colina.",
       "Acetil-CoA."
     ],
@@ -3887,11 +3887,11 @@ export const snaQuestions: Question[] = [
   },
   {
     "id": "sna-16",
-    "question": "Um paciente ingere acidentalmente uma substância que bloqueia os receptores α \n2\n​\n  adrenérgicos. Fisiologicamente, o receptor α \n2\n​\n  atua como um \"freio\", pois\n:",
+    "question": "Um paciente ingere acidentalmente uma substância que bloqueia os receptores α 2\n​  adrenérgicos. Fisiologicamente, o receptor α 2\n​  atua como um \"freio\", pois\n:",
     "options": [
       "Estimula a liberação de mais noradrenalina rompendo o balanço hidrostático necessário.",
       "Ativa a proteína Gs para aumentar o AMPc rompendo o balanço hidrostático necessário.",
-      "Inibe o receptor α \n1\n​\n  (vasoconstritor), gerando vasodilatação via proteína Gi\n.",
+      "Inibe o receptor α 1\n​  (vasoconstritor), gerando vasodilatação via proteína Gi",
       "Promove a contração do esfíncter ureteral rompendo o balanço hidrostático necessário."
     ],
     "correctAnswer": 2,
@@ -3903,7 +3903,7 @@ export const snaQuestions: Question[] = [
     "question": "A proteína Gq, quando ativada por um neurotransmissor, estimula a enzima fosfolipase C, gerando quais segundos mensageiros?",
     "options": [
       "AMPc e GMPc através de uma alteração no mecanismo de transporte.",
-      "Diacilglicerol (DAG) e Inositol Trifosfato (IP3)\n.",
+      "Diacilglicerol (DAG) e Inositol Trifosfato (IP3)",
       "ATP e ADP através de uma alteração no mecanismo de transporte.",
       "Canais de sódio e potássio através de uma alteração no mecanismo de transporte."
     ],
@@ -3913,10 +3913,10 @@ export const snaQuestions: Question[] = [
   },
   {
     "id": "sna-18",
-    "question": "No sistema gastrointestinal, o estímulo parassimpático via receptor M \n3\n​\n  promove\n:",
+    "question": "No sistema gastrointestinal, o estímulo parassimpático via receptor M 3\n​  promove\n:",
     "options": [
       "Inibição da digestão e constipação sob influência direta do controle autonômico.",
-      "Aumento da motilidade e secreção ácida (via bomba de prótons)\n.",
+      "Aumento da motilidade e secreção ácida (via bomba de prótons)",
       "Relaxamento do músculo detrusor sob influência direta do controle autonômico.",
       "Vasoconstrição das artérias mesentéricas sob influência direta do controle autonômico."
     ],
@@ -3928,10 +3928,10 @@ export const snaQuestions: Question[] = [
     "id": "sna-19",
     "question": "Um paciente apresenta retenção urinária. Para facilitar a micção, seria necessário estimular qual receptor no músculo detrusor da bexiga?",
     "options": [
-      "α \n1\n​\n  (que promove contração do esfíncter)\n bloqueando a via de fluxo iônico.",
-      "M \n3\n​\n  (parassimpático, que promove contração do detrusor)\n.",
-      "β \n3\n​\n  (que promove relaxamento do detrusor)\n bloqueando a via de fluxo iônico.",
-      "M \n2\n​\n  (que reduz a frequência cardíaca) bloqueando a via de fluxo iônico."
+      "α 1\n​  (que promove contração do esfíncter) bloqueando a via de fluxo iônico.",
+      "M 3\n​  (parassimpático, que promove contração do detrusor)",
+      "β 3\n​  (que promove relaxamento do detrusor) bloqueando a via de fluxo iônico.",
+      "M 2\n​  (que reduz a frequência cardíaca) bloqueando a via de fluxo iônico."
     ],
     "correctAnswer": 1,
     "explanation": "M",
@@ -3942,7 +3942,7 @@ export const snaQuestions: Question[] = [
     "question": "O veneno \"Curare\" é conhecido por causar paralisia muscular. Seu mecanismo consiste em\n:",
     "options": [
       "Bloquear a liberação de acetilcolina gerando uma resposta compensatória inadequada.",
-      "Competir com a acetilcolina pelos receptores nicotínicos na placa motora, impedindo a despolarização\n.",
+      "Competir com a acetilcolina pelos receptores nicotínicos na placa motora, impedindo a despolarização",
       "Inibir a bomba de sódio e potássio gerando uma resposta compensatória inadequada.",
       "Ativar excessivamente os receptores muscarínicos gerando uma resposta compensatória inadequada."
     ],
@@ -3954,9 +3954,9 @@ export const snaQuestions: Question[] = [
     "id": "sna-21",
     "question": "Qual das seguintes proteínas de membrana exerce funções enzimáticas, conforme o esquema da membrana plasmática?",
     "options": [
-      "Proteínas integrais\n.",
+      "Proteínas integrais",
       "Colesterol mediante regulação homeostática específica.",
-      "Proteínas periféricas\n.",
+      "Proteínas periféricas",
       "Glicocálix mediante regulação homeostática específica."
     ],
     "correctAnswer": 2,
@@ -3969,7 +3969,7 @@ export const snaQuestions: Question[] = [
     "options": [
       "Nervo Facial (VII).",
       "Nervo Glossofaringeo (IX).",
-      "Nervo Vago (X)\n.",
+      "Nervo Vago (X)",
       "Nervo Oculomotor (III)."
     ],
     "correctAnswer": 2,
@@ -3981,7 +3981,7 @@ export const snaQuestions: Question[] = [
     "question": "Sobre a proteína Gi, é correto afirmar que sua ativação leva a\n:",
     "options": [
       "Aumento dos níveis de AMP cíclico por meio de um processo fisiológico adaptativo.",
-      "Inibição da adenilato ciclase e diminuição do AMP cíclico\n.",
+      "Inibição da adenilato ciclase e diminuição do AMP cíclico",
       "Ativação da fosfolipase C por meio de um processo fisiológico adaptativo.",
       "Abertura direta de canais de cálcio por meio de um processo fisiológico adaptativo."
     ],
@@ -3994,7 +3994,7 @@ export const snaQuestions: Question[] = [
     "question": "A medula da glândula suprarrenal é considerada um gânglio simpático modificado. Ela secreta principalmente\n:",
     "options": [
       "Acetilcolina seguindo o padrão de resposta sistêmica.",
-      "Adrenalina (80%) e Noradrenalina (20%)\n.",
+      "Adrenalina (80%) e Noradrenalina (20%)",
       "Apenas Dopamina seguindo o padrão de resposta sistêmica.",
       "Serotonina seguindo o padrão de resposta sistêmica."
     ],
@@ -4006,10 +4006,10 @@ export const snaQuestions: Question[] = [
     "id": "sna-25",
     "question": "Um paciente apresenta taquicardia em uma situação de estresse. O neurotransmissor noradrenalina está atuando em qual receptor cardíaco para aumentar a frequência e a força de contração?",
     "options": [
-      "β \n1\n​\n  adrenérgico, acoplado à proteína Gs\n.",
-      "β \n2\n​\n  adrenérgico, promovendo vasodilatação.",
-      "M \n2\n​\n  muscarínico, promovendo bradicardia.",
-      "α \n1\n​\n  adrenérgico, promovendo vasoconstrição."
+      "β 1\n​  adrenérgico, acoplado à proteína Gs",
+      "β 2\n​  adrenérgico, promovendo vasodilatação.",
+      "M 2\n​  muscarínico, promovendo bradicardia.",
+      "α 1\n​  adrenérgico, promovendo vasoconstrição."
     ],
     "correctAnswer": 0,
     "explanation": "No coração, o simpático atua via β",
@@ -4019,9 +4019,9 @@ export const snaQuestions: Question[] = [
     "id": "sna-26",
     "question": "Assinale a alternativa que correlaciona corretamente o receptor e sua proteína G correspondente, conforme o \"macete\" fornecido no material:",
     "options": [
-      "α \n1\n​\n  - Gi; α \n2\n​\n  - Gq; Betas - Gs.",
-      "α \n1\n​\n  - Gq; α \n2\n​\n  - Gi; Betas - Gs\n.",
-      "α \n1\n​\n  - Gs; α \n2\n​\n  - Gi; Betas - Gq.",
+      "α 1\n​  - Gi; α 2\n​  - Gq; Betas - Gs.",
+      "α 1\n​  - Gq; α 2\n​  - Gi; Betas - Gs",
+      "α 1\n​  - Gs; α 2\n​  - Gi; Betas - Gq.",
       "Todos os receptores adrenérgicos são acoplados à proteína Gq."
     ],
     "correctAnswer": 1,
@@ -4032,10 +4032,10 @@ export const snaQuestions: Question[] = [
     "id": "sna-27",
     "question": "Em relação aos receptores muscarínicos, quais são considerados inibitórios (pares) e acoplados à proteína Gi?",
     "options": [
-      "M \n1\n​\n  e M \n3\n​\n.",
-      "M \n2\n​\n  e M \n4\n​\n.",
-      "M \n3\n​\n  e M \n5\n​\n.",
-      "Apenas o M \n1\n​\n."
+      "M 1\n​  e M 3\n​",
+      "M 2\n​  e M 4\n​",
+      "M 3\n​  e M 5\n​",
+      "Apenas o M 1\n​"
     ],
     "correctAnswer": 1,
     "explanation": "Receptores muscarínicos pares (M",
@@ -4045,10 +4045,10 @@ export const snaQuestions: Question[] = [
     "id": "sna-28",
     "question": "A lipólise (quebra de gordura) no tecido adiposo é estimulada pelo sistema simpático através do receptor\n:",
     "options": [
-      "α \n1\n​\n.",
-      "β \n2\n​\n.",
-      "β \n3\n​\n.",
-      "M \n3\n​\n."
+      "α 1\n​",
+      "β 2\n​",
+      "β 3\n​",
+      "M 3\n​"
     ],
     "correctAnswer": 2,
     "explanation": "O receptor β",
@@ -4059,7 +4059,7 @@ export const snaQuestions: Question[] = [
     "question": "Qual a função principal da Bainha de Mielina nos neurônios simpáticos pré-ganglionares?",
     "options": [
       "Retardar o impulso nervoso para permitir a integração ganglionar.",
-      "Permitir uma condução rápida do impulso por meio do salto saltatório\n.",
+      "Permitir uma condução rápida do impulso por meio do salto saltatório",
       "Sintetizar neurotransmissores como a adrenalina bloqueando a via de fluxo iônico.",
       "Atuar como receptor ionotrópico para o sódio bloqueando a via de fluxo iônico."
     ],
@@ -4072,7 +4072,7 @@ export const snaQuestions: Question[] = [
     "question": "O sistema nervoso simpático é frequentemente chamado de sistema \"toracolombar\" devido à sua origem na medula espinhal entre os segmentos\n:",
     "options": [
       "C1 e T1.",
-      "T1 e L2\n.",
+      "T1 e L2",
       "L2 e S4.",
       "Tronco encefálico e S2-S4."
     ],
@@ -4084,10 +4084,10 @@ export const snaQuestions: Question[] = [
     "id": "sna-31",
     "question": "O relaxamento da musculatura lisa vascular (vasodilatação) no músculo esquelético durante o exercício é mediado por receptores\n:",
     "options": [
-      "α \n1\n​\n.",
-      "β \n2\n​\n.",
-      "M \n3\n​\n.",
-      "α \n2\n​\n."
+      "α 1\n​",
+      "β 2\n​",
+      "M 3\n​",
+      "α 2\n​"
     ],
     "correctAnswer": 1,
     "explanation": "Receptores β",
@@ -4097,10 +4097,10 @@ export const snaQuestions: Question[] = [
     "id": "sna-32",
     "question": "Um paciente apresenta pupilas muito contraídas (miose) após exposição a um agente colinérgico. Qual o mecanismo fisiológico por trás desse sinal?",
     "options": [
-      "Ativação de receptores α \n1\n​\n  no músculo radial via sinalização celular local.",
-      "Ativação de receptores muscarínicos (M \n3\n​\n ) no músculo esfíncter da pupila\n.",
+      "Ativação de receptores α 1\n​  no músculo radial via sinalização celular local.",
+      "Ativação de receptores muscarínicos (M 3\n​ ) no músculo esfíncter da pupila",
       "Inibição do sistema parassimpático via sinalização celular local.",
-      "Estimulação de receptores β \n1\n​\n  oculares via sinalização celular local."
+      "Estimulação de receptores β 1\n​  oculares via sinalização celular local."
     ],
     "correctAnswer": 1,
     "explanation": "O estímulo muscarínico M",
@@ -4111,7 +4111,7 @@ export const snaQuestions: Question[] = [
     "question": "No transporte ativo primário, a energia para o movimento de íons contra o gradiente de concentração provém de\n:",
     "options": [
       "Gradiente iônico de sódio.",
-      "Hidrólise direta do ATP\n.",
+      "Hidrólise direta do ATP",
       "Energia cinética das moléculas em movimento.",
       "Proteínas de canal de vazamento."
     ],
@@ -4125,7 +4125,7 @@ export const snaQuestions: Question[] = [
     "options": [
       "Sódio (Na+).",
       "Potássio (K+).",
-      "Cálcio (Ca2+)\n.",
+      "Cálcio (Ca2+)",
       "Cloreto (Cl-)."
     ],
     "correctAnswer": 2,
@@ -4134,10 +4134,10 @@ export const snaQuestions: Question[] = [
   },
   {
     "id": "sna-35",
-    "question": "Sobre a homeostase, o Sistema Nervoso Autônomo atua ajustando os sistemas do corpo conforme a necessidade (repouso vs estresse)\n. Qual estrutura central é o principal centro integrador do SNA?",
+    "question": "Sobre a homeostase, o Sistema Nervoso Autônomo atua ajustando os sistemas do corpo conforme a necessidade (repouso vs estresse) Qual estrutura central é o principal centro integrador do SNA?",
     "options": [
       "Tálamo.",
-      "Hipotálamo\n.",
+      "Hipotálamo",
       "Cerebelo.",
       "Córtex pré-frontal."
     ],
@@ -4149,10 +4149,10 @@ export const snaQuestions: Question[] = [
     "id": "sna-36",
     "question": "Um paciente apresenta \"boca seca\" (xerostomia) como efeito colateral de um medicamento. Esse sintoma ocorre provavelmente devido ao bloqueio de receptores:",
     "options": [
-      "Adrenérgicos β \n2\n​\n  rompendo o balanço hidrostático necessário.",
-      "Muscarínicos (que estimulam a secreção salivar)\n.",
+      "Adrenérgicos β 2\n​  rompendo o balanço hidrostático necessário.",
+      "Muscarínicos (que estimulam a secreção salivar)",
       "Nicotínicos ganglionares rompendo o balanço hidrostático necessário.",
-      "Adrenérgicos α \n1\n​\n  rompendo o balanço hidrostático necessário."
+      "Adrenérgicos α 1\n​  rompendo o balanço hidrostático necessário."
     ],
     "correctAnswer": 1,
     "explanation": "O parassimpático estimula a salivação; seu bloqueio causa boca seca",
@@ -4163,7 +4163,7 @@ export const snaQuestions: Question[] = [
     "question": "A proteína Gs (estimulatória) age ativando qual enzima efetora?",
     "options": [
       "Fosfolipase C.",
-      "Adenilato ciclase\n.",
+      "Adenilato ciclase",
       "Acetilcolinesterase.",
       "Tirosina quinase."
     ],
@@ -4177,7 +4177,7 @@ export const snaQuestions: Question[] = [
     "options": [
       "Cálcio (Ca2+).",
       "Sódio (Na+).",
-      "Cloreto (Cl-)\n.",
+      "Cloreto (Cl-)",
       "Potássio (K+)."
     ],
     "correctAnswer": 2,
@@ -4189,7 +4189,7 @@ export const snaQuestions: Question[] = [
     "question": "Assinale a alternativa que descreve uma função do Sistema Nervoso Somático\n:",
     "options": [
       "Controle da frequência cardíaca bloqueando a via de fluxo iônico.",
-      "Motricidade voluntária e sensorial consciente\n.",
+      "Motricidade voluntária e sensorial consciente",
       "Regulação da digestão bloqueando a via de fluxo iônico.",
       "Controle do diâmetro pupilar bloqueando a via de fluxo iônico."
     ],
@@ -4203,8 +4203,8 @@ export const snaQuestions: Question[] = [
     "options": [
       "Abertura de canais de sódio gerando uma resposta compensatória inadequada.",
       "Fechamento de canais de potássio gerando uma resposta compensatória inadequada.",
-      "Fechamento (inativação) dos canais de sódio e abertura dos canais de potássio\n.",
-      "Abertura simultânea de canais de cálcio e cloreto.\n\n--------------------------------------------------------------------------------\nGabarito Comentado\nB: O acúmulo de Na+ intracelular reduz o gradiente que move o trocador Na+/Ca2+, resultando em mais cálcio disponível para a contração (inotropismo positivo)\n.\nB: A toxina botulínica cliva proteínas de fusão (SNAREs), impedindo a exocitose da acetilcolina\n.\nB: Receptores nicotínicos são canais iônicos diretos (ionotrópicos) que permitem a entrada de Na+\n.\nB: O SNA controla funções involuntárias como pressão arterial e digestão\n.\nA: Receptores β \n2\n​\n  ativam Gs -> AMPc -> relaxamento muscular e broncodilatação\n.\nD: O sistema simpático é toracolombar (T1-L2); o parassimpático é que é craniossacral\n.\nB: M \n2\n​\n  é acoplado à Gi, que reduz o AMPc no coração, diminuindo a frequência cardíaca\n.\nC: Difusão facilitada utiliza proteínas transportadoras a favor do gradiente, sem ATP\n.\nA: α \n1\n​\n  via Gq aumenta cálcio, promovendo a contração do músculo radial (midríase)\n.\nB: A proporção fixa é de 3 Na+ para fora e 2 K+ para dentro\n.\nC: A acetilcolinesterase degrada a ACh na fenda sináptica\n.\nB: O potencial de ação é um evento \"tudo ou nada\" que requer atingir o limiar\n.\nC: Glândulas sudoríparas são uma exceção simpática que utiliza fibras colinérgicas\n.\nD: Receptores metabotrópicos não são canais iônicos diretos; essa é a definição de ionotrópicos\n.\nB: A síntese começa com o aminoácido Tirosina\n.\nC: α \n2\n​\n  é inibitório (Gi) e atua como autorreceptor ou modulador negativo de α \n1\n​\n.\nB: Gq ativa a fosfolipase C, que cliva PIP2 em DAG e IP3\n.\nB: O parassimpático (via M \n3\n​\n ) aumenta as funções digestivas\n.\nB: M \n3\n​\n  promove a contração do músculo detrusor para esvaziamento da bexiga\n.\nB: O curare bloqueia o receptor nicotínico, impedindo a contração muscular\n.\nC: Proteínas periféricas na membrana plasmática frequentemente atuam como enzimas\n.\nC: O nervo vago (X) carrega a maior parte das fibras parassimpáticas para as vísceras\n.\nB: A proteína Gi é inibitória da adenilato ciclase\n.\nB: A medula suprarrenal libera majoritariamente adrenalina na corrente sanguínea\n.\nA: No coração, o simpático atua via β \n1\n​\n  (Gs) para causar taquicardia\n.\nB: α \n1\n​\n  (Gq), α \n2\n​\n  (Gi), e todos os Betas (β \n1\n​\n,β \n2\n​\n,β \n3\n​\n ) são Gs\n.\nB: Receptores muscarínicos pares (M \n2\n​\n,M \n4\n​\n ) são Gi\n.\nC: O receptor β \n3\n​\n  está associado à lipólise e relaxamento do detrusor\n.\nB: A mielina isola o axônio e permite a condução saltatória rápida\n.\nB: A origem das fibras simpáticas é toracolombar (T1 a L2)\n.\nB: Receptores β \n2\n​\n  promovem relaxamento (vasodilatação) no músculo esquelético\n.\nB: O estímulo muscarínico M \n3\n​\n  no olho causa miose (constrição)\n.\nB: No transporte ativo primário, a energia vem diretamente da quebra do ATP\n.\nC: O influxo de Ca2+ é o gatilho para a fusão das vesículas sinápticas\n.\nB: O hipotálamo é o centro mestre de controle autonômico\n.\nB: O parassimpático estimula a salivação; seu bloqueio causa boca seca\n.\nB: A proteína Gs estimula a adenilato ciclase para produzir AMPc\n.\nC: O canal de GABA permite a entrada de Cl-, hiperpolarizando a célula\n.\nB: O sistema somático lida com motricidade voluntária e consciência\n.\nC: A repolarização envolve a inativação dos canais de Na+ e a saída de K+\n."
+      "Fechamento (inativação) dos canais de sódio e abertura dos canais de potássio",
+      "Abertura simultânea de canais de cálcio e cloreto.\n\n--------------------------------------------------------------------------------\nGabarito Comentado\nB: O acúmulo de Na+ intracelular reduz o gradiente que move o trocador Na+/Ca2+, resultando em mais cálcio disponível para a contração (inotropismo positivo)\nB: A toxina botulínica cliva proteínas de fusão (SNAREs), impedindo a exocitose da acetilcolina\nB: Receptores nicotínicos são canais iônicos diretos (ionotrópicos) que permitem a entrada de Na+\nB: O SNA controla funções involuntárias como pressão arterial e digestão\nA: Receptores β 2\n​  ativam Gs -> AMPc -> relaxamento muscular e broncodilatação\nD: O sistema simpático é toracolombar (T1-L2); o parassimpático é que é craniossacral\nB: M 2\n​  é acoplado à Gi, que reduz o AMPc no coração, diminuindo a frequência cardíaca\nC: Difusão facilitada utiliza proteínas transportadoras a favor do gradiente, sem ATP\nA: α 1\n​  via Gq aumenta cálcio, promovendo a contração do músculo radial (midríase)\nB: A proporção fixa é de 3 Na+ para fora e 2 K+ para dentro\nC: A acetilcolinesterase degrada a ACh na fenda sináptica\nB: O potencial de ação é um evento \"tudo ou nada\" que requer atingir o limiar\nC: Glândulas sudoríparas são uma exceção simpática que utiliza fibras colinérgicas\nD: Receptores metabotrópicos não são canais iônicos diretos; essa é a definição de ionotrópicos\nB: A síntese começa com o aminoácido Tirosina\nC: α 2\n​  é inibitório (Gi) e atua como autorreceptor ou modulador negativo de α 1\n​\nB: Gq ativa a fosfolipase C, que cliva PIP2 em DAG e IP3\nB: O parassimpático (via M 3\n​ ) aumenta as funções digestivas\nB: M 3\n​  promove a contração do músculo detrusor para esvaziamento da bexiga\nB: O curare bloqueia o receptor nicotínico, impedindo a contração muscular\nC: Proteínas periféricas na membrana plasmática frequentemente atuam como enzimas\nC: O nervo vago (X) carrega a maior parte das fibras parassimpáticas para as vísceras\nB: A proteína Gi é inibitória da adenilato ciclase\nB: A medula suprarrenal libera majoritariamente adrenalina na corrente sanguínea\nA: No coração, o simpático atua via β 1\n​  (Gs) para causar taquicardia\nB: α 1\n​  (Gq), α 2\n​  (Gi), e todos os Betas (β 1\n​\n,β 2\n​\n,β 3\n​ ) são Gs\nB: Receptores muscarínicos pares (M 2\n​\n,M 4\n​ ) são Gi\nC: O receptor β 3\n​  está associado à lipólise e relaxamento do detrusor\nB: A mielina isola o axônio e permite a condução saltatória rápida\nB: A origem das fibras simpáticas é toracolombar (T1 a L2)\nB: Receptores β 2\n​  promovem relaxamento (vasodilatação) no músculo esquelético\nB: O estímulo muscarínico M 3\n​  no olho causa miose (constrição)\nB: No transporte ativo primário, a energia vem diretamente da quebra do ATP\nC: O influxo de Ca2+ é o gatilho para a fusão das vesículas sinápticas\nB: O hipotálamo é o centro mestre de controle autonômico\nB: O parassimpático estimula a salivação; seu bloqueio causa boca seca\nB: A proteína Gs estimula a adenilato ciclase para produzir AMPc\nC: O canal de GABA permite a entrada de Cl-, hiperpolarizando a célula\nB: O sistema somático lida com motricidade voluntária e consciência\nC: A repolarização envolve a inativação dos canais de Na+ e a saída de K+"
     ],
     "correctAnswer": 2,
     "explanation": "A repolarização envolve a inativação dos canais de Na+ e a saída de K+",
