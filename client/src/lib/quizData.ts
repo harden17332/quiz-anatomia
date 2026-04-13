@@ -4032,10 +4032,10 @@ export const snaQuestions: Question[] = [
     "id": "sna-27",
     "question": "Em relação aos receptores muscarínicos, quais são considerados inibitórios (pares) e acoplados à proteína Gi?",
     "options": [
-      "M \n1\n​\n  e M \n3\n​\n .",
+      "M \n1\n​\n  e M \n3\n​\n.",
       "M \n2\n​\n  e M \n4\n​\n \n.",
-      "M \n3\n​\n  e M \n5\n​\n .",
-      "Apenas o M \n1\n​\n ."
+      "M \n3\n​\n  e M \n5\n​\n.",
+      "Apenas o M \n1\n​\n."
     ],
     "correctAnswer": 1,
     "explanation": "Receptores muscarínicos pares (M",
@@ -4045,10 +4045,10 @@ export const snaQuestions: Question[] = [
     "id": "sna-28",
     "question": "A lipólise (quebra de gordura) no tecido adiposo é estimulada pelo sistema simpático através do receptor\n:",
     "options": [
-      "α \n1\n​\n .",
-      "β \n2\n​\n .",
+      "α \n1\n​\n.",
+      "β \n2\n​\n.",
       "β \n3\n​\n \n.",
-      "M \n3\n​\n ."
+      "M \n3\n​\n."
     ],
     "correctAnswer": 2,
     "explanation": "O receptor β",
@@ -4084,10 +4084,10 @@ export const snaQuestions: Question[] = [
     "id": "sna-31",
     "question": "O relaxamento da musculatura lisa vascular (vasodilatação) no músculo esquelético durante o exercício é mediado por receptores\n:",
     "options": [
-      "α \n1\n​\n .",
+      "α \n1\n​\n.",
       "β \n2\n​\n \n.",
-      "M \n3\n​\n .",
-      "α \n2\n​\n ."
+      "M \n3\n​\n.",
+      "α \n2\n​\n."
     ],
     "correctAnswer": 1,
     "explanation": "Receptores β",
