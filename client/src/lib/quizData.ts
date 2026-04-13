@@ -4081,19 +4081,6 @@ export const snaQuestions: Question[] = [
     "theme": "Fisiologia"
   },
   {
-    "id": "sna-33",
-    "question": "No transporte ativo primário, a energia para o movimento de íons contra o gradiente de concentração provém de\n:",
-    "options": [
-      "Gradiente iônico de sódio.",
-      "Hidrólise direta do ATP.",
-      "Energia cinética das moléculas em movimento.",
-      "Proteínas de canal de vazamento."
-    ],
-    "correctAnswer": 1,
-    "explanation": "No transporte ativo primário, a energia vem diretamente da quebra do ATP",
-    "theme": "Fisiologia"
-  },
-  {
     "id": "sna-34",
     "question": "A liberação de neurotransmissores na fenda sináptica é um processo dependente do influxo de qual íon para o terminal pré-sináptico?",
     "options": [
