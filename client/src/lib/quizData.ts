@@ -5243,3 +5243,4 @@ export const quizzes: Quiz[] = [
   { id: "sna", title: "SNA", description: "Sistema Nervoso Autônomo e Fisiologia de Membrana", emoji: "🧠⚡", category: "Fisiologia", questions: snaQuestions },
   { id: "microbiologia", title: "Microbiologia", description: "Estudo de bactérias, vírus, fungos e genética microbiana", emoji: "🔬", category: "Microbiologia", questions: microbiologiaQuestions }
 ];
+ 
