@@ -4184,6 +4184,1048 @@ export const snaQuestions: Question[] = [
     "theme": "Fisiologia"
   }
 ];
+export const microbiologiaQuestions: Question[] = [
+  {
+    "id": "micro-1",
+    "question": "Paciente de 30 anos apresenta lesão ulcerada indolor em genitália. O médico suspeita de sífilis. Considerando o histórico da microbiologia presente nos materiais, qual o tratamento de escolha que, apesar de ser o primeiro antibiótico descoberto, ainda é o mais eficaz para esta patologia?**",
+    "options": [
+      "Vancomicina.",
+      "Penicilina benzatina.",
+      "Isoniazida.",
+      "Quinolonas."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Penicilina é o padrão-ouro para sífilis.",
+    "theme": "Microbiologia"
+  },
+  {
+    "id": "micro-2",
+    "question": "Um pesquisador isola um microrganismo de um animal doente, cultiva-o em meio puro e, ao inoculá-lo em uma cobaia saudável, observa o surgimento dos mesmos sintomas. Esse procedimento descreve:**",
+    "options": [
+      "A Teoria Miasmática.",
+      "Os Postulados de Koch.",
+      "O Experimento de Pasteur.",
+      "A Lei da Biogênese."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Passos clássicos para causalidade micróbio-doença.",
+    "theme": "Microbiologia"
+  },
+  {
+    "id": "micro-3",
+    "question": "Sobre a importância da descoberta do microscópio para a sociedade, assinale a alternativa INCORRETA:**",
+    "options": [
+      "Permitiu a transição da ignorância populacional para o entendimento de epidemias.",
+      "Possibilitou o aprimoramento de práticas sanitárias e higiene.",
+      "Fortaleceu o combate a pandemias através do diagnóstico.",
+      "Provou que a geração espontânea era a causa das doenças infecciosas."
+    ],
+    "correctAnswer": 3,
+    "explanation": "Pasteur refutou a geração espontânea; microscópio ajudou na biogênese.",
+    "theme": "Microbiologia"
+  },
+  {
+    "id": "micro-4",
+    "question": "Na análise de uma amostra clínica, o médico solicita a visualização da morfologia externa de um vírus recém-identificado. Qual equipamento é indispensável para essa tarefa?**",
+    "options": [
+      "Microscópio óptico composto.",
+      "Microscópio de luz com contraste de fase.",
+      "Microscópio eletrônico.",
+      "Microscópio de varredura manual."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Vírus são invisíveis ao óptico; exigem microscópio eletrônico.",
+    "theme": "Microbiologia"
+  },
+  {
+    "id": "micro-5",
+    "question": "Qual cientista é considerado o \"Pai da Microbiologia\" por ter inventado o primeiro microscópio de luz rudimentar e descrito pela primeira vez a *Giardia lamblia*?**",
+    "options": [
+      "Robert Koch.",
+      "Louis Pasteur.",
+      "Antonie Von Leeuwenhoek.",
+      "Ignaz Semmelweis."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Leeuwenhoek descreveu bactérias e Giardia primeiro.",
+    "theme": "Microbiologia"
+  },
+  {
+    "id": "micro-6",
+    "question": "Sobre as vantagens do microscópio óptico em relação ao eletrônico, assinale a CORRETA:**",
+    "options": [
+      "Possui maior capacidade resolutiva para visualizar capsídeos virais.",
+      "Permite a observação de células vivas sem a necessidade de fixação complexa.",
+      "Utiliza feixes de elétrons para aumentar o contraste tecidual.",
+      "É a ferramenta padrão para o estudo de príons e viróides. no ambiente intracelular."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Microscopia de luz permite ver células vivas em tempo real.",
+    "theme": "Microbiologia"
+  },
+  {
+    "id": "micro-7",
+    "question": "O médico húngaro Ignaz Semmelweis observou alta mortalidade por sepse puerperal em hospitais. Sua principal contribuição para a microbiologia clínica foi:**",
+    "options": [
+      "A descoberta da vacina contra a raiva. através de processos metabólicos.",
+      "A introdução de antissépticos e da lavagem das mãos na prática médica.",
+      "O isolamento do bacilo da tuberculose. por sinalização celular.",
+      "A criação da técnica de pasteurização de alimentos. no ambiente intracelular."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Pioneiro da antissepsia hospitalar.",
+    "theme": "Microbiologia"
+  },
+  {
+    "id": "micro-8",
+    "question": "Assinale a alternativa que descreve corretamente a função dos agentes decompositores (bactérias e fungos heterótrofos) na manutenção da vida:**",
+    "options": [
+      "Produção de metano em ambientes aeróbicos. através de processos metabólicos.",
+      "Transformação de matéria orgânica em sais minerais, água e $CO_{2}$.",
+      "Fixação exclusiva de nitrogênio em tecidos animais. por sinalização celular.",
+      "Síntese de glicose a partir de radiação eletromagnética.\n\n---\n\n### **MÓDULO 2: ESTRUTURA E MORFOLOGIA BACTERIANA**."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Ciclam os elementos na natureza decompondo matéria orgânica.",
+    "theme": "Microbiologia"
+  },
+  {
+    "id": "micro-9",
+    "question": "Uma criança de 5 anos apresenta febre alta e rigidez de nuca. O líquor revela diplococos Gram-negativos. Sobre a parede celular desse agente, é correto afirmar:**",
+    "options": [
+      "Possui uma camada espessa de peptideoglicano (90%).",
+      "Contém ácidos teicóicos que atuam como toxinas.",
+      "Apresenta uma membrana externa com Lipopolissacarídeo (LPS).",
+      "É altamente permeável a corantes como o cristal violeta."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Gram-negativas têm camada fina de mureína e membrana externa com LPS.",
+    "theme": "Microbiologia"
+  },
+  {
+    "id": "micro-10",
+    "question": "Paciente internado em UTI desenvolve infecção por bactéria multirresistente. A equipe de infectologia afirma que a resistência foi adquirida via transferência de plasmídeos por uma \"ponte\" citoplasmática. Qual estrutura permitiu esse processo?**",
+    "options": [
+      "Flagelo.",
+      "Fímbrias comuns.",
+      "Pili sexual.",
+      "Cápsula polissacarídica."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Pili sexual permite conjugação e troca de plasmídeos.",
+    "theme": "Microbiologia"
+  },
+  {
+    "id": "micro-11",
+    "question": "No diagnóstico de uma pneumonia, observa-se que a bactéria causadora expressa uma cápsula volumosa. Qual a relevância clínica dessa estrutura para a patogênese?**",
+    "options": [
+      "Facilita a entrada da bactéria por fusão de membrana.",
+      "Dificulta a fagocitose ao impedir o englobamento pelo fagócito.",
+      "É essencial para a síntese de proteínas no ribossomo bacteriano.",
+      "Atua exclusivamente na motilidade celular por quimiotaxia."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Cápsula aumenta o volume e impede a via fagocítica.",
+    "theme": "Microbiologia"
+  },
+  {
+    "id": "micro-12",
+    "question": "Assinale a alternativa que contém apenas componentes encontrados no citoplasma bacteriano:**",
+    "options": [
+      "Mitocôndrias, DNA cromossômico e ribossomos.",
+      "Complexo de Golgi, Plasmídeos e RNAm. via regulação enzimática.",
+      "DNA cromossômico (nucleoide), Plasmídeos e Ribossomos.",
+      "Retículo endoplasmático, proteínas e metabólitos."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Componentes do procarionte; não possuem organelas membranosas.",
+    "theme": "Microbiologia"
+  },
+  {
+    "id": "micro-13",
+    "question": "Sobre as Arqueobactérias, assinale a alternativa CORRETA:**",
+    "options": [
+      "São o maior grupo de bactérias e causam a maioria das doenças humanas.",
+      "Possuem parede celular composta por pseudoglicano ou Camada S.",
+      "São incapazes de sobreviver em condições extremas de pH ou temperatura.",
+      "Sua membrana citoplasmática contém obrigatoriamente colesterol."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Arqueias têm pseudoglicano e camada S protetora.",
+    "theme": "Microbiologia"
+  },
+  {
+    "id": "micro-14",
+    "question": "Um estudante observa uma lâmina de coloração de Gram e identifica bactérias roxas agrupadas como \"cachos de uva\". Qual a classificação morfológica e o tipo de parede celular?**",
+    "options": [
+      "Estreptococos Gram-negativos.",
+      "Estafilococos Gram-positivos.",
+      "Bacilos Gram-positivos.",
+      "Sarcina Gram-negativa."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Cocos em cachos são estafilococos; roxo indica Gram+.",
+    "theme": "Microbiologia"
+  },
+  {
+    "id": "micro-15",
+    "question": "Qual o principal caminho para a difusão de moléculas hidrofílicas pequenas através da membrana externa de bactérias Gram-negativas?**",
+    "options": [
+      "Ácidos lipoteicóicos.",
+      "Camada de peptideoglicano.",
+      "Porinas.",
+      "Mesossomos."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Porinas são canais proteicos na membrana externa das Gram-.",
+    "theme": "Microbiologia"
+  },
+  {
+    "id": "micro-16",
+    "question": "Paciente com tosse crônica e perda de peso. A coloração de Gram não foi conclusiva. O médico suspeita de *Mycobacterium tuberculosis*. Isso ocorre porque as micobactérias:**",
+    "options": [
+      "Não possuem parede celular. através de processos metabólicos.",
+      "Possuem parede rica em ácidos micólicos (ceras), sendo álcool-ácido resistentes.",
+      "São procariontes sem DNA cromossômico. por sinalização celular.",
+      "Possuem uma membrana externa idêntica às Gram-negativas. no ambiente intracelular."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Ácidos micólicos impedem a entrada de corantes comuns (Gram).",
+    "theme": "Microbiologia"
+  },
+  {
+    "id": "micro-17",
+    "question": "O Lipopolissacarídeo (LPS), presente na membrana externa de Gram-negativas, é clinicamente importante por agir como:**",
+    "options": [
+      "Uma enzima que digere antibióticos. através de processos metabólicos.",
+      "Uma endotoxina que estimula respostas imunes inatas agressivas.",
+      "Um receptor para a entrada de vírus bacteriófagos.",
+      "Um componente que garante a permeabilidade ao cristal violeta."
+    ],
+    "correctAnswer": 1,
+    "explanation": "LPS é endotoxina que causa choque e febre.",
+    "theme": "Microbiologia"
+  },
+  {
+    "id": "micro-18",
+    "question": "Sobre os esporos bacterianos (endósporos), é INCORRETO afirmar:**",
+    "options": [
+      "São estruturas de resistência contra calor, radiação e agentes químicos.",
+      "São produzidos principalmente pelos gêneros *Bacillus* e *Clostridium*.",
+      "Representam uma forma de reprodução que aumenta o número de células.",
+      "Contêm elevada concentração de cálcio ligado ao ácido dipicolínico."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Esporulação é sobrevivência, não reprodução; não aumenta o número de células.",
+    "theme": "Microbiologia"
+  },
+  {
+    "id": "micro-19",
+    "question": "Qual estrutura bacteriana é responsável pela formação de biofilmes em superfícies de dispositivos médicos, como cateteres?**",
+    "options": [
+      "Mesossomos. através de processos metabólicos.",
+      "Flagelos. via regulação enzimática.",
+      "Fímbrias e glicocálix (slime).",
+      "Ácidos teicóicos."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Fímbrias e biofilmes garantem adesão a superfícies inertes.",
+    "theme": "Microbiologia"
+  },
+  {
+    "id": "micro-20",
+    "question": "A membrana citoplasmática bacteriana diferencia-se da eucariótica principalmente por:**",
+    "options": [
+      "Não possuir colesterol (exceto nos micoplasmas).",
+      "Ser composta exclusivamente por carboidratos.",
+      "Ser externa à parede celular. por sinalização celular.",
+      "Não participar do transporte de substâncias."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Membrana bacteriana não tem esteróis/colesterol (exceção: micoplasmas).",
+    "theme": "Microbiologia"
+  },
+  {
+    "id": "micro-21",
+    "question": "Na síntese do peptideoglicano, as enzimas transpeptidases (PBPs) são alvos de quais antibióticos?**",
+    "options": [
+      "Quinolonas. através de processos metabólicos.",
+      "Isoniazida. via regulação enzimática.",
+      "Beta-lactâmicos (como a penicilina).",
+      "Vancomicina. no ambiente intracelular."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Beta-lactâmicos bloqueiam a transpeptidação.",
+    "theme": "Microbiologia"
+  },
+  {
+    "id": "micro-22",
+    "question": "O \"espaço periplasmático\" é uma característica marcante de qual grupo celular e o que ele contém?**",
+    "options": [
+      "Gram-positivas; contém ácidos teicóicos. através de processos metabólicos.",
+      "Gram-negativas; contém enzimas líticas e proteínas de transporte.",
+      "Micobactérias; contém ceras hidrofóbicas. por sinalização celular.",
+      "Arqueobactérias; contém pseudomureína. no ambiente intracelular."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Periplasmo nas Gram- concentra enzimas agressivas.",
+    "theme": "Microbiologia"
+  },
+  {
+    "id": "micro-23",
+    "question": "Sobre a morfologia em \"vibrião\", assinale a alternativa que exemplifica esse agente:**",
+    "options": [
+      "*Escherichia coli*.",
+      "*Staphylococcus aureus*.",
+      "*Vibrio cholerae*.",
+      "*Treponema pallidum*."
+    ],
+    "correctAnswer": 2,
+    "explanation": "*Vibrio cholerae* tem forma de vírgula.",
+    "theme": "Microbiologia"
+  },
+  {
+    "id": "micro-24",
+    "question": "O que acontece com uma bactéria Gram-positiva quando tratada com lisozima em um ambiente hipotônico?**",
+    "options": [
+      "Ela se torna mais resistente devido ao espessamento da parede.",
+      "Ela sofre lise osmótica devido à degradação do peptideoglicano.",
+      "Ela se transforma em um esporo. por sinalização celular.",
+      "Nada acontece, pois a lisozima só ataca bactérias Gram-negativas."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Lisozima quebra o peptideoglicano; sem ele, a célula estoura por osmose.",
+    "theme": "Microbiologia"
+  },
+  {
+    "id": "micro-25",
+    "question": "Qual componente da parede celular bacteriana é formado por cadeias de NAG (N-acetilglicosamina) e NAM (ácido N-acetilmurâmico)?**",
+    "options": [
+      "Ácido micólico.",
+      "LPS.",
+      "Peptideoglicano.",
+      "Ácido lipoteicóico."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Unidades básicas do peptideoglicano (mureína).",
+    "theme": "Microbiologia"
+  },
+  {
+    "id": "micro-26",
+    "question": "Paciente apresenta quadro de diarreia severa com sangue. O médico explica que a bactéria produz toxinas diméricas A-B. Qual o mecanismo de ação dessas toxinas?**",
+    "options": [
+      "Destruição direta da membrana plasmática. através de processos metabólicos.",
+      "Paralisia da atividade ribossomal, impedindo a tradução de proteínas.",
+      "Inibição da síntese de DNA cromossômico. por sinalização celular.",
+      "Bloqueio da formação do pili sexual. no ambiente intracelular."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Toxinas AB paralisam ribossomos, levando à necrose tecidual.",
+    "theme": "Microbiologia"
+  },
+  {
+    "id": "micro-27",
+    "question": "Sobre a motilidade bacteriana por flagelos, o movimento orientado em direção a nutrientes é chamado de:**",
+    "options": [
+      "Bipartição.",
+      "Quimiotaxia.",
+      "Conjugação.",
+      "Esporulação."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Quimiotaxia é o movimento orientado por gradiente químico.",
+    "theme": "Microbiologia"
+  },
+  {
+    "id": "micro-28",
+    "question": "Por que as bactérias Gram-negativas costumam ser mais resistentes a certos antibióticos como a penicilina G?**",
+    "options": [
+      "Porque possuem uma parede de peptideoglicano muito mais espessa.",
+      "Devido à presença da membrana externa que atua como barreira seletiva.",
+      "Porque não possuem ribossomos para o antibiótico atuar.",
+      "Porque vivem exclusivamente dentro das células hospedeiras.\n\n---\n\n### **MÓDULO 3: GENÉTICA E REPRODUÇÃO BACTERIANA**."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Membrana externa protege a camada fina de mureína de certos fármacos.",
+    "theme": "Microbiologia"
+  },
+  {
+    "id": "micro-29",
+    "question": "A incorporação de fragmentos de DNA livre no meio ambiente, provenientes de bactérias que sofreram lise, por uma célula receptora viva é chamada de:**",
+    "options": [
+      "Transdução.",
+      "Transformação.",
+      "Conjugação.",
+      "Transposição."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Transformação: absorção de DNA livre pós-lise.",
+    "theme": "Microbiologia"
+  },
+  {
+    "id": "micro-30",
+    "question": "Um vírus bacteriófago infecta uma bactéria e, acidentalmente, carrega genes bacterianos para uma nova célula na próxima infecção. Este mecanismo de variabilidade genética é a:**",
+    "options": [
+      "Transformação.",
+      "Transdução.",
+      "Divisão binária.",
+      "Mutação pontual."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Transdução: vírus como vetor de DNA bacteriano.",
+    "theme": "Microbiologia"
+  },
+  {
+    "id": "micro-31",
+    "question": "Sobre os plasmídeos de resistência (Plasmídeos R), assinale a alternativa CORRETA:**",
+    "options": [
+      "São essenciais para o crescimento básico da bactéria em qualquer meio.",
+      "São fragmentos de DNA circular extracromossômico que conferem vantagem seletiva.",
+      "Localizam-se dentro do núcleo definido da bactéria. por sinalização celular.",
+      "São transferidos apenas de forma vertical (de mãe para filha). no ambiente intracelular."
+    ],
+    "correctAnswer": 1,
+    "explanation": "DNA extracromossômico circular com genes de resistência.",
+    "theme": "Microbiologia"
+  },
+  {
+    "id": "micro-32",
+    "question": "O processo de reprodução assexuada onde uma célula se alonga e se divide em duas células geneticamente iguais é a:**",
+    "options": [
+      "Esporulação. através de processos metabólicos.",
+      "Gemulação. via regulação enzimática.",
+      "Fissão binária (Bipartição).",
+      "Transdução. no ambiente intracelular."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Fissão binária gera clones geneticamente idênticos.",
+    "theme": "Microbiologia"
+  },
+  {
+    "id": "micro-33",
+    "question": "O que são Transposons (genes saltadores)?**",
+    "options": [
+      "Vírus que infectam exclusivamente fungos. através de processos metabólicos.",
+      "Sequências de DNA que se movimentam dentro do genoma, podendo gerar \"ilhas de patogenicidade\".",
+      "Proteínas que formam o capsídeo viral. por sinalização celular.",
+      "Nutrientes essenciais para o cultivo *in vitro*. no ambiente intracelular."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Transposons mudam de posição, alterando a agressividade.",
+    "theme": "Microbiologia"
+  },
+  {
+    "id": "micro-34",
+    "question": "Na transferência de plasmídeos por pili sexual, como se comporta a bactéria doadora?**",
+    "options": [
+      "Ela morre após transferir todo seu DNA cromossômico. através de processos metabólicos.",
+      "Ela permanece inalterada, pois transfere apenas uma cópia do plasmídeo.",
+      "Ela se funde com a bactéria receptora formando um diploide.",
+      "Ela perde sua resistência a antibióticos. no ambiente intracelular."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Conjugação é unidirecional; doadora replica o plasmídeo e envia cópia.",
+    "theme": "Microbiologia"
+  },
+  {
+    "id": "micro-35",
+    "question": "O mecanismo de \"Quorum Sensing\" permite que as bactérias:**",
+    "options": [
+      "Aumentem sua velocidade de natação por flagelos. através de processos metabólicos.",
+      "Coordenem a expressão gênica e ações patogênicas em conjunto baseadas na densidade populacional.",
+      "Corrijam erros de replicação do RNA. por sinalização celular.",
+      "Se transformem em micobactérias hidrofóbicas. no ambiente intracelular."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Mecanismo de sinalização química entre bactérias.",
+    "theme": "Microbiologia"
+  },
+  {
+    "id": "micro-36",
+    "question": "Sobre as mutações bacterianas, assinale a alternativa CORRETA:**",
+    "options": [
+      "Ocorrem apenas quando induzidas por antibióticos. através de processos metabólicos.",
+      "Podem ser espontâneas e são a fonte primária de novos recursos genéticos individuais.",
+      "São corrigidas pela RNA polimerase com 100% de eficiência. por sinalização celular.",
+      "Impedem que a bactéria realize fissão binária. no ambiente intracelular."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Mutação é a base individual da variabilidade.",
+    "theme": "Microbiologia"
+  },
+  {
+    "id": "micro-37",
+    "question": "O surgimento de linhagens multirresistentes em ambiente hospitalar está fortemente associado a:**",
+    "options": [
+      "Uso de microscópios de baixa resolução. através de processos metabólicos.",
+      "Recombinação genética via pili sexual e plasmídeos de resistência.",
+      "Falta de oxigênio nos meios de cultura. por sinalização celular.",
+      "Excesso de bactérias autotróficas no microbioma. no ambiente intracelular."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Conjugação espalha genes de resistência rapidamente em hospitais.",
+    "theme": "Microbiologia"
+  },
+  {
+    "id": "micro-38",
+    "question": "Uma bactéria \"F+\" é aquela que:**",
+    "options": [
+      "Possui flagelos polares. através de processos metabólicos.",
+      "É resistente à febre (Hot mutant). via regulação enzimática.",
+      "Possui o plasmídeo de fertilidade (F) e pode atuar como doadora na conjugação.",
+      "Não possui parede celular (Micoplasma). no ambiente intracelular."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Plasmídeo F (fertilidade) qualifica a doadora.",
+    "theme": "Microbiologia"
+  },
+  {
+    "id": "micro-39",
+    "question": "Sobre a replicação do cromossomo bacteriano, assinale a alternativa CORRETA:**",
+    "options": [
+      "Ocorre no núcleo cercado por membrana. através de processos metabólicos.",
+      "Envolve histonas para manter a conformação do DNA.",
+      "Desencadeia o início da divisão celular e formação do septo.",
+      "Acontece apenas durante o ciclo lisogênico viral."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Replicação circular gatilha a formação do septo e divisão.",
+    "theme": "Microbiologia"
+  },
+  {
+    "id": "micro-40",
+    "question": "A \"clivagem incompleta do septo\" durante a divisão binária resulta em:**",
+    "options": [
+      "Morte celular imediata. através de processos metabólicos.",
+      "Formação de arranjos como cadeias (estreptococos) ou grupos (estafilococos).",
+      "Transformação da bactéria em levedura. por sinalização celular.",
+      "Surgimento de arqueobactérias termofílicas. no ambiente intracelular."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Se não houver separação completa, formam-se cadeias ou cachos.",
+    "theme": "Microbiologia"
+  },
+  {
+    "id": "micro-41",
+    "question": "O que diferencia a transposição generalizada da pontual?**",
+    "options": [
+      "A generalizada ocorre apenas em vírus. através de processos metabólicos.",
+      "A pontual liga genes em regiões específicas, podendo criar ilhas de patogenicidade mais agressivas.",
+      "A generalizada é sempre benéfica para o hospedeiro humano. por sinalização celular.",
+      "Não há diferença, ambos são termos para mutação por radiação. no ambiente intracelular."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Pontual é direcionada; generalizada é aleatória (\"jogo de sorte\").",
+    "theme": "Microbiologia"
+  },
+  {
+    "id": "micro-42",
+    "question": "Qual estrutura é formada por duas membranas separadas por camadas de peptideoglicano durante a divisão celular?**",
+    "options": [
+      "Cápsula.",
+      "Septo transverso.",
+      "Plasmídeo.",
+      "Pili."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Septo divide a célula mãe em duas filhas.",
+    "theme": "Microbiologia"
+  },
+  {
+    "id": "micro-43",
+    "question": "A variabilidade genética coletiva é fundamental para a evolução bacteriana. Qual processo NÃO faz parte desses recursos?**",
+    "options": [
+      "Transformação. através de processos metabólicos.",
+      "Transdução. via regulação enzimática.",
+      "Conjugação. por sinalização celular.",
+      "Fissão binária.\n\n---\n\n### **MÓDULO 4: VIROLOGIA**."
+    ],
+    "correctAnswer": 3,
+    "explanation": "Bipartição é assexuada; não gera variabilidade (gera clones).",
+    "theme": "Microbiologia"
+  },
+  {
+    "id": "micro-44",
+    "question": "Um vírus é considerado um \"parasita intracelular obrigatório\" porque:**",
+    "options": [
+      "Possui metabolismo próprio, mas prefere as células humanas. através de processos metabólicos.",
+      "Carece de maquinaria bioquímica (como ribossomos) para replicação independente.",
+      "É composto apenas por lipídeos e carboidratos. por sinalização celular.",
+      "Só infecta células que possuem parede celular de quitina. no ambiente intracelular."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Vírus subvertem o metabolismo celular por não terem o próprio.",
+    "theme": "Microbiologia"
+  },
+  {
+    "id": "micro-45",
+    "question": "Sobre a estrutura do vírion, o que compõe o \"nucleocapsídeo\"?**",
+    "options": [
+      "Envelope lipídico + Proteínas.",
+      "Genoma (DNA ou RNA) + Capsídeo proteico.",
+      "Espículas + Enzimas. por sinalização celular.",
+      "Ácido dipicolínico + Ribossomos."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Nucleocapsídeo = cerne genômico + capa proteica.",
+    "theme": "Microbiologia"
+  },
+  {
+    "id": "micro-46",
+    "question": "Paciente apresenta lesões herpéticas recorrentes. O médico explica que o vírus permanece \"escondido\" no DNA das células nervosas sem destruí-las. Este estado é chamado de:**",
+    "options": [
+      "Ciclo lítico. através de processos metabólicos.",
+      "Ciclo lisogênico (ou latência).",
+      "Adsorção seletiva.",
+      "Transcrição reversa."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Lisogenia: integração sem lise imediata; latência.",
+    "theme": "Microbiologia"
+  },
+  {
+    "id": "micro-47",
+    "question": "Por que vírus envelopados (como o Influenza e HIV) são considerados mais \"lábeis\" ou frágeis no ambiente?**",
+    "options": [
+      "Porque o envelope de lipídios é facilmente rompido por sabão, álcool e ressecamento.",
+      "Porque possuem capsídeos feitos de queratina resistente. via regulação enzimática.",
+      "Porque não possuem material genético. por sinalização celular.",
+      "Porque se replicam muito lentamente. no ambiente intracelular."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Lipídios do envelope são sensíveis a solventes e detergentes.",
+    "theme": "Microbiologia"
+  },
+  {
+    "id": "micro-48",
+    "question": "Qual a função das \"espículas\" (glicoproteínas) no envelope viral?**",
+    "options": [
+      "Realizar a digestão de nutrientes do meio. através de processos metabólicos.",
+      "Permitir a adsorção e reconhecimento específico de receptores na célula hospedeira.",
+      "Proteger o vírus contra a radiação UV de forma definitiva. por sinalização celular.",
+      "Produzir ATP para a movimentação viral. no ambiente intracelular."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Proteínas que se ligam a receptores específicos do hospedeiro.",
+    "theme": "Microbiologia"
+  },
+  {
+    "id": "micro-49",
+    "question": "O vírus HIV é classificado como um Retrovírus. Isso significa que ele:**",
+    "options": [
+      "Possui genoma de DNA fita dupla. através de processos metabólicos.",
+      "Utiliza a enzima transcriptase reversa para produzir DNA a partir de um molde de RNA.",
+      "Infecta apenas plantas e bactérias. por sinalização celular.",
+      "Sai da célula obrigatoriamente por lise celular. no ambiente intracelular."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Transcriptase reversa transforma RNA viral em DNA.",
+    "theme": "Microbiologia"
+  },
+  {
+    "id": "micro-50",
+    "question": "Sobre a replicação viral, qual a sequência CORRETA das etapas?**",
+    "options": [
+      "Montagem → Adsorção → Penetração → Liberação. através de processos metabólicos.",
+      "Adsorção → Penetração → Desnudamento → Replicação/Síntese → Montagem → Liberação.",
+      "Desnudamento → Liberação → Adsorção → Síntese. por sinalização celular.",
+      "Penetração → Montagem → Adsorção → Desnudamento. no ambiente intracelular."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Sequência lógica: ligar, entrar, expor genes, copiar, montar, sair.",
+    "theme": "Microbiologia"
+  },
+  {
+    "id": "micro-51",
+    "question": "Vírus que possuem genoma de RNA tendem a sofrer mais mutações que os de DNA. Por quê?**",
+    "options": [
+      "Porque o RNA é uma molécula maior. através de processos metabólicos.",
+      "Porque a RNA polimerase viral geralmente não possui atividade de correção de erros (*proof-reading*).",
+      "Porque o RNA se transforma em DNA no ambiente externo. por sinalização celular.",
+      "Porque vírus de RNA não possuem capsídeo. no ambiente intracelular."
+    ],
+    "correctAnswer": 1,
+    "explanation": "RNA polimerase viral erra muito e não corrige, gerando mutantes.",
+    "theme": "Microbiologia"
+  },
+  {
+    "id": "micro-52",
+    "question": "O termo \"Tropismo Viral\" refere-se a:**",
+    "options": [
+      "Capacidade do vírus de infectar diversos tipos de espécies (animais e plantas).",
+      "Afinidade do vírus por tipos específicos de células ou tecidos do hospedeiro.",
+      "Velocidade com que o vírus sofre mutação. por sinalização celular.",
+      "Resistência do vírus ao calor intenso. no ambiente intracelular."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Tropismo define quais órgãos/células o vírus consegue infectar.",
+    "theme": "Microbiologia"
+  },
+  {
+    "id": "micro-53",
+    "question": "Um vírus que infecta exclusivamente bactérias é chamado de:**",
+    "options": [
+      "Arbovírus.",
+      "Bacteriófago.",
+      "Vírusóide.",
+      "Príon."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Bacteriófagos usam bactérias como hospedeiros.",
+    "theme": "Microbiologia"
+  },
+  {
+    "id": "micro-54",
+    "question": "Sobre os \"Príons\", assinale a alternativa CORRETA:**",
+    "options": [
+      "São pequenos fragmentos de RNA circular que infectam plantas.",
+      "São proteínas infecciosas que atacam o encéfalo (ex: Doença da Vaca Louca).",
+      "Possuem genoma de DNA fita simples e envelope lipídico. por sinalização celular.",
+      "São facilmente destruídos por antibióticos comuns. no ambiente intracelular."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Príons atacam o encéfalo deixando-o \"esponjoso\".",
+    "theme": "Microbiologia"
+  },
+  {
+    "id": "micro-55",
+    "question": "Diferente das bactérias, a reprodução viral ocorre por:**",
+    "options": [
+      "Fissão binária. através de processos metabólicos.",
+      "Esporulação. via regulação enzimática.",
+      "Montagem de componentes individuais sintetizados pela célula hospedeira.",
+      "Mitose direta. no ambiente intracelular."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Vírus são montados peça por peça dentro da célula.",
+    "theme": "Microbiologia"
+  },
+  {
+    "id": "micro-56",
+    "question": "O \"Adenovírus\" é frequentemente utilizado na terapia gênica como vetor porque:**",
+    "options": [
+      "É um vírus de RNA que sofre mutação constante. através de processos metabólicos.",
+      "É um vírus de DNA capaz de introduzir genes funcionais em células humanas para tratar doenças (ex: AME).",
+      "Causa lise imediata de todas as células do corpo. por sinalização celular.",
+      "Não possui capsídeo proteico. no ambiente intracelular."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Adenovírus (DNA) são vetores para inserir genes terapêuticos.",
+    "theme": "Microbiologia"
+  },
+  {
+    "id": "micro-57",
+    "question": "Sobre os vírus da Dengue e Influenza, assinale a classificação genômica correta respectivamente:**",
+    "options": [
+      "ssRNA (+) e ssRNA (-).",
+      "dsDNA e ssDNA.",
+      "Retrovírus e Adenovírus.",
+      "dsRNA e ssRNA (+)."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Dengue é senso positivo (+); Influenza é senso negativo (-).",
+    "theme": "Microbiologia"
+  },
+  {
+    "id": "micro-58",
+    "question": "O que caracteriza o \"Ciclo Lítico\"?**",
+    "options": [
+      "O vírus integra seu DNA ao da célula e permanece latente. através de processos metabólicos.",
+      "O vírus subverte o metabolismo celular, replica-se intensamente e rompe a célula para liberar a progênie.",
+      "A célula hospedeira divide-se normalmente carregando o prófago. por sinalização celular.",
+      "O vírus morre imediatamente após entrar na célula. no ambiente intracelular."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Ciclo lítico termina com a morte/lise da célula hospedeira.",
+    "theme": "Microbiologia"
+  },
+  {
+    "id": "micro-59",
+    "question": "Qual a principal diferença entre Viróides e Vírusóides?**",
+    "options": [
+      "Viróides possuem DNA, Vírusóides possuem RNA. através de processos metabólicos.",
+      "Virusóides precisam de um vírus auxiliador para infectar (ex: Hepatite D precisa da B).",
+      "Viróides infectam apenas humanos, Virusóides infectam plantas. por sinalização celular.",
+      "Não há diferença, são sinônimos. no ambiente intracelular."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Virusóides são satélites; precisam de um \"ajudante\".",
+    "theme": "Microbiologia"
+  },
+  {
+    "id": "micro-60",
+    "question": "A \"Imunopatogênese\" em infecções virais (ex: Dengue Hemorrágica) é causada por:**",
+    "options": [
+      "Destruição direta de todas as células pelo vírus. através de processos metabólicos.",
+      "Uma resposta imunológica exagerada do hospedeiro que gera desequilíbrios fisiológicos graves.",
+      "Falta de produção de anticorpos pelo indivíduo. por sinalização celular.",
+      "Toxinas AB produzidas pelo capsídeo viral. no ambiente intracelular."
+    ],
+    "correctAnswer": 1,
+    "explanation": "O dano é causado pela própria reação imune ao vírus.",
+    "theme": "Microbiologia"
+  },
+  {
+    "id": "micro-61",
+    "question": "Vírus não envelopados costumam sair da célula hospedeira por qual processo?**",
+    "options": [
+      "Brotamento.",
+      "Lise celular (rompimento).",
+      "Exocitose controlada.",
+      "Difusão simples."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Vírus nus (sem envelope) geralmente rompem a célula ao sair.",
+    "theme": "Microbiologia"
+  },
+  {
+    "id": "micro-62",
+    "question": "Qual estrutura viral é resistente a condições ambientais severas (ácido gástrico, detergentes)?**",
+    "options": [
+      "Envelope lipídico.",
+      "Capsídeo proteico.",
+      "Transcriptase reversa.",
+      "Espículas glicoproteicas."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Capsídeo proteico é rígido e protege contra meios ácidos e detergentes.",
+    "theme": "Microbiologia"
+  },
+  {
+    "id": "micro-63",
+    "question": "O termo \"Espectro de Hospedeiro\" define:**",
+    "options": [
+      "O número de células infectadas dentro de um único órgão. através de processos metabólicos.",
+      "A variedade de espécies de hospedeiros que um vírus é capaz de infectar.",
+      "A cor do vírus no microscópio eletrônico. por sinalização celular.",
+      "O tempo de latência no ciclo lisogênico. no ambiente intracelular."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Espectro define o nível de espécies atingidas.",
+    "theme": "Microbiologia"
+  },
+  {
+    "id": "micro-64",
+    "question": "Durante a penetração, o processo onde o vírus entra integralmente por invaginação da membrana plasmática é a:**",
+    "options": [
+      "Fusão de membranas.",
+      "Endocitose.",
+      "Translocação ativa.",
+      "Bipartição.\n\n---\n\n### **MÓDULO 5: CULTIVO E CRESCIMENTO MICROBIANO**."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Endocitose: entrada integral envolta em vesícula.",
+    "theme": "Microbiologia"
+  },
+  {
+    "id": "micro-65",
+    "question": "Em um laboratório, o sucesso de um cultivo é medido primariamente pelo:**",
+    "options": [
+      "Aumento do tamanho individual de cada célula.",
+      "Crescimento microbiano (aumento do número da população).",
+      "Mudança de cor do microrganismo sob luz UV.",
+      "Produção de oxigênio pelas bactérias heterotróficas."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Sucesso do cultivo = crescimento da população.",
+    "theme": "Microbiologia"
+  },
+  {
+    "id": "micro-66",
+    "question": "Qual a diferença entre cultivo *in vitro* e *in vivo*?**",
+    "options": [
+      "*In vitro* usa animais vivos; *In vivo* usa placas de Petri. através de processos metabólicos.",
+      "*In vitro* ocorre quando se conhece as exigências nutricionais; *In vivo* quando são desconhecidas.",
+      "*In vitro* é sempre mais caro e lento. por sinalização celular.",
+      "Não existe diferença no diagnóstico clínico. no ambiente intracelular."
+    ],
+    "correctAnswer": 1,
+    "explanation": "*In vitro* (laboratório conhecido); *In vivo* (habitat natural desconhecido).",
+    "theme": "Microbiologia"
+  },
+  {
+    "id": "micro-67",
+    "question": "Sobre os meios de cultura, o que define um \"Meio Seletivo\"?**",
+    "options": [
+      "Permite o crescimento de todos os microrganismos igualmente. através de processos metabólicos.",
+      "Contém ingredientes (como cristal violeta ou sais biliares) que restringem certos grupos e favorecem outros.",
+      "Serve apenas para mudar a cor da colônia. por sinalização celular.",
+      "É um meio onde as concentrações químicas são desconhecidas. no ambiente intracelular."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Seletivo restringe um grupo para favorecer outro.",
+    "theme": "Microbiologia"
+  },
+  {
+    "id": "micro-68",
+    "question": "O \"Meio Diferencial\" (como o Ágar MacConkey) tem como princípio:**",
+    "options": [
+      "Matar todas as bactérias Gram-negativas. através de processos metabólicos.",
+      "Utilizar indicadores que reagem com metabólitos específicos, permitindo distinguir espécies em uma cultura mista.",
+      "Fornecer apenas luz como fonte de energia. por sinalização celular.",
+      "Impedir a formação de esporos. no ambiente intracelular."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Diferencial permite distinguir por reações químicas visíveis.",
+    "theme": "Microbiologia"
+  },
+  {
+    "id": "micro-69",
+    "question": "Na curva de crescimento bacteriano, a fase de adaptação ao meio, onde não há aumento significativo no número de células, é a:**",
+    "options": [
+      "Fase Log (Exponencial).",
+      "Fase Lag.",
+      "Fase Estacionária.",
+      "Fase de Declínio."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Lag: fase de adaptação e preparação metabólica.",
+    "theme": "Microbiologia"
+  },
+  {
+    "id": "micro-70",
+    "question": "Por que a Fase Estacionária ocorre em um cultivo fechado?**",
+    "options": [
+      "Porque as bactérias decidem parar de se dividir por tédio. através de processos metabólicos.",
+      "Devido ao esgotamento de nutrientes e acúmulo de resíduos metabólicos tóxicos.",
+      "Porque o oxigênio aumenta demais no meio. por sinalização celular.",
+      "Porque o pH se torna neutro. no ambiente intracelular."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Estacionária: equilíbrio entre morte e divisão por escassez de recursos.",
+    "theme": "Microbiologia"
+  },
+  {
+    "id": "micro-71",
+    "question": "Um aditivo usado para \"sequestrar\" íons metálicos e evitar que atrapalhem o crescimento microbiano é o:**",
+    "options": [
+      "Agente Quelante.",
+      "Tampão.",
+      "Antiespumante.",
+      "Indutor."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Quelantes \"sequestram\" íons indesejados no meio.",
+    "theme": "Microbiologia"
+  },
+  {
+    "id": "micro-72",
+    "question": "Qual elemento químico é o principal constituinte da matéria seca microbiana (cerca de 50%) e base para meios de cultura?**",
+    "options": [
+      "Nitrogênio.",
+      "Fósforo.",
+      "Carbono.",
+      "Enxofre."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Carbono é o macronutriente mais exigido.",
+    "theme": "Microbiologia"
+  },
+  {
+    "id": "micro-73",
+    "question": "O uso do \"Ágar\" em meios de cultura serve para:**",
+    "options": [
+      "Atuar como o principal nutriente (açúcar) para as bactérias.",
+      "Solidificar o meio, permitindo o isolamento de colônias puras.",
+      "Matar vírus indesejados. por sinalização celular.",
+      "Fornecer nitrogênio molecular ($N_{2}$). no ambiente intracelular."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Ágar é um agente solidificante introduzido por Koch.",
+    "theme": "Microbiologia"
+  },
+  {
+    "id": "micro-74",
+    "question": "A turvação (turbidez) de um meio líquido (caldo) indica:**",
+    "options": [
+      "Que o meio está estéril.",
+      "Presença de crescimento microbiano.",
+      "Que o pH está perfeitamente equilibrado.",
+      "Que a autoclave falhou em aquecer."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Turvação em caldos indica colonização microbiana.",
+    "theme": "Microbiologia"
+  },
+  {
+    "id": "micro-75",
+    "question": "Como tornar um meio de cultura seletivo para fungos, inibindo o crescimento bacteriano?**",
+    "options": [
+      "Aumentando o pH para 9,0 (alcalino). através de processos metabólicos.",
+      "Usando pH mais ácido e alta concentração de açúcares.",
+      "Retirando todo o carbono do meio. por sinalização celular.",
+      "Adicionando soro fetal bovino em excesso.\n\n---\n\n### **MÓDULO 6: MICOLOGIA E MICROBIOTA**."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Fungos toleram mais acidez e açúcar que bactérias comuns.",
+    "theme": "Microbiologia"
+  },
+  {
+    "id": "micro-76",
+    "question": "Diferente das bactérias, os fungos são organismos:**",
+    "options": [
+      "Procariontes sem mitocôndrias. através de processos metabólicos.",
+      "Eucariotos com núcleo definido e organelas membranosas.",
+      "Acelulares e dependentes de hospedeiros.",
+      "Compostos exclusivamente por LPS. no ambiente intracelular."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Fungos são eucariotos complexos.",
+    "theme": "Microbiologia"
+  },
+  {
+    "id": "micro-77",
+    "question": "Fungos que podem assumir tanto a forma unicelular (levedura) quanto filamentosa (bolor) são chamados de:**",
+    "options": [
+      "Saprófitas.",
+      "Dimórficos.",
+      "Anaeróbios obrigatórios.",
+      "Termófilos extremas."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Dimórficos alternam entre levedura e hifas/bolor.",
+    "theme": "Microbiologia"
+  },
+  {
+    "id": "micro-78",
+    "question": "Sobre a microbiota (flora) normal humana, assinale a alternativa INCORRETA:**",
+    "options": [
+      "É estável e idêntica em todos os indivíduos desde o nascimento até a morte.",
+      "Pode trazer benefícios como a produção de vitaminas (K e B).",
+      "O \"Efeito Antagônico\" impede que patógenos se instalem por competição.",
+      "Pode causar doenças oportunistas se translocada para sítios estéreis."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Flora muda com idade, dieta e saúde; não é estável.",
+    "theme": "Microbiologia"
+  },
+  {
+    "id": "micro-79",
+    "question": "Qual local do corpo humano é considerado estéril (sem microbiota normal) em condições de saúde?**",
+    "options": [
+      "Pele.",
+      "Intestino Grosso.",
+      "Sangue e Líquor.",
+      "Cavidade Oral."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Sangue e líquor não devem possuir microrganismos em saúde.",
+    "theme": "Microbiologia"
+  },
+  {
+    "id": "micro-80",
+    "question": "O uso prolongado de antibióticos de amplo espectro pode causar \"Disbiose\". Um exemplo clínico comum disso é:**",
+    "options": [
+      "Aumento da resistência óssea. através de processos metabólicos.",
+      "Surgimento de candidíase (infecção fúngica) por supressão da flora bacteriana competidora.",
+      "Melhora imediata de todas as funções digestivas. por sinalização celular.",
+      "Transformação de bactérias Gram-negativas em Gram-positivas.\n\n---\n### **GABARITO COMENTADO (RESUMIDO)**\n\n1.  **B** - Penicilina é o padrão-ouro para sífilis.\n2.  **B** - Passos clássicos para causalidade micróbio-doença.\n3.  **D** - Pasteur refutou a geração espontânea; microscópio ajudou na biogênese.\n4.  **C** - Vírus são invisíveis ao óptico; exigem microscópio eletrônico.\n5.  **C** - Leeuwenhoek descreveu bactérias e Giardia primeiro.\n6.  **B** - Microscopia de luz permite ver células vivas em tempo real.\n7.  **B** - Pioneiro da antissepsia hospitalar.\n8.  **B** - Ciclam os elementos na natureza decompondo matéria orgânica.\n9.  **C** - Gram-negativas têm camada fina de mureína e membrana externa com LPS.\n10. **C** - Pili sexual permite conjugação e troca de plasmídeos.\n11. **B** - Cápsula aumenta o volume e impede a via fagocítica.\n12. **C** - Componentes do procarionte; não possuem organelas membranosas.\n13. **B** - Arqueias têm pseudoglicano e camada S protetora.\n14. **B** - Cocos em cachos são estafilococos; roxo indica Gram+.\n15. **C** - Porinas são canais proteicos na membrana externa das Gram-.\n16. **B** - Ácidos micólicos impedem a entrada de corantes comuns (Gram).\n17. **B** - LPS é endotoxina que causa choque e febre.\n18. **C** - Esporulação é sobrevivência, não reprodução; não aumenta o número de células.\n19. **C** - Fímbrias e biofilmes garantem adesão a superfícies inertes.\n20. **A** - Membrana bacteriana não tem esteróis/colesterol (exceção: micoplasmas).\n21. **C** - Beta-lactâmicos bloqueiam a transpeptidação.\n22. **B** - Periplasmo nas Gram- concentra enzimas agressivas.\n23. **C** - *Vibrio cholerae* tem forma de vírgula.\n24. **B** - Lisozima quebra o peptideoglicano; sem ele, a célula estoura por osmose.\n25. **C** - Unidades básicas do peptideoglicano (mureína).\n26. **B** - Toxinas AB paralisam ribossomos, levando à necrose tecidual.\n27. **B** - Quimiotaxia é o movimento orientado por gradiente químico.\n28. **B** - Membrana externa protege a camada fina de mureína de certos fármacos.\n29. **B** - Transformação: absorção de DNA livre pós-lise.\n30. **B** - Transdução: vírus como vetor de DNA bacteriano.\n31. **B** - DNA extracromossômico circular com genes de resistência.\n32. **C** - Fissão binária gera clones geneticamente idênticos.\n33. **B** - Transposons mudam de posição, alterando a agressividade.\n34. **B** - Conjugação é unidirecional; doadora replica o plasmídeo e envia cópia.\n35. **B** - Mecanismo de sinalização química entre bactérias.\n36. **B** - Mutação é a base individual da variabilidade.\n37. **B** - Conjugação espalha genes de resistência rapidamente em hospitais.\n38. **C** - Plasmídeo F (fertilidade) qualifica a doadora.\n39. **C** - Replicação circular gatilha a formação do septo e divisão.\n40. **B** - Se não houver separação completa, formam-se cadeias ou cachos.\n41. **B** - Pontual é direcionada; generalizada é aleatória (\"jogo de sorte\").\n42. **B** - Septo divide a célula mãe em duas filhas.\n43. **D** - Bipartição é assexuada; não gera variabilidade (gera clones).\n44. **B** - Vírus subvertem o metabolismo celular por não terem o próprio.\n45. **B** - Nucleocapsídeo = cerne genômico + capa proteica.\n46. **B** - Lisogenia: integração sem lise imediata; latência.\n47. **A** - Lipídios do envelope são sensíveis a solventes e detergentes.\n48. **B** - Proteínas que se ligam a receptores específicos do hospedeiro.\n49. **B** - Transcriptase reversa transforma RNA viral em DNA.\n50. **B** - Sequência lógica: ligar, entrar, expor genes, copiar, montar, sair.\n51. **B** - RNA polimerase viral erra muito e não corrige, gerando mutantes.\n52. **B** - Tropismo define quais órgãos/células o vírus consegue infectar.\n53. **B** - Bacteriófagos usam bactérias como hospedeiros.\n54. **B** - Príons atacam o encéfalo deixando-o \"esponjoso\".\n55. **C** - Vírus são montados peça por peça dentro da célula.\n56. **B** - Adenovírus (DNA) são vetores para inserir genes terapêuticos.\n57. **A** - Dengue é senso positivo (+); Influenza é senso negativo (-).\n58. **B** - Ciclo lítico termina com a morte/lise da célula hospedeira.\n59. **B** - Virusóides são satélites; precisam de um \"ajudante\".\n60. **B** - O dano é causado pela própria reação imune ao vírus.\n61. **B** - Vírus nus (sem envelope) geralmente rompem a célula ao sair.\n62. **B** - Capsídeo proteico é rígido e protege contra meios ácidos e detergentes.\n63. **B** - Espectro define o nível de espécies atingidas.\n64. **B** - Endocitose: entrada integral envolta em vesícula.\n65. **B** - Sucesso do cultivo = crescimento da população.\n66. **B** - *In vitro* (laboratório conhecido); *In vivo* (habitat natural desconhecido).\n67. **B** - Seletivo restringe um grupo para favorecer outro.\n68. **B** - Diferencial permite distinguir por reações químicas visíveis.\n69. **B** - Lag: fase de adaptação e preparação metabólica.\n70. **B** - Estacionária: equilíbrio entre morte e divisão por escassez de recursos.\n71. **A** - Quelantes \"sequestram\" íons indesejados no meio.\n72. **C** - Carbono é o macronutriente mais exigido.\n73. **B** - Ágar é um agente solidificante introduzido por Koch.\n74. **B** - Turvação em caldos indica colonização microbiana.\n75. **B** - Fungos toleram mais acidez e açúcar que bactérias comuns.\n76. **B** - Fungos são eucariotos complexos.\n77. **B** - Dimórficos alternam entre levedura e hifas/bolor.\n78. **A** - Flora muda com idade, dieta e saúde; não é estável.\n79. **C** - Sangue e líquor não devem possuir microrganismos em saúde.\n80. **B** - Disbiose elimina bactérias da flora, permitindo o supercrescimento de fungos como *Candida*."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Disbiose elimina bactérias da flora, permitindo o supercrescimento de fungos como *Candida*.",
+    "theme": "Microbiologia"
+  }
+];
 
 export const quizzes: Quiz[] = [
   { id: "coracao", title: "Coração", description: "Anatomia do sistema cardiovascular", emoji: "❤️", category: "Anatomia", questions: coracaoQuestions },
@@ -4198,5 +5240,6 @@ export const quizzes: Quiz[] = [
   { id: "fisiologia-cardiaca", title: "Fisiologia Cardíaca", description: "Funcionamento do coração e sistema circulatório", emoji: "⚡", category: "Fisiologia", questions: fisiologiaCardiacaQuestions },
   { id: "hemostasia", title: "Hemostasia e Coagulação", description: "Mecanismos de hemostasia e coagulação sanguínea", emoji: "🩸", category: "Fisiologia", questions: hemostasiaQuestions },
   { id: "fisiologia-muscular", title: "Fisiologia Muscular", description: "Mecanismos de contração e fisiologia do músculo", emoji: "💪", category: "Fisiologia", questions: fisiologiaMuscularQuestions },
-  { id: "sna", title: "SNA", description: "Sistema Nervoso Autônomo e Fisiologia de Membrana", emoji: "🧠⚡", category: "Fisiologia", questions: snaQuestions }
+  { id: "sna", title: "SNA", description: "Sistema Nervoso Autônomo e Fisiologia de Membrana", emoji: "🧠⚡", category: "Fisiologia", questions: snaQuestions },
+  { id: "microbiologia", title: "Microbiologia", description: "Estudo de bactérias, vírus, fungos e genética microbiana", emoji: "🔬", category: "Microbiologia", questions: microbiologiaQuestions }
 ];

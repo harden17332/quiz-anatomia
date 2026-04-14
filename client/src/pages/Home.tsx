@@ -6,7 +6,7 @@ import { useState } from "react";
 
 export default function Home() {
   const [, setLocation] = useLocation();
-  const [activeTab, setActiveTab] = useState<"Anatomia" | "Fisiologia">("Anatomia");
+  const [activeTab, setActiveTab] = useState<"Anatomia" | "Fisiologia" | "Microbiologia">("Anatomia");
 
   const handleThemeSelect = (themeId: string) => {
     setLocation(`/quiz/${themeId}`);
@@ -24,7 +24,7 @@ export default function Home() {
             <span className="text-3xl">🧬</span>
             <h1 className="text-3xl font-bold text-white">Quiz Interativo</h1>
           </div>
-          <p className="text-slate-300">Teste seus conhecimentos em Anatomia e Fisiologia</p>
+          <p className="text-slate-300">Teste seus conhecimentos em Anatomia, Fisiologia e Microbiologia</p>
         </div>
       </div>
 
@@ -34,7 +34,7 @@ export default function Home() {
             Escolha uma Categoria
           </h2>
           
-          <div className="flex gap-4 mb-8">
+          <div className="flex flex-wrap gap-4 mb-8">
             <Button
               onClick={() => setActiveTab("Anatomia")}
               className={`px-8 py-6 text-lg font-bold transition-all ${
@@ -55,6 +55,16 @@ export default function Home() {
             >
               ⚡ Fisiologia
             </Button>
+            <Button
+              onClick={() => setActiveTab("Microbiologia")}
+              className={`px-8 py-6 text-lg font-bold transition-all ${
+                activeTab === "Microbiologia"
+                  ? "bg-emerald-600 hover:bg-emerald-700 text-white shadow-lg shadow-emerald-900/20"
+                  : "bg-slate-800 hover:bg-slate-700 text-slate-400 border-2 border-slate-700"
+              }`}
+            >
+              🔬 Microbiologia
+            </Button>
           </div>
         </div>
 
@@ -63,7 +73,9 @@ export default function Home() {
             <Card
               key={quiz.id}
               className={`hover:shadow-lg transition-all duration-300 cursor-pointer border-2 bg-slate-800 ${
-                activeTab === "Anatomia" ? "border-slate-700 hover:border-blue-500/50" : "border-slate-700 hover:border-purple-500/50"
+                activeTab === "Anatomia" ? "border-slate-700 hover:border-blue-500/50" : 
+                activeTab === "Fisiologia" ? "border-slate-700 hover:border-purple-500/50" :
+                "border-slate-700 hover:border-emerald-500/50"
               }`}
               onClick={() => handleThemeSelect(quiz.id)}
             >
@@ -71,7 +83,9 @@ export default function Home() {
                 <div className="flex items-start justify-between mb-3">
                   <span className="text-5xl">{quiz.emoji}</span>
                   <span className={`inline-block text-xs font-semibold px-3 py-1 rounded-full ${
-                    activeTab === "Anatomia" ? "bg-blue-900/30 text-blue-300" : "bg-purple-900/30 text-purple-300"
+                    activeTab === "Anatomia" ? "bg-blue-900/30 text-blue-300" : 
+                    activeTab === "Fisiologia" ? "bg-purple-900/30 text-purple-300" :
+                    "bg-emerald-900/30 text-emerald-300"
                   }`}>
                     {quiz.questions.length} questões
                   </span>
@@ -86,7 +100,9 @@ export default function Home() {
               <CardContent>
                 <Button
                   className={`w-full font-bold ${
-                    activeTab === "Anatomia" ? "bg-blue-600 hover:bg-blue-700 text-white" : "bg-purple-600 hover:bg-purple-700 text-white"
+                    activeTab === "Anatomia" ? "bg-blue-600 hover:bg-blue-700 text-white" : 
+                    activeTab === "Fisiologia" ? "bg-purple-600 hover:bg-purple-700 text-white" :
+                    "bg-emerald-600 hover:bg-emerald-700 text-white"
                   }`}
                   onClick={(e) => {
                     e.stopPropagation();
